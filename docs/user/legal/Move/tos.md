@@ -1,6 +1,6 @@
 ---
 title: Terms of Service
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ### The DAO's Terms of Service
