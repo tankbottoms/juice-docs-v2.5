@@ -3,9 +3,9 @@ title: Terms of Service
 sidebar_position: 7
 ---
 
-## ☮️ PeaceDAO Terms of Service
+### The DAO's Terms of Service
 
-Last Updated: July 29, 2022
+Last Updated: March 1, 2022
 
 ### Introduction
 

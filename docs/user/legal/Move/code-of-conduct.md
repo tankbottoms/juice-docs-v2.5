@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Any nominated or ratified via Snapshot DAO ("DAO") Steward must accept this Code of Conduct prior to serving in any governance capacity.
 
-#### ☮️ Community
+#### Community
 
 The selection as the DAO Steward is conditional to the acceptance by each candidate of the DAO Steward’s Code of Conduct, COMMUNITY IMPACT AND ENFORCEMENT GUIDELINES, as well as the DAO Privacy Policy and Terms and Conditions.
 

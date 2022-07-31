@@ -1,30 +1,36 @@
 ---
-title: Gnosis Multi-Signature Signers
+title: Initial Gnosis Signers
 sidebar_position: 2
 ---
 
-#### Initial Multi-Signature Signers
+#### Initial Multi-Signature ("Initial Signers")
 
-| Discord                  | Ethereum Address                           | ENS              |
-| :----------------------- | :----------------------------------------- | :--------------- |
-| @tankbottoms(🎽,🍑)#2749 | 0x5d95baEBB8412AD827287240A5c281E3bB30d27E | tankbottoms.eth  |
-| @theryanking#1111        | 0x8C00f41676Ce4670ae9FcBBF297a24736dc23cc3 | ryan-breslow.eth |
-| TBD                      | TBD                                        | TBD              |
-| TBD                      | TBD                                        | TBD              |
-| TBD                      | TBD                                        | TBD              |
+The Initial Signers are members of the DAO who have agreed to sign and execute proposals which have been ratified by the DAO. The Initial Signers are:
+
+| Ethereum Address                           | Notes                                                                   |
+| :----------------------------------------- | :---------------------------------------------------------------------- |
+| 0x752515a3A1091b9f1c04416CF79D1F14d2340085 | https://etherscan.io/address/0x752515a3a1091b9f1c04416cf79d1f14d2340085 |
+| 0x468f178672C86bFA02e5E1B0413C3ccf55A37409 | https://etherscan.io/address/0x468f178672C86bFA02e5E1B0413C3ccf55A37409 |
+| 0x550bD0F03580B9a687931af4d837F8e45D61d410 | https://etherscan.io/address/0x550bD0F03580B9a687931af4d837F8e45D61d410 |
+| 0x746cf650d4E5431474E8D4E2d5B6Bbe53772b498 | https://etherscan.io/address/0x746cf650d4E5431474E8D4E2d5B6Bbe53772b498 |
+| 0xDbE76F6ae97dFD5bdd1D7DAD8972740d18aB2b57 | https://etherscan.io/address/0xDbE76F6ae97dFD5bdd1D7DAD8972740d18aB2b57 |
+
+The Initial Policy of the Gnosis Multi-Signature Wallet requires 3 out of 5 confirmations in order to execute a transaction.
 
 ##### Oversight, Slow Start, Veto Rights
 
-> The Council exists to vet and endorse Peace DAO Proposals. Council members, ("Stewards"), hold
-> trusted permissions and credentials over key tooling and platforms utilized by Peace DAO, including the
-> Endowment Treasury’s Gnosis Safe[^1], the Operational Treasury, Juicebox campaign, Snapshot Space, website,
-> social media accounts, and Discord server.
+> The Initial Signers exists to ratify and execute any proposal which has satisfied the following:
+>
+> -   (a) Discord Workshop phase,
+> -   (b) Snapshot Temperature-Check, and,
+> -   (c) is not vetoed for any reason set forth below.
 
-> Stewards may be appointed by unanimous public consent of the Council or by DAO Proposal.
-
-> Stewards may be removed by majority of the voting consent via DAO Proposal.
+> Proposals satisfying the DAO's governance may ratify proposals and approve transactions from the DAO's Gnosis Safe[^1]
+> The Initial Signers expect to expand the number of signers as soon as it is reasonably necessary, and by the majority vote of the DAO.
 
 ##### Governance
+
+##### Veto Rights
 
 ###### Proposal Process
 
