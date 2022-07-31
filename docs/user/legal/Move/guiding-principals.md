@@ -3,47 +3,51 @@ title: Guiding Principles
 sidebar_position: 3
 ---
 
-# 🚴 MoveDAO Guiding Principles
+# 🚴 MovementDAO (mDAO) Guiding Principles
 
 #### Definitions.
 
--   [Definitions](./definitions.md)
+-   The [definitions](./definitions.md) section of the associated document is included in its entirety herein. Any terms which are contained herein supersede any definition contained in the associated document.
+
+-   **"Service Provider"** means the Person appointed by the DAO to perform administrative services, responsibilities, and duties to carry on the DAO's operations. The initial Service Provider shall be dao-lawfirm.eth, its predecessor entities, or any future entity of dao-lawfirm.eth.
 
 #### Introduction.
 
-These guiding principles constitute an Agreement **(hereinafter the "Agreement")** and are entered into by and amongst members of **MoveDAO (hereinafter “DAO” or “🚴DAO”)**, an unincorporated nonprofit association organized under the laws of the **State of Delaware.**
+These guiding principles constitute an Agreement **(hereinafter the "Agreement")** and are entered into by and amongst members of **MovementDAO, Move DAO, or mDAO (hereinafter “DAO”)**, an unincorporated nonprofit association organized under the laws of the **State of Delaware.**
 
 The following terms apply when you click to view or access DAO's Dapp or DAO's online services **(including https://move.xyz)**, donate cryptocurrencies such as Ethereum, or transfer one or more **ERC-20 ("Tokens")** or **ERC-721 ("NFTs")** **("Cryptographic currencies")** to the DAO, become a Member of DAO, receive DAO Tokens, hold Governance Rights for the DAO, interact with or access [the DAO's smart contracts in any way](./contract-addresses), provide services to the DAO, donate or transfer any property to the DAO, or otherwise interact with or access the DAO's services through the Dapp. Participating in the DAO's governance may occur on [Snapshot](https://snapshot.org), however for the purpose of this agreement we refer to this as part of the DAO Dapp.
 
 **By doing any of the above, you signify your agreement to these terms. If you do not agree to be bound by the Agreement in its entirety, you may not access, interact with, or use the DAO Dapp or online services. Capitalized terms used herein have the meanings ascribed to them in Section 17.**
 
+---
+
 #### 1. Organization.
 
-> **(a) Formation.** The DAO was formed on March 15, 2021. The obligations of members of the DAO shall be determined pursuant to the Delaware Uniform Unincorporated Nonprofit Association Act, Del. Code Ann. Tit. 6, §§ 1901-1916 inclusive, and this Agreement.
+> **(a) Formation.** The DAO was formed on March 1st, 2022. The obligations of members of the DAO shall be determined pursuant to the **Delaware Uniform Unincorporated Nonprofit Association Act, Del. Code Ann. Tit. 6, §§ 1901-1916** inclusive, and this Agreement.
 
 #### Purpose.
 
-Peace DAO's purpose is to fund life-saving assistance and support for refugees of war and internally displaced people. The following is an initial framework for the governance of Peace DAO, the execution of funding initiatives, and the management of Peace DAO’s treasury.
+The primary purpose of the DAO is to develop programmable community focused Ethereum **("Cryptocurrency")** treasury applications at any scale, openly on the blockchain. The DAO community collaborates with communities to build, deploy and maintain the DAO application. One such part of the treasury applications employs the **Juicebox protocol**, a framework for funding and operating projects **("Member Projects")** openly on Ethereum. Its contracts allow communities to deploy an administrative NFT, programmable payment terminals for receiving **("Contributions")** and distributing funds **("Payouts")**, project tokens **("Project Tokens")** for community membership, and funding cycles for time-locked and recurring constraints—all in powerful, customizable ways. DAO communities may receive Contributions, donations, sales, or facilitate a portion of their organization's access to capital on the blockchain, The DAO additionally develops on-and-off-ramps for fiat and existing financial infrastructure, accounting management tooling, and creator focused features to enable any type of lawful activity to native to Cryptocurrency or not.
 
 > The DAO is an unincorporated association of individuals, corporations, statutory trusts, business trusts, estates, trusts, partnerships, limited liability companies, associations, joint ventures, or any other legal or commercial entity, many, if not all, of whom agree to join together for a common, nonprofit purpose. For the DAO, that purpose is encapsulated in its mission statement.
 
-> The DAO is not intended to be or become an entity required to register as an “investment company” as defined in Section3(a)(1)(A) of the Investment Company Act of 1940, as amended.
+> **The DAO is not intended to be or become an entity required to register as an “investment company” as defined in Section3(a)(1)(A) of the Investment Company Act of 1940, as amended.**
 
--   [Expanded Misson and Purpose](./purpose.md)
+-   The [purpose](./purpose.md) section of the associated document is included in its entirety herein. Any terms which are contained herein supersede any definition contained in the associated document.
 
 #### 2. Membership; Governance Rights and Tokens; Limitations.
 
 > **(a) Governance Rights.** Governance Rights in the DAO are represented by Project Tokens, with each Token representing a fractional part of the Governance Rights of all Members (or assignees, as the case may be) equal to the quotient of one (1) divided by the total number of Tokens claimed at any time.
 
-> **(b) Tokens.** As of the date hereof, there shall be an allowance of up to the max of an unsigned integer 2(<sup>256-1</sup>)[^1], tokens authorized to represent membership interests in the DAO, unless otherwise agreed to and by the Members via a vote occurring through the Dapp. Membership in the DAO, as defined bey Del. Code Ann. Tit. 6, § 1901, shall be voluntary and open to any individual whose purpose or presumed intent is to contribute to the DAO and is willing to accept responsibilities and terms of membership. The DAO shall grant the initial Member's governance voting tokens proportional to contributions to the Gnosis multi-signature wallet[^2].
+> **(b) Tokens.** As of the date hereof, there shall be an allowance of up to the max of an unsigned integer 2(<sup>256-1</sup>)[^1], tokens authorized to represent membership interests in the DAO, unless otherwise agreed to and by the Members via a vote occurring through the Dapp. Membership in the DAO, as defined by **Del. Code Ann. Tit. 6, § 1901**, shall be voluntary and open to any individual whose purpose or presumed intent is to contribute to the DAO and is willing to accept responsibilities and terms of membership. The DAO shall grant the initial Member's governance voting tokens proportional to contributions to the Gnosis multi-signature wallet[^2].
 
 > Notwithstanding the foregoing or any other provision of this Agreement, the DAO may provide initial members Tokens for their role in conceiving and supporting the DAO. [continued](./tokens.md)
 
-> **(c) Limitation to the DAO Protocol Configuration.** The DAO shall not configure the Juicebox Protocol where the Reserved Tokens is undefined or 0%, the Redemption Rate allows for 100%, and the Discount Rate with any value other than zero (0%). The DAO shall not allow the Juicebox Protocol initial Token Issuance with any parameters where the Token Redemption Rate is greater than the capital required to purchase the Tokens.
+> **(c) Limitation to the DAO Protocol Configuration.** The DAO shall not configure the Juicebox Protocol where the Reserved Tokens is undefined or 0%, the Redemption Rate allows for 100%, and the Discount Rate with any value other than zero (0%). **The DAO shall not allow the Juicebox Protocol initial Token Issuance with any parameters where the Token Redemption Rate is greater than the capital required to purchase the Tokens.**
 
 > **(d) Admission.** The DAO is a decentralized network of members and may admit or deny individuals for any arbitrary purpose or lack of purpose.
 
-All of the DAO governing members shall have their membership determined upon receipt of voting tokens acquired on a public blockchain via the DAO's Juicebox Project management page (“Cryptographic Units”, and such holders, “Members”). Cryptographic Units are used for participating in and improving the governance of the DAO through affirmative votes effectuted via the Designated Smart Contract (defined herein) (such process, “Cryptographic Consensus”) or more commonly, Snapshot the popular off-chain voting protocol ("Snapshot"). Once the DAO admission requirements are met a prospective Member may be put up to a vote of the full membership. The DAO will consistently review, and if necessary, Members may make adjustments to the DAO admission requirements based on their evolving needs and as registered in a successful vote through the Designated Smart Contract. Notwithstanding, the DAO may admit all individuals who hold the DAO token by capturing an inventory of all current holders and ratifying the membership at Governance intervals from time to time.
+All of the DAO governing members shall have their membership determined upon receipt of voting tokens acquired on a public blockchain via the DAO's Juicebox Project management page **(“Cryptographic Units”, and such holders, “Members”)**. Cryptographic Units are used for participating in and improving the governance of the DAO through affirmative votes effectuted via the Designated Smart Contract (defined herein) **(such process, “Cryptographic Consensus”)** or more commonly, Snapshot the popular off-chain voting protocol **("Snapshot")**. Once the DAO admission requirements are met a prospective Member may be put up to a vote of the full membership. The DAO will consistently review, and if necessary, Members may make adjustments to the DAO admission requirements based on their evolving needs and as registered in a successful vote through the Designated Smart Contract. Notwithstanding, the DAO may admit all individuals who hold the DAO token by capturing an inventory of all current holders and ratifying the membership at Governance intervals from time to time.
 
 > **(e) Token Liquidity Pools.** The DAO shall not create any Liquidity Pools.
 
@@ -57,13 +61,13 @@ All of the DAO governing members shall have their membership determined upon rec
 
 > **(i) Information Rights.** Members shall have access to all information concerning operational and financial affairs of the DAO via
 
-> > **Gnosis Multi-Signature Wallet Etherscan Mainnet** `0xD2427c0e44D28Ea74c0504E072c6073d135569B2`,
+> > **Gnosis Multi-Signature Wallet Etherscan Mainnet** `0x143cC0A996De329C1C5723Ee4F15D2a40c1203c6`,
 
-> > **Ethereum Block Explorer** `https://etherscan.io/address/0xD2427c0e44D28Ea74c0504E072c6073d135569B2`,
+> > **Ethereum Block Explorer** `https://etherscan.io/address/0x143cC0A996De329C1C5723Ee4F15D2a40c1203c6`,
 
-> > **Juicebox's Project Page** `https://juicebox.money/p/peace`, and
+> > **Juicebox's Project Page** `Not Applicatable`, and
 
-> > **Snapshot** `https://snapshot.org/#/peace.movedao.eth`.
+> > **Snapshot** `https://snapshot.org/#/movedao.eth`.
 
 #### 3. Liability.
 
@@ -186,6 +190,8 @@ The DAO shall not be obligated to keep any books or records beyond what is made 
 > > **(ii)** any liability arising from the transfer or use of any Governance Rights or Tokens, including with respect to matters arising under applicable laws or private rights of action; or
 
 > > **(iii)** any action taken or omitted by the DAO, its Members, any affiliated Persons of the DAO or its Members, or any third party.
+
+> **(c) Initial Service Provider.** The initial Service Provider shall be the dao-lawfirm.eth
 
 #### General Provisions.
 

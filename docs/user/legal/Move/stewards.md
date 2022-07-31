@@ -1,18 +1,19 @@
 ---
-title: Stewards
+title: Gnosis Multi-Signature Signers
 sidebar_position: 2
 ---
 
-#### ☮️ Initial Stewards
+#### Initial Multi-Signature Signers
 
 | Discord                  | Ethereum Address                           | ENS              |
 | :----------------------- | :----------------------------------------- | :--------------- |
-| @\_anna#5501             |                                            |                  |
-| @Fuego#4208              | 0x06bc1be1b5dd4d287a3be9b72dbe8eda8297c465 | fuegomoves.eth   |
 | @tankbottoms(🎽,🍑)#2749 | 0x5d95baEBB8412AD827287240A5c281E3bB30d27E | tankbottoms.eth  |
 | @theryanking#1111        | 0x8C00f41676Ce4670ae9FcBBF297a24736dc23cc3 | ryan-breslow.eth |
+| TBD                      | TBD                                        | TBD              |
+| TBD                      | TBD                                        | TBD              |
+| TBD                      | TBD                                        | TBD              |
 
-##### Duties
+##### Oversight, Slow Start, Veto Rights
 
 > The Council exists to vet and endorse Peace DAO Proposals. Council members, ("Stewards"), hold
 > trusted permissions and credentials over key tooling and platforms utilized by Peace DAO, including the

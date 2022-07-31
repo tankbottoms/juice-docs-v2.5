@@ -5,6 +5,9 @@ sidebar_position: 3
 
 # ☮️ PeaceDAO Guiding Principles
 
+#### Regulatory Tax Id
+
+- EIN 88-3482019
 #### Definitions.
 
 -   [Definitions](./definitions.md)

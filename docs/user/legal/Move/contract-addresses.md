@@ -3,20 +3,24 @@ title: Contract Addresses
 sidebar_position: 8
 ---
 
-### ☮️ Gnosis Multi-Signature
+### Gnosis Multi-Signature
 
 #### Ethereum Mainnet
 
 -   **Etherscan**: `https://etherscan.io/address/0x143cC0A996De329C1C5723Ee4F15D2a40c1203c6`
 -   **Gnosis Safe**: `https://gnosis-safe.io/app/eth:0x143cC0A996De329C1C5723Ee4F15D2a40c1203c6/balances`
 
-### ☮️ Movem DAO (MOVE)
+### DAO Token address
 
 **Mainnet ERC-20 Token:** `TBD`[^1]
 
 [^1]: To reduce gas fees, newly issued $PEACE tokens are stored in the Juicebox TicketBooth contract by default ("staked"). $PEACE holders can call the unstake function on the TicketBooth contract to mint $PEACE ERC-20 tokens to their wallets. In the frontend, this is called Claim and can be found under the Manage button. The above ERC-20 contract reflects the total supply of minted ERC-20 $PEACE tokens. To ascertain the total supply of claimed (ERC-20) and unclaimed ("staked") $PEACE tokens, call the totalSupplyOf() function on the TicketBooth contract above, passing project id **TBD** as the argument.
 
 ---
+
+### DAO Smart Contracts
+
+This section is intentionally blank.
 
 ### Juicebox Smart Contracts
 
