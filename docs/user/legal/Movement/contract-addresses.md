@@ -47,7 +47,7 @@ This section is intentionally blank.
 -   **JBOperatorStore**: `0x6F3C5afCa0c9eDf3926eF2dDF17c8ae6391afEfb`
 -   **JBPrices**: `0xCDE93bdA2a706Fc652F7e75241bA949aCB9f4Fe5`
 -   **JBProjects**: `0xD8B4359143eda5B2d763E127Ed27c77addBc47d3`
--   **JB3DayReconfigurationBufferBallot**: `0x4b9f876c7Fc5f6DEF8991fDe639b2C812a85Fb12``
+-   **JB3DayReconfigurationBufferBallot**: `0x4b9f876c7Fc5f6DEF8991fDe639b2C812a85Fb12`
 -   **JB7DayReconfigurationBufferBallot**: `0x642EFF5259624FD09D021AB764a4b47d1DbD5770`
 -   **JBSingleTokenPaymentTerminalStore**: `0x96a594ABE6B910E05E486b63B32fFe29DA5d33f7`
 -   **JBSplitsStore**: `0xFBE1075826B7FFd898cf8D944885ba6a8D714A7F`
