@@ -5,9 +5,6 @@ sidebar_position: 3
 
 # ☮️ PeaceDAO Guiding Principles
 
-#### Regulatory Tax Id
-
-- EIN 88-3482019
 #### Definitions.
 
 -   [Definitions](./definitions.md)
@@ -148,7 +145,7 @@ All of the DAO governing members shall have their membership determined upon rec
 
 #### 11. Books and Records; Accounting and Tax Matters.
 
-The DAO shall not be obligated to keep any books or records beyond what is made available via the Dapp or available via the Ethereum blockchain. 
+The DAO shall not be obligated to keep any books or records beyond what is made available via the Dapp or available via the Ethereum blockchain.
 
 #### 12. Waiver of Fiduciary Duties.
 
