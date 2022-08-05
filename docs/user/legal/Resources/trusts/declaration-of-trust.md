@@ -9,7 +9,7 @@ TRUST NAME
 PROPERTY DESCRIPTION
 ```
 
-[Declaration of Trust](../papers/Declaration-of-trust.docx)
+[Declaration of Trust](./Declaration-of-trust.docx)
 
 [TRUST NAME] Revocable Living Trust
 

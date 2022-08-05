@@ -3,9 +3,6 @@ title: Investment Club LLC
 sidebar_position: 2
 ---
 
--   [Investment Club LLC](papers/Example-Operating-Agreement-Investment-Club-Series-LLC.docx)
--   [Source](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity)
-
 ```
 Variables:
 
@@ -34,6 +31,9 @@ Telephone Number
 Associated with Wallet:
 
 ```
+
+-   [Investment Club LLC](llcs/Example-Operating-Agreement-Investment-Club-Series-LLC.docx)
+-   [Source](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity)
 
 **Provided by Syndicate.**
 

@@ -25,7 +25,7 @@ Below are online resources we found helpful preparing this information, addition
 
 ### LLCs, Series LLC
 
-`See LLC related documents in teh Resources/papers folder`
+`See LLC related documents in teh Resources/research folder`
 
 ### S-Corporations
 
@@ -53,15 +53,15 @@ The following links will return Word Documents, which may automatically download
 ### Legal Analysis with DAOs
 
 -   [DAO Legal Entity How to Pick](https://a16zcrypto.com/dao-legal-entity-how-to-pick/)
--   [Legal Wrappers and DAOs](./Resources/papers/legal-wrappers-and-daos.pdf)
--   [DAO Governance Dispute Resolution and Regulation](./Resources/papers/dao-governance-dispute-resolution.pdf)
--   [DAO Legal Framework Part 1](./Resources/papers/dao-legal-framework-part-1.pdf)
--   [DAO Legal Framework Part 2](./Resources/papers/dao-legal-framework-part-2.pdf)
+-   [Legal Wrappers and DAOs](./Resources/research/legal-wrappers-and-daos.pdf)
+-   [DAO Governance Dispute Resolution and Regulation](./Resources/research/dao-governance-dispute-resolution.pdf)
+-   [DAO Legal Framework Part 1](./Resources/research/dao-legal-framework-part-1.pdf)
+-   [DAO Legal Framework Part 2](./Resources/research/dao-legal-framework-part-2.pdf)
 
 ### Securities
 
 -   [Filing 2022 IRS Federal Tax ID Application](https://irs-tax-id-ein-gov.com/irs-2021/?utm_medium=cpc&utm_campaign=15581835982&utm_term=irs%20gov%20ein&gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndtIXBtsjFLcHrwQMhU8Idz5DQlbYNQI_aMRLSvuYpeOr1PIMRb5XoRoC9bUQAvD_BwE)
--   [A Regulatory Classification of Digital Assets: Toward an Operational Howey Test for Cryptocurrencies, ICOs, and Other Digital Assets](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265295)
+-   [A Regulatory Classification of Digital Assets: Toward an Operational Howey Test for Cryptocurrencies, ICOs, and Other Digital Assets](https://research.ssrn.com/sol3/research.cfm?abstract_id=3265295)
 -   [OxLegal Resources](https://docs.0x.org/developer-resources/0x-legal-guide#legal-library)
 
 [^2]: https://docs.0x.org/developer-resources/0x-legal-guide

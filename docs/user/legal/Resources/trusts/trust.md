@@ -10,13 +10,14 @@ TRUSTEE
 CITY, STATE
 ```
 
-[Trust Document](papers/Trust.docx)
+[Trust Document](./Trust.docx)
+[Uniform Trust Code](./utc_final_2020apr10.pdf)
 
 ---
 
 # REVOCABLE LIVING TRUST AGREEMENT
 
-DECEMBER 20, 2021
+`__________________`, 20`___`
 REVOCABLE LIVING TRUST AGREEMENT
 [CITY, STATE]
 
@@ -40,7 +41,7 @@ This Trust is specifically set up to provide financial resources and economic su
 
 > (3) Take any other action that Grantor may deem necessary for the goals and aims of the Trust.
 
-> s(4) The initial Trustee [INDIVIDUAL], who shall serve for as long as Grantor deems necessary.
+> (4) The initial Trustee [INDIVIDUAL], who shall serve for as long as Grantor deems necessary.
 
 ## ARTICLE II
 
@@ -54,11 +55,11 @@ Any time that neither beneficiary is no longer living than all assets of the Tru
 
 ### Assets and Property Allocations
 
-SECTION 1: Option to fund the Trust
+-   **SECTION 1:** Option to fund the Trust
 
 It is intended that the Grantor will fund the Trust with sufficient resources necessary to carry out the purpose of the Trust, which shall include, but are not limited to providing sufficient funding to allow beneficiaries to pay for the basic necessities of life.
 
-SECTION 2: Death of the Grantor
+-   **SECTION 2:** Death of the Grantor
 
 If the Grantor dies while the Trust is still operational and valid then the roles, duties and rights of the Grantor shall pass to the Trustee. It is not anticipated that the Trust shall generate any income or have any discernible assets that would require a plan for distribution in this founding document. Any assets that are in the possession of the Trust shall pass to the Beneficiaries and the Trustee shall determine the use of any assets held by the Trust at the time of the demise of the Grantor.
 
@@ -106,9 +107,9 @@ The Grantor shall have the power to change or appoint a successor Trustee at any
 
 ### Situs
 
-SECTION 1: JURISDICTION. This Trust has been executed and the Trust created by this Agreement shall be regulated and governed in accordance with the laws of the State of Washington. This document is intended to comply with all statutory requirements as found in RCW 11.103 et seq.
+-   **SECTION 1: JURISDICTION.** This Trust has been executed and the Trust created by this Agreement shall be regulated and governed in accordance with the laws of the State of Washington. This document is intended to comply with all statutory requirements as found in RCW 11.103 et seq.
 
-SECTION 2: COUNTERPART SIGNATURE. This Agreement may be executed in several counterparts, as long as each party to this Agreement executes at least one such counterpart. Each of such counterparts shall be an original, but all of the counterparts, when taken together, shall constitute one and the same instrument and shall become effective when each party hereto has executed at least one such counterpart. Counterparts may be delivered via facsimile, electronic mail (including pdf or any electronic signature complying with the U.S. federal ESIGN Act of 2000, Uniform Electronic Transactions Act or other applicable law) or other transmission method and any counterpart so delivered will be deemed to have been duly and validly delivered and be valid and effective for all purposes.
+-   **SECTION 2: COUNTERPART SIGNATURE.** This Agreement may be executed in several counterparts, as long as each party to this Agreement executes at least one such counterpart. Each of such counterparts shall be an original, but all of the counterparts, when taken together, shall constitute one and the same instrument and shall become effective when each party hereto has executed at least one such counterpart. Counterparts may be delivered via facsimile, electronic mail (including pdf or any electronic signature complying with the U.S. federal ESIGN Act of 2000, Uniform Electronic Transactions Act or other applicable law) or other transmission method and any counterpart so delivered will be deemed to have been duly and validly delivered and be valid and effective for all purposes.
 
 ## ACCEPTANCE CLAUSE
 
@@ -122,13 +123,15 @@ Executed this 20th day of December, 2021, at [city, state].
 
 [INDIVIDUAL], Grantor
 
-STATE OF )
-) ss.
-COUNTY OF )
+|                                       |
+| ------------------------------------- |
+| STATE OF `_________`)                 |
+| `_________________________`ss.        |
+| COUNTY OF`_________________________`) |
 
-On this 20th day of December, 2021, before me personally appeared [INDIVIDUAL], to me known to be described in and who executed the within and foregoing instrument and acknowledged that he signed the same as his free and voluntary act and deed for the uses and purposes therein mentioned. Given under my hand and official seal the day and year last above written.
+On this `____` day of `_______, ____`, before me personally appeared [INDIVIDUAL], to me known to be described in and who executed the within and foregoing instrument and acknowledged that he signed the same as his free and voluntary act and deed for the uses and purposes therein mentioned. Given under my hand and official seal the day and year last above written.
 
-Notary Public in and for the State of [STATE] **\*\***\*\*\*\***\*\***\_\_**\*\***\*\*\*\***\*\***
+Notary Public in and for the State of [STATE] `__________________________`,
 
 Residing at [city, state] Notary Public:
 

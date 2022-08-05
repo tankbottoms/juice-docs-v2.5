@@ -14,7 +14,7 @@ INTEREST RATE
 AMOUNT
 ```
 
-[IOU](../papers/IOU-form-template.docx)
+[IOU](IOU-form-template.docx)
 
 ## I OWE YOU (IOU)
 

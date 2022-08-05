@@ -10,7 +10,7 @@ Trusts are very versatile legal devices, in particular there are six broad categ
 
 Trusts are also opaque devices. That is to say, they are contracts between parties in which the terms of the contract are not usually accessible by other parties, therefore a Certificate of Trust or Declaration of Trust is an additional document which states the high-level terms of the agreement, i.e. what property the trustee has authority over, which is notarized and provided to 3rd parties who are required to validate ownership. The trustee may be required to provide the Certificate of Trust to a bank in order to open an account in which to deposit the property.
 
--   [Certificate of Trust](./_category_.json)
+-   [Certificate of Trust](./Declaration-of-trust.md)
 -   [Trust](./trust.md)
 
 It is common to be required to have the Certificate of Trust signed by the trustee and notarized by an individual who has access or knowledge of the claims made in the declaration.

@@ -3,7 +3,7 @@ title: Series LLC
 sidebar_position: 3
 ---
 
-###Info needed to search/replace: 
+###Info needed to search/replace:
 
 [FULL ENTITY NAME]
 
@@ -25,7 +25,7 @@ Additional Capital Contribution Requirements (if any):
 
 Distribution Policies (if different that those set forth in the LLC Agreement):
 
-[Operating Agreement LLC](papers/Example-Operating-Agreement-Investment%20Club-Series%20LLC.docx)
+[Operating Agreement LLC](llcs/Example-Operating-Agreement-Investment%20Club-Series%20LLC.docx)
 [Source](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity)
 
 LIMITED LIABILITY COMPANY AGREEMENT
@@ -108,9 +108,9 @@ Definitions. When used in this Agreement, the following terms have the meanings 
 
 “Consensus Attack” means an attack that: (a) is undertaken by or on behalf of a block producer who controls, or group of cooperating block producers who collectively control, a preponderance of the means of block production on the Designated Blockchain Network; and (b) has the actual or intended effect of:
 
-(i) reversing any transaction made to or by the Designated Smart Contract after Confirmation of such transaction, including any “double spend” attack having or intended to have such effect; or 
+(i) reversing any transaction made to or by the Designated Smart Contract after Confirmation of such transaction, including any “double spend” attack having or intended to have such effect; or
 
-(ii) preventing inclusion in blocks or Confirmation of any transaction made to or by the Designated Smart Contract, including any “censorship attack,” 
+(ii) preventing inclusion in blocks or Confirmation of any transaction made to or by the Designated Smart Contract, including any “censorship attack,”
 
 “transaction withholding attack” or “block withholding attack” having or intended to have such effect.
 
@@ -252,19 +252,19 @@ Definitions. When used in this Agreement, the following terms have the meanings 
 
 ## ORGANIZATIONAL MATTERS
 
-II.1 Name. 
+II.1 Name.
 
 The name of the Company is set forth on the cover page of this Agreement. The business of the Company may be conducted under that name or under any other name that the Members may determine.
 
-II.2 Term. 
+II.2 Term.
 
 The Parties hereto as of the Effective Date, by execution of this Agreement and the filing of the Certificate of Formation, hereby form the Company as a limited liability company under and pursuant to the Act as of the Effective Date. The term of the Company commenced on the Effective Date and will continue in full force and effect until the Company is terminated pursuant to Article X.
 
-II.3 Member Information. 
+II.3 Member Information.
 
 Each Member may be required by the Company, at any time, to provide basic Know Your Customer (KYC) information, such as copy of national ID, name, proof of address, Form W-9, among others, in the event where: (a) the Company desires to obtain a bank account, (b) the Company is legally required to provide such information, or (c) any Series will be formed or become a “registered series” (as defined in the Act) in the State of Delaware.
 
-II.4 Office and Agent. 
+II.4 Office and Agent.
 
 The Company will maintain its principal office at a place as the Administrative Member may determine from time to time. The Administrative Member will notify the Members of any change in principal office of the Company. The Registered Agent and the address of the registered office of the Company in the State of Delaware as of the Effective Date is set forth in the Certificate of Formation. The Administrative Member may change the identity of the Registered Agent and the Company’s registered office in accordance with the Act. The Administrative Member will notify the Members of any change in the identity of the Registered Agent or the location of the Company’s registered office in the State of Delaware.
 
@@ -324,7 +324,7 @@ II.12 Effects of Designated Smart Contract.
 
 (E) If the Parties fail to reach an agreement resulting in an Exception Handling Addendum during the Negotiation Period (or a determination that no Material Adverse Exception Event has occurred), then any Party may initiate an arbitration action to resolve the issues in accordance with the procedures set forth in Section 14.7; provided the decision of the arbitrators shall include, among any other determinations, a determination of the treatment of any Distributed Subject Property and whether to extend, modify or terminate the covenants applying to the Distributed Subject Property during the Standstill Period.
 
-II.13 Establishment of Series. 
+II.13 Establishment of Series.
 
 The Members, acting by a Majority in Interest, shall have full power and authority to approve the establishment of one or more Series (as defined below), and upon such approval, the Administrative Member shall establish such Series pursuant to the provisions of this Section 2.3 through the adoption of a Series Addendum (as defined below) and, if such Series shall be a “registered series” (within the meaning of the Act), the execution and filing of a Certificate of Registered Series with the Office of the Secretary of State of Delaware in the form attached hereto as Exhibit C hereto, whereupon such Series shall be established. The Interests in each Series are and shall be separate and distinct from the Interests in any other Series. In connection with the establishment of a Series hereunder, the Administrative Member may, in its sole discretion and without obtaining the consent, vote or other approval of the other Members: (i) issue Interests without limitation as to number to such persons or entities and for such amount and type of consideration, including cash or securities, at such time or times and on such terms as the Administrative Member may deem appropriate and in connection therewith to admit such persons or entities as Members associated with such Series, (ii) establish, designate and fix such preferences, voting powers, rights, duties and privileges and business purpose of each Series as the Administrative Member may from time to time determine, which preferences, voting powers, rights, duties and privileges may be senior or subordinate to (or in the case of business purpose, different from) any existing Series and may be limited to specified property or obligations of the Company or profits and losses associated with specified property or obligations of the Company, (iii) divide or combine the Interests of any Series into a greater or lesser number without thereby materially changing the proportionate beneficial interest of the Interests of such Series in the assets held with respect to that Series and (iv) combine the assets and liabilities belonging to any two or more Series into assets and liabilities belonging to a single Series. The relative preferences, voting powers, rights, duties and privileges and business purpose of any Series established by the Administrative Member will be as set forth in an addendum to this Agreement that covers the terms specific to a particular Series, each of which shall be a part of this Agreement (each, a “Series Addendum”) and, to the extent of any inconsistency between the provisions set forth herein and in the Series Addendum, the terms of the Series Addendum shall control. A form of Series Addendum is attached as Exhibit B hereto. [Without limiting the authority of the Members to establish Series in the future as set forth above, the Parties hereby establish [insert name of Series] as a Series, and the Series Addendum for [name of Series] is annexed hereto and, if such Series is intended to be a “registered series” (within the meaning of the Act), the Administrative Member shall file a Certificate of Registered Series for such Series, whereupon such Series shall be formed] . Subject to variation by any Series Addendum, Interests of any Series that may from time to time be established by the Administrative Member shall (unless the Administrative Member otherwise determines at the time of establishing the same) have the following relative rights and preferences:
 
@@ -339,7 +339,7 @@ The Members, acting by a Majority in Interest, shall have full power and authori
 (1) with respect to any vote, matter or action affecting a Series, each Member who holds an Interest in such Series shall be entitled to a vote proportionate to its Interest in such Series as recorded on the books of the Company with respect to such Series, all Members who hold an Interest in such Series shall vote as a separate class, and the vote or action of a Majority in Interest of the Members associated with such Series shall control; and
 
 (2) notwithstanding the foregoing, in the event of a vote, matter or action affecting the Company as a whole (regardless of whether such vote, matter of action also affects one or more Series), each Member shall be entitled to a vote proportionate to the proportion that its Capital Contributions to all Series and the Company bears to the Capital Contributions of all Members to all Series and the Company, all Members shall vote together as a single class, and the vote or action of Members holding a majority of all Capital Contributions to all Series and the Company shall control.
-• For the avoidance of doubt, the provisions of this Section 2.3(d) shall apply solely to the extent that one or more Series has been established.  
+• For the avoidance of doubt, the provisions of this Section 2.3(d) shall apply solely to the extent that one or more Series has been established.
 
 (e) Application of this Agreement with respect to Series. References to the Company in this Agreement shall be deemed to include references to each Series, as applicable, as determined by the Administrative Member in its sole discretion. This Agreement and all provisions herein will be interpreted in a manner to give full effect to the separateness of each Series. The Administrative Member shall take reasonable steps as are necessary to implement the provisions of this Section.
 
@@ -362,15 +362,15 @@ Notwithstanding anything to the contrary in the Agreement, the Members shall be 
 
 ## MEMBERSHIP CAPITAL; CAPITAL ACCOUNTS
 
-III.1 Membership Capital. 
+III.1 Membership Capital.
 
 Upon each Closing, each participating Member shall make a Capital Contribution in an amount equal to its accepted Subscription Amount as set forth in its Subscription Agreement (its “Commitment”) in exchange for an Interest.
 
-III.2 No Further Capital Contributions. 
+III.2 No Further Capital Contributions.
 
 No Member will be required to make Capital Contributions in the aggregate in excess of that Member’s then accepted Commitment or lend money to the Company or the applicable Series.
 
-III.3 In-Kind Contributions. 
+III.3 In-Kind Contributions.
 
 In the sole discretion of the Administrative Member, Capital Contributions can be made via non-cash assets, such as Portfolio Company Securities or Digital Assets. Non-cash assets will be valued at their Net Fair Market Value on the date of contribution.
 
@@ -382,11 +382,11 @@ III.4 Capital Accounts.
 
 (c) If any Interest is Transferred pursuant to the terms of this Agreement, the transferee will succeed to the Capital Account and the respective Interest of the transferor to the extent the Capital Account and Interest is attributable to the Interests so Transferred.
 
-III.5 Interest on Capital. 
+III.5 Interest on Capital.
 
 No Member will be entitled to receive any interest on its Capital Contributions or Capital Account.
 
-III.6 Return of Capital Contributions. 
+III.6 Return of Capital Contributions.
 
 Except as otherwise provided in this Agreement, no Member has any right to withdraw or reduce its Capital Contribution or Commitment.
 
@@ -402,15 +402,15 @@ IV.1 Admission of Members.
 
 (b) Notwithstanding Section 4.1(a), the Company will be deemed “closed”, such that no additional Members may be admitted except in connection with a Transfer permitted by Article VIII, or increased Commitments are no longer accepted following the earliest of (i) the date the Administrative Member closes the Company, (ii) the maximum number of Members is reached (as specified by the Administrative Member), and (iii) the set maximum amount of Capital Contributions to the Company is reached (as specified by the Administrative Member ). This can be seen when the closedSyndicate event is emitted for a given Syndicate address within the Syndicate smart contract.
 
-IV.2 Nature of Ownership. 
+IV.2 Nature of Ownership.
 
 Interests held by Members constitute personal property.
 
-IV.3 Dealing with Third Parties. 
+IV.3 Dealing with Third Parties.
 
 Unless admitted as a Member as provided in this Agreement, no Person will be considered a Member. The Company and the Administrative Member need deal only with Persons admitted as Members. The Company, the Series, and the Administrative Member will not be required to deal with any other Person (other than with respect to Distributions to assignees pursuant to assignments in compliance with Article VIII) merely because of an assignment or transfer of any Interest to that Person whether by reason of the Disability of a Member or otherwise; provided, however, that any Distribution by the Company or the applicable Series to the Person shown on the Interest Register as a Member or to its legal representatives, or to the assignee of the right to receive such Member’s Distributions as provided in this Agreement, will relieve the Company or the applicable Series and the Administrative Member of all liability to any other Person who may be interested in that Distribution by reason of any other assignment by the Member or by reason of its Disability, or for any other reason.
 
-IV.4 Members are not Agents. 
+IV.4 Members are not Agents.
 
 Pursuant to Article V of this Agreement, the management of the Company and each Series is vested in the Members as a group. No Member acting alone has any right to direct the management of the Company or any Series except as expressly authorized by the Act or this Agreement. Except as expressly authorized in this Agreement or in writing by a Majority in Interest, no Member, acting solely in the capacity of a Member, is an agent of the Company or any Series, nor does any Member, have any power or authority to bind or act on behalf of the Company or any Series in any way, to pledge its credit, to execute any instrument on its behalf or to render it liable for any purpose.
 
@@ -428,11 +428,11 @@ IV.5 Expenses.
 
 (f) If the Company or the applicable Series has insufficient funds to pay its operating costs and expenses after a Capital Call and any Advances, the Administrative Member, in its discretion, may sell assets of the Company or the applicable Series without any Consent of the Members in order to pay the Company’s or the applicable Series’ operating costs and expenses.
 
-IV.6 Nature of Obligations between Members. 
+IV.6 Nature of Obligations between Members.
 
 Except as otherwise required by applicable law, nothing contained in this Agreement will be deemed to constitute any Member, in that Member’s capacity as a Member, an agent or legal representative of any other Member or to create any fiduciary relationship between Members for any purpose whatsoever. Except as otherwise expressly provided in this Agreement, a Member has no authority to act for, or to assume any obligation or responsibility on behalf of, any other Member or the Company or any Series.
 
-IV.7 Status Under the Uniform Commercial Code. 
+IV.7 Status Under the Uniform Commercial Code.
 
 All Interests will be securities governed by Article 8 of the Uniform Commercial Code as in effect from time to time in the State of Delaware. The Interests are not evidenced by certificates and will remain not evidenced by certificates. Neither the Company nor any Series is authorized to issue certificated Interests. The Company will record all Transfers of Members’ Interests made in accordance with Article VIII of this Agreement in the Interest Register.
 
@@ -524,7 +524,7 @@ VII.4 Form of Distribution. Distributions pursuant to this Article VII will be c
 
 VII.5 Amounts Withheld. Any amounts withheld with respect to a Member pursuant to any federal, state, local or foreign tax law from a Distribution by the Company or the applicable Series to the Member will be treated as paid or distributed, as the case may be, to the Member for all purposes of this Agreement. In addition, the Company or the applicable Series may withhold from Distributions amounts deemed necessary, in the sole discretion of the Administrative Member, to be held in reserve for payment of accrued or foreseeable permitted expenses of the Company or the applicable Series. Each Member hereby agrees to indemnify and hold harmless the Company and the applicable Series from and against any liability with respect to income attributable to or Distributions or other payments to that Member (including, without limitation, any “imputed underpayment” within the meaning of Section 6225 of the Code attributable to such Member, as determined by the Administrative Member). Any other amount that the Administrative Member determines is required to be paid by the Company or the applicable Series to a taxing authority with respect to a Member pursuant to any federal, state, local or foreign tax law in connection with any payment to or tax liability (estimated or otherwise) of the Member shall be treated as a loan from the Company or the applicable Series to that Member. If that loan is not repaid within 30 days from the date the Administrative Member notifies that Member of that withholding, the loan will bear interest from the date of the applicable notice to the date of repayment at a rate at the lesser of (a) [10]% or (b) the maximum legal interest rate under applicable law, compounded annually. In addition to all other remedies the Company or the applicable Series may have, the Company or the applicable Series may withhold Distributions that would otherwise be payable to that Member and apply that amount toward repayment of the loan and interest. Any payment made by a Member to the Company or the applicable Series pursuant to this Section 7.5 will not constitute a Capital Contribution. The obligations of a Member pursuant to this Section 7.5 shall survive the termination, dissolution, liquidation and winding up of the Company or applicable Series and the withdrawal of such Member from the Company or applicable Series or transfer of its interest in the Company or applicable Series.
 
-VII.6 Member Giveback. Except as required by applicable law, Section 7.3 or Section 7.5, no Member will be required to repay to the Company or the applicable Series, any other Member, or any creditor of the Company or the applicable Series, all or any part of the Distributions made to that Member.  
+VII.6 Member Giveback. Except as required by applicable law, Section 7.3 or Section 7.5, no Member will be required to repay to the Company or the applicable Series, any other Member, or any creditor of the Company or the applicable Series, all or any part of the Distributions made to that Member.
 
 VII.7 No Creditor Status. A Member will not have the status of, and is not entitled to the remedies available to, a creditor of the Company or the applicable Series with regard to Distributions that the Member becomes entitled to receive pursuant to this Agreement and the Act.
 
@@ -534,46 +534,47 @@ VII.8 Limitations on Distributions. Notwithstanding any provision to the contrar
 
 ## TRANSFERS
 
-VIII.1 Transfers. 
+VIII.1 Transfers.
 
 Except as otherwise expressly provided in this Article VIII, no Member may Transfer all or any portion of its Interests without (a) providing the Administrative Member with a written opinion of counsel that such Transfer would not be considered a securities transaction under applicable securities laws if required by the Administrative Member; (b) compliance with the provisions of Section 8.4; (c) the approval of the Administrative Member; and (d) the approval of such Members (which may include the Administrative Member) as represents two-thirds of the aggregate Interests in the Company or the applicable Series. Any attempted Transfer in violation of this Article VIII will be null and void ab initio and will not bind the Company or the applicable Series.
 
-VIII.2 Permitted Transfers. 
+VIII.2 Permitted Transfers.
 
 The consent of the Members pursuant to Section 8.1(d) will not be required for any Transfer (a) by a Member who is an individual to an entity controlled (which for this purpose shall require that the Member own more than 50% of the voting control and equity securities of that entity) by that Member and all of the remaining beneficial ownership of such entity is owned by the Family Members of such Member or (b) by a Member to another Member (each transferee, a “Permitted Transferee”); provided, however, that unless otherwise consented to by the Administrative Member, in connection with a Transfer permitted pursuant to clause (a) of this Section 8.2, the transferring Member shall remain jointly and severally liable for the obligations of the Permittee Transferee under this Agreement.
 
-VIII.3 Admission of Transferee as a Member. 
+VIII.3 Admission of Transferee as a Member.
 
 A Transfer permitted by this Article VIII will only transfer the rights of an assignee as set forth in Section 8.6 unless (a) the transferee is a Member or is admitted as a Member with the consent of the Administrative Member and otherwise complies with Section 4.1 and (b) payment to the Company or the applicable Series of a transfer fee in cash which is sufficient, in the Administrative Member’s sole determination, to cover all reasonable expenses incurred by the Company or the applicable Series in connection with the Transfer and admission of the transferee as a Member.
 
-VIII.4 Additional Restrictions. 
+VIII.4 Additional Restrictions.
 
 Notwithstanding any other provision of this Agreement, no Transfer of an Interest (including any Transfer of an interest in Company profits, losses or distributions) shall be permitted unless the Administrative Member otherwise consents, in its sole discretion, if such Transfer would cause the Company or the applicable Series (a) to have more than 100 partners, as determined for purposes Section 7704 of the Code; (b) to be treated as a publicly traded partnership within the meaning of Section 7704 of the Code; (c) to be required to be registered as an “investment company” under the Investment Company Act of 1940 (the “40 Act”); (d) to hold any “plan assets” under the Employee Retirement Income Security Act of 1974 (“ERISA”), or (e) in the Administrative Member’s sole determination, to be subject to any burdensome regulatory or reporting requirements, any adverse tax or fiscal consequences or otherwise in breach of any applicable law or agreement to which the Company or the applicable Series is a party.
 
-VIII.5 Involuntary Transfer of Interests. 
+VIII.5 Involuntary Transfer of Interests.
 
 In the event of any involuntary transfer of Interests to a Person, that Person will have only the rights of an assignee set forth in Section 8.6 with respect to those Interests.
 
-VIII.6 Rights of Assignee. 
+VIII.6 Rights of Assignee.
 
 An assignee has no right to vote, receive information concerning the business and affairs of the Company or the applicable Series and is entitled only to receive Distributions and allocations attributable to the Interest held by the assignee as determined by the Member and in accordance with this Agreement.
 
-VIII.7 Enforcement. 
+VIII.7 Enforcement.
 
 The restrictions on Transfers contained in this Agreement are an essential element in the ownership of an Interest. Upon application to any court of competent jurisdiction, the Administrative Member will be entitled to a decree against any Person violating or about to violate those restrictions, requiring their specific performance, including those prohibiting a Transfer of all or a portion of its Interests.
 
-VIII.8 Death or Disability of a Member. 
+VIII.8 Death or Disability of a Member.
 
 Upon the Disability or death of a Member, the provisions of Section 18-705 of the Act shall apply.
 
-VIII.9 Compulsory Redemption. 
+VIII.9 Compulsory Redemption.
 
 A Majority in Interest may, by notice to any Member, force the sale of all or a portion of that Member’s Interest on terms as the Administrative Member determines to be fair and reasonable, or take other action as it determines to be fair and reasonable in the event that the Administrative Member determines or has reason to believe that: (a) that Member has attempted to effect a Transfer of, or a Transfer has occurred with respect to, any portion of that Member’s Interest in violation of this Agreement; (b) continued ownership of that Interest by that Member is reasonably likely to cause any of the events set forth in Section 8.4; (c) continued ownership of that Interest by that Member may be harmful to the business or reputation of the Company or the applicable Series or the Administrative Member; (d) any of the representations or warranties made by that Member under this Agreement or its Subscription Agreement was not true when made or has ceased to be true; (e) any portion of that Member’s Interest has vested in any other Person by reason of the bankruptcy, dissolution, incompetency or death of that Member; (f) such Member has failed to fund any Additional Capital Contribution; or (g) it would not be in the best interests of the Company or the applicable Series, as determined by the Administrative Member in its sole discretion, for that Member to continue ownership of its Interest.
 
 # ARTICLE IX
+
 ## RECORDS, REPORTS AND TAXES
 
-IX.1 Books and Records. 
+IX.1 Books and Records.
 
 The Administrative Member will maintain all of the information required to be maintained by the Act at the Company’s principal office, with copies available at all times during normal business hours for inspection and copying upon reasonable notice by any Member or its authorized representatives for any purpose reasonably related to that Member’s status as a member of the Company or the applicable Series, including as applicable:
 
@@ -583,7 +584,7 @@ The Administrative Member will maintain all of the information required to be ma
 
 (c) the Interest Register;
 
-(d) a copy of this Agreement and all amendments, including any Exception Handling Addendum, together with executed copies of (i) any powers of attorney and 
+(d) a copy of this Agreement and all amendments, including any Exception Handling Addendum, together with executed copies of (i) any powers of attorney and
 
 (ii) any other document pursuant to which this Agreement or any amendments have been executed or have been deemed to be executed; and
 
@@ -595,12 +596,12 @@ IX.2 Reports.
 
 (b) Tax Reports. The Administrative Member will cause to be prepared and duly and timely filed, at the Company’s and Series’ expense, all tax returns required to be filed by the Company and each Series. The Administrative Member will send or cause to be sent to each Member within [90] days after the end of each Fiscal Year, or a later date as determined in the discretion of the Administrative Member, an Internal Revenue Service Schedule K-1 with respect to the Member’s interest in the Company or applicable Series (or substantially similar information if an Internal Revenue Service Schedule K-1 is not required to be provided to Members).
 
-IX.3 Tax Elections. 
+IX.3 Tax Elections.
 
 Except as otherwise expressly provided in this Agreement, the Company will make any tax elections as the Administrative Member may determine. The Administrative Member may, in its sole discretion, make an election under Section 754 of the Code.
 IX.4 Partnership Representative. The Administrative Member will be the “partnership representative” within the meaning of Code Section 6223 (the “Partnership Representative”). The Partnership Representative will have all of the powers and authority of a “partnership representative” under the Code. The Partnership Representative will represent the Company and each Series (at its expense) in connection with all administrative and judicial proceedings by the Internal Revenue Service or any taxing authority involving any tax return of the Company and each Series, and may expend the Company’s and Series’ funds for professional services and associated costs. The Partnership Representative will provide to the Members notice of any communication to or from or agreements with a federal, state or local authority regarding any return of the Company or the applicable Series, including a summary of the provisions.
 
-IX.5 Confidentiality. 
+IX.5 Confidentiality.
 
 All information concerning the business, affairs and properties of the Company and each Series and all of the terms and provisions of this Agreement will be held in confidence by each Member and their respective Affiliates, subject to any obligation to comply with (a) any applicable law, (b) any rule or regulation of any legal authority or securities exchange, (c) any subpoena or other legal process to make information available to the Persons entitled thereto or (d) the enforcement of that Party’s rights under this Agreement in any legal process, arbitration, as a Member, or employee, as applicable. Confidentiality will be maintained until that time, if any, as the confidential information either is, or becomes, published or a matter of public knowledge (other than as a result of a breach of this Section 9.5); provided that each Party recognizes that the privilege each has to maintain, in its sole discretion, the confidentiality of a communication relating to the transactions, including a confidential communication with its attorney or a confidential communication with a federally authorized tax practitioner under Section 7525 of the Code, is not intended to be affected by the foregoing provisions of this sentence. Notwithstanding this Section 9.5, the Administrative Member may use confidential information about the Company, the Series, and the Members in data aggregation, so long as the data use does not include the disclosure of information that could reasonably be used to identify any Member.
 
@@ -628,15 +629,15 @@ X.1 Dissolution.
 
 • At any time that (i) there are no Interests outstanding of any particular Series previously established or (ii) a particular Series never acquired any Portfolio Company or any other assets, has no liabilities, and did not receive any Capital Contributions, the Administrative Member may terminate that Series, cancel any Interests therein for no consideration and rescind the establishment thereof.
 
-X.2 Date of Dissolution. 
+X.2 Date of Dissolution.
 
 Dissolution of the Company or the applicable Series will be effective on the day on which the event occurs giving rise to the dissolution, but the Company or the applicable Series will not terminate or cease to exist until the assets of the Company or the applicable Series have been liquidated and distributed as provided in this Agreement and a Certificate of Cancellation for the Company or the applicable Series has been filed in accordance with Section 10.8. Notwithstanding the dissolution of the Company or the applicable Series, prior to the termination of the Company or the applicable Series, the business of the Company or the applicable Series and the rights and obligations of the Members will continue to be governed by this Agreement.
 
-X.3 Winding Up. 
+X.3 Winding Up.
 
 Upon the occurrence of any event specified in Section 10.1, the Company or the applicable Series will continue solely for the purpose of winding up its affairs in an orderly manner, liquidating its assets, satisfying the claims of its creditors, and distributing any remaining assets in cash or in kind, to the Members in accordance with this Agreement. The Liquidating Trustee will be responsible for overseeing the winding up and liquidation of the Company or the applicable Series and will cause the Company or the applicable Series to sell or otherwise liquidate all of the Company’s or the applicable Series’ assets except to the extent the Liquidating Trustee determines to distribute any assets to the Members in kind, discharge or make provision for all liabilities of the Company or the applicable Series and all costs relating to the dissolution, winding up, and liquidation and distribution of assets, establish reserves as may be necessary to provide for contingent liabilities of the Company or the applicable Series (for purposes of determining the Capital Accounts of the Members, the amounts of those reserves will be deemed to be an expense of the Company or the applicable Series and will be deemed income to the extent it ceases to be reserved), and distribute the remaining assets to the Members, in the manner specified in Section 10.4. The Liquidating Trustee will be allowed a reasonable time for the orderly liquidation of the Company or the applicable Series’ assets and discharge of its liabilities, so as to preserve and upon disposition maximize, to the extent possible, the value of the Company’s or the applicable Series’ assets.
 
-X.4 Liquidation. 
+X.4 Liquidation.
 
 The Company’s or the applicable Series’ assets, or the proceeds from the liquidation of the Company’s or the applicable Series’ assets, will be paid or distributed in the following order:
 
@@ -648,21 +649,21 @@ The Company’s or the applicable Series’ assets, or the proceeds from the liq
 
 (d) next, to the Members, on a pro rata in accordance with their Interests.
 
-X.5 Distributions in Kind. 
+X.5 Distributions in Kind.
 
 Any non-cash asset distributed to one or more Members will first be valued by the Administrative Member at its Fair Market Value to determine the Net Income, Loss and special allocations that would have resulted if that asset had been sold for that value, which amounts will be allocated pursuant to Article VI, and the Members’ Capital Accounts will be adjusted to reflect those allocations. The amount distributed and charged to the Capital Account of each Member receiving an interest in the distributed asset will be the Net Fair Market Value of that interest.
 
-X.6 No Liability. 
+X.6 No Liability.
 
 Notwithstanding anything in this Agreement to the contrary, upon a liquidation within the meaning of Section 1.704-1(b)(2)(ii)(g) of the Treasury Regulations, if any Member has a negative Capital Account balance (after giving effect to all contributions, Distributions, allocations and other Capital Account adjustments for all Fiscal Years, including the Year in which that liquidation occurs), neither that Member nor the Liquidating Trustee will have any obligation to make any contribution to the capital of the Company or the applicable Series, and the negative balance of that Member’s Capital Account will not be considered a debt owed by that Member or any Liquidating Trustee to the Company or the applicable Series or to any other Person for any purpose; provided, however, that nothing in this Section 10.6 will relieve any Member from any liability under any promissory note or other affirmative commitment that Member has made to contribute capital to the Company or the applicable Series.
 
 X.7 Limitations on Payments Made in Dissolution. Except as otherwise specifically provided in this Agreement, each Member will be entitled to look only to the assets of the Company or the applicable Series for Distributions (including Distributions in liquidation) and the Parties will have no personal liability for any Distributions.
 
-X.8 Certificate of Cancellation. 
+X.8 Certificate of Cancellation.
 
 Upon completion of the winding up of the Company’s affairs, the Liquidating Trustee will cause to be filed a Certificate of Cancellation, in accordance with the Act, of the Certificate of Formation.
 
-X.9 Conversion to a Trust. 
+X.9 Conversion to a Trust.
 
 If, on the Outside Date, a Liquidity Event has not occurred, the Administrative Member may appoint a third-party liquidator or custodian at the expense of the Company or the applicable Series or distribute the assets of the Company or the applicable Series to a liquidating trust or Entity for the benefit of the Members (a “Liquidating Vehicle”). Interests in any Liquidating Vehicle will generally be subject to terms comparable to Interests (including, for the avoidance of doubt, Distribution Expenses); provided that, in addition to other expenses contemplated in this Agreement, interests in a Liquidating Vehicle may be subject to actual expenses incurred in connection with the ongoing operations of the liquidating vehicle. The Administrative Member or the liquidating trustee, in its sole discretion, may establish reserves for contingencies under this Section 10.9, including with respect to interests in any liquidating vehicle.
 
@@ -670,31 +671,31 @@ ARTICLE XI
 
 LIMITATION OF LIABILITY; STANDARD OF CARE; INDEMNIFICATION
 
-XI.1 Limitation of Liability. 
+XI.1 Limitation of Liability.
 
 Unless explicitly agreed upon, the debts, obligations and liabilities of the Company and each Series, whether arising in contract, tort or otherwise, will be solely the debts, obligations and liabilities of the Company or such Series, and will not be those of the Members, or the Covered Persons.
 
-XI.2 Standard of Care; Liability. 
+XI.2 Standard of Care; Liability.
 
 Neither the Members nor the Covered Persons will have any personal liability whatsoever to the Company, any Series, any Member, or their Affiliates on account of that Person’s role within the Company or any Series or by reason of that Person’s acts or omissions in connection with the conduct of the business of the Company or any Series so long as that Person acts in good faith for a purpose which the Person reasonably believes to be in, or not opposed to, the best interests of the Company or such Series. Notwithstanding the preceding, nothing contained in this Agreement will protect that Person against any liability to which that Person would otherwise be subject by reason of (a) any act or omission of that Person that involves gross negligence, willful misconduct, bad faith, fraud, or willful and material breach of a material provision of this Agreement or any Subscription Agreement or any management agreement or other agreement with or for the benefit of the Company; (b) any transaction from which that Person or its Affiliate derives any improper personal benefit; or (c) a breach of any representation or warranty by such Member made in this Agreement or its Subscription Agreement.
 
-XI.3 Indemnification. 
+XI.3 Indemnification.
 
 To the fullest extent permitted by applicable law, the Members and the Covered Persons will be entitled, out of the Company or Series assets, to be indemnified against and held harmless from any and all liabilities, judgments, obligations, losses, damages, claims, actions, suits or other proceedings (whether civil or criminal, pending or threatened, before any court or administrative or legislative body, and as the same are accrued, in which a Member or Covered Person may be or may have been involved as a party or otherwise or with which he, she or it may be or may have been threatened (a “Proceeding”)) and reasonable costs, expenses and disbursements (including legal and accounting fees and expenses) of any kind and nature whatsoever (collectively, “Covered Losses”) that may be imposed on, incurred by, or asserted at any time against a Member or Covered Person (whether or not indemnified against by other parties) in any way related to or arising out of this Agreement, the administration of the Company or any Series, or the action or inaction of a Member or Covered Person (including actions or inactions pursuant to Article X on the Company’s or Series’ dissolution or termination) or under contracts with the Company or any Series, except that the Members and Covered Persons will not be entitled to indemnity for Covered Losses with respect to any matter as to which such Member or Covered Person has been finally adjudicated in any action, suit, or other proceeding, or otherwise by a court of competent jurisdiction, to have committed an act or omission involving his, her or its own gross negligence, willful misconduct, bad faith, fraud, willful and material breach of a material provision of this Agreement or any Subscription Agreement or any management agreement or other agreement with or for the benefit of the Company or any Series, or from which such Person derived an improper personal benefit. The indemnities contained in this Article XI will survive the termination of this Agreement.
 
-XI.4 Contract Right; Expenses. 
+XI.4 Contract Right; Expenses.
 
 The right to indemnification conferred in this Article XI will be a contract right. A Member’s or a Covered Person’s right to indemnification under this Agreement includes the right to require the Company or the applicable Series to advance the expenses incurred by that Member or Covered Person in defending any Proceeding in advance of its final disposition subject to an obligation to return the amount so advanced if it is ultimately determined that the Member or Covered Person has not met the standard of conduct required for indemnification.
 
-XI.5 Nonexclusive Right. 
+XI.5 Nonexclusive Right.
 
 The right to indemnification and the payment of expenses incurred in defending a Proceeding in advance of its final disposition conferred in this Article XI will not be exclusive of any other right which any Person may have or later acquire under any statute or agreement, or under any insurance policy obtained for the benefit of any Administrative Member, Partnership Representative or officer of the Company or the applicable Series (it being understood that if any such insurance policy is obtained, it shall be at the expense of the Company or the applicable Series).
 
-XI.6 Severability. 
+XI.6 Severability.
 
 If any provision of this Article XI is determined to be unenforceable in whole or in part, that provision will nonetheless be enforced to the fullest extent permissible, it being the intent of this Article XI to provide indemnification to all Persons eligible under this Agreement to the fullest extent permitted by applicable law.
 
-XI.7 Insurance. 
+XI.7 Insurance.
 
 The Administrative Member may cause the Company or the applicable Series to purchase and maintain insurance on behalf of any Covered Person who is or was an agent of the Company or the applicable Series against any liability asserted against that Covered Person capacity as an agent.
 
@@ -702,7 +703,7 @@ The Administrative Member may cause the Company or the applicable Series to purc
 
 ## REPRESENTATIONS, WARRANTIES AND COVENANTS
 
-XII.1 Representations and Warranties of the Members. 
+XII.1 Representations and Warranties of the Members.
 
 Each Member is fully aware that the Company, each Series, and the Administrative Member are relying upon the truth and accuracy of the following representations by each of the Members. Each of the Members hereby represents, warrants and covenants to the Administrative Member, the Company, and each Series that:
 
@@ -728,11 +729,11 @@ Each Member is fully aware that the Company, each Series, and the Administrative
 
 (k) It has received and carefully reviewed all code for the Designated Smart Contract sufficiently in advance of signing this Agreement. It is a Person who is, or in connection with this Agreement and the matters contemplated thereby has received the advice of Persons who are, knowledgeable, sophisticated and experienced in making, and qualified to make, evaluations and decisions with respect to the quality, security and intended and expected functionality of the Designated Smart Contract and the other matters contemplated by this Agreement.
 
-XII.2 Derivative Transactions. 
+XII.2 Derivative Transactions.
 
 No Member may, without providing the Administrative Member with a written opinion of counsel satisfactory to the Administrative Member regarding the compliance of the proposed transfer with all applicable securities laws, and the prior written consent of the Administrative Member (which may be granted, withheld, conditioned or delayed in its sole discretion), directly or indirectly, (a) offer, pledge, sell, contract to sell, sell any option or contract to purchase, purchase any option or contract to sell, grant any option, right or warrant to purchase, lend, or otherwise assign, transfer or dispose of any Interests or Portfolio Company Securities, or publicly disclose the intention to make any offer, sale, pledge or disposition, or (b) engage in any short selling of any Interests or Portfolio Company Securities. Notwithstanding the foregoing, any permitted transfers of Interests that are approved by the Members will be governed by Article VIII.
 
-XII.3 Further Instruments and Cooperation of Members. 
+XII.3 Further Instruments and Cooperation of Members.
 
 Each Member will furnish, from time to time, to the Administrative Member within 5 Business Days after receipt of the Administrative Member’s request (or other amounts of time as specified by the Administrative Member) any further instruments (including any designations, representations, warranties, and covenants), documentation and information as the Administrative Member deems to be reasonably necessary, appropriate or convenient: (a) to facilitate the Closing or satisfy any Closing Conditions; (b) to satisfy applicable anti-money laundering requirements; (c) for any tax purpose, including, for the avoidance of doubt, a Form W-9; or (d) for any other purpose that is consistent with the terms of this Agreement.
 
@@ -740,11 +741,11 @@ Each Member will furnish, from time to time, to the Administrative Member within
 
 ## POWER OF ATTORNEY
 
-XIII.1 Function of Power of Attorney. 
+XIII.1 Function of Power of Attorney.
 
 Each Member, by its execution of this Agreement, hereby irrevocably makes, constitutes and appoints each of the Administrative Member and the Liquidating Trustee, if any, in the capacity as Liquidating Trustee (each is referred to as the “Attorney”), as its true and lawful agent and attorney-in-fact, with full power of substitution and full power and authority in its name, place and stead, to make, execute, sign, acknowledge, swear to, record and file (a) this Agreement and any amendment to this Agreement that has been adopted as provided in this Agreement; (b) the original Certificate of Formation and all amendments required or permitted by law or the provisions of this Agreement; (c) all instruments or documents required to effect a transfer of Interest; (d) all certificates and other instruments deemed advisable by the Administrative Member or the Liquidating Trustee, if any, to carry out the provisions of this Agreement, and applicable law or to permit the Company to become or to continue as a limited liability company wherein the Members have limited liability in each jurisdiction where the Company may be doing business; (e) all instruments that the Administrative Member or the Liquidating Trustee, if any, deems appropriate to reflect a change, modification or termination of this Agreement or the Company or the Series in accordance with this Agreement including, the admission of additional Members or substituted members pursuant to the provisions of this Agreement, as applicable; (f) all fictitious or assumed name certificates required or permitted to be filed on behalf of the Company or the Series; (g) all conveyances and other instruments or papers deemed advisable by the Administrative Member or the Liquidating Trustee, if any, including, those to effect the dissolution and termination of the Company (including a Certificate of Cancellation) or the Series; (h) all other agreements and instruments necessary or advisable to consummate any purchase of Investments; (i) all forms, instruments, or documents required to make certain elections pursuant to the Code or state law governing the taxation of limited liability companies; and (j) all other instruments or papers that may be required or permitted by law to be filed on behalf of the Company or the Series. Notwithstanding the foregoing, the Administrative Member may not exercise this power of attorney with respect to matters as to which this Agreement requires the consent of the Members until such consent has been received.
 
-XIII.2 Additional Functions. 
+XIII.2 Additional Functions.
 
 The foregoing power of attorney:
 
@@ -754,8 +755,7 @@ The foregoing power of attorney:
 
 (c) will survive the delivery of an assignment by a Member of all or any portion of its Interest; except that, where the assignee of all of that Member’s Interest has been approved by the Administrative Member for admission to the Company or the applicable Series, as a substituted Member, the power of attorney of the assignor will survive the delivery of that assignment for the sole purpose of enabling the Attorney to execute, swear to, acknowledge and file any instrument necessary or appropriate to effect that substitution.
 
-
-XIII.3 Delivery of Power of Attorney. 
+XIII.3 Delivery of Power of Attorney.
 
 Each Member must execute and deliver to the Administrative Member within 5 Business Days after receipt of the Administrative Member’s request, any further designations, powers-of-attorney and other instruments as the Administrative Member reasonably deems necessary to carry out the terms of this Agreement.
 
@@ -763,15 +763,15 @@ Each Member must execute and deliver to the Administrative Member within 5 Busin
 
 ## MISCELLANEOUS
 
-XIV.1 Ministerial and Administrative Amendments. 
+XIV.1 Ministerial and Administrative Amendments.
 
 Amendments that under this Agreement are expressly permitted to be made by the Administrative Member, ministerial or administrative amendments to cure ambiguities or inconsistencies as may in the discretion of the Administrative Member be necessary or appropriate and those amendments as may be required by law may be made from time to time without the Consent of any of the Members. Other amendments may be made to this Agreement only with the Consent of a Majority in Interest. Amendments may be made to a Series Addendum with the Consent of Majority in Interest of such Series. Notwithstanding the foregoing, (a) no amendment will be adopted pursuant to this Section 14.1 unless that amendment would not alter, or result in the alteration of, the limited liability of the Members or the status of the Company or any Series as a “partnership” for federal income tax purposes and (b) no amendment that increases the liabilities or duties of a Member (including the Administrative Member under this Agreement may be made without the consent of that Member.
 
-XIV.2 Amendment Recordation. 
+XIV.2 Amendment Recordation.
 
 Upon the adoption of any amendment to this Agreement, the amendment will be executed by the Administrative Member and, if required, will be recorded in the proper records of each jurisdiction in which recordation is necessary for the Company or any Series to conduct business. Any adopted amendment may be executed by the Administrative Member on behalf of the Members pursuant to the power of attorney granted in Section 13.1.
 
-XIV.3 Offset Privilege. 
+XIV.3 Offset Privilege.
 
 The Company may offset against any monetary obligation owing from the Company or any Series to any Members or Administrative Member any monetary obligation then owing from that Member or Administrative Member to the Company or such Series; provided, however, that the offset right will only apply to any monetary obligation owed to that Member or Administrative Member in their capacity as a Member or Administrative Member.
 
@@ -781,21 +781,21 @@ XIV.4 Notices.
 
 (b) Each Member hereby acknowledges that the Administrative Member is entitled to transmit to that Member exclusively by e-mail (or other means of electronic messaging) all notices, correspondence and reports, including, but not limited to, that Member’s Schedule K-1s.
 
-(c) Each notice or other communication to the Administrative Member will for purposes of this Agreement be treated as effective or having been given upon the earlier of (i) receipt, (ii) the date transmitted by email, with evidence of transmission from the transmitting device, (iii) acknowledged receipt, 
+(c) Each notice or other communication to the Administrative Member will for purposes of this Agreement be treated as effective or having been given upon the earlier of (i) receipt, (ii) the date transmitted by email, with evidence of transmission from the transmitting device, (iii) acknowledged receipt,
 
 (iv) when delivered in person, (v) when sent by electronic facsimile transfer or electronic mail at the number or address set forth below and receipt is acknowledged by the Administrative Member, (vi) 1 Business Day after having been dispatched by a nationally recognized overnight courier service if receipt is evidenced by a signature of a person regularly employed or residing at the address set forth below for that Party or (vii) 3 Business Days after being sent by registered or certified mail, return receipt requested, postage prepaid.
 
 (d) Any notice must be given, if (x) to the Company or any Series, to the Company’s or Series’ email address, to the attention of the Administrative Member and (y) to any Member, to that Member’s address or number specified in the Interest Register of the Company or the applicable Series. Any Party may by notice pursuant to this Section 14.4 designate any other physical address or email address to which notice to that Party must be given.
 
-XIV.5 Waiver. 
+XIV.5 Waiver.
 
 No course of dealing or omission or delay on the part of any Party in asserting or exercising any right under this Agreement will constitute or operate as a waiver of any right. No waiver of any provision of this Agreement will be effective, unless in writing and signed by or on behalf of the Party to be charged with the waiver. No waiver will be deemed a continuing waiver or future waiver or waiver in respect of any other breach or default, unless expressly so stated in writing.
 
-XIV.6 Governing Law. 
+XIV.6 Governing Law.
 
 This Agreement will be construed, performed and enforced in accordance with the laws of the State of Delaware, without giving effect to its conflict of laws principles to the extent those principles or rules would require or permit the application of the laws of another jurisdiction.
 
-XIV.7 Dispute Resolution. 
+XIV.7 Dispute Resolution.
 
 Any dispute, controversy or claim arising out of or relating to this Agreement, or the breach of this Agreement, except for any claim or action that the Administrative Member, any Series or Company may elect to commence to enforce any of its rights or the Members’ obligations under this Agreement, will be settled by binding arbitration, before three arbitrators, administered by the American Arbitration Association under and in accordance with its Commercial Arbitration Rules. The decision of the arbitrators shall be non-appealable, binding and conclusive upon all parties thereto and judgment on the award rendered by the arbitrators may be entered in any court having jurisdiction.
 
@@ -807,43 +807,43 @@ Any dispute, controversy or claim arising out of or relating to this Agreement, 
 
 NOTICE: By becoming a party to this Agreement, each Party is agreeing to have all disputes, claims or controversies arising out of or relating to this Agreement decided by neutral binding arbitration, and is giving up any rights it might possess to have those matters litigated in a court or jury trial. By becoming a party to this Agreement, each Party is giving up its judicial rights to discovery and appeal except to the extent that they are specifically provided for under this Agreement. If any Party refuses to submit to arbitration after agreeing to this provision, that Party may be compelled to arbitrate under federal or state law. By becoming a party to this Agreement, each Party confirms that its agreement to this arbitration provision is voluntary.
 
-XIV.8 Remedies. 
+XIV.8 Remedies.
 
 In the event of any actual or prospective breach or default of this Agreement by any Party, the other Parties will be entitled to seek equitable relief, including remedies in the nature of injunction and specific performance (without being required to post a bond or other security or to establish any actual damages). In this regard, the Parties acknowledge that they will be irreparably damaged in the event this Agreement is not specifically enforced, since (among other things) the Interests are not readily marketable. All remedies under this Agreement are cumulative and not exclusive, may be exercised concurrently and nothing in this Agreement will be deemed to prohibit or limit any Party from pursuing any other remedy or relief available at law or in equity for any actual or prospective breach or default, including the recovery of damages.
 
-XIV.9 Severability. 
+XIV.9 Severability.
 
 The provisions of this Agreement are severable and in the event that any provision of this Agreement is determined to be illegal, invalid or unenforceable in any respect by a court of competent jurisdiction, the remaining provisions of this Agreement will not be affected, but will, subject to the discretion of that court, remain in full force and effect, and any illegal, invalid or unenforceable provision will be deemed, without further action on the part of the Parties, amended and limited to the extent necessary to render that provision, as so amended and limited, legal, valid and enforceable, it being the intention of the Parties that this Agreement and each provision will be legal, valid and enforceable to the fullest extent permitted by applicable law.
 
-XIV.10 Counterparts. 
+XIV.10 Counterparts.
 
 This Agreement may be executed in counterparts, each of which will be deemed an original, but all of which together will constitute one and the same agreement. A facsimile, PDF or DocuSign (or similar service) signature will be deemed an original. The Parties hereby Consent to transact business with the Company and each of the other via electronic signature (including via DocuSign, eSignLive, or a similar service). Each Party understands and agrees that their signature page may be disassembled and attached to the final version of this Agreement.
 
-XIV.11 IRS Circular 230 disclosure. 
+XIV.11 IRS Circular 230 disclosure.
 
 Any discussion of United States federal tax issues contained in this Agreement, or concerning the investment in the Company, by the Company, Administrative Member, and their respective counsel, is not intended or written to be relied on by the Parties for purpose of avoiding penalties imposed under the Code. Each Party should seek advice from an independent tax adviser based on their particular circumstances.
 
-XIV.12 Further Assurances. 
+XIV.12 Further Assurances.
 
 Each Party shall promptly execute, deliver, file or record those agreements, instruments, certificates and other documents and take other actions as the Administrative Member may reasonably request or as may otherwise be necessary or proper to carry out the terms and provisions of this Agreement and to consummate and perfect the transactions contemplated hereby.
 
-XIV.13 Assignment. 
+XIV.13 Assignment.
 
 The rights, interests or obligations of a Party may not be assigned by such Party except in accordance with a Transfer permitted by Article VIII. Any purported assignment without such Consent will be null and void ab initio.
 
-XIV.14 Binding Effect. 
+XIV.14 Binding Effect.
 
 This Agreement will be binding upon and inure to the benefit of the Parties and their respective legal representatives, successors and permitted assigns. This Agreement is not intended, and will not be deemed, to create or confer any right or interest for the benefit of any Person not a party to this Agreement.
 
-XIV.15 Titles and Captions. 
+XIV.15 Titles and Captions.
 
 The titles and captions of the Articles and Sections of this Agreement are for convenience of reference only and do not in any way define or interpret the intent of the Parties or modify or otherwise affect any of the provisions hereof and shall not have any effect on the construction or interpretation of this Agreement.
 
-XIV.16 Construction. 
+XIV.16 Construction.
 
 This Agreement will not be construed against any party by reason of that party having caused this Agreement to be drafted.
 
-XIV.17 Entire Agreement. 
+XIV.17 Entire Agreement.
 
 This Agreement, the Subscription Agreements of each Member and any side letter with a Member constitutes the entire understanding and agreement among the Parties and supersedes all prior and contemporaneous understandings and agreements whether written or oral. The Administrative Member and the Company and any Series may enter into side letters with any Member or prospective Member which contain terms different from those in this Agreement or amend and supplement provisions of this Agreement as it applies to such Member. In the event of any inconsistency between the terms of this Agreement and the terms of any side letter, the terms of the side letter shall control.
 
@@ -927,10 +927,9 @@ The undersigned, being duly authorized to execute and file this Certificate of R
     (Signature Page Follows)
     IN WITNESS WHEREOF, the undersigned has duly executed this Certificate of Registered Series.
 
+    Name: `________________________`
+    Signature: `________________________`
 
-    Name: 	`________________________`
-    Signature: 	`________________________`
-	
     Authorized Person
 
 -   Available from [Syndicate](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity/delaware-series-llc)

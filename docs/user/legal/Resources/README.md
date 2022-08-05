@@ -25,12 +25,12 @@ This section is intentionally blank.
 -   [Simple Loan Agreement](./loans/note-template.md)
 -   [IOU Loan Agreement](./loans/iou-template.md)
 -   [Promissory Note](./loans/promissory-note-template.md)
--   [Secured Promissory Note Template](secured-promissory-note-template)
+-   [Secured Promissory Note Template](./loans/secured-promissory-note-template.md)
 
 ### Trust Agreements
 
--   [Trust](trust)
--   [Trust Declaration](declaration-of-trust)
+-   [Trust](./trusts/trust.md)
+-   [Trust Declaration](./trusts/declaration-of-trust.md)
 
 ### Unincorporated Non-Profit
 
@@ -38,7 +38,7 @@ This section is intentionally blank.
 
 ### Series LLC, Standalone
 
--   [Investment Club](investment-club)
+-   [Investment Club](./llcs/investment-club)
 -   [Delaware Series LLC](op-llc-series)
 -   [Delaware Standalone](standalone-llc)
 
@@ -56,5 +56,5 @@ This section is intentionally blank.
 
 #### Additional Agreements
 
--   [Simple Agreement for Future Equity (SAFE)](papers/Rolling-SAFE-Template.docx)
--   [SAFE Exhibit A](papers/Rolling-SAFE-Exhibit-A.docx)
+-   [Simple Agreement for Future Equity (SAFE)](./tokens/Rolling-SAFE-Template.docx)
+-   [SAFE Exhibit A](./tokens/Rolling-SAFE-Exhibit-A.docx)
