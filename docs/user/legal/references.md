@@ -25,7 +25,9 @@ Below are online resources we found helpful preparing this information, addition
 
 ### LLCs, Series LLC
 
-`See LLC related documents in teh Resources/research folder`
+-   [Standalone LLC](./Resources/llcs/Example-LLC-Standalone.docx)
+-   [Investment Club Series LLC](./Resources/llcs/Example-Operating-Agreement-Investment-Club-Series-LLC.docx)
+-   [Subscription Agreement](./Resources/llcs/Example-Subscription-Agreement.docx)
 
 ### S-Corporations
 
@@ -37,9 +39,24 @@ This section is intentionally blank.
 The following links will return Word Documents, which may automatically download.
 :::
 
--   [Incorporation Questionnarie](./Resources/ccorp/EXAMPLE-Incorporation%20Questionnaire.docx)
--   `See additional C-Corp documents in the Resources/ccorp folder`
--   [Form of Non-Disclosure Agreement-Individual](./Resources/ccorp/EXAMPLE-19-Form%20of%20Non-Disclosure%20Agreement-Mutual.docx)
+-   [Incorporation-Questionnaire](./Resources/ccorp/EXAMPLE-Incorporation-Questionnaire.docx)
+-   [Certificate-of-Incorporation](./Resources/ccorp/EXAMPLE-2-Certificate-of-Incorporation.doc)
+-   [Action-by-Sole-Incorporator](./Resources/ccorp/EXAMPLE-3-Action-by-Sole-Incorporator.doc)
+-   [ByLaws](./Resources/ccorp/EXAMPLE-4-Bylaws.doc)
+-   [Certificate-of-Adoption-of-Bylaws](./Resources/ccorp/EXAMPLE-5-Certificate-of-Adoption-of-Bylaws.doc)
+-   [Board-Action-in-Lieu-of-First-Meeting](./Resources/ccorp/EXAMPLE-6-Board-Action-in-Lieu-of-First-Meeting.doc)
+-   [IRS-Form-SS-4-Application-for-Employer-Identification-Number](./Resources/ccorp/EXAMPLE-7-IRS-Form-SS-4-Application-for-Employer-Identification-Number.pdf)
+-   [Restricted-Stock-Purchase-Agreement-Founder](./Resources/ccorp/EXAMPLE-8-Restricted-Stock-Purchase-Agreement-Founder-01.doc)
+-   [Common-Stock-Purchase-Agreement](./Resources/ccorp/EXAMPLE-9-Common-Stock-Purchase-Agreement-Kilpatrick-Townsend-&-Stockton.doc)
+-   [Indemnification Agreement](./Resources/ccorp/EXAMPLE-11-Indemnification-Agreement-Delaware-Corporation-Founder-01.doc)
+-   [Equity-Incentive-Plan](./Resources/ccorp/EXAMPLE-12-201__-Equity-Incentive-Plan.doc)
+-   [Form-of-Stock-Option-Agreement](./Resources/ccorp/EXAMPLE-13-Form-of-Stock-Option-Agreement.doc)
+-   [Action-by-Written-Consent-of-Stockholders](./Resources/ccorp/EXAMPLE-14-Action-by-Written-Consent-of-Stockholders.doc)
+-   [At-Will-Employment-Agreement](./Resources/ccorp/EXAMPLE-15-Form-of-At-Will-Employment-Agreement.doc)
+-   [Form-of-Consulting-Agreement-Individual](./Resources/ccorp/EXAMPLE-16-Form-of-Consulting-Agreement-Individual.doc)
+-   [Form-of-Consulting-Agreement-Corp](./Resources/ccorp/EXAMPLE-17-Form-of-Consulting-Agreement-Corporation.doc)
+-   [Form-of-Non-Disclosure-Agreement-Discloser](./Resources/ccorp/EXAMPLE-18-Form-of-Non-Disclosure-Agreement-Discloser.docx)
+-   [Form-of-Non-Disclosure-Agreement-Mutual](./Resources/ccorp/EXAMPLE-19-Form-of-Non-Disclosure-Agreement-Mutual.docx)
 
 ### Unincorporated Non-Profit
 
@@ -58,10 +75,16 @@ The following links will return Word Documents, which may automatically download
 -   [DAO Legal Framework Part 1](./Resources/research/dao-legal-framework-part-1.pdf)
 -   [DAO Legal Framework Part 2](./Resources/research/dao-legal-framework-part-2.pdf)
 
+### Taxation
+
+-   [PwC Annual Global Crypto Tax Report 2021](./research/pwc-annual-global-crypto-tax-report-2021)
+-   [Filing 2022 IRS Federal Tax ID Application](https://irs-tax-id-ein-gov.com/irs-2021/?utm_medium=cpc&utm_campaign=15581835982&utm_term=irs%20gov%20ein&gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndtIXBtsjFLcHrwQMhU8Idz5DQlbYNQI_aMRLSvuYpeOr1PIMRb5XoRoC9bUQAvD_BwE)
+
 ### Securities
 
--   [Filing 2022 IRS Federal Tax ID Application](https://irs-tax-id-ein-gov.com/irs-2021/?utm_medium=cpc&utm_campaign=15581835982&utm_term=irs%20gov%20ein&gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndtIXBtsjFLcHrwQMhU8Idz5DQlbYNQI_aMRLSvuYpeOr1PIMRb5XoRoC9bUQAvD_BwE)
 -   [A Regulatory Classification of Digital Assets: Toward an Operational Howey Test for Cryptocurrencies, ICOs, and Other Digital Assets](https://research.ssrn.com/sol3/research.cfm?abstract_id=3265295)
 -   [OxLegal Resources](https://docs.0x.org/developer-resources/0x-legal-guide#legal-library)
+
+---
 
 [^2]: https://docs.0x.org/developer-resources/0x-legal-guide

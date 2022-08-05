@@ -56,6 +56,7 @@ A legal structure is an agreement between parties to form an enterprise for a co
 ### **Unincorporated Non-Profit Association**
 
 -   [Unicorporated Non-Profit Association Act of 2008 (the "Act"), Model Act](https://www.uniformlaws.org/viewdocument/final-act-149?CommunityKey=40227d3a-8b5d-47c2-8cd0-b0ec12da97f9&tab=librarydocuments)
+-   [Unicorporated Non-Profit Association Act of 2008,(the "Act"), Last Amended 2011](./unas/UUNAA_Final_2014_20154aug19.pdf)
 -   [Nevada Guiding Principals](resources/nv-una.md)
 
 ### **Partnership**
@@ -64,8 +65,10 @@ This sentence is intentionally left blanks.
 
 ### **Series, Master LLC**
 
+-   [Standalone LLC](./Resources/llcs/Example-LLC-Standalone.docx)
+-   [Investment Club Series LLC](./Resources/llcs/Example-Operating-Agreement-Investment-Club-Series-LLC.docx)
+-   [Subscription Agreement](./Resources/llcs/Example-Subscription-Agreement.docx)
 -   [Delaware Division of Corporations How to form new business entity](https://corp.delaware.gov/howtoform/)
--   Closed-End Fund
 
 ### **S-Corp**
 
@@ -73,8 +76,24 @@ This sentence is intentionally left blanks.
 
 ### **C-Corp**
 
--   [Incorporation Checklist](./Resources/ccorp/EXAMPLE-Incorporation%20Questionnaire.docx)
--   [Incorporation NDA](./Resources/)
+-   [Incorporation-Questionnaire](./Resources/ccorp/EXAMPLE-Incorporation-Questionnaire.docx)
+-   [Certificate-of-Incorporation](./Resources/ccorp/EXAMPLE-2-Certificate-of-Incorporation.doc)
+-   [Action-by-Sole-Incorporator](./Resources/ccorp/EXAMPLE-3-Action-by-Sole-Incorporator.doc)
+-   [ByLaws](./Resources/ccorp/EXAMPLE-4-Bylaws.doc)
+-   [Certificate-of-Adoption-of-Bylaws](./Resources/ccorp/EXAMPLE-5-Certificate-of-Adoption-of-Bylaws.doc)
+-   [Board-Action-in-Lieu-of-First-Meeting](./Resources/ccorp/EXAMPLE-6-Board-Action-in-Lieu-of-First-Meeting.doc)
+-   [IRS-Form-SS-4-Application-for-Employer-Identification-Number](./Resources/ccorp/EXAMPLE-7-IRS-Form-SS-4-Application-for-Employer-Identification-Number.pdf)
+-   [Restricted-Stock-Purchase-Agreement-Founder](./Resources/ccorp/EXAMPLE-8-Restricted-Stock-Purchase-Agreement-Founder-01.doc)
+-   [Common-Stock-Purchase-Agreement](./Resources/ccorp/EXAMPLE-9-Common-Stock-Purchase-Agreement-Kilpatrick-Townsend-&-Stockton.doc)
+-   [Indemnification Agreement](./Resources/ccorp/EXAMPLE-11-Indemnification-Agreement-Delaware-Corporation-Founder-01.doc)
+-   [Equity-Incentive-Plan](./Resources/ccorp/EXAMPLE-12-201__-Equity-Incentive-Plan.doc)
+-   [Form-of-Stock-Option-Agreement](./Resources/ccorp/EXAMPLE-13-Form-of-Stock-Option-Agreement.doc)
+-   [Action-by-Written-Consent-of-Stockholders](./Resources/ccorp/EXAMPLE-14-Action-by-Written-Consent-of-Stockholders.doc)
+-   [At-Will-Employment-Agreement](./Resources/ccorp/EXAMPLE-15-Form-of-At-Will-Employment-Agreement.doc)
+-   [Form-of-Consulting-Agreement-Individual](./Resources/ccorp/EXAMPLE-16-Form-of-Consulting-Agreement-Individual.doc)
+-   [Form-of-Consulting-Agreement-Corp](./Resources/ccorp/EXAMPLE-17-Form-of-Consulting-Agreement-Corporation.doc)
+-   [Form-of-Non-Disclosure-Agreement-Discloser](./Resources/ccorp/EXAMPLE-18-Form-of-Non-Disclosure-Agreement-Discloser.docx)
+-   [Form-of-Non-Disclosure-Agreement-Mutual](./Resources/ccorp/EXAMPLE-19-Form-of-Non-Disclosure-Agreement-Mutual.docx)
 
 ## DAO Framework Papers
 

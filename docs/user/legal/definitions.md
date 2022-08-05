@@ -1,5 +1,5 @@
 ---
-title: "Glossary"
+title: "Definitions"
 sidebar_position: 6
 ---
 
