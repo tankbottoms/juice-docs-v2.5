@@ -14,4 +14,5 @@ sidebar_position: 0
 7. [Contract addresses](./contract-addresses)
 8. [Terms of Service](./tos)
 9. [Expenses](./expenses)
-10. [Proposed Budget](./10.%20movement-proposal-budget.pdf)
+10. [Initial Budget](./10.%20movement-proposal-budget.pdf)
+11. [Proposals](./proposals)
