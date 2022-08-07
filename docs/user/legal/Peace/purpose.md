@@ -1,25 +1,18 @@
----
-title: Purpose
-sidebar_position: 1
----
+# Purpose
 
-#### ☮️ Our Mission
+☮️ Our Mission and Core Values
 
-##### Our goal
+### Our Goal
 
-...is to ensure the ability of the earth to nurture life in all its diversity.
+**Our goal is to ensure the ability of the earth to nurture life in all its diversity.**
 
 That means we want to:
+- **protect biodiversity** in all its forms.
+- **prevent pollution** and abuse of the earth’s ocean, land, air and fresh water.
+- **end all nuclear threats**.
+- **promote peace**, global disarmament and non-violence.
 
-**protect biodiversity** in all its forms
-
-**prevent pollution** and abuse of the earth’s ocean, land, air and fresh water
-
-**end all nuclear threats**
-
-**promote peace**, global disarmament and non-violence
-
-##### Our core values
+### Our Core Values
 
 **Personal responsibility and nonviolence.** We take action based on conscience. This means we are accountable for our actions and take personal responsibility. We are committed to peacefulness; everyone on a Greenpeace action is trained in nonviolence.
 

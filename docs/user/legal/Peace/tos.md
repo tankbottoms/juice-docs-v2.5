@@ -1,25 +1,22 @@
----
-title: Terms of Service
-sidebar_position: 7
----
+# Terms of Service
 
 ## ☮️ PeaceDAO Terms of Service
 
-Last Updated: July 29, 2022
+Last Updated: August 5th, 2022
 
 ### Introduction
 
-Please read these terms of service (“Terms”) carefully. These Terms are between you and **Peace DAO** (the “DAO,” “we,” “us,” or “our”) concerning your use of the **Peace’s site**, currently located at https://peace.move.xyz and https://juicebox.money/p/peace (the “Site”) which operates on the **Juicebox protocol** (the "Juicebox DAO Protocol") available on Ethereum via [smart contracts (“Smart Contracts”)](./contract-addresses.md).
+Please read these terms of service (“Terms”) carefully. These Terms are between you and Peace DAO (the “DAO,” “we,” “us,” or “our”) concerning your use of the DAO sites, including the sites currently located at [https://peace.move.xyz](https://peace.move.xyz), [https://discord.gg/movexyz](https://discord.gg/movexyz), [https://doc.move.xyz](https://doc.move.xyz), and [https://juicebox.money/p/peace](https://juicebox.money/p/peace) (the "Site" or "Sites") which operates on the Juicebox Protocol available on Ethereum via [smart contracts](./contract-addresses.md) (“Smart Contracts”).
 
 These Terms apply to you (“you,” or “User”) as a user of the Site information made available on the Site.
 
 ### By using the Site, you agree to these Terms
 
-Certain features on the site may be offered while still in “beta” form (“Services”). By accepting these Terms or using the Services, You understand and acknowledge that theServices are being provided as a version and made available on an “As Is” or “As Available” basis. The Services may contain bugs, errors, and other problems.
+Certain features on the Sites may be offered while still in “beta” form (“Services”). By accepting these Terms or using the Services, You understand and acknowledge that the Services are being provided as a beta version and made available on an “As Is” or “As Available” basis. The Services may contain bugs, errors, and other problems.
 
-**YOU ASSUME ALL RISKS AND ALL COSTS ASSOCIATED WITH YOUR USE OF THE DAO SERVICES, INCLUDING, WITHOUT LIMITATION, ANY INTERNET ACCESS FEES, BACK-UP EXPENSES, COSTS INCURRED FOR THE USE OF YOUR DEVICE AND PERIPHERALS, AND ANY DAMAGE TO ANY EQUIPMENT, SOFTWARE, INFORMATION OR DATA.** In addition, we are not obligated to provide any maintenance, technical, or other support for the Services.
+You assume all risks and all costs associated with your use of the DAO services, including, without limitation, any internet access fees, back-up expenses, costs incurred for the use of your device and peripherals, and any damage to any equipment, software, information or data. In addition, we are not obligated to provide any maintenance, technical, or other support for the Services.
 
-**NONE OF THE INFORMATION, SERVICES OR MATERIALS OFFERED ON OUR SITE CONSTITUTE, AND ARE NOT INTENDED TO CONSTITUTE, LEGAL, FINANCIAL, TAX, INVESTMENT OR OTHER ADVICE, AND YOU SHOULD NOT ACT OR REFRAIN FROM ACTING BASED ON ANY INFORMATION, SERVICES OR MATERIALS PROVIDED ON THIS SITE. ALL CONTENT ON OUR SITE IS INFORMATION OF A GENERAL NATURE AND DOES NOT ADDRESS THE UNIQUE CIRCUMSTANCES OF ANY PARTICULAR USER. YOU ARE STRONGLY URGED TO CONSULT WITH YOUR OWN LEGAL, FINANCIAL, TAX, INVESTMENT AND OTHER ADVISORS AS TO ALL LEGAL, FINANCIAL, TAX AND INVESTMENT-RELATED QUESTIONS YOU HAVE.**
+None of the information, services or materials offered on the Sites constitute, or are intended to constitute, legal, financial, tax, investment or other advice, and you should not act or refrain from acting based on any information, services or materials provided on the Sites. All content on the Sites is information of a general nature and does not address the unique circumstances of any particular user. You are strongly urged to consult with your own legal, financial, tax, investment and other advisors as to all legal, financial, tax and investment-related questions you have.
 
 You must be able to form a legally binding contract online either as an individual or on behalf of a legal entity. You represent that as a User, you have the legal authority to bind the company or other legal entity on which behalf you are acting to these Terms, you are at least 18 years old or the age of majority where you reside, whichever is older, you can form a legally binding contract online, and you have the full, right, power and authority to enter into and to comply with the obligations under these Terms on your own behalf, or on behalf of the company or other legal entity on which behalf you are acting.
 
@@ -27,110 +24,85 @@ You are advised to revisit these Terms periodically to familiarize yourself with
 
 ### Information of a Legal, Accounting, or Tax Matters
 
-Any legal, financial, or tax comments within Discord is provided for informational and illustrative purposes only, and is not intended to constitute legal, financial, tax, or other advice. You should not act or refrain from acting based on any information gleaned from any documents, comments, or instructions. The DAO does not endorse or make any representation as to the capabilities of any legal or tax professional or advisors within our Discord (or the Internet) and the provision of contact information is not a recommendation that you hire any such person. Please check with your legal and tax advisors to make the best decisions for your specific circumstances.
+Any legal, financial, or tax comments within the Sites is provided for informational and illustrative purposes only, and is not intended to constitute legal, financial, tax, or other advice. You should not act or refrain from acting based on any information gleaned from any documents, comments, or instructions. The DAO does not endorse or make any representation as to the capabilities of any legal or tax professional or advisors within our Sites (or the Internet) and the provision of contact information is not a recommendation that you hire any such person. Please check with your legal and tax advisors to make the best decisions for your specific circumstances.
 
 ### Risks Involved in the Use of the Smart Contracts
 
-The DAO protocol runs entirely on publicly accessible smart contracts explained in detail throughout the Juicebox DAO's online documents. The Juicebox DAO's protocol is public infrastructure running well-known code, all consequences from interacting with networks running the protocol are borne by the entities who sign each transaction. The protocol works according to the specifications outlined in these docs to the extent the code is written and deployed correctly, which is a collective responsibility and not guaranteed. There are major risks that this is not the case. Please do your own research.
+The DAO protocol runs entirely on publicly accessible smart contracts explained in detail throughout the Juicebox DAO's online documents, currently available at [https://info.juicebox.money](https://info.juicebox.money). The Juicebox DAO's protocol is public infrastructure running well-known code. All consequences from interacting with networks running the protocol are borne by the entities who sign each transaction. The protocol works according to the specifications outlined in these docs to the extent the code is written and deployed correctly, which is a collective responsibility and not guaranteed. There are major risks that this is not the case. Please do your own research.
 
 ### Source Code Repositories
 
-No Warranties. The DAO's Repository is only a presentation of information regarding certain view points and technologies. The statements contained in the Repository do not provide any advice, representation, warranty, certification, guarantee or promise relating to these technologies, any uses thereof or any of the other matters discussed in the Repository, nor does the Repository provide an offer or agreement to make such technologies available, maintain or update such technologies, or sell or buy any asset or enter into any transaction. You should not rely on the Repository as a basis for making any financial or other decision.
+No Warranties. Juicebox DAO's source code repository ("Repository") is only a presentation of information regarding certain view points and technologies. The statements contained in the Repository do not provide any advice, representation, warranty, certification, guarantee or promise relating to these technologies, any uses thereof or any of the other matters discussed in the Repository, nor does the Repository provide an offer or agreement to make such technologies available, maintain or update such technologies, or sell or buy any asset or enter into any transaction. You should not rely on the Repository as a basis for making any financial or other decision.
 
 ### The Decentralized Application
 
-The DAO provides access to a decentralized finance application (“Application”) on the Ethereum blockchain that allows individuals to contribute Ethereum assets including Ethereum, ERC-20, ERC-721 (“Cryptocurrency Assets”) to the Peace DAO Treasury as contributions. The Application may be configured as to emit project tokens ("Project Tokens") which may or may not have utility. The Application spans a front-end application, middleware (including Interplanetary File System metadata, Graph indexers, Cloud Functions, etc.) and an array of Ethereum smart contracts - the user at all times is required to authorize the execution of the Smart Contracts when interacting with their wallet. These collected Cryptocurrency Assets are received by projects created on the Juicebox DAO Application with the support of the Smart Contracts, operated by specific Users (“Managers” also known as "Stewards") which the DAO has governance appointment as described in the Stewards section. The Stewards in conjunction with the Smart Contracts and the Peace DAO NFT Community together evaluate, propose, ratify and effectuate Peace DAO Funding Initiatives. The Peace DAO Juicebox Project receive Cryptocurrency Assets, disperses said Cryptocurrency Assets and the emission rate of the Project Tokens set to specific parameters via the aforementioned governance. The DAO Application provides for complete trust-less transparent views into the Project Tokens', Stewards', Community's and Cryptocurrency Assets' life cycle, including the Project Tokens' possible redemption, of which the existing members, Stewards do now expect any meaningful redemption possible.
+Juicebox DAO provides access to a decentralized finance application (“Application”) on the Ethereum blockchain that allows individuals to contribute Ethereum assets including Ethereum, ERC-20, ERC-721 (“Cryptocurrency Assets”) to the Peace DAO Treasury as contributions. The Application may be configured as to emit project tokens ("Project Tokens") which may or may not have utility. The Application spans a front-end application, middleware (including Interplanetary File System metadata, Graph indexers, Blocknative API functions, Infura services, Cloud Functions, etc.) and an array of Ethereum smart contracts - the user at all times is required to authorize the execution of the Smart Contracts when interacting with their wallet. These collected Cryptocurrency Assets are received by projects created on the Juicebox DAO Application with the support of the Smart Contracts, operated by specific Users (“Managers” also known as "Stewards") which the DAO has governance appointment as described in the Stewards section. The Stewards in conjunction with the Smart Contracts and the Peace DAO NFT Community together evaluate, propose, ratify and effectuate Peace DAO Funding Initiatives. The Peace DAO Juicebox Project receive Cryptocurrency Assets, disperses said Cryptocurrency Assets and the emission rate of the Project Tokens set to specific parameters via the aforementioned governance. The DAO Application provides for complete trust-less transparent views into the Project Tokens', Stewards', Community's and Cryptocurrency Assets' life cycle, including the Project Tokens' possible redemption, of which the existing members, Stewards do now expect any meaningful redemption possible.
 
-Using the DAO protocol may require that you pay a fee, such as gas charges on the Ethereum network, to perform a transaction. You acknowledge and agree that the DAO has no control over any transactions among Users over the DAO’s protocol, the method of payment of any such transactions or any actual payments of such transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your DAO protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any such transaction on the the DAO protocol or the Ethereum network before initiating such transaction.
+Using the Juicebox Protocol may require that you pay a fee, such as gas charges on the Ethereum network, to perform a transaction. You acknowledge and agree that the DAO has no control over any transactions among Users over Juicebox DAO’s protocol, the method of payment of any such transactions or any actual payments of such transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your Juicebox Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any such transaction the Juicebox Protocol or the Ethereum network before initiating such transaction.
 
 ### Access to the Peace DAO Juicebox Application
 
-Access to the Site is provided “AS IS” and “as available” basis only. We do not guarantee that the Site, or any content on it, will always be available or uninterrupted. From time to time, access may be interrupted, suspended or restricted, including because of a fault, error or unforeseen circumstances or because we are carrying out planned maintenance. With regards to https://peace.move.xyz; We reserve the right to limit the availability of the Site to any person, geographic area or jurisdiction we so desire and/or to terminate your access to and use of the site, at any time and in our sole and absolute discretion. We may remove or amend the content of the Site at any time. However, some of the content may be out of date at any given time and we are under no obligation to update it. We do not guarantee that the Site, or any content on it, will be free from errors or omissions.
+Access to the Site is provided on an “as is” and “as available” basis only. We do not guarantee that the Site, or any content on it, will always be available or uninterrupted. From time to time, access may be interrupted, suspended or restricted, including because of a fault, error or unforeseen circumstances or because we are carrying out planned maintenance. With regards to [https://peace.move.xyz](https://peace.move.xyz) and the Sites; We reserve the right to limit the availability of the Sites to any person, geographic area or jurisdiction we so desire and/or to terminate your access to and use of the Sites, at any time and in our sole and absolute discretion. We may remove or amend the content of the Sites at any time. However, some of the content may be out of date at any given time and we are under no obligation to update it. We do not guarantee that the Sites, or any content on them, will be free from errors or omissions.
 
-We will not be liable to you for any loss or damage you may suffer as a result of the Site being unavailable at any time for any reason.
-You will comply with all applicable domestic and international laws, statutes, ordinances and regulations applicable to your use of the Site.
+We will not be liable to you for any loss or damage you may suffer as a result of the Sites being unavailable at any time for any reason. You will comply with all applicable domestic and international laws, statutes, ordinances and regulations applicable to your use of the Sites.
 
-As a condition to accessing or using the Site, you:
+**As a condition to accessing or using the Site, you will:**
+1. only use the Site in accordance with these Terms;
+2. ensure that all information that you provide on the Site is current, complete, and accurate;
+3. ensure compliance with all U.S. Securities laws; and
+4. maintain the security and confidentiality of access to your Cryptocurrency Wallet address.
 
--   will only use the Site in accordance with these Terms;
+**As a condition to accessing or using the Site, you will not:**
+1. violate any applicable law, including, without limitation, any relevant and applicable anti-money laundering and anti-terrorist financing laws as well as any relevant and applicable privacy and data collection laws, in each case as may be amended;
+2. export, reexport, or transfer, directly or indirectly, any DAO technology in violation of applicable export laws or regulations;
+3. infringe on or misappropriate any contract, intellectual property or other third-party right, or commit a tort while using the Site;
+4. make commercial use of the Site or any of its content without our express written permission;
+5. misrepresent the truthfulness, sourcing or reliability of any content on the Site;
+6. use the Site to simulate communications from us or another service or entity in order to collect identity information, authentication credentials, or other information (known as ‘phishing’);
+7. use the Site in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Site or the DAO protocol, or that could damage, disable, overburden, or impair the functioning of the Site or the DAO protocol in any manner;
+8. attempt to circumvent any content filtering techniques or security measures that DAO employs on the Site, or attempt to access any service or area of the Site that you are not authorized to access;
+9. use any robot, spider, crawler, scraper, or other automated means or interface not provided by us, to access the Site to extract data;
+10. introduce any malware, virus, Trojan horse, worm, logic bomb, drop-dead device, backdoor, shutdown mechanism or other harmful material into the Site;
+11. **post content or communications on the Site that are, in our sole and absolute discretion, libelous, defamatory, profane, obscene, pornographic, sexually explicit, indecent, lewd, vulgar, suggestive, harassing, hateful, threatening, offensive, discriminatory, bigoted, abusive, inflammatory, fraudulent, deceptive or otherwise objectionable;**
+12. post content on the Site containing unsolicited promotions, commercial messages or any chain messages or user content designed to deceive or trick the user of the Site; or
+13. encourage or induce any third party to engage in any of the activities prohibited under these Terms.
 
--   will ensure that all information that you provide on the Site is current, complete, and accurate;
+**You acknowledge that the Site and your use of the Site contain certain risks, including without limitation the following risks:**
+1. That any Smart Contracts you interact with are entirely your own responsibility and liability, and that DAO is not party to the Smart Contracts;
+2. That at any time, your access to your Cryptocurrency Assets may be suspended or terminated or there may be a delay in your access or use of your Cryptocurrency Assets which may result in the Cryptocurrency Assets diminishing in value or you being unable to complete a Smart Contract; and
+3. That the Site and/or application may be suspended or terminated for any or no reason, which may limit your access to your Cryptocurrency Assets.
 
--   will ensure compliance with all U.S. securities laws; and
-
--   will maintain the security and confidentiality of access to your Cryptocurrency Wallet address.
-
-As a condition to accessing or using the Site, you will not:
-
--   Violate any applicable law, including, without limitation, any relevant and applicable anti-money laundering and anti-terrorist financing laws and any relevant and applicable privacy and data collection laws, in each case as may be amended;
-
--   Export, reexport, or transfer, directly or indirectly, any DAO technology in violation of applicable export laws or regulations;
-
--   Infringe on or misappropriate any contract, intellectual property or other third-party right, or commit a tort while using the Site;
-
--   Make commercial use of the Site or any of its content without our express written permission;
-
--   Misrepresent the truthfulness, sourcing or reliability of any content on the Site;
-
--   Use the Site to simulate communications from us or another service or entity in order to collect identity information, authentication credentials, or other information (known as ‘phishing’);
-
--   Use the Site in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Site or the DAO protocol, or that could damage, disable, overburden, or impair the functioning of the Site or the DAO protocol in any manner;
-
--   Attempt to circumvent any content filtering techniques or security measures that DAO employs on the Site, or attempt to access any service or area of the Site that you are not authorized to access;
-
--   Use any robot, spider, crawler, scraper, or other automated means or interface not provided by us, to access the Site to extract data;
-
--   Introduce any malware, virus, Trojan horse, worm, logic bomb, drop-dead device, backdoor, shutdown mechanism or other harmful material into the Site;
-
--   **Post content or communications on the Site that are, in our sole and absolute discretion, libelous, defamatory, profane, obscene, pornographic, sexually explicit, indecent, lewd, vulgar, suggestive, harassing, hateful, threatening, offensive, discriminatory, bigoted, abusive, inflammatory, fraudulent, deceptive or otherwise objectionable;**
-
--   Post content on the Site containing unsolicited promotions, commercial messages or any chain messages or user content designed to deceive or trick the user of the Site; or
-
--   Encourage or induce any third party to engage in any of the activities prohibited under these Terms.
-
-You acknowledge that the Site and your use of the Site contain certain risks, including without limitation the following risks:
-
--   That any Smart Contracts you interact with are entirely your own responsibility and liability, and that DAO is not party to the Smart Contracts;
-
--   At any time, your access to your Cryptocurrency Assets may be suspended or terminated or there may be a delay in your access or use of your Cryptocurrency Assets which may result in the Cryptocurrency Assets diminishing in value or you being unable to complete a Smart Contract; and
-
-The Site and/or application may be suspended or terminated for any or no reason, which may limit your access to your Cryptocurrency Assets.
-
-Accordingly, you expressly agree that:
-
--   You assume all risks in connection with your access and use of the Site, the DAO Application and the Smart Contracts; and
-
--   You expressly release the DAO, our contributors, members, and affiliates, and hold them harmless from and against, any and all liability, claims, causes of action, losses, expenses, or damages (whether arising in law or equity, including but not limited to special, consequential, indirect, punitive and exemplary damages, and including but not limited to economic loss, business disruption, and/or attorney’s fees) arising from or in any way related to the Site, the Application and/or the Smart Contracts. You expressly waive all such claims against the Releasees.
+**Accordingly, you expressly agree that:**
+1. You assume all risks in connection with your access and use of the Site, the DAO Application and the Smart Contracts; and
+2. You expressly release the DAO, our contributors, members, and affiliates, and hold them harmless from and against, any and all liability, claims, causes of action, losses, expenses, or damages (whether arising in law or equity, including but not limited to special, consequential, indirect, punitive and exemplary damages, and including but not limited to economic loss, business disruption, and/or attorney’s fees) arising from or in any way related to the Site, the Application and/or the Smart Contracts. You expressly waive all such claims against the Releases.
 
 ### Securities Law Matters
 
 **ANY GOVERNANCE TOKENS RECEIVED BY MEMBERS HAVE NOT BEEN APPROVED OR DISAPPROVED BY THE UNITED STATES SECURITIES AND EXCHANGE COMMISSION, ANY STATE SECURITIES COMMISSION, OR OTHER REGULATORY AUTHORITY, NOR HAVE ANY OF THE FOREGOING AUTHORITIES PASSED UPON THE MERITS OF THIS OFFERING OR UPON THE ACCURACY OR ADEQUACY OF THIS AGREEMENT. ANY REPRESENTATION TO THE CONTRARY IS A CRIMINAL OFFENSE. THIS DOCUMENT DOES NOT CONSTITUTE AN OFFER OR SOLICITATION TO ANYONE IN ANY JURISDICTION IN WHICH SUCH OFFER OR SOLICITATION IS NOT AUTHORIZED.**
 
-**ANY GOVERNANCE TOKENS THAT YOU MAY ACQUIRE HAVE NOT BEEN REGISTERED UNDER THE SECURITIES ACT, STATE SECURITIES LAWS, OR THE LAWS OF ANY COUNTRY OUTSIDE THE UNITED STATES. THE DAO'S POSITION IS THAT THE DAO'S GOVERNANCE TOKENS SHOULD NOT BE SINCE THE PURPOSE OF THE DAO IS TO PROVIDE A BLOCKCHAIN NATIVE ACCOUNTING APPLICATION, PROVIDE NO RIGHTS TO ANY DISTRIBUTION OR PROFITS, AND ARE NON-TRANSFERRABLE EXCEPT DETAILED IN THE TERMS OF USE.**
+**ANY GOVERNANCE TOKENS THAT YOU MAY ACQUIRE HAVE NOT BEEN REGISTERED UNDER THE SECURITIES ACT, STATE SECURITIES LAWS, OR THE LAWS OF ANY COUNTRY OUTSIDE THE UNITED STATES. THE DAO'S POSITION IS THAT THE DAO'S GOVERNANCE TOKENS SHOULD NOT BE SINCE THE PURPOSE OF THE DAO IS TO PROVIDE A BLOCKCHAIN NATIVE ACCOUNTING APPLICATION, PROVIDE NO RIGHTS TO ANY DISTRIBUTION OR PROFITS, AND ARE NON-TRANSFERABLE EXCEPT DETAILED IN THE TERMS OF USE.**
 
 ### OFAC Compliance
 
-The U.S. Department of Treasury, through the Office of Foreign Assets Control (“OFAC”), prohibits U.S. companies from engaging in all or certain commercial activities with certain sanctioned countries (each a “Sanctioned Country”) and certain individuals, organizations or entities, including without limitation, certain “Specially Designated Nationals” (“SDN”) listed by OFAC. **If you use the Site, you expressly represent that you are not located in a Sanctioned Country and are not listed as an SDN. If the DAO determines that the Site is being used by prohibited persons, it will take any and all actions to terminate that User’s access to the Site.**
+The U.S. Department of Treasury, through the Office of Foreign Assets Control (“OFAC”), prohibits U.S. companies from engaging in all or certain commercial activities with certain sanctioned countries (each a “Sanctioned Country”) and certain individuals, organizations or entities, including without limitation, certain “Specially Designated Nationals” (“SDN”) listed by OFAC. **If you use the Sites, you expressly represent that you are not located in a Sanctioned Country and are not listed as an SDN. If the DAO determines that the Sites is being used by prohibited persons, it will take any and all actions to terminate that User’s access to the Sites.**
 
 ### Third Party Links
 
-The Site may contain hyperlinks or references to third party websites. Any such hyperlinks or references are provided for your information and convenience only. We have no control over third party websites and accept no legal responsibility for any content, material or information contained in them. The display of any hyperlink and reference to any third-party website does not mean that we endorse that third party's website, products or services. Your use of a third-party site may be governed by the terms and conditions of that third-party site.
+The Sites may contain hyperlinks or references to third party websites. Any such hyperlinks or references are provided for your information and convenience only. We have no control over third party websites and accept no legal responsibility for any content, material or information contained in them. The display of any hyperlink and reference to any third-party website does not mean that we endorse that third party's website, products or services. Your use of a third-party site may be governed by the terms and conditions of that third-party site.
 
 ### The Verbose Privacy Policy
 
-Certain areas of the Site or Application including any and all interactions with the Ethereum blockchain, record your Cryptocurrency address and details of the transactions you authorize. You understand that in the aggregate of transactions, including parties you transact with, specific Cryptocurrency Assets you hold, including unique ENS domain NFTs, third-party NFTs, the Cryptocurrency address, metadata associated with any Smart Contract such as the executing function, its arguments (or parameters) will contain in aggregate information which _may_ identify you personally.
+Certain areas of the Sites or Application including any and all interactions with the Ethereum blockchain, record your Cryptocurrency address and details of the transactions you authorize. You understand that in the aggregate of transactions, including parties you transact with, specific Cryptocurrency Assets you hold, including unique ENS domain NFTs, third-party NFTs, the Cryptocurrency address, metadata associated with any Smart Contract such as the executing function, its arguments (or parameters) will contain in aggregate information which _may_ identify you personally.
 
 The Ethereum blockchain transactions are not temporary or transient, but permanently, permission-less, accessible and the DAO, its contributors, affiliates are not engaged in profiling activities whatsoever. However, _any other_ 3rd party, including government agencies and foreign adversaries, will have unfettered access to all your transactions on the blockchain forever.
 
-Your authorization of transactions with your Cryptocurrency address, using Cryptocurrency Tokens, will result in the indelible dissemination of information to the Ethereum blockchain. Notwithstanding, the Application, handles as little personal information as possible, only your Cryptographic address. With regards to transaction with https://peace.move.xyz, including any payments or transfer of funds, any information you provide to the payment vendors we do not retain, have access to or control; your authorization of any payment or execution of transactions you provide to the https://peace.move.xyz site is voluntary, and final.
+Your authorization of transactions with your Cryptocurrency address, using Cryptocurrency Tokens, will result in the indelible dissemination of information to the Ethereum blockchain. Notwithstanding, the Application, handles as little personal information as possible, only your Cryptographic address. With regards to transaction with [https://peace.move.xyz](https://peace.move.xyz), including any payments or transfer of funds, any information you provide to the payment vendors we do not retain, have access to or control; your authorization of any payment or execution of transactions you provide to the [https://peace.move.xyz](https://peace.move.xyz) site is voluntary, and final.
 
-:::info
 ALL SALES ARE FINAL. NO REFUNDS WILL BE GRANTED FOR ANY REASON. ALL RIGHTS RESERVED. NEITHER THE PURCHASER NOR THE TICKET HOLDER SHALL BE ENTITLED TO A REFUND EXCEPT AS OTHERWISE REQUIRED BY LAW OR OTHERWISE DETERMINED BY THE DAO IN ITS SOLE DISCRETION.
-:::
 
-Additionally, the Application may employ Fathom Analytics for website traffic analytics, which doesn't use cookies and complies with the GDPR, ePrivacy (including PECR), COPPA and CCPA. The decision to potentially use this privacy-friendly analytics software, was in large part to ensure your IP address is only briefly processed by this 3rd party, and the DAO and the Application have no way of identifying you (aside from the aforementioned indelible entire history of Cryptographic transactions). As per the CCPA, your personal information is de-identified.
+Additionally, the Sites may employ Fathom Analytics for website traffic analytics, which doesn't use cookies and complies with the GDPR, ePrivacy (including PECR), COPPA and CCPA. The decision to potentially use this privacy-friendly analytics software, was in large part to ensure your IP address is only briefly processed by this 3rd party, and the DAO and the Application have no way of identifying you (aside from the aforementioned indelible entire history of Cryptographic transactions). As per the CCPA, your personal information is de-identified.
 
-The purpose of the DAO potentially using Fathom Analytics is to understand the Application website traffic in the most privacy-friendly way possible so that the DAO can continually improve the Application. The lawful basis as per the GDPR is "Article 6(1)(f); where our legitimate interests are to improve our website and business continually." Additionally, the DAO and its contributors, have no interest in collecting this information.
+The purpose of Juicebox DAO potentially using Fathom Analytics is to understand the Application website traffic in the most privacy-friendly way possible so that Juicebox DAO can continually improve the Application. The lawful basis as per the GDPR is "Article 6(1)(f); where our legitimate interests are to improve our website and business continually." Additionally, the DAO and its contributors, have no interest in collecting this information.
 
 ### Disclaimers; Limitation of Liability
 
@@ -140,19 +112,19 @@ TO THE FULLEST EXTENT PERMITTED BY LAW, THE DISCLAIMERS OF LIABILITY CONTAINED H
 
 IN THE EVENT THAT A COURT AND/OR ARBITRATOR(S) OF COMPETENT JURISDICTION HOLDS THAT ANY DAO PARTY IS LIABLE TO YOU (FOR EXAMPLE AND WITHOUT LIMITATION, BECAUSE ANY RELEASE OR WAIVER HEREUNDER IS FOUND TO BE VOID OR OTHERWISE UNENFORCEABLE, OR BECAUSE ANY CLAIMS ARE FOUND TO BE OUTSIDE THE SCOPE OF ANY SUCH RELEASE OR WAIVER), UNDER NO CIRCUMSTANCES WILL ANY OF THE DAO PARTIES BE LIABLE TO YOU IN THE AGGREGATE FOR MORE THAN THE AMOUNT YOU HAVE PAID THE **DAO DIRECTLY ARISING FROM YOUR CONTRIBUTION TO THE DAO** IN THE THIRTY (30) DAYS IMMEDIATELY PRECEDING THE DATE ON WHICH YOU FIRST ASSERT ANY SUCH CLAIM, WHETHER SUCH LIABILITY IS BASED ON BREACH OF WARRANTY, BREACH OF CONTRACT OR TORT (INCLUDING NEGLIGENCE) OR OTHERWISE.
 
-We do not guarantee that the Site will be secure or free from bugs or viruses.
+We do not guarantee that the Sites will be secure or free from bugs or viruses.
 
-You are responsible for configuring your information technology, computer programs and platform in order to access the Site. You should use your own virus protection software.
+You are responsible for configuring your information technology, computer programs and platform in order to access the Sites. You should use your own virus protection software.
 
-We cannot promise that the use of the Site, or any content taken from the Site, will not infringe the rights of any third party.
+We cannot promise that the use of the Sites, or any content taken from the Site, will not infringe the rights of any third party.
 
-Certain content and materials available on the Site are for informational purposes only and are not intended to address your particular requirements. In particular, the content and materials available on the Site do not constitute any form of advice or recommendation by us, should not be regarded as an offer, solicitation, invitation or recommendation to buy or sell investments, securities or any other financial services and are not intended to be relied upon by you in making any specific investment or other decisions. We recommend that you seek independent advice from your own financial advisors and legal counsel before making any such decision.
+Certain content and materials available on the Sites are for informational purposes only and are not intended to address your particular requirements. In particular, the content and materials available on the Sites do not constitute any form of advice or recommendation by us, should not be regarded as an offer, solicitation, invitation or recommendation to buy or sell investments, securities or any other financial services and are not intended to be relied upon by you in making any specific investment or other decisions. We recommend that you seek independent advice from your own financial advisors and legal counsel before making any such decision.
 
-Nothing included in the Site constitutes an offer or solicitation to sell, or distribution of, investments and related services by the DAO to anyone in any jurisdiction.
+Nothing included in the Sites constitutes an offer or solicitation to sell, or distribution of, investments and related services by the DAO to anyone in any jurisdiction.
 
-You may only participate with Smart Contracts on the Site by linking your Cryptocurrency Wallet on supported bridge extensions such as MetaMask (https://metamask.io/). MetaMask is an electronic wallet that allows you to purchase, store, and engage in transactions using Ethereum cryptocurrency. Before putting your Cryptocurrency Asset into a Smart Contract, you will be required to download a supported electronic wallet extension and connect and unlock your Cryptocurrency Wallet with that extension.
+You may only participate with Smart Contracts on the Site by linking your Cryptocurrency Wallet on supported bridge extensions such as [MetaMask](https://metamask.io/). MetaMask is an electronic wallet that allows you to purchase, store, and engage in transactions using Ethereum cryptocurrency. Before putting your Cryptocurrency Asset into a Smart Contract, you will be required to download a supported electronic wallet extension and connect and unlock your Cryptocurrency Wallet with that extension.
 
-ALL TRANSACTIONS INITIATED THROUGH OUR SERVICE ARE FACILITATED AND RUN BY THIRD-PARTY ELECTRONIC WALLET EXTENSIONS, AND BY USING OUR SERVICES YOU AGREE THAT YOU ARE GOVERNED BY THE TERMS OF SERVICE AND PRIVACY POLICY FOR THE APPLICABLE EXTENSIONS. FOR METAMASK, THOSE TERMS ARE AVAILABLE AT (https://metamask.io/terms.html) AND (https://metamask.io/privacy.html).
+ALL TRANSACTIONS INITIATED THROUGH OUR SERVICE ARE FACILITATED AND RUN BY THIRD-PARTY ELECTRONIC WALLET EXTENSIONS, AND BY USING OUR SERVICES YOU AGREE THAT YOU ARE GOVERNED BY THE TERMS OF SERVICE AND PRIVACY POLICY FOR THE APPLICABLE EXTENSIONS. FOR METAMASK, THOSE TERMS ARE AVAILABLE AT [https://metamask.io/terms.html](https://metamask.io/terms.html) AND [https://metamask.io/privacy.html](https://metamask.io/privacy.html).
 
 ### Indemnification
 
@@ -160,7 +132,7 @@ You agree to defend, indemnify and hold harmless the DAO, its members, affiliate
 
 ### Arbitration
 
-**Informal Negotiations.** To expedite resolution and control the cost of any dispute, controversy or claim arising under or related to your account, the the DAO protocol or Application, the Site, these Terms, or any other transaction involving you and the DAO, whether in contract, warranty, misrepresentation, fraud, tort, intentional tort, statute, regulation, ordinance, or any other legal or equitable basis (or the breach, termination, enforcement, interpretation or validity thereof) (“Dispute”), you and the DAO agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least ninety (90) days before initiating any arbitration. Such informal negotiations commence upon written notice from one person to the other. You should send your notice to the general Discord channel for https://Peace.money or via https://chat.blockscan.com/ to the Gnosis multi-signature address 0xD2427c0e44D28Ea74c0504E072c6073d135569B2 ("Notice Address"). The DAO will send its notice to you by the Discord handle provided by you in connection with the aforementioned notice or to the Cryptographic address used in connection with the Application via the aforementioned https://chat.blockscan.com/.
+**Informal Negotiations.** To expedite resolution and control the cost of any dispute, controversy or claim arising under or related to your account, the DAO protocol or Application, the Site, these Terms, or any other transaction involving you and the DAO, whether in contract, warranty, misrepresentation, fraud, tort, intentional tort, statute, regulation, ordinance, or any other legal or equitable basis (or the breach, termination, enforcement, interpretation or validity thereof) (“Dispute”), you and the DAO agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least ninety (90) days before initiating any arbitration. Such informal negotiations commence upon written notice from one person to the other. You should send your notice in an appropriate Discord channel via [https://discord.gg/movexyz](https://discord.gg/movexyz) or via a message on [https://chat.blockscan.com](https://chat.blockscan.com) addressed to the DAO Gnosis multi-signature address 0xD2427c0e44D28Ea74c0504E072c6073d135569B2 ("Notice Address"). The DAO will send its notice to you by the Discord handle provided by you in connection with the aforementioned notice or to the Cryptographic address used in connection with the Application via the aforementioned https://chat.blockscan.com/.
 
 **Binding Arbitration.** If you and the DAO are unable to resolve a Dispute through informal negotiations, either you or the DAO may elect to have the Dispute (except those Disputes expressly excluded below) finally and exclusively resolved by confidential binding arbitration, and not in a class, representative or consolidated action or proceeding. In such event, these Terms memorialize a transaction in interstate commerce; (i) the Federal Arbitration Act (9 U.S.C. § 1, et seq.) governs the interpretation and enforcement of this Section; and (ii) this Section shall survive termination of these Terms.
 
@@ -168,11 +140,11 @@ Any election to arbitrate by one party shall be final and binding on the other, 
 
 **Restrictions/No Class Actions.** You and the DAO agree that any claim brought in connection with a Dispute, whether resolved through arbitration or not, will be brought between the DAO and you individually, and that you may not assert any such claim against the DAO as plaintiff or class member in any purported class or representative proceeding. To the fullest extent permitted by law, (1) no arbitration shall be joined with any other; (2) no Dispute between you and the DAO is to be arbitrated on a class-action basis or will utilize class action procedures; and (3) you may not bring any Dispute in a purported representative capacity on behalf of the general public, other Users of the Site or any other persons. If this specific provision is determined to be unenforceable, then the entirety of this Arbitration section will be null and void.
 
-Exceptions to Informal Negotiations and Arbitration. You and the DAO agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration:
+**Exceptions to Informal Negotiations and Arbitration.** You and the DAO agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration:
 
 (1) any Disputes seeking to enforce or protect, or concerning the validity of, any of your or the DAO’s intellectual property rights; and (2) any claim for injunctive relief.
 
-Effect of Changes on Arbitration. Notwithstanding the provisions of these Terms, if the DAO changes any of the terms of this Arbitration section after the date you first accepted these Terms (or accepted any subsequent changes to these Terms), you may reject any such change by sending us written notice (including by electronic mail to the aforementioned Notice Address via https://chat.blockscan.com/) within 30 days of the date such change became effective, as indicated in the “Last Updated” date above or in the date of the DAO’s email to you notifying you of such change (whichever is earlier). By rejecting any change, you are agreeing that you will arbitrate any Dispute between you and the DAO in accordance with the terms of this Arbitration section as of the date you first accepted these Terms (or accepted any subsequent changes to these Terms.
+**Effect of Changes on Arbitration.** Notwithstanding the provisions of these Terms, if the DAO changes any of the terms of this Arbitration section after the date you first accepted these Terms (or accepted any subsequent changes to these Terms), you may reject any such change by sending us written notice (including by electronic mail to the aforementioned Notice Address via https://chat.blockscan.com/) within 30 days of the date such change became effective, as indicated in the “Last Updated” date above or in the date of the DAO’s email to you notifying you of such change (whichever is earlier). By rejecting any change, you are agreeing that you will arbitrate any Dispute between you and the DAO in accordance with the terms of this Arbitration section as of the date you first accepted these Terms (or accepted any subsequent changes to these Terms.
 
 **Small Claims Court.** Notwithstanding the foregoing, you may bring an individual action in the small claims court of your state or municipality if the action is within that court’s jurisdiction and is pending only in that court.
 
@@ -189,10 +161,11 @@ No single or partial exercise, or failure or delay in exercising any right, powe
 If any of the provisions in these Terms are found to be illegal, invalid or unenforceable by any court of competent jurisdiction, the remainder shall continue in full force and effect.
 
 The DAO shall not be liable for any unforeseeable event beyond its reasonable control not caused by its fault or negligence (each, a “force majeure event”), which causes the DAO to be unable to perform its obligations under these Terms, and which it has been unable to overcome by the exercise of its due diligence, provided that the DAO shall use reasonable efforts to avoid or remove such causes of nonperformance, shall suspend performance only for such period of time as is necessary as a result of such force majeure event and shall resume performance as quickly as reasonably possible.
+
 All disclaimers, indemnities and exclusions in these Terms shall survive termination of the Terms and shall continue to apply during any suspension or any period during which the Site is not available for you to use for any reason whatsoever.
 
-These Terms and the documents referred to in them set out the entire agreement between you and us with respect to your use of the Site, the DAO and the services provided via the Site and supersede any and all prior or contemporaneous representations, communications or agreements (written or oral) made between you or us.
+These Terms and the documents referred to in them set out the entire agreement between you and us with respect to your use of the Site, the DAO and the services provided via the Sites, and supersede any and all prior or contemporaneous representations, communications or agreements (written or oral) made between you or us.
 
 ### Contacting Us
 
-Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please do so by sending a message to the DAO's Discord public channels, via https://chat.blockscan.com/ to the Notice Address, eth:0xD2427c0e44D28Ea74c0504E072c6073d135569B2 provided for convenience.
+Should you have any question about these Terms, or wish to contact us for any reason whatsoever, please do so by sending a message to the DAO's Discord public channels, or by sending a message via [https://chat.blockscan.com/](https://chat.blockscan.com/) addressed to the Notice Address, eth:0xD2427c0e44D28Ea74c0504E072c6073d135569B2, which has been provided for your convenience.
