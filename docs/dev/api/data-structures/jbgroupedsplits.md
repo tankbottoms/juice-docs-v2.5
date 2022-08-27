@@ -7,7 +7,7 @@ https://github.com/jbx-protocol/juice-contracts-v2/blob/main/contracts/structs/J
 #### Definition
 
 ```
-/** 
+/**
   @member group The group indentifier.
   @member splits The splits to associate with the group.
 */
@@ -17,5 +17,5 @@ struct JBGroupedSplits {
 }
 ```
 
-* `group` is the group indentifier.
-* `splits` are the splits to associate with the group.
+- `group` is the group indentifier.
+- `splits` are the splits to associate with the group.

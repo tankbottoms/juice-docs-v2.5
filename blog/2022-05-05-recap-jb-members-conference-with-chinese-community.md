@@ -4,6 +4,7 @@ title: JB Members Conference with Chinese Community Members
 authors: [felixander]
 tags: [dao, news]
 ---
+
 # Recap: JB Members Conference with Chinese Community Members
 
 On Tuesday, May 3rd (Wednesday May 4th local Chinese time), some Juicebox members (including jango, Zeugh, peri, filipv and your favorite author, to name just a few) engaged in an open discord call with Chinese-speaking JB community members and contributors. This article recaps some of the main points discussed. Also a huge shout-out to Zhape for his excellent on-the-fly translations!

@@ -1,4 +1,4 @@
-# _refundHeldFees
+# \_refundHeldFees
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -18,11 +18,11 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
   returns (uint256 refundedFees) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the project for which fees are being refunded.
-  * `_amount` is the amount to base the refund on, as a fixed point number with the same amount of decimals as this terminal.
-* The function is private to this contract.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the project for which fees are being refunded.
+  - `_amount` is the amount to base the refund on, as a fixed point number with the same amount of decimals as this terminal.
+- The function is private to this contract.
+- The function doesn't return anything.
 
 #### Body
 
@@ -35,7 +35,8 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+
 2.  Delete all of the project's held fees. These will be repopulated if they were not refunded.
 
     ```
@@ -45,7 +46,7 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
 
 3.  Get a reference to how much of the amount is left to refund fees for.
 
@@ -97,8 +98,8 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
-    * [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
 
 5.  Emit a `RefundHeldFees` event with the relevant parameters.
 
@@ -108,7 +109,7 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
 
     _Event references:_
 
-    * [`RefundHeldFees`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/refundheldfees.md)
+    - [`RefundHeldFees`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/refundheldfees.md)
 
 </TabItem>
 
@@ -181,9 +182,9 @@ function _refundHeldFees(uint256 _projectId, uint256 _amount)
 
 <TabItem value="Events" label="Events">
 
-| Name                          | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`RefundHeldFees`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/refundheldfees.md)                                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>uint256 indexed refundedFees</code></li><li><code>uint256 leftoverAmount</code></li><li><code>address caller</code></li></ul>        |
+| Name                                                                                                                                   | Data                                                                                                                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`RefundHeldFees`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/refundheldfees.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>uint256 indexed refundedFees</code></li><li><code>uint256 leftoverAmount</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

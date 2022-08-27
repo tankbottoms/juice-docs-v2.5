@@ -5,11 +5,11 @@ title: Juicebox Docs
 
 # Intro
 
-#### *Juicebox helps people confidently run programmable and community funded treasuries from startup to scale, openly on Ethereum.*
+#### _Juicebox helps people confidently run programmable and community funded treasuries from startup to scale, openly on Ethereum._
 
 ![](/img/characters.png)
 
-The Juicebox protocol is a framework for funding and operating projects openly on Ethereum. Its contracts allow communities to receive funds, issue tokens for community membership, and configure funding cycles to transparently utilize those funds—all in powerful, customizable ways. 
+The Juicebox protocol is a framework for funding and operating projects openly on Ethereum. Its contracts allow communities to receive funds, issue tokens for community membership, and configure funding cycles to transparently utilize those funds—all in powerful, customizable ways.
 
 Juicebox treasuries can evolve over time, allowing people to launch open-ended projects and to adjust constraints, extensions, and incentives over time as needed. The protocol is light enough for a group of friends, yet powerful enough for a global network of anons sharing thousands of ETH, ERC-20s, or other assets.
 
@@ -21,4 +21,4 @@ Juicebox treasuries can evolve over time, allowing people to launch open-ended p
 
 We have [Discord Town Halls](https://discord.gg) every Tuesday at 22:00 UTC. Stop by and say hello!
 
-*The Juicebox protocol is built and maintained by [Juicebox DAO](/dao/).*
+_The Juicebox protocol is built and maintained by [Juicebox DAO](/dao/)._

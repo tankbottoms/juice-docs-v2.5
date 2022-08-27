@@ -25,13 +25,13 @@ function setEnsNamePartsFor(uint256 _projectId, string[] memory _parts)
   requirePermission(projects.ownerOf(_projectId), _projectId, JBOperations2.SET_ENS_NAME_FOR) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to set an ENS handle for.
-  * `_parts` is t
-* The function can be accessed externally by anyone.
-* Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the token holder, or from an operator that has been given the [`JBOperations2.SET_ENS_NAME_FOR`](/dev/api/libraries/jboperations2.md) permission by the token holder.
-* The resulting function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to set an ENS handle for.
+  - `_parts` is t
+- The function can be accessed externally by anyone.
+- Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the token holder, or from an operator that has been given the [`JBOperations2.SET_ENS_NAME_FOR`](/dev/api/libraries/jboperations2.md) permission by the token holder.
+- The resulting function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -42,7 +42,7 @@ function setEnsNamePartsFor(uint256 _projectId, string[] memory _parts)
     uint256 _partsLength = _parts.length;
     ```
 
-2.  Make sure there are at least some parts that make up the ENS name. 
+2.  Make sure there are at least some parts that make up the ENS name.
 
     ```
     // Make sure there are ens name parts.
@@ -70,9 +70,9 @@ function setEnsNamePartsFor(uint256 _projectId, string[] memory _parts)
 
     _Internal references:_
 
-    * [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
-    
-3.  Emit a `SetEnsNameParts` event with the relevant parameters.
+    - [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
+
+5.  Emit a `SetEnsNameParts` event with the relevant parameters.
 
     ```
     emit SetEnsNameParts(_projectId, _formatHandle(_parts), _parts, msg.sender);
@@ -80,16 +80,15 @@ function setEnsNamePartsFor(uint256 _projectId, string[] memory _parts)
 
     _Event references:_
 
-    * [`SetEnsNameParts`](/dev/api/contracts/or-utilities/jbprojecthandles/events/setensnameparts.md)
-
+    - [`SetEnsNameParts`](/dev/api/contracts/or-utilities/jbprojecthandles/events/setensnameparts.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Associate an ENS name with a project.
 
   @dev
@@ -131,9 +130,9 @@ function setEnsNamePartsFor(uint256 _projectId, string[] memory _parts)
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
-| **`NO_PARTS`** | Thrown if there are no name parts being set. |
+| String                | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| **`NO_PARTS`**        | Thrown if there are no name parts being set.            |
 | **`EMPTY_NAME_PART`** | Thrown if at least one of the specified parts is empty. |
 
 </TabItem>

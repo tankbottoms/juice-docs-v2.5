@@ -74,9 +74,9 @@ Corporate law is the practice of law in which the shareholders, directors and of
 
 As highlighted above generally there are several factors of the association which determine what structure and duties are reasonable.
 
--   Representations made by the association to the public
--   What is the purpose of the association, and finally,
--   Do the participants (project owner, members, contributors) have an expectation of profit?
+- Representations made by the association to the public
+- What is the purpose of the association, and finally,
+- Do the participants (project owner, members, contributors) have an expectation of profit?
 
 [^1]: When parties of a contract, including verbal contract enter into an agreement, each party has a **duty**, for the **Project Owner** it is performance, for the **Contributor** it is to pay. The **Project Owner** failure to perform, or performing an activity incongruent with the aforementioned agreement may cause a breach of the contract.
 [^2]: Implied covenant of good faith and fair dealing (often simplified to good faith) is a rule used by most courts in the United States that requires every party in a contract to implement the agreement as intended, not using means to undercut the purpose of the transaction., https://www.law.cornell.edu/wex/implied_covenant_of_good_faith_and_fair_dealing

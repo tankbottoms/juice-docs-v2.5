@@ -25,14 +25,14 @@ function mintFor(
 ) external override onlyController(_projectId) { ... }
 ```
 
-* Arguments:
-  * `_holder` is the address receiving the new tokens.
-  * `_projectId` is the ID of the project to which the tokens belong.
-  * `_amount` is the amount of tokens to mint.
-  * `_preferClaimedTokens` is a flag indicating whether there's a preference for minted tokens to be claimed automatically into the `_holder`s wallet if the project currently has a token contract attached.
-* Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_holder` is the address receiving the new tokens.
+  - `_projectId` is the ID of the project to which the tokens belong.
+  - `_amount` is the amount of tokens to mint.
+  - `_preferClaimedTokens` is a flag indicating whether there's a preference for minted tokens to be claimed automatically into the `_holder`s wallet if the project currently has a token contract attached.
+- Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -45,7 +45,8 @@ function mintFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 2.  Check if tokens should be minted using the internal accounting mechanism, or if they should be claimed into the holder's wallet. Tokens should be claimed if the project has issued tokens, and either the project forces tokens to be claimed or if the `_preferClaimedTokens` flag is true. The internal accounting mechanism uses less gas, and tokens issued using it can later be claimed into the holders wallet by anyone who submits a [`claimFor`](/dev/api/contracts/jbtokenstore/write/claimfor.md) transaction.
 
     ```
@@ -56,11 +57,12 @@ function mintFor(
 
     _Internal references:_
 
-    * [`requireClaimFor`](/dev/api/contracts/jbtokenstore/properties/requireclaimfor.md)
+    - [`requireClaimFor`](/dev/api/contracts/jbtokenstore/properties/requireclaimfor.md)
+
 3.  If claimed tokens should be minted, mint the project's token into the holders wallet. Otherwise increment the holder's balance or the unclaimed tokens for the project, and the total supply of unclaimed tokens for the project.
 
     ```
-    if (_shouldClaimTokens) 
+    if (_shouldClaimTokens)
       // If tokens should be claimed, mint tokens into the holder's wallet.
       _token.mint(_projectId, _holder, _amount);
     else {
@@ -72,12 +74,13 @@ function mintFor(
 
     _Internal references:_
 
-    * [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
-    * [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
+    - [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+    - [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
 
     _External references:_
 
-    * [`mint`](/dev/api/contracts/jbtoken/write/mint.md)
+    - [`mint`](/dev/api/contracts/jbtoken/write/mint.md)
+
 4.  Emit a `Mint` event with the relevant parameters.
 
     ```
@@ -86,7 +89,7 @@ function mintFor(
 
     _Event references:_
 
-    * [`Mint`](/dev/api/contracts/jbtokenstore/events/mint.md)
+    - [`Mint`](/dev/api/contracts/jbtokenstore/events/mint.md)
 
 </TabItem>
 
@@ -118,7 +121,7 @@ function mintFor(
   bool _shouldClaimTokens = (requireClaimFor[_projectId] || _preferClaimedTokens) &&
     _token != IJBToken(address(0));
 
-  if (_shouldClaimTokens) 
+  if (_shouldClaimTokens)
     // If tokens should be claimed, mint tokens into the holder's wallet.
     _token.mint(_projectId, _holder, _amount);
   else {
@@ -135,9 +138,9 @@ function mintFor(
 
 <TabItem value="Events" label="Events">
 
-| Name                            | Data                                                                                                                                                                                                                                                                   |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`Mint`**](/dev/api/contracts/jbtokenstore/events/mint.md)                             | <ul><li><code>address indexed holder</code></li><li><code>uint256 indexed projectId</code></li><li><code>uint256 amount</code></li><li><code>bool tokensWereClaimed</code></li><li><code>bool preferClaimedTokens</code></li><li><code>address caller</code></li></ul>        |
+| Name                                                         | Data                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Mint`**](/dev/api/contracts/jbtokenstore/events/mint.md) | <ul><li><code>address indexed holder</code></li><li><code>uint256 indexed projectId</code></li><li><code>uint256 amount</code></li><li><code>bool tokensWereClaimed</code></li><li><code>bool preferClaimedTokens</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

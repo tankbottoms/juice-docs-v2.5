@@ -16,8 +16,8 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 modifier isTerminalOf(uint256 _projectId) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to check.
+- Arguments:
+  - `_projectId` is the ID of the project to check.
 
 #### Body
 
@@ -29,11 +29,11 @@ modifier isTerminalOf(uint256 _projectId) { ... }
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
 
     _External references:_
 
-    * [`isTerminalOf`](/dev/api/contracts/jbdirectory/read/isterminalof.md)
+    - [`isTerminalOf`](/dev/api/contracts/jbdirectory/read/isterminalof.md)
 
 2.  Continue the rest of the function.
 
@@ -46,8 +46,8 @@ modifier isTerminalOf(uint256 _projectId) { ... }
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   A modifier that verifies this terminal is a terminal of provided project ID.
 */
 modifier isTerminalOf(uint256 _projectId) {
@@ -60,8 +60,8 @@ modifier isTerminalOf(uint256 _projectId) {
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String                          | Description                                                         |
+| ------------------------------- | ------------------------------------------------------------------- |
 | **`PROJECT_TERMINAL_MISMATCH`** | Thrown if this terminal is not a terminal of the specified project. |
 
 </TabItem>

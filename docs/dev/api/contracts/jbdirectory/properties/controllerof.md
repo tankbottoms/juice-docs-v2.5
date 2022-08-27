@@ -9,8 +9,8 @@ Interface: [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md)
 #### Definition
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   For each project ID, the controller that manages how terminals interact with tokens and funding cycles.
 
   _projectId The ID of the project to get the controller of.
@@ -18,7 +18,7 @@ Interface: [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md)
 mapping(uint256 => address) public override controllerOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the controller of.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.
+- Arguments:
+  - `_projectId` is the ID of the project to get the controller of.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.

@@ -24,13 +24,13 @@ function currentOverflowOf(IJBSingleTokenPaymentTerminal _terminal, uint256 _pro
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_terminal` is the terminal for which the overflow is being calculated.
-  * `_projectId` is the ID of the project to get overflow for.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns the current amount of overflow that project has in the specified terminal.
+- Arguments:
+  - `_terminal` is the terminal for which the overflow is being calculated.
+  - `_projectId` is the ID of the project to get overflow for.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns the current amount of overflow that project has in the specified terminal.
 
 #### Body
 
@@ -49,12 +49,12 @@ function currentOverflowOf(IJBSingleTokenPaymentTerminal _terminal, uint256 _pro
 
     _Internal references:_
 
-    * [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
+    - [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
-    * [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
 
 </TabItem>
 

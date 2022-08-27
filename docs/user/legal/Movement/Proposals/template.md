@@ -33,7 +33,7 @@ Details.
 
 To support this proposal, I have:
 
--   Support
+- Support
 
 ## Timeline:
 

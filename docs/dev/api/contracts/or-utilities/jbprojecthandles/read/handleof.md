@@ -20,12 +20,12 @@ _Requires a TXT record for the `TEXT_KEY` that matches the `_projectId`._
 function handleOf(uint256 _projectId) external view override returns (string memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the handle of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
-* The function returns the project's handle.
+- Arguments:
+  - `_projectId` is the ID of the project to get the handle of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
+- The function returns the project's handle.
 
 #### Body
 
@@ -38,7 +38,7 @@ function handleOf(uint256 _projectId) external view override returns (string mem
 
     _Internal references:_
 
-    * [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
+    - [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
 
 2.  If there are no name parts, there's no handle.
 
@@ -56,13 +56,13 @@ function handleOf(uint256 _projectId) external view override returns (string mem
 
     _Internal references:_
 
-    * [`textResolver`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/textresolver.md)
-    * [`TEXT_KEY`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/textkey.md)
-    * [`_namehash`](/dev/api/contracts/or-utilities/jbprojecthandles/read/-_namehash.md)
+    - [`textResolver`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/textresolver.md)
+    - [`TEXT_KEY`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/textkey.md)
+    - [`_namehash`](/dev/api/contracts/or-utilities/jbprojecthandles/read/-_namehash.md)
 
     _External references:_
 
-    * [`text`](https://docs.ens.domains/contract-api-reference/publicresolver#get-text-data)
+    - [`text`](https://docs.ens.domains/contract-api-reference/publicresolver#get-text-data)
 
 4.  If the project's ID doesn't match the text record, the project has no handle.
 
@@ -74,8 +74,8 @@ function handleOf(uint256 _projectId) external view override returns (string mem
 
     _Library references:_
 
-    * [`Strings`](https://docs.openzeppelin.com/contracts/3.x/dev/api/utils#Strings)<br/>
-      * `.toString(...)`
+    - [`Strings`](https://docs.openzeppelin.com/contracts/3.x/dev/api/utils#Strings)<br/>
+      - `.toString(...)`
 
 5.  Return a handle formatted from the stored ENS name parts.
 
@@ -86,18 +86,18 @@ function handleOf(uint256 _projectId) external view override returns (string mem
 
     _Internal references:_
 
-    * [`_formatHandle`](/dev/api/contracts/or-utilities/jbprojecthandles/read/-_formathandle.md)
-      
+    - [`_formatHandle`](/dev/api/contracts/or-utilities/jbprojecthandles/read/-_formathandle.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Returns the handle for a project.
 
-  @dev 
+  @dev
   Requires a TXT record for the `TEXT_KEY` that matches the `_projectId`.
 
   @param _projectId The ID of the project to get the handle of.

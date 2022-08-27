@@ -4,13 +4,13 @@ import ReactPlayer from 'react-player'
 
 ## Juicebox: Getting Started
 
-*If you are new to Juicebox, watch this!*
+_If you are new to Juicebox, watch this!_
 
 <ReactPlayer controls url='https://youtu.be/hPPyuyii1Oo' />
 
 ## Sipping Juice
 
-*This video is simply rad*
+_This video is simply rad_
 
 <ReactPlayer controls url='https://youtu.be/PpOtBhQghOg' />
 

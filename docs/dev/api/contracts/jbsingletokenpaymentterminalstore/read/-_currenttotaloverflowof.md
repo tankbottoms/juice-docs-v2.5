@@ -1,4 +1,4 @@
-# _currentTotalOverflowOf
+# \_currentTotalOverflowOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -22,13 +22,13 @@ function _currentTotalOverflowOf(
 ) private view returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the total overflow for.
-  * `_decimals` is the number of decimals that the fixed point overflow should include.
-  * `_currency` is the currency that the overflow should be in terms of.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the total overflow of a project's funds.
+- Arguments:
+  - `_projectId` is the ID of the project to get the total overflow for.
+  - `_decimals` is the number of decimals that the fixed point overflow should include.
+  - `_currency` is the currency that the overflow should be in terms of.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the total overflow of a project's funds.
 
 #### Body
 
@@ -41,13 +41,15 @@ function _currentTotalOverflowOf(
 
     _Internal references:_
 
-    * [`terminalsOf`](/dev/api/contracts/jbdirectory/read/terminalsof.md)
+    - [`terminalsOf`](/dev/api/contracts/jbdirectory/read/terminalsof.md)
+
 2.  Create a reference where the total balance across all terminals is be stored in terms of ETH.
 
     ```
     // Keep a reference to the ETH overflow across all terminals, as a fixed point number with 18 decimals.
     uint256 _ethOverflow;
     ```
+
 3.  For each terminal, add its balance in terms of ETH to the total ETH balance.
 
     ```
@@ -58,7 +60,8 @@ function _currentTotalOverflowOf(
 
     _External references:_
 
-    * [`currentEthOverflowOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/currentethoverflowof.md)
+    - [`currentEthOverflowOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/currentethoverflowof.md)
+
 4.  If the total overflow is to be returned in a currency other than ETH, make the conversion while maintaining 18 decimals of fidelity.
 
     ```
@@ -70,15 +73,16 @@ function _currentTotalOverflowOf(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md)
-      * `.ETH`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md)
+      - `.ETH`
 
     _External references:_
 
-    * [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
-5.  If the fixed point overflow is to be returned with a number of decimals other than 18, adjust the number accordingly. 
+    - [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
+
+5.  If the fixed point overflow is to be returned with a number of decimals other than 18, adjust the number accordingly.
 
     ```
     // Adjust the decimals of the fixed point number if needed to match the target decimals.
@@ -90,10 +94,10 @@ function _currentTotalOverflowOf(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBFixedPointNumber`](/dev/api/libraries/jbfixedpointnumber.md)
-      * `.adjustDecimals(...)`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBFixedPointNumber`](/dev/api/libraries/jbfixedpointnumber.md)
+      - `.adjustDecimals(...)`
 
 </TabItem>
 
@@ -102,7 +106,7 @@ function _currentTotalOverflowOf(
 ```
 /**
   @notice
-  Gets the amount that is currently overflowing across all of a project's terminals. 
+  Gets the amount that is currently overflowing across all of a project's terminals.
 
   @dev
   This amount changes as the value of the balances changes in relation to the currency being used to measure the project's distribution limits.

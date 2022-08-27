@@ -18,12 +18,12 @@ Interface: [`IERC721Metadata`](https://docs.openzeppelin.com/contracts/3.x/dev/a
 function tokenURI(uint256 _projectId) public view override returns (string memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get a URI of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IERC721Metadata`](https://docs.openzeppelin.com/contracts/3.x/dev/api/token/erc721#IERC721Metadata) interface.
-* The function returns the token URI to use for the provided `_projectId`.
+- Arguments:
+  - `_projectId` is the ID of the project to get a URI of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IERC721Metadata`](https://docs.openzeppelin.com/contracts/3.x/dev/api/token/erc721#IERC721Metadata) interface.
+- The function returns the token URI to use for the provided `_projectId`.
 
 #### Body
 
@@ -36,7 +36,8 @@ function tokenURI(uint256 _projectId) public view override returns (string memor
 
     _Internal references:_
 
-    * [`tokenUriResolver`](/dev/api/contracts/jbprojects/properties/tokenuriresolver.md)
+    - [`tokenUriResolver`](/dev/api/contracts/jbprojects/properties/tokenuriresolver.md)
+
 2.  Resolve the URI for the project.
 
     ```
@@ -46,8 +47,7 @@ function tokenURI(uint256 _projectId) public view override returns (string memor
 
     _External references:_
 
-    * [`getUri`](/dev/api/interfaces/ijbtokenuriresolver.md)
-
+    - [`getUri`](/dev/api/interfaces/ijbtokenuriresolver.md)
 
 </TabItem>
 
@@ -55,7 +55,7 @@ function tokenURI(uint256 _projectId) public view override returns (string memor
 
 ```
 /**
-  @notice 
+  @notice
   Returns the URI where the ERC-721 standard JSON of a project is hosted.
 
   @param _projectId The ID of the project to get a URI of.

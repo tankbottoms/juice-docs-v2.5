@@ -18,7 +18,7 @@ Interface: [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutr
 mapping(address => bool) public override isFeelessAddress;
 ```
 
-* Arguments:
-  * `_address` is the address that can be paid toward.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- Arguments:
+  - `_address` is the address that can be paid toward.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.

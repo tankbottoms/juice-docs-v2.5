@@ -18,12 +18,12 @@ function terminalsOf(uint256 _projectId)
   returns (IJBPaymentTerminal[] memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get terminals of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.
-* The function returns an array of terminal addresses.
+- Arguments:
+  - `_projectId` is the ID of the project to get terminals of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.
+- The function returns an array of terminal addresses.
 
 #### Body
 
@@ -35,14 +35,14 @@ function terminalsOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_terminalsOf`](/dev/api/contracts/jbdirectory/properties/-_terminalsof.md)
+    - [`_terminalsOf`](/dev/api/contracts/jbdirectory/properties/-_terminalsof.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   For each project ID, the terminals that are currently managing its funds.
 

@@ -1,4 +1,4 @@
-# _transferFrom
+# \_transferFrom
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,12 +20,12 @@ function _transferFrom(
 ) internal override { ...}
 ```
 
-* Arguments:
-  * `_from` is the address from which the transfer should originate. This is ignored.
-  * `_to` is the address to which the transfer should go.
-  * `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
-* The resulting function is internal to this contract and its inheriters.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- Arguments:
+  - `_from` is the address from which the transfer should originate. This is ignored.
+  - `_to` is the address to which the transfer should go.
+  - `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
+- The resulting function is internal to this contract and its inheriters.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
 
 #### Body
 
@@ -37,16 +37,15 @@ function _transferFrom(
 
     _Library references:_
 
-    * [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
-      * `.sendValue(...)`
-
+    - [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
+      - `.sendValue(...)`
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Transfers tokens.
 

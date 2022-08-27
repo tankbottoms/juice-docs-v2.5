@@ -22,14 +22,14 @@ function currentTotalOverflowOf(
 ) external view override returns (uint256)  { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get total overflow for.
-  * `_decimals` is the number of decimals that the fixed point overflow should include.
-  * `_currency` is the currency that the total overflow should be in terms of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns the current total amount of overflow that project has across all terminals.
+- Arguments:
+  - `_projectId` is the ID of the project to get total overflow for.
+  - `_decimals` is the number of decimals that the fixed point overflow should include.
+  - `_currency` is the currency that the total overflow should be in terms of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns the current total amount of overflow that project has across all terminals.
 
 #### Body
 
@@ -41,7 +41,7 @@ function currentTotalOverflowOf(
 
     _Internal references:_
 
-    * [`_currentTotalOverflowOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_currenttotaloverflowof.md)
+    - [`_currentTotalOverflowOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_currenttotaloverflowof.md)
 
 </TabItem>
 

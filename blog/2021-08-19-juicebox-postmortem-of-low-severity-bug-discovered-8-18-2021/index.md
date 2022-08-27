@@ -13,7 +13,7 @@ To mitigate potential exploits before a patch is issued, an exploit breakout tea
 
 What follows is how I discovered the bug, the technical details about it, and what our next steps will be.
 
-**TLDR:****Until further notice, projects are not advised to set their reserved rate to 0% if they intend to raise their reserved rate in the near future.**
+**TLDR:\*\***Until further notice, projects are not advised to set their reserved rate to 0% if they intend to raise their reserved rate in the near future.\*\*
 
 ---
 
@@ -27,10 +27,10 @@ To even the playing field, I had the idea to raise SharkDAO's reserved rate to 1
 
 After running this plan by SharkDAO at a Sharktank town hall meeting, we decided to move forward with it. We would allocate any SHARK minted during this paused period to the multi-sig, which could later be burned if needed.
 
-A few details to note: 
+A few details to note:
 
-- SharkDAO's reserved rate has been set to 0% since its start. 
-- SharkDAO does not use funding cycles with preset durations, meaning changes can be executed on-demand. 
+- SharkDAO's reserved rate has been set to 0% since its start.
+- SharkDAO does not use funding cycles with preset durations, meaning changes can be executed on-demand.
 - SharkDAO's Juicebox project is owned by a Gnosis multi-sig requiring 3/5 signatures. I'm one of the signatories.
 
 Right after the call, I got together with multi-sig holders to execute the plan. After one transaction to TerminalV1's `configure` function, the reserved rate was successfully updated. I immediately checked the UI to see if things were in order – thats when I noticed that after having set the reserved rate to 100%, it was now possible to mint and distribute 100% of the current token supply to the preconfigured destination (the multi-sig). Since this distribute transaction is public, anyone who triggered this would effectively double the SHARK supply, and would leave us with unnecessary work after the fact to burn this unintended supply from the multi-sig and communicate the issue to the community.
@@ -43,11 +43,12 @@ The root of the problem was fairly obvious to me once I noticed the distributabl
 
 Many parts of the Juicebox mechanism's design are gas optimized, meaning the transactions that are most frequently called are responsible for fewer state changes than those that are infrequently called. The `pay` transaction is by far the most frequently called, so very few state changes take place within this function: the payment is received, and the resulting amount of treasury tokens are minted to the payer in a staked format.
 
-Importantly, the reserved token amount is *not* minted during a payment. Instead, this amount is calculated later when the `printReservedTickets` transaction is called. It does so by taking the current token total supply and minting an appropriate amount of new tokens to the preconfigured reserved addresses such that the reserved rate is respected. Most importantly, the mechanism then keeps track of the fact that it has minted reserved tokens for the current token supply so that it doesn't create extra reserved tokens later. Given perfect information, it is in the economic best interest of the project to wait to call `printReservedTickets` if the reserved rate is going to increase, and in the community's interest to call it before an increase. The opposite is also true. This dynamic allows the protocol to offload a high-gas storage operation from a frequently called `pay` function onto less frequently called operations.
+Importantly, the reserved token amount is _not_ minted during a payment. Instead, this amount is calculated later when the `printReservedTickets` transaction is called. It does so by taking the current token total supply and minting an appropriate amount of new tokens to the preconfigured reserved addresses such that the reserved rate is respected. Most importantly, the mechanism then keeps track of the fact that it has minted reserved tokens for the current token supply so that it doesn't create extra reserved tokens later. Given perfect information, it is in the economic best interest of the project to wait to call `printReservedTickets` if the reserved rate is going to increase, and in the community's interest to call it before an increase. The opposite is also true. This dynamic allows the protocol to offload a high-gas storage operation from a frequently called `pay` function onto less frequently called operations.
 
 Unfortunately, when the reserved rate is 0%, the `printReservedTickets` call assumes there's no work to do, and returns before it has had a chance to update the tracker. This prevents anyone from locking in the rate before it is increased. In the [TerminalV1 file](https://github.com/jbx-protocol/juicehouse/blob/3555d7baf7fa8ba4bc350140201805c740e3df4e/packages/hardhat/contracts/TerminalV1.sol#L968), the solution is literally just putting line 968 below line 977:
 
 ![](image-1.png)Current TerminalV1 implementation of `printReservedTickets`
+
 ## Execution
 
 I immediately proposed two workarounds to the SharkDAO admins:
@@ -74,7 +75,7 @@ We got all of this done in about 2.5 hours.
 
 Despite having written extensive unit, integration, and load tests, this condition fell through the cracks. I will keep stressing to the community that Juicebox is still experimental software with high risks. I'm confident in the way it's built and am committed to its improvement, but I'm not going to pretend that it is perfect.
 
-The good news is that TerminalV1 has a built in mechanism to allow projects to choose to migrate to new terminal contracts that have been approved by JuiceboxDAO's governance, so bugs like this can be fixed. 
+The good news is that TerminalV1 has a built in mechanism to allow projects to choose to migrate to new terminal contracts that have been approved by JuiceboxDAO's governance, so bugs like this can be fixed.
 
 We are now working around the clock to get a TerminalV1_1 safely set up for migration, and extensively tested.
 

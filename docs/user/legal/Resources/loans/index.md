@@ -32,7 +32,7 @@ This section is intentionally blank.
 
 ## References
 
--   [IOU](iou-template)
--   [Note Template](note-template)
--   [Secured Promissory Note](secured-note-template)
--   [Unsecured Promissory Note](unsecured-note-template)
+- [IOU](iou-template)
+- [Note Template](note-template)
+- [Secured Promissory Note](secured-note-template)
+- [Unsecured Promissory Note](unsecured-note-template)

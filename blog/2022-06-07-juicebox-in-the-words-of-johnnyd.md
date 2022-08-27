@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of: johnnyD
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*JohnnyD is a front-end dev and a core member of the Peel Team. His work is plainly visible on our website, where he takes an active role both in the front-end code and, increasingly, in the design elements of the website. How visual architecture complements site tooling and functionality are an area of great interest and focus for him. Recently, he’s been on the road with Zeugh at a couple of conferences, and by the time I caught up to him was traveling solo across Europe. Read on to learn a bit about his origin story, interests and future aspirations!*
+_JohnnyD is a front-end dev and a core member of the Peel Team. His work is plainly visible on our website, where he takes an active role both in the front-end code and, increasingly, in the design elements of the website. How visual architecture complements site tooling and functionality are an area of great interest and focus for him. Recently, he’s been on the road with Zeugh at a couple of conferences, and by the time I caught up to him was traveling solo across Europe. Read on to learn a bit about his origin story, interests and future aspirations!_
 
 ### Greetings! I know you’re in the midst of traveling, thank you for taking the time. How’s it been going?
 

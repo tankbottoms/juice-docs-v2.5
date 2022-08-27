@@ -1,63 +1,69 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Juicebox Docs',
-  tagline: 'Welcome to the juiciest repository of knowledge',
-  url: 'https://info.juicebox.money',
-  baseUrl: '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
-  favicon: 'img/favicon.svg',
-  organizationName: 'Juicebox', // Usually your GitHub org/user name.
-  projectName: 'Juicebox Protocol', // Usually your repo name.
+  title: "Juicebox Docs",
+  tagline: "Welcome to the juiciest repository of knowledge",
+  url: "https://info.juicebox.money",
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
+  favicon: "img/favicon.svg",
+  organizationName: "Juicebox", // Usually your GitHub org/user name.
+  projectName: "Juicebox Protocol", // Usually your repo name.
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
           // editUrl: 'https://github.com/jbx-protocol/juice-docs-v2/blob/main',
         },
         blog: {
           showReadingTime: true,
           // editUrl: 'https://github.com/jbx-protocol/juice-docs-v2/blob/main',
-          blogSidebarTitle: 'Articles',
-          blogSidebarCount: 'ALL',
+          blogSidebarTitle: "Articles",
+          blogSidebarCount: "ALL",
           feedOptions: {
-            type: 'all',
+            type: "all",
             copyright: `Licensed under the MIT License`,
           },
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
   ],
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    defaultLocale: "en",
+    locales: ["en", "zh"],
   },
   themeConfig: {
-    image: 'img/apple.png',
-    metadata: [{ name: 'keywords', content: 'Juicebox, juicebox, crypto, cryptocurrency, ethereum, Ethereum, fundraising, treasury, treasury management, Juicebox DAO, JuiceboxDAO, juiceboxdao, juicebox dao, dao tooling, dao, daos, erc20, nft, decentralized, funding, web3, Web3' }],
+    image: "img/apple.png",
+    metadata: [
+      {
+        name: "keywords",
+        content:
+          "Juicebox, juicebox, crypto, cryptocurrency, ethereum, Ethereum, fundraising, treasury, treasury management, Juicebox DAO, JuiceboxDAO, juiceboxdao, juicebox dao, dao tooling, dao, daos, erc20, nft, decentralized, funding, web3, Web3",
+      },
+    ],
     docs: {
       sidebar: {
         autoCollapseCategories: true,
       },
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       respectPrefersColorScheme: true,
     },
     tableOfContents: {
@@ -65,47 +71,47 @@ const config = {
       maxHeadingLevel: 5,
     },
     navbar: {
-      title: 'Juicebox',
+      title: "Juicebox",
       logo: {
-        alt: 'Juicebox Logo',
-        src: 'img/logo.png',
+        alt: "Juicebox Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          position: 'left',
-          sidebarId: 'dev',
-          label: 'Docs',
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "dev",
+          label: "Docs",
         },
         {
-          type: 'docSidebar',
-          position: 'left',
-          sidebarId: 'user',
-          label: 'Project Creators',
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "user",
+          label: "Project Creators",
         },
         {
-          type: 'docSidebar',
-          position: 'left',
-          sidebarId: 'dao',
-          label: 'Juicebox DAO',
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "dao",
+          label: "Juicebox DAO",
         },
         {
-            type: 'localeDropdown',
-            position: 'right',
+          type: "localeDropdown",
+          position: "right",
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: "/blog", label: "Blog", position: "left" },
         {
-          href: 'https://juicebox.money/',
-          label: 'Juicebox',
-          position: 'right',
+          href: "https://juicebox.money/",
+          label: "Juicebox",
+          position: "right",
         },
       ],
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
-      defaultLanguage: 'solidity',
-      additionalLanguages: ['solidity'],
+      defaultLanguage: "solidity",
+      additionalLanguages: ["solidity"],
     },
     metadata: [
       {

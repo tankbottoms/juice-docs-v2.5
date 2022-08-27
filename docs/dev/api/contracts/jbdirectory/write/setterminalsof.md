@@ -28,12 +28,12 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
   ) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project having terminals set.
-  * `_terminals` is the terminals to set.
-* Through the [`requirePermissionAllowingOverride`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermissionallowingoverride.md) modifier, the function is only accessible by the project's owner, from an operator that has been given the [`JBOperations.SET_TERMINALS`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`, or by the project's controller.
-* The function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project having terminals set.
+  - `_terminals` is the terminals to set.
+- Through the [`requirePermissionAllowingOverride`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermissionallowingoverride.md) modifier, the function is only accessible by the project's owner, from an operator that has been given the [`JBOperations.SET_TERMINALS`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`, or by the project's controller.
+- The function overrides a function definition from the [`IJBDirectory`](/dev/api/interfaces/ijbdirectory.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -46,7 +46,7 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
 
 2.  Make sure the project's current funding cycle is set to allow setting terminals, or the request to set the terminals is coming from the project's current controller.
 
@@ -60,12 +60,12 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.setTerminalsAllowed(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.setTerminalsAllowed(...)`
 
     _Internal references:_
 
-    * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+    - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
 
 3.  Get a reference to the project's current funding cycle.
 
@@ -76,7 +76,7 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
 
 4.  Delete the project's current set of terminals from storage.
 
@@ -87,9 +87,10 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
     _Internal references:_
 
-    * [`_terminalsOf`](/dev/api/contracts/jbdirectory/properties/-_terminalsof.md)
+    - [`_terminalsOf`](/dev/api/contracts/jbdirectory/properties/-_terminalsof.md)
 
 5.  Make sure the same terminal isn't being set multiple times.
+
     ```
     // Make sure duplicates were not added.
     if (_terminals.length > 1)
@@ -106,19 +107,19 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
     _Event references:_
 
-    * [`SetTerminals`](/dev/api/contracts/jbdirectory/events/setterminals.md)
+    - [`SetTerminals`](/dev/api/contracts/jbdirectory/events/setterminals.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Set a project's terminals.
 
   @dev
-  Only a project owner, an operator, or its controller can set its terminals. 
+  Only a project owner, an operator, or its controller can set its terminals.
 
   @param _projectId The ID of the project having terminals set.
   @param _terminals The terminal to set.
@@ -159,22 +160,21 @@ function setTerminalsOf(uint256 _projectId, IJBPaymentTerminal[] calldata _termi
 
 <TabItem value="Errors" label="Errors">
 
-| String                          | Description                                               |
-| ------------------------------- | --------------------------------------------------------- |
-| **`ADD_TERMINAL_ZERO_ADDRESS`** | Thrown if a provided terminal to add is the zero address. |
-| **`DUPLICATE_TERMINALS`** | Thrown if the same terminal is being set multiple times. |
-| **`SET_TERMINALS_NOT_ALLOWED`**          | Thrown if the provided project isn't currently allowed to set its terminals.                |
+| String                          | Description                                                                  |
+| ------------------------------- | ---------------------------------------------------------------------------- |
+| **`ADD_TERMINAL_ZERO_ADDRESS`** | Thrown if a provided terminal to add is the zero address.                    |
+| **`DUPLICATE_TERMINALS`**       | Thrown if the same terminal is being set multiple times.                     |
+| **`SET_TERMINALS_NOT_ALLOWED`** | Thrown if the provided project isn't currently allowed to set its terminals. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                                          | Data                                                                                          |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [**`SetTerminals`**](/dev/api/contracts/jbdirectory/events/setterminals.md)         | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBPaymentTerminal](/dev/api/interfaces/ijbpaymentterminal.md)[] indexed terminals</code></li><li><code>address caller</code></li></ul>                                            |
+| Name                                                                        | Data                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`SetTerminals`**](/dev/api/contracts/jbdirectory/events/setterminals.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBPaymentTerminal](/dev/api/interfaces/ijbpaymentterminal.md)[] indexed terminals</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
-
 
 <TabItem value="Bug bounty" label="Bug bounty">
 

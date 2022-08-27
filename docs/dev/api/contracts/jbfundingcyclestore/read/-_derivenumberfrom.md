@@ -1,4 +1,4 @@
-# _deriveNumberFrom
+# \_deriveNumberFrom
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,12 +19,12 @@ function _deriveNumberFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_baseFundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) to base the calculation on.
-  * `_start` is the start time of the funding cycle to derive a number for.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the funding cycle number.
+- Arguments:
+  - `_baseFundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) to base the calculation on.
+  - `_start` is the start time of the funding cycle to derive a number for.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the funding cycle number.
 
 #### Body
 
@@ -34,12 +34,14 @@ function _deriveNumberFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
     // A subsequent cycle to one with a duration of 0 should be the next number.
     if (_baseFundingCycle.duration == 0) return _baseFundingCycle.number + 1;
     ```
-2.  Get a reference to how long after the base funding cycle's start the specified start time is. 
+
+2.  Get a reference to how long after the base funding cycle's start the specified start time is.
 
     ```
     // The difference between the start of the base funding cycle and the proposed start.
     uint256 _startDistance = _start - _baseFundingCycle.start;
     ```
+
 3.  Return the number of base cycles that fit in the base distance.
 
     ```
@@ -52,8 +54,8 @@ function _deriveNumberFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The number of the next funding cycle given the specified funding cycle.
 
   @param _baseFundingCycle The funding cycle to make the calculation using.

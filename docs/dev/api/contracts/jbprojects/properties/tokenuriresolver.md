@@ -16,5 +16,5 @@ Interface: [`IJBProjects`](/dev/api/interfaces/ijbprojects.md)
 IJBTokenUriResolver public override tokenUriResolver;
 ```
 
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.

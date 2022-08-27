@@ -17,19 +17,19 @@ _Only the owner of this contract can transfer it._
 #### Definition
 
 ```
-function transferOwnership(uint256 _projectId, address _newOwner) 
-  public 
-  virtual 
-  override 
+function transferOwnership(uint256 _projectId, address _newOwner)
+  public
+  virtual
+  override
   onlyOwner  { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the token belongs. This is ignored.
-  * `_newOwner` is the new owner.
-* Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function returns nothing.
+- Arguments:
+  - `_projectId` is the ID of the project to which the token belongs. This is ignored.
+  - `_newOwner` is the new owner.
+- Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function returns nothing.
 
 #### Body
 
@@ -41,14 +41,14 @@ function transferOwnership(uint256 _projectId, address _newOwner)
 
     _Inherited references:_
 
-    * [`transferOwnership`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-transferOwnership-address-)
+    - [`transferOwnership`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-transferOwnership-address-)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Transfer ownership of this contract to another address.
 
@@ -58,11 +58,11 @@ function transferOwnership(uint256 _projectId, address _newOwner)
   @param _projectId The ID of the project to which the token belongs. This is ignored.
   @param _newOwner The new owner.
 */
-function transferOwnership(uint256 _projectId, address _newOwner) 
-  public 
-  virtual 
-  override 
-  onlyOwner 
+function transferOwnership(uint256 _projectId, address _newOwner)
+  public
+  virtual
+  override
+  onlyOwner
 {
   _projectId; // Prevents unused var compiler and natspec complaints.
 

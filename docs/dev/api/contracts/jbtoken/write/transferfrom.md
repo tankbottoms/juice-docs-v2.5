@@ -25,13 +25,13 @@ function transferFrom(
 ) external override { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the token belongs. This is ignored. 
-  * `_from` is the originating address.
-  * `_to` is the destination address.
-  * `_amount` is the amount of the transfer, as a fixed point number with 18 decimals.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to which the token belongs. This is ignored.
+  - `_from` is the originating address.
+  - `_to` is the destination address.
+  - `_amount` is the amount of the transfer, as a fixed point number with 18 decimals.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -43,14 +43,14 @@ function transferFrom(
 
     _Inherited references:_
 
-    * [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
+    - [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Transfer tokens between accounts.
 

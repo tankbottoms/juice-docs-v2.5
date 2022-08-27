@@ -24,12 +24,12 @@ function currentOf(uint256 _projectId)
   returns (JBFundingCycle memory fundingCycle) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the current funding cycle of.
-* The view function can be accessed externally by anyone, and internally by the contract.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
-* The function returns the project's current [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md).
+- Arguments:
+  - `_projectId` is the ID of the project to get the current funding cycle of.
+- The view function can be accessed externally by anyone, and internally by the contract.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
+- The function returns the project's current [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md).
 
 #### Body
 
@@ -42,8 +42,9 @@ function currentOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 2.  Get a reference to the configuration of an eligible funding cycle if there is one. This eligible cycle might not yet be approved.
 
     ```
@@ -53,13 +54,15 @@ function currentOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_eligibleOf`](/dev/api/contracts/jbfundingcyclestore/read/-_eligibleof.md)
+    - [`_eligibleOf`](/dev/api/contracts/jbfundingcyclestore/read/-_eligibleof.md)
+
 3.  Create a reference to a funding cycle.
 
     ```
     // Keep a reference to the eligible funding cycle.
     JBFundingCycle memory _fundingCycle;
     ```
+
 4.  If there's a candidate funding cycle configuration, check to see if it is approved. If so, return the funding cycle as the current funding cycle of the project. Otherwise, get a reference to the funding cycle that the candidate is based on. A current funding cycle will be one derived from this reference.
 
     ```
@@ -75,13 +78,14 @@ function currentOf(uint256 _projectId)
       // If it hasn't been approved, set the funding cycle configuration to be the configuration of the funding cycle that it's based on,
       // which carries the last approved configuration.
       _fundingCycleConfiguration = _fundingCycle.basedOn;
-    } 
+    }
     ```
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
-    * [`_isApproved`](/dev/api/contracts/jbfundingcyclestore/read/-_isapproved.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_isApproved`](/dev/api/contracts/jbfundingcyclestore/read/-_isapproved.md)
+
 5.  If there's not a candidate funding cycle configuration, get a reference the latest stored funding cycle for the project. If it's not approved or if it hasn't yet started, get a reference to the cycle it's based on. A current funding cycle will be one derived from this reference.
 
     ```
@@ -101,19 +105,21 @@ function currentOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
-    * [`_isApproved`](/dev/api/contracts/jbfundingcyclestore/read/-_isapproved.md)
+    - [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_isApproved`](/dev/api/contracts/jbfundingcyclestore/read/-_isapproved.md)
+
 6.  If the current referenced configuration is 0, there must not be a current cycle so return an empty one.
 
     ```
-    // If there is not funding cycle to base the current one on, there can't be a current one. 
+    // If there is not funding cycle to base the current one on, there can't be a current one.
     if (_fundingCycleConfiguration == 0) return _getStructFor(0, 0);
     ```
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 7.  Create the funding cycle structure using the current reference. The current funding cycle will be one based on this reference.
 
     ```
@@ -123,7 +129,7 @@ function currentOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
 
 8.  If the base has a duration of 0, it must still be current.
 
@@ -141,7 +147,7 @@ function currentOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_mockFundingCycleBasedOn`](/dev/api/contracts/jbfundingcyclestore/read/-_mockfundingcyclebasedon.md)
+    - [`_mockFundingCycleBasedOn`](/dev/api/contracts/jbfundingcyclestore/read/-_mockfundingcyclebasedon.md)
 
 </TabItem>
 
@@ -149,12 +155,12 @@ function currentOf(uint256 _projectId)
 
 ```
 /**
-  @notice 
+  @notice
   The funding cycle that is currently active for the specified project.
 
   @dev
   If a current funding cycle of the project is not found, returns an empty funding cycle with all properties set to 0.
-  
+
   @param _projectId The ID of the project to get the current funding cycle of.
 
   @return fundingCycle The project's current funding cycle.
@@ -199,7 +205,7 @@ function currentOf(uint256 _projectId)
       _fundingCycleConfiguration = _fundingCycle.basedOn;
   }
 
-  // If there is not funding cycle to base the current one on, there can't be a current one. 
+  // If there is not funding cycle to base the current one on, there can't be a current one.
   if (_fundingCycleConfiguration == 0) return _getStructFor(0, 0);
 
   // The funding cycle to base a current one on.

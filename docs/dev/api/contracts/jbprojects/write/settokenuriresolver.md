@@ -18,11 +18,11 @@ Interface: [`IJBProjects`](/dev/api/interfaces/ijbprojects.md)
 function setTokenUriResolver(IJBTokenUriResolver _newResolver) external override onlyOwner { ... }
 ```
 
-* Arguments:
-  * `_newResolver` is the address of the new resolver.
-* Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
-* The function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_newResolver` is the address of the new resolver.
+- Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
+- The function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -35,7 +35,8 @@ function setTokenUriResolver(IJBTokenUriResolver _newResolver) external override
 
     _Internal references:_
 
-    * [`tokenUriResolver`](/dev/api/contracts/jbprojects/properties/tokenuriresolver.md)
+    - [`tokenUriResolver`](/dev/api/contracts/jbprojects/properties/tokenuriresolver.md)
+
 2.  Emit a `SetTokenUriResolver` event with the relevant parameters.
 
     ```
@@ -44,7 +45,7 @@ function setTokenUriResolver(IJBTokenUriResolver _newResolver) external override
 
     _Event references:_
 
-    * [`SetTokenUriResolver`](/dev/api/contracts/jbprojects/events/settokenuriresolver.md)
+    - [`SetTokenUriResolver`](/dev/api/contracts/jbprojects/events/settokenuriresolver.md)
 
 </TabItem>
 
@@ -52,7 +53,7 @@ function setTokenUriResolver(IJBTokenUriResolver _newResolver) external override
 
 ```
 /**
-  @notice 
+  @notice
   Sets the address of the resolver used to retrieve the tokenURI of projects.
 
   @param _newResolver The address of the new resolver.
@@ -69,9 +70,9 @@ function setTokenUriResolver(IJBTokenUriResolver _newResolver) external override
 
 <TabItem value="Events" label="Events">
 
-| Name                                                          | Data                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`SetTokenUriResolver`**](/dev/api/contracts/jbprojects/events/settokenuriresolver.md) | <ul><li><code>[IJBTokenUriResolver](/dev/api/interfaces/ijbtokenuriresolver.md) indexed resolver</code></li><li><code>address caller</code></li></ul>                                                                                                         |
+| Name                                                                                     | Data                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`SetTokenUriResolver`**](/dev/api/contracts/jbprojects/events/settokenuriresolver.md) | <ul><li><code>[IJBTokenUriResolver](/dev/api/interfaces/ijbtokenuriresolver.md) indexed resolver</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

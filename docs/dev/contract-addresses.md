@@ -68,7 +68,6 @@ JB3DayReconfigurationBufferBallot: [`0xC3890c4Dac5D06C4DAA2eE3Fdc95eC1686A4718e`
 
 JB7DayReconfigurationBufferBallot: [`0x69f9aAC8e68cBa3685b84A1990a0F29F131Ca791`](https://etherscan.io/address/0x69f9aAC8e68cBa3685b84A1990a0F29F131Ca791)
 
-
 JBSingleTokenPaymentTerminalStore: [`0x5d4eb71749DD9984118EBdF96aaF3CF6EAE1A745`](https://rinkeby.etherscan.io/address/0x5d4eb71749DD9984118EBdF96aaF3CF6EAE1A745)
 
 JBSplitsStore: [`0x767e488155030589c1833592E60876bbE64c1C74`](https://rinkeby.etherscan.io/address/0x767e488155030589c1833592E60876bbE64c1C74)

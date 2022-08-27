@@ -30,13 +30,13 @@ function processFees(uint256 _projectId)
   nonReentrant { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project whos held fees should be processed.
-* Through the [`requirePermissionAllowingOverride`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermissionallowingoverride.md) modifier, the function is only accessible by the project's owner, from an operator that has been given the [`JBOperations.PROCESS_FEES`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`, or from the owner of this contract.
-* The function can be overriden by inheriting contracts.
-* The function cannot be accessed recursively or while other `nonReentrant` functions in this contract are in progress.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project whos held fees should be processed.
+- Through the [`requirePermissionAllowingOverride`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermissionallowingoverride.md) modifier, the function is only accessible by the project's owner, from an operator that has been given the [`JBOperations.PROCESS_FEES`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`, or from the owner of this contract.
+- The function can be overriden by inheriting contracts.
+- The function cannot be accessed recursively or while other `nonReentrant` functions in this contract are in progress.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -49,7 +49,8 @@ function processFees(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+
 2.  Remove all fees.
 
     ```
@@ -59,8 +60,9 @@ function processFees(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
-2.  Iterate through the array. Take fee's for each [`JBFee`](/dev/api/data-structures/jbfee.md) data structure. Emit a `ProcessFee` event with the relevant parameters for each fee processed.
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+
+3.  Iterate through the array. Take fee's for each [`JBFee`](/dev/api/data-structures/jbfee.md) data structure. Emit a `ProcessFee` event with the relevant parameters for each fee processed.
 
     ```
     // Push array length in stack
@@ -88,12 +90,12 @@ function processFees(uint256 _projectId)
 
     _Internal references:_
 
-    * [`_processFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_processfee.md)
-    * [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
+    - [`_processFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_processfee.md)
+    - [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
 
     _Event references:_
 
-    * [`ProcessFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)
+    - [`ProcessFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)
 
 </TabItem>
 
@@ -154,9 +156,9 @@ function processFees(uint256 _projectId)
 
 <TabItem value="Events" label="Events">
 
-| Name                                          | Data                                                                                                                                                       |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`ProcessFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>bool indexed wasHeld</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul>                                                                                                                                                                                                                                                                                                                         |
+| Name                                                                                                                           | Data                                                                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`ProcessFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>bool indexed wasHeld</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

@@ -1,4 +1,4 @@
-# _distributeReservedTokensOf
+# \_distributeReservedTokensOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,11 +16,11 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
   returns (uint256 tokenCount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the reserved tokens belong.
-  * `_memo` is a memo to pass along to the emitted event.
-* The resulting function is internal to this contract and its inheriters. 
-* The function returns the amount of reserved tokens that were minted.
+- Arguments:
+  - `_projectId` is the ID of the project to which the reserved tokens belong.
+  - `_memo` is a memo to pass along to the emitted event.
+- The resulting function is internal to this contract and its inheriters.
+- The function returns the amount of reserved tokens that were minted.
 
 #### Body
 
@@ -33,11 +33,12 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
+    - [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+
 2.  Get a reference to the current total supply of tokens issued for the project.
 
     ```
@@ -47,11 +48,12 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
+    - [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
 
     _External references:_
 
-    * [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
+    - [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
+
 3.  Get a reference to the current amount of reserved tokens given the current state of the tracker, the current funding cycle's reserved rate, and the current total token supply.
 
     ```
@@ -65,13 +67,14 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.reservedRate(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.reservedRate(...)`
 
     _Internal references:_
 
-    * [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
-    * [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
+    - [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
+    - [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
+
 4.  Set the tracker to be equal to the new current total token supply, which is the amount stored plus the amount that will be minted and distributed.
 
     ```
@@ -81,7 +84,8 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
+    - [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
+
 5.  Get a reference to the project's owner.
 
     ```
@@ -91,11 +95,12 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`projects`](/dev/api/contracts/or-controllers/jbcontroller/properties/projects.md)
+    - [`projects`](/dev/api/contracts/or-controllers/jbcontroller/properties/projects.md)
 
     _External references:_
 
-    * [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+    - [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+
 6.  If there are outstanding reserved tokens, distribute them to reserved token splits. Get a reference to any leftover amount after the splits are settled.
 
     ```
@@ -112,12 +117,13 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Library references:_
 
-    * [`JBSplitsGroups`](/dev/api/libraries/jbsplitsgroups.md)
-      * `.RESERVED_TOKENS`
+    - [`JBSplitsGroups`](/dev/api/libraries/jbsplitsgroups.md)
+      - `.RESERVED_TOKENS`
 
     _Internal references:_
 
-    * [`_distributeToReservedTokenSplitsOf`](/dev/api/contracts/or-controllers/jbcontroller/write/-_distributetoreservedtokensplitsof.md)
+    - [`_distributeToReservedTokenSplitsOf`](/dev/api/contracts/or-controllers/jbcontroller/write/-_distributetoreservedtokensplitsof.md)
+
 7.  If there are any leftover reserved tokens, mint them for the project's owner.
 
     ```
@@ -127,7 +133,8 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`mintFor`](/dev/api/contracts/jbtokenstore/write/mintfor.md)
+    - [`mintFor`](/dev/api/contracts/jbtokenstore/write/mintfor.md)
+
 8.  Emit a `DistributeReservedTokens` event with the relevant parameters.
 
     ```
@@ -145,7 +152,7 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Event references:_
 
-    * [`DistributeReservedTokens`](/dev/api/contracts/or-controllers/jbcontroller/events/distributereservedtokens.md)
+    - [`DistributeReservedTokens`](/dev/api/contracts/or-controllers/jbcontroller/events/distributereservedtokens.md)
 
 </TabItem>
 
@@ -214,9 +221,9 @@ function _distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
 <TabItem value="Events" label="Events">
 
-| Name                                        | Data                                                                                                                                                                                                                                                       |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`DistributeReservedTokens`**](/dev/api/contracts/or-controllers/jbcontroller/events/distributereservedtokens.md)             | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 tokenCount</code></li><li><code>uint256 beneficiaryTokenCount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul> |
+| Name                                                                                                                | Data                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`DistributeReservedTokens`**](/dev/api/contracts/or-controllers/jbcontroller/events/distributereservedtokens.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 tokenCount</code></li><li><code>uint256 beneficiaryTokenCount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

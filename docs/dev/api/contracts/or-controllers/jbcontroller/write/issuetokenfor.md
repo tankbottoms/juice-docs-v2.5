@@ -31,14 +31,14 @@ function issueFor(
   returns (IJBToken token) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project being issued tokens.
-  * `_name` is the ERC20's name.
-  * `_symbol` is the ERC20's symbol.
-* Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the project's owner, or from an operator that has been given the [`JBOperations.ISSUE`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns the address of the token that was issued.
+- Arguments:
+  - `_projectId` is the ID of the project being issued tokens.
+  - `_name` is the ERC20's name.
+  - `_symbol` is the ERC20's symbol.
+- Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the project's owner, or from an operator that has been given the [`JBOperations.ISSUE`](/dev/api/libraries/jboperations.md) permission by the project owner for the provided `_projectId`.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns the address of the token that was issued.
 
 #### Body
 
@@ -51,12 +51,12 @@ function issueFor(
 
     _Internal references:_
 
-    * [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
+    - [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
 
     _External references:_
 
-    * [`issueFor`](/dev/api/contracts/jbtokenstore/write/issuefor.md)
-    
+    - [`issueFor`](/dev/api/contracts/jbtokenstore/write/issuefor.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">

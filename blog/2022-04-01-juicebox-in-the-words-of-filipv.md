@@ -7,9 +7,9 @@ tags: [dao, interview]
 
 # Juicebox in the words of: filipv
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*Today, we’re getting the inside scoop on filipv, a JB workhorse who seems to always be ready to jump in and find a solution. From running blog posts, editing podcasts and writing and editing governance protocols, filipv does it all and then some, and keeps a great positive attitude throughout. Read below to get to know him a bit better!*
+_Today, we’re getting the inside scoop on filipv, a JB workhorse who seems to always be ready to jump in and find a solution. From running blog posts, editing podcasts and writing and editing governance protocols, filipv does it all and then some, and keeps a great positive attitude throughout. Read below to get to know him a bit better!_
 
 ### How'd you get started with JB, and how has it changed since you've been here?
 

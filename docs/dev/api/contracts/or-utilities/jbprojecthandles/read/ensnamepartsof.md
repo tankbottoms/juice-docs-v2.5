@@ -18,12 +18,12 @@ Interface: [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md)
 function ensNamePartsOf(uint256 _projectId) external view override returns (string[] memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the ENS name of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
-* The function returns the ENS name parts of a project.
+- Arguments:
+  - `_projectId` is the ID of the project to get the ENS name of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBProjectHandles`](/dev/api/interfaces/ijbprojecthandles.md) interface.
+- The function returns the ENS name parts of a project.
 
 #### Body
 
@@ -35,15 +35,15 @@ function ensNamePartsOf(uint256 _projectId) external view override returns (stri
 
     _Internal references:_
 
-    * [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
-      
+    - [`_ensNamePartsOf`](/dev/api/contracts/or-utilities/jbprojecthandles/properties/-_ensnamepartsof.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The parts of the stored ENS name of a project.
 
   @param _projectId The ID of the project to get the ENS name of.

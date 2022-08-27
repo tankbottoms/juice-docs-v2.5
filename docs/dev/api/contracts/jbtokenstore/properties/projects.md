@@ -16,6 +16,6 @@ Interface: [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md)
 IJBProjects public immutable override projects;
 ```
 
-* Once set the value cannot be changed.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBTokenStore` ](/dev/api/interfaces/ijbtokenstore.md) interface.
+- Once set the value cannot be changed.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBTokenStore` ](/dev/api/interfaces/ijbtokenstore.md) interface.

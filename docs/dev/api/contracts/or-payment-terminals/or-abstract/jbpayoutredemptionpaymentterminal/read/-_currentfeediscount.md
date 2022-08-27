@@ -1,4 +1,4 @@
-# _currentFeeDiscount
+# \_currentFeeDiscount
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,11 +16,11 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 feeDiscount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get a fee discount for.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns thhe fee discount, which should be interpreted as a percentage out MAX_FEE_DISCOUNT.
+- Arguments:
+  - `_projectId` is the ID of the project to get a fee discount for.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns thhe fee discount, which should be interpreted as a percentage out MAX_FEE_DISCOUNT.
 
 #### Body
 
@@ -34,16 +34,17 @@ function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 f
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_FEE_DISCOUNT`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_FEE_DISCOUNT`
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
 
     _External references:_
 
-    * [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+    - [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+
 2.  If there's a gauge, ask it for the discount. Otherwise, there is no discount. If the gauge reverts, set the discount to 0.
 
     ```
@@ -61,11 +62,11 @@ function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 f
 
     _Internal references:_
 
-    * [`feeGauge`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/feegauge.md)
+    - [`feeGauge`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/feegauge.md)
 
     _External references:_
 
-    * [`currentDiscountFor`](/dev/api/interfaces/ijbfeegauge.md)
+    - [`currentDiscountFor`](/dev/api/interfaces/ijbfeegauge.md)
 
 3.  If there gauge provided an invalid discount, set the discount to 0.
 
@@ -76,20 +77,20 @@ function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 f
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_FEE_DISCOUNT`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_FEE_DISCOUNT`
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Get the fee discount from the fee gauge for the specified project.
 
   @param _projectId The ID of the project to get a fee discount for.
-  
+
   @return feeDiscount The fee discount, which should be interpreted as a percentage out MAX_FEE_DISCOUNT.
 */
 function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 feeDiscount) {
@@ -126,4 +127,3 @@ function _currentFeeDiscount(uint256 _projectId) private view returns (uint256 f
 </TabItem>
 
 </Tabs>
- 

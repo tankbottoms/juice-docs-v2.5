@@ -22,13 +22,13 @@ function totalOutstandingTokensOf(uint256 _projectId, uint256 _reservedRate)
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get total outstanding tokens of.
-  * `_reservedRate` is the reserved rate to use when making the calculation.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns the current total amount of outstanding tokens for the project.
+- Arguments:
+  - `_projectId` is the ID of the project to get total outstanding tokens of.
+  - `_reservedRate` is the reserved rate to use when making the calculation.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns the current total amount of outstanding tokens for the project.
 
 #### Body
 
@@ -41,11 +41,11 @@ function totalOutstandingTokensOf(uint256 _projectId, uint256 _reservedRate)
 
     _Internal references:_
 
-    * [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
+    - [`tokenStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/tokenstore.md)
 
     _External references:_
 
-    * [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
+    - [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
 
 2.  Get the number of outstanding reserved tokens the project has given the provided reserved rate.
 
@@ -60,8 +60,8 @@ function totalOutstandingTokensOf(uint256 _projectId, uint256 _reservedRate)
 
     _Internal references:_
 
-    * [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
-    * [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
+    - [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
+    - [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
 
 3.  Return the sum of the total supply and the reserved tokens.
 

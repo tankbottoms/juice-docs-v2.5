@@ -1,15 +1,15 @@
 ---
 slug: juicebox-in-the-words-of-peri
-title: Juicebox in the Words of peri 
+title: Juicebox in the Words of peri
 authors: [felixander]
 tags: [dao, interview]
 ---
 
 # Juicebox in the words of: peri
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*peri is one of the two OG’s of JB, having created JB along with jango and worked tirelessly to streamline it, organize contributors, and deliver excellent front-end work at a breakneck pace. Along with jango he has by far the widest perspective of the JB story. Read on to learn a bit about JB’s beginnings and evolution.*
+_peri is one of the two OG’s of JB, having created JB along with jango and worked tirelessly to streamline it, organize contributors, and deliver excellent front-end work at a breakneck pace. Along with jango he has by far the widest perspective of the JB story. Read on to learn a bit about JB’s beginnings and evolution._
 
 ### How'd you get started with JB, and how has it changed since you've been here?
 

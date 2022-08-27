@@ -1,4 +1,4 @@
-# _requirePermissionAllowingOverride
+# \_requirePermissionAllowingOverride
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,17 +21,17 @@ function _requirePermissionAllowingOverride(
 ) internal view { ... }
 ```
 
-* Arguments:
-  * `_account` is the account to allow.
-  * `_domain` is the domain namespace within which the permission index will be checked.
-  * `_permissionIndex` is the permission index that an operator must have within the specified domain to be allowed.
-  * `_override` is the override condition to allow.
-* The resulting function is internal to this contract and its inheriters.
-* The function doesn't return anything.
+- Arguments:
+  - `_account` is the account to allow.
+  - `_domain` is the domain namespace within which the permission index will be checked.
+  - `_permissionIndex` is the permission index that an operator must have within the specified domain to be allowed.
+  - `_override` is the override condition to allow.
+- The resulting function is internal to this contract and its inheriters.
+- The function doesn't return anything.
 
 #### Body
 
-1.  Make sure the override flag is on, or the message sender is the specified account, an operator of the account within the specified domain, or an operator of the account within the wildcard domain. 
+1.  Make sure the override flag is on, or the message sender is the specified account, an operator of the account within the specified domain, or an operator of the account within the wildcard domain.
 
     ```
     if (
@@ -44,18 +44,18 @@ function _requirePermissionAllowingOverride(
 
     _Internal references:_
 
-    * [`operatorStore`](/dev/api/contracts/or-abstract/jboperatable/properties/operatorstore.md)
+    - [`operatorStore`](/dev/api/contracts/or-abstract/jboperatable/properties/operatorstore.md)
 
     _External references:_
 
-    * [`hasPermission`](/dev/api/contracts/jboperatorstore/read/haspermission.md)
+    - [`hasPermission`](/dev/api/contracts/jboperatorstore/read/haspermission.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Require the message sender is either the account, has the specified permission, or the override condition is true.
 
@@ -83,8 +83,8 @@ function _requirePermissionAllowingOverride(
 
 <TabItem value="Errors" label="Errors">
 
-| String                    | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
+| String             | Description                                                                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | **`UNAUTHORIZED`** | Thrown if the override flag is off and the message sender is neither the specified account nor an operator of the specified account. |
 
 </TabItem>

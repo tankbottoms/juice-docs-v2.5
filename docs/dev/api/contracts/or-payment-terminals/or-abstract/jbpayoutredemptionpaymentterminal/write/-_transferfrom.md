@@ -1,4 +1,4 @@
-# _transferFrom
+# \_transferFrom
 
 Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/README.md)​‌
 
@@ -7,7 +7,7 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 #### Definition
 
 ```
-/** 
+/**
   @notice
   Transfers tokens.
 
@@ -22,9 +22,9 @@ function _transferFrom(
 ) internal virtual;
 ```
 
-* Arguments:
-  * `_from` is the address from which the transfer should originate.
-  * `_to` is the address to which the transfer should go.
-  * `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
-* The resulting function is internal to this contract and its inheriters.
-* The virtual function must be implemented by inheriters.
+- Arguments:
+  - `_from` is the address from which the transfer should originate.
+  - `_to` is the address to which the transfer should go.
+  - `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
+- The resulting function is internal to this contract and its inheriters.
+- The virtual function must be implemented by inheriters.

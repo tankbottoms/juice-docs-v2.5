@@ -25,15 +25,15 @@ function currentReclaimableOverflowOf(
 ) external view override returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the reclaimable overflow amount for.
-  * `_tokenCount` is the number of tokens to make the calculation with, as a fixed point number with 18 decimals.
-  * `_totalSupply` is the total number of tokens to make the calculation with, as a fixed point number with 18 decimals.
-  * `_overflow` is the amount of overflow to make the calculation with, as a fixed point number.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns the amount of overflowed tokens that can be reclaimed, as a fixed point number with the same number of decimals as the provided `_overflow`.
+- Arguments:
+  - `_projectId` is the ID of the project to get the reclaimable overflow amount for.
+  - `_tokenCount` is the number of tokens to make the calculation with, as a fixed point number with 18 decimals.
+  - `_totalSupply` is the total number of tokens to make the calculation with, as a fixed point number with 18 decimals.
+  - `_overflow` is the amount of overflow to make the calculation with, as a fixed point number.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns the amount of overflowed tokens that can be reclaimed, as a fixed point number with the same number of decimals as the provided `_overflow`.
 
 #### Body
 
@@ -52,7 +52,7 @@ function currentReclaimableOverflowOf(
     ```
 
 3.  Get a reference to the project's current funding cycle.
-    
+
     ```
     // Get a reference to the project's current funding cycle.
     JBFundingCycle memory _fundingCycle = fundingCycleStore.currentOf(_projectId);
@@ -60,9 +60,9 @@ function currentReclaimableOverflowOf(
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
 
-4.  Return the reclaimable overflow using the project's current funding cycle and the provided parameters. 
+4.  Return the reclaimable overflow using the project's current funding cycle and the provided parameters.
 
     ```
     // If there is no overflow, nothing is reclaimable.
@@ -72,8 +72,7 @@ function currentReclaimableOverflowOf(
 
     _Internal references:_
 
-    * [`_reclaimableOverflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_reclaimableoverflowduring.md)
-
+    - [`_reclaimableOverflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_reclaimableoverflowduring.md)
 
 </TabItem>
 
@@ -84,7 +83,7 @@ function currentReclaimableOverflowOf(
   @notice
   The current amount of overflowed tokens from a terminal that can be reclaimed by the specified number of tokens, using the specified total token supply and overflow amounts.
 
-  @dev 
+  @dev
   If the project has an active funding cycle reconfiguration ballot, the project's ballot redemption rate is used.
 
   @param _projectId The ID of the project to get the reclaimable overflow amount for.

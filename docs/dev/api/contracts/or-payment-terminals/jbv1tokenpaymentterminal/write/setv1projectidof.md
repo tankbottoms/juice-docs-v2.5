@@ -18,16 +18,16 @@ Interface: [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentte
 function setV1ProjectId(uint256 _projectId, uint256 _v1ProjectId) external override { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the v2 project to set a v1 project ID for.
-  * `_v1ProjectId` is the ID of the v1 project to set.
-* The function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the v2 project to set a v1 project ID for.
+  - `_v1ProjectId` is the ID of the v1 project to set.
+- The function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
-1.  Make sure the v1 project and v2 project have the same owner. 
+1.  Make sure the v1 project and v2 project have the same owner.
 
     ```
     // Can't set the v1 project ID if it isn't owned by the same address who owns the v2 project.
@@ -39,15 +39,15 @@ function setV1ProjectId(uint256 _projectId, uint256 _v1ProjectId) external overr
 
     _Internal references:_
 
-    * [`projects`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/projects.md)
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`projects`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/projects.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
-    
-    * [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
-    * [`projects`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L71)
 
-2.  Set the v1 project ID. 
+    - [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+    - [`projects`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L71)
+
+2.  Set the v1 project ID.
 
     ```
     // Store the mapping.
@@ -56,7 +56,7 @@ function setV1ProjectId(uint256 _projectId, uint256 _v1ProjectId) external overr
 
     _Internal references:_
 
-    * [`v1ProjectIdOf`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/v1projectidof.md)
+    - [`v1ProjectIdOf`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/v1projectidof.md)
 
 3.  Emit a `SetV1ProjectId` event with the relevant parameters.
 
@@ -66,16 +66,15 @@ function setV1ProjectId(uint256 _projectId, uint256 _v1ProjectId) external overr
 
     _Event references:_
 
-    * [`SetV1ProjectId`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/setv1projectid.md)
-
+    - [`SetV1ProjectId`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/setv1projectid.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Allows a project owner to initialize the acceptance of a v1 project's tokens in exchange for its v2 project token.
 
   @dev
@@ -102,17 +101,17 @@ function setV1ProjectId(uint256 _projectId, uint256 _v1ProjectId) external overr
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String            | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
 | **`NOT_ALLOWED`** | Thrown if the v1 and v2 project's don't have the same owner. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                          | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`SetV1ProjectId`**](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/setv1projectid.md)                                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed v1ProjectId</code></li><li><code>address caller</code></li></ul>        |
+| Name                                                                                                              | Data                                                                                                                                          |
+| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`SetV1ProjectId`**](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/setv1projectid.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed v1ProjectId</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

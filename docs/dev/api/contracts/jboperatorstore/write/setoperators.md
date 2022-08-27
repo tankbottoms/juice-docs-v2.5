@@ -20,10 +20,10 @@ _Only an address can set its own operators._
 function setOperators(JBOperatorData[] calldata _operatorData) external override { ... }
 ```
 
-* `_operatorData` are the [`JBOperatorData`](/dev/api/data-structures/jboperatordata.md) that specify the params for each operator being set.
-* The function can be accessed externally by anyone.
-* The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
-* The function doesn't return anything.
+- `_operatorData` are the [`JBOperatorData`](/dev/api/data-structures/jboperatordata.md) that specify the params for each operator being set.
+- The function can be accessed externally by anyone.
+- The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -42,7 +42,8 @@ function setOperators(JBOperatorData[] calldata _operatorData) external override
 
         _Internal references:_
 
-        * [`_packedPermissions`](/dev/api/contracts/jboperatorstore/read/-_packedpermissions.md)
+        - [`_packedPermissions`](/dev/api/contracts/jboperatorstore/read/-_packedpermissions.md)
+
     2.  Store the packed permissions as the permissions of the provided operator, on behalf of the `msg.sender`, specifically for the provided domain.
 
         ```
@@ -52,7 +53,8 @@ function setOperators(JBOperatorData[] calldata _operatorData) external override
 
         _Internal references:_
 
-        * [`permissionsOf`](../properties/permissionsof.md)
+        - [`permissionsOf`](../properties/permissionsof.md)
+
     3.  Emit a `SetOperator` event with the relevant parameters.
 
         ```
@@ -67,7 +69,7 @@ function setOperators(JBOperatorData[] calldata _operatorData) external override
 
         _Event references:_
 
-        * [`SetOperator`](../events/setoperator.md)
+        - [`SetOperator`](../events/setoperator.md)
 
 </TabItem>
 
@@ -106,8 +108,8 @@ function setOperators(JBOperatorData[] calldata _operatorData) external override
 
 <TabItem value="Events" label="Events">
 
-|                                               |                                                                                                                                                                                                                                       |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                               |                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**`SetOperator`**](/dev/api/contracts/jboperatorstore/events/setoperator.md) | <ul><li><code>address indexed operator</code></li><li><code>address indexed account</code></li><li><code>uint256 indexed domain</code></li><li><code>uint256[] permissionIndexes</code></li><li><code>uint256 packed</code></li></ul> |
 
 </TabItem>

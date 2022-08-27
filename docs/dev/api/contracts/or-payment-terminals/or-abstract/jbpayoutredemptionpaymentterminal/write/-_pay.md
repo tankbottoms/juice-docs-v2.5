@@ -1,4 +1,4 @@
-# _pay
+# \_pay
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -25,17 +25,17 @@ function _pay(
 ) private returns (uint256 beneficiaryTokenCount) { ... }
 ```
 
-* Arguments:
-  * `_amount` is the amount of terminal tokens being received, as a fixed point number with the same amount of decimals as this terminal. If this terminal's token is ETH, this is ignored and msg.value is used in its place.
-  * `_payer` is the address making the payment.
-  * `_projectId` is the ID of the project being paid.
-  * `_beneficiary` is the address to mint tokens for and pass along to the funding cycle's data source and delegate.
-  * `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with the same amount of decimals as this terminal.
-  * `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
-  * `_memo` is memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate. A data source can alter the memo before emitting in the event and forwarding to the delegate.
-  * `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
-* The function is private to this contract.
-* The function returns the number of tokens minted for the beneficiary, as a fixed point number with 18 decimals.
+- Arguments:
+  - `_amount` is the amount of terminal tokens being received, as a fixed point number with the same amount of decimals as this terminal. If this terminal's token is ETH, this is ignored and msg.value is used in its place.
+  - `_payer` is the address making the payment.
+  - `_projectId` is the ID of the project being paid.
+  - `_beneficiary` is the address to mint tokens for and pass along to the funding cycle's data source and delegate.
+  - `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with the same amount of decimals as this terminal.
+  - `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
+  - `_memo` is memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate. A data source can alter the memo before emitting in the event and forwarding to the delegate.
+  - `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
+- The function is private to this contract.
+- The function returns the number of tokens minted for the beneficiary, as a fixed point number with 18 decimals.
 
 #### Body
 
@@ -71,7 +71,7 @@ function _pay(
         JBTokenAmount memory _bundledAmount = JBTokenAmount(token, _amount, decimals, currency);
         ```
 
-    3.  Record the payment, and get a reference to the funding cycle during which the payment was made, the number of project tokens that should be minted as a result, a delegate to callback to, and an updated memo. 
+    3.  Record the payment, and get a reference to the funding cycle during which the payment was made, the number of project tokens that should be minted as a result, a delegate to callback to, and an updated memo.
 
         ```
         // Record the payment.
@@ -88,11 +88,11 @@ function _pay(
 
         _Internal references:_
 
-        * [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
+        - [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
 
         _External references:_
 
-        * [`recordPaymentFrom`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordpaymentfrom.md)
+        - [`recordPaymentFrom`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordpaymentfrom.md)
 
     4.  Mint tokens if needed. Get a reference to the number of tokens sent to the specified beneificiary as opposed to reserved to be distributed to the project's reserved token splits.
 
@@ -112,12 +112,12 @@ function _pay(
 
         _Internal references:_
 
-        * [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
+        - [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
 
         _External references:_
 
-        * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-        * [`mintTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/minttokensof.md)
+        - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+        - [`mintTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/minttokensof.md)
 
     5.  Make sure the beneficiary is receiving at least as much tokens as the minimum specied.
 
@@ -150,11 +150,11 @@ function _pay(
 
         _External references:_
 
-        * [`didPay`](/dev/api/interfaces/ijbpaydelegate.md)
+        - [`didPay`](/dev/api/interfaces/ijbpaydelegate.md)
 
         _Event references:_
 
-        * [`DelegateDidPay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/delegatedidpay.md)
+        - [`DelegateDidPay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/delegatedidpay.md)
 
 3.  Emit a `Pay` event with the relevant parameters.
 
@@ -174,7 +174,7 @@ function _pay(
 
     _Event references:_
 
-    * [`Pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/pay.md)
+    - [`Pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/pay.md)
 
 </TabItem>
 
@@ -293,9 +293,9 @@ function _pay(
 
 <TabItem value="Events" label="Events">
 
-| Name                          | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`Pay`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/pay.md)                                         | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address payer</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 beneficiaryTokenCount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul>        |
+| Name                                                                                                             | Data                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Pay`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/pay.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address payer</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 beneficiaryTokenCount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

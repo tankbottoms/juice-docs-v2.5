@@ -2,7 +2,7 @@
 
 Emitted from:
 
-* [`issueFor`](/dev/api/contracts/jbtokenstore/write/issuefor.md)
+- [`issueFor`](/dev/api/contracts/jbtokenstore/write/issuefor.md)
 
 #### Definition
 
@@ -16,8 +16,8 @@ event Issue(
 )
 ```
 
-* `projectId` is the ID of the project to which the issued token belongs.
-* `token` is the address of the newly issued token.
-* `name` is the name of the token.
-* `symbol` is the symbol of the token.
-* `caller` is the address that issued the transaction within which the event was emitted.
+- `projectId` is the ID of the project to which the issued token belongs.
+- `token` is the address of the newly issued token.
+- `name` is the name of the token.
+- `symbol` is the symbol of the token.
+- `caller` is the address that issued the transaction within which the event was emitted.

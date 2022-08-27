@@ -14,16 +14,15 @@ Interface: [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md)
 
 _This function is called automatically when the contract receives an ETH payment._
 
-
 #### Definition
 
 ```
 receive() external payable virtual override { ... }
 ```
 
-* The function is triggered when the contract receives ETH.
-* The function can be accessed externally by anyone.
-* The function doesn't return anything.
+- The function is triggered when the contract receives ETH.
+- The function can be accessed externally by anyone.
+- The function doesn't return anything.
 
 #### Body
 
@@ -44,11 +43,11 @@ receive() external payable virtual override { ... }
 
     _Internal references:_
 
-    * [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
-    * [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
-    * [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
+    - [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
+    - [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
+    - [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
 
 2.  If there's no leftover amount, there's nothing left to do.
 
@@ -95,28 +94,27 @@ receive() external payable virtual override { ... }
 
     _Library references:_
 
-    * [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
-      * `.sendValue(...)`
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-      
+    - [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
+      - `.sendValue(...)`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+
     _Internal references:_
 
-
-    * [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
-    * [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
-    * [`defaultMemo`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmemo.md)
-    * [`defaultMetadata`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmetadata.md)
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
-    * [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
+    - [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
+    - [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
+    - [`defaultMemo`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmemo.md)
+    - [`defaultMetadata`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmetadata.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
+    - [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Received funds are paid to the default split group using the stored default properties.
 

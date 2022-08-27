@@ -1,4 +1,4 @@
-# _pay
+# \_pay
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -26,22 +26,22 @@ function _pay(
 ) internal virtual { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project that is being paid.
-  * `_token` is the token being paid in.
-  * `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  * `_beneficiary` is the address who will receive tokens from the payment.
-  * `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with 18 decimals.
-  * `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
-  * `_memo` is a memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate.  A data source can alter the memo before emitting in the event and forwarding to the delegate.
-  * `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
-* The function is private to this contract.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project that is being paid.
+  - `_token` is the token being paid in.
+  - `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
+  - `_beneficiary` is the address who will receive tokens from the payment.
+  - `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with 18 decimals.
+  - `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
+  - `_memo` is a memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate. A data source can alter the memo before emitting in the event and forwarding to the delegate.
+  - `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
+- The function is private to this contract.
+- The function doesn't return anything.
 
 #### Body
 
-1.  Get a reference to the terminal that should be sent the payment by checking for the project's stored primary terminal for the token being paid.  
+1.  Get a reference to the terminal that should be sent the payment by checking for the project's stored primary terminal for the token being paid.
 
     ```
     // Find the terminal for the specified project.
@@ -50,11 +50,12 @@ function _pay(
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/directory.md)
 
     _External references:_
 
-    * [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+    - [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+
 2.  Make sure there is a terminal to make a payment towards.
 
     ```
@@ -71,7 +72,7 @@ function _pay(
 
     _External references:_
 
-    * [`decimalsForToken`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/read/decimalsfortoken.md)
+    - [`decimalsForToken`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/read/decimalsfortoken.md)
 
 4.  If the token being paid is an ERC20, approve the terminal to spend the amount of tokens from this terminal.
 
@@ -82,14 +83,14 @@ function _pay(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
 
     _External references:_
 
-    * [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
+    - [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
 
-5.  Keep a reference to the amount to send in the transaction. If the token being paid is ETH, send the value along with the tx.   
+5.  Keep a reference to the amount to send in the transaction. If the token being paid is ETH, send the value along with the tx.
 
     ```solidity
     // If the token is ETH, send it in msg.value.
@@ -98,9 +99,9 @@ function _pay(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-      
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+
 6.  Send the payment to the terminal with the provided properties. If no beneficiary was specified, set the message sender as the beneficiary.
 
     ```
@@ -120,15 +121,15 @@ function _pay(
 
     _External references:_
 
-    * [`pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/pay.md)
-    
+    - [`pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/pay.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Make a payment to the specified project.
 
   @param _projectId The ID of the project that is being paid.
@@ -192,10 +193,10 @@ function _pay(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                       | Description                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------- |
-| **`TERMINAL_NOT_FOUND`**    | Thrown if the project has no terminal for the specified token   |
-| **`INCORRECT_DECIMAL_AMOUNT`**                     | Thrown if the amount being paid is a fixed point number with a different amount of decimals than the terminal expects  |
+| String                         | Description                                                                                                           |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **`TERMINAL_NOT_FOUND`**       | Thrown if the project has no terminal for the specified token                                                         |
+| **`INCORRECT_DECIMAL_AMOUNT`** | Thrown if the amount being paid is a fixed point number with a different amount of decimals than the terminal expects |
 
 </TabItem>
 

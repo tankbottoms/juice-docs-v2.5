@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of: aeolian
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*aeolian is a longtime JB member and a front-end wizard. He has worked tirelessly for the JB cause and seemingly writes lines of code in his sleep. Lately he has championed discussions around how we evaluate compensation in the DAO, and most recently has submitted a proposal (in-process as of this writing) to reduce payouts across all JB contributors. Read on to learn a bit more about this front-end developer turned fiscal activist.*
+_aeolian is a longtime JB member and a front-end wizard. He has worked tirelessly for the JB cause and seemingly writes lines of code in his sleep. Lately he has championed discussions around how we evaluate compensation in the DAO, and most recently has submitted a proposal (in-process as of this writing) to reduce payouts across all JB contributors. Read on to learn a bit more about this front-end developer turned fiscal activist._
 
 ### How’d you get started with JB and how has it changed since you’ve been here?
 
@@ -47,9 +47,9 @@ That’s the biggie, you’ve hit the nail on the head. One model we’ve stewar
 
 Jango said something a while ago that really nails home why he’s so amazing, and the culture he’s ushered in at JB. I’m just gonna quote it here:
 
-*“i like hangin with folks that can be fluid between bullshitting and manifesting, fluid between appreciating beauty and ugly, fluid between conversation and silence, fluid between humor and practicality, fluid between been in awe of everything and focusing on the next idea in front of us. I'm attracted as fuck to people with big imaginations who make moves towards them.”*
+_“i like hangin with folks that can be fluid between bullshitting and manifesting, fluid between appreciating beauty and ugly, fluid between conversation and silence, fluid between humor and practicality, fluid between been in awe of everything and focusing on the next idea in front of us. I'm attracted as fuck to people with big imaginations who make moves towards them.”_
 
-That was like such an amazing statement because it’s really hard to find people who are *your* people. I feel like my people are this: people who strike that balance between brilliance and focus, but also are able to laugh at the ridiculousness of life, and so I guess when I read that I was like damn, I will definitely be vibing here for many years.
+That was like such an amazing statement because it’s really hard to find people who are _your_ people. I feel like my people are this: people who strike that balance between brilliance and focus, but also are able to laugh at the ridiculousness of life, and so I guess when I read that I was like damn, I will definitely be vibing here for many years.
 
 But my homies at Peel definitely need a huge shoutout. This is the dream team and I'm super lucky to be a part of it.
 

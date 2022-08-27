@@ -20,10 +20,10 @@ _Only an address can set its own operators._
  function setOperator(JBOperatorData calldata _operatorData) external override { ... }
 ```
 
-* `_operatorData` is the [`JBOperatorData`](/dev/api/data-structures/jboperatordata.md) that specifies the params for the operator being set.
-* The function can be accessed externally by anyone.
-* The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
-* The function doesn't return anything.
+- `_operatorData` is the [`JBOperatorData`](/dev/api/data-structures/jboperatordata.md) that specifies the params for the operator being set.
+- The function can be accessed externally by anyone.
+- The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -36,32 +36,34 @@ _Only an address can set its own operators._
 
     _Internal references:_
 
-    * [`_packedPermissions`](/dev/api/contracts/jboperatorstore/read/-_packedpermissions.md)
+    - [`_packedPermissions`](/dev/api/contracts/jboperatorstore/read/-_packedpermissions.md)
+
 2.  Store the packed permissions as the permissions of the provided operator, on behalf of the `msg.sender`, specifically for the provided domain.
 
-     ```
-     // Store the new value.
-     permissionsOf[_operatorData.operator][msg.sender][_operatorData.domain] = _packed;
-     ```
+    ```
+    // Store the new value.
+    permissionsOf[_operatorData.operator][msg.sender][_operatorData.domain] = _packed;
+    ```
 
-     _Internal references:_
+    _Internal references:_
 
-     * [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
+    - [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
+
 3.  Emit a `SetOperator` event with the relevant parameters.
 
-     ```
-     emit SetOperator(
-       _operatorData.operator,
-       msg.sender,
-       _operatorData.domain,
-       _operatorData.permissionIndexes,
-       _packed
-     );
-     ```
+    ```
+    emit SetOperator(
+      _operatorData.operator,
+      msg.sender,
+      _operatorData.domain,
+      _operatorData.permissionIndexes,
+      _packed
+    );
+    ```
 
-     _Event references:_
+    _Event references:_
 
-     * [`SetOperator`](/dev/api/contracts/jboperatorstore/events/setoperator.md)
+    - [`SetOperator`](/dev/api/contracts/jboperatorstore/events/setoperator.md)
 
 </TabItem>
 
@@ -98,8 +100,8 @@ function setOperator(JBOperatorData calldata _operatorData) external override {
 
 <TabItem value="Events" label="Events">
 
-|                                               |                                                                                                                                                                                                                                       |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                               |                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**`SetOperator`**](/dev/api/contracts/jboperatorstore/events/setoperator.md) | <ul><li><code>address indexed operator</code></li><li><code>address indexed account</code></li><li><code>uint256 indexed domain</code></li><li><code>uint256[] permissionIndexes</code></li><li><code>uint256 packed</code></li></ul> |
 
 </TabItem>

@@ -19,17 +19,25 @@ JuiceBox — Get an Array of wallet addresses
 If you’ve run your DAO fundraising via JuiceBox, as the ConstitutionDAO did, they make it pretty easy to export the wallet list as a CSV file:
 
 ![](/img/rewarding-your-community/erc20.png)
-> *Simply click on "Holders"*
+
+> _Simply click on "Holders"_
 
 On the holders dialog you’ll be able to select “Amount paid”:
 
 ![](/img/rewarding-your-community/holders.png)
-> *Clicking the little blue "download" icon on the right will get you a CSV*
+
+> _Clicking the little blue "download" icon on the right will get you a CSV_
 
 Once you’ve got the CSV, you will want to process that into a JavaScript Array list of wallet addresses. Here is a snip of NodeJS to generate the JSON:
 
 ```js
-const fs = require('fs');  const allFileContents = fs.readFileSync('../cdao_wallets.csv', 'utf-8'); let wallets = new Array(); allFileContents.split(/\r?\n/).forEach(line =>  {     wallets.push(line.split(',')[0]); }); fs.writeFileSync('./wallets.json', JSON.stringify(wallets, null, 2) , 'utf-8');
+const fs = require("fs");
+const allFileContents = fs.readFileSync("../cdao_wallets.csv", "utf-8");
+let wallets = new Array();
+allFileContents.split(/\r?\n/).forEach((line) => {
+  wallets.push(line.split(",")[0]);
+});
+fs.writeFileSync("./wallets.json", JSON.stringify(wallets, null, 2), "utf-8");
 ```
 
 ## Building a Merkle Tree
@@ -39,16 +47,16 @@ To get a basic understanding of what Merkle Trees are, I suggest starting [with 
 Now that we have a list of wallets as a JavaScript Array we can process that array into a Merkle Tree and generate a `rootHash` — this is basically the “public key” for the tree, any proof can be validated with knowledge of the `rootHash` — once this is generated we use the value within our Solidity smart contract. We leverage two open source projects to achieve this: [keccak256](https://www.npmjs.com/package/keccak256) and [merkletreejs](https://www.npmjs.com/package/merkletreejs) — here is a NodeJS code snip to generate the `rootHash`:
 
 ```js
-const wallets = require('./wallets.json');
-const keccak256 = require('keccak256')
-const { MerkleTree } = require('merkletreejs')
+const wallets = require("./wallets.json");
+const keccak256 = require("keccak256");
+const { MerkleTree } = require("merkletreejs");
 
-const leafNodes = wallets.map(addr => keccak256(addr))
+const leafNodes = wallets.map((addr) => keccak256(addr));
 
-const merkleTree = new MerkleTree(leafNodes, keccak256, {sortPairs: true})
-const rootHash = merkleTree.getRoot()
+const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
+const rootHash = merkleTree.getRoot();
 
-console.log('rootHash', rootHash.toString('hex'))
+console.log("rootHash", rootHash.toString("hex"));
 ```
 
 ## Setting up a Webservice to Generate Merkle Proofs
@@ -56,15 +64,15 @@ console.log('rootHash', rootHash.toString('hex'))
 To verify if a wallet is a contributor we will need to generate a proof for that wallet and send that proof into the smart contract function the wallet wishes to transact on. In the case of the [CFRAC](https://constitution.y4000.xyz/) project, we’re allowing a contributor to mint an NFT for free…. On our mint website, the user is prompted to connect their wallet, once connected we verify if they are a contributing address, if so we generate the proof and allow them to run the `daoMint` function on our smart contract. Here a code snip of the simple webservice (built with [expressjs](https://www.npmjs.com/package/express)) to generate the proof:
 
 ```js
-const wallets = require('./util/wallets.json');
-const keccak256 = require('keccak256')
-const { MerkleTree } = require('merkletreejs')
-const leafNodes = wallets.map(addr => keccak256(addr))
-const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true })
+const wallets = require("./util/wallets.json");
+const keccak256 = require("keccak256");
+const { MerkleTree } = require("merkletreejs");
+const leafNodes = wallets.map((addr) => keccak256(addr));
+const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
 
 app.get("/proof/:address", (req, res) => {
   let addrs = req.params.address.toLowerCase();
-  let hexProof = merkleTree.getHexProof(keccak256(addrs))
+  let hexProof = merkleTree.getHexProof(keccak256(addrs));
   // send json of res
   res.json(hexProof);
 });

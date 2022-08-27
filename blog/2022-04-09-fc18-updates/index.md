@@ -15,11 +15,11 @@ Frontend efforts are already well underway: as of 2022-04-07, the [V2 feature pa
 
 ## veBanny Frontend
 
->VeBanny has pushed into a new stage. We have completed all the Layers, Backgrounds and token spreads. The Ui for the VeBanny voting token minting site has been fully drafted. All contracts are written and nearly finalized. Next steps are to tighten up some front end pieces and start the build out.<br/>*―Mieos*
+> VeBanny has pushed into a new stage. We have completed all the Layers, Backgrounds and token spreads. The Ui for the VeBanny voting token minting site has been fully drafted. All contracts are written and nearly finalized. Next steps are to tighten up some front end pieces and start the build out.<br/>_―Mieos_
 
 For realtime progress updates, take a look at the [Figma](https://www.figma.com/proto/ODXasKZdY95CmGN0onM13o/vebanny-frontend?page-id=0%3A1&node-id=610%3A314&viewport=241%2C48%2C0.37&scaling=min-zoom&starting-point-node-id=610%3A314).
 
-## Juicebox High 
+## Juicebox High
 
 [Juicebox High](https://info.juicebox.money) is live (and you are on it right now)! Join the [Discord](https://www.discord.gg/juicebox) and send a message in `#documentation` if you're interested in contributing or have ideas for improvements.
 
@@ -37,7 +37,7 @@ Head to the [Juicebox Lounge](http://juicebox.lexicondevils.xyz) to join!
 
 Felixander has launched a new interview series called "Juicebox in the words of".
 
-In his words: *“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+In his words: _“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
 Interviews with [zom](https://info.juicebox.money/blog/juicebox-in-the-words-of-zom-bae), [filipv](https://info.juicebox.money/blog/juicebox-in-the-words-of-filipv), [jango](https://info.juicebox.money/blog/juicebox-in-the-words-of-jango), and [peri](https://info.juicebox.money/blog/juicebox-in-the-words-of-peri) have already been published. You can find the latest interviews (and more) on the [blog](https://info.juicebox.money/blog).
 

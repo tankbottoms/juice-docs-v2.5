@@ -16,6 +16,6 @@ Interface: [`IJBNFTRewardDelegate`](/dev/api/interfaces/ijbnftrewarddelegate.md)
 uint256 public immutable override projectId;
 ```
 
-* Once set the value cannot be changed.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBNFTRewardDelegate`](/dev/api/interfaces/ijbnftrewarddelegate.md) interface.
+- Once set the value cannot be changed.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBNFTRewardDelegate`](/dev/api/interfaces/ijbnftrewarddelegate.md) interface.

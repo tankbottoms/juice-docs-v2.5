@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of Sage
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*If Banny had a cool mom who went on wild adventures with him across the country, it would be Sage. The resident artist who created the iconic Banny, along with a whole cornucopia of descendant-Bannies, Sage’s role at JB goes way beyond branding. You can find her artistic fingerprints in the UI, in real-world designs and marketing materials, and in amazing infographs designed to streamline difficult concepts in a fun and digestible way. Read on to learn a bit about what Sage is up to nowadays and her journey to JB!*
+_If Banny had a cool mom who went on wild adventures with him across the country, it would be Sage. The resident artist who created the iconic Banny, along with a whole cornucopia of descendant-Bannies, Sage’s role at JB goes way beyond branding. You can find her artistic fingerprints in the UI, in real-world designs and marketing materials, and in amazing infographs designed to streamline difficult concepts in a fun and digestible way. Read on to learn a bit about what Sage is up to nowadays and her journey to JB!_
 
 ### Hi Sage! What’re you up to right now?
 
@@ -21,7 +21,7 @@ In addition to everything else! I also like frozen chicken nuggets, which I’m 
 
 ### Walk me through “gourmet” chicken nuggets!
 
-Well they’re “organic” so yeah, whatever that means. I would never buy frozen chicken nuggets, but they were there so I figured I may as well grab them. The bougiest thing I got was, hmm…  I got a free thing of 15 dollar fig pomegranate jam.
+Well they’re “organic” so yeah, whatever that means. I would never buy frozen chicken nuggets, but they were there so I figured I may as well grab them. The bougiest thing I got was, hmm… I got a free thing of 15 dollar fig pomegranate jam.
 
 ### You know, I was once gifted a 40 dollar peanut butter jar.
 

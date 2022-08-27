@@ -1,4 +1,4 @@
-# _mockFundingCycleBasedOn
+# \_mockFundingCycleBasedOn
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -23,12 +23,12 @@ function _mockFundingCycleBasedOn(JBFundingCycle memory _baseFundingCycle, bool 
   returns (JBFundingCycle memory) { ... }
 ```
 
-* Arguments:
-  * `_baseFundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) that the resulting funding cycle should follow.
-  * `_allowMidCycle` is a flag indicating if the mocked funding cycle is allowed to already be mid cycle.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns a mock [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) of what the next funding cycle will be.
+- Arguments:
+  - `_baseFundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) that the resulting funding cycle should follow.
+  - `_allowMidCycle` is a flag indicating if the mocked funding cycle is allowed to already be mid cycle.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns a mock [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) of what the next funding cycle will be.
 
 #### Body
 
@@ -44,6 +44,7 @@ function _mockFundingCycleBasedOn(JBFundingCycle memory _baseFundingCycle, bool 
       ? block.timestamp + 1
       : block.timestamp - _baseFundingCycle.duration + 1;
     ```
+
 2.  Find the correct start time for the mock funding cycle.
 
     ```
@@ -53,7 +54,8 @@ function _mockFundingCycleBasedOn(JBFundingCycle memory _baseFundingCycle, bool 
 
     _Internal references:_
 
-    * [`_deriveStartFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_derivestartfrom.md)
+    - [`_deriveStartFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_derivestartfrom.md)
+
 3.  Find the correct number for the mock funding cycle.
 
     ```
@@ -63,7 +65,8 @@ function _mockFundingCycleBasedOn(JBFundingCycle memory _baseFundingCycle, bool 
 
     _Internal references:_
 
-    * [`_deriveNumberFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_derivenumberfrom.md)
+    - [`_deriveNumberFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_derivenumberfrom.md)
+
 4.  Return a [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) with the aggregated configuration.
 
     ```
@@ -83,15 +86,15 @@ function _mockFundingCycleBasedOn(JBFundingCycle memory _baseFundingCycle, bool 
 
     _Internal references:_
 
-    * [`_deriveWeightFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_deriveweightfrom.md)
+    - [`_deriveWeightFrom`](/dev/api/contracts/jbfundingcyclestore/read/-_deriveweightfrom.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   A view of the funding cycle that would be created based on the provided one if the project doesn't make a reconfiguration.
 
   @dev

@@ -1,4 +1,4 @@
-# _deriveWeightFrom
+# \_deriveWeightFrom
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,12 +19,12 @@ function _deriveWeightFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
   returns (uint256 weight) { ... }
 ```
 
-* Arguments:
-  * `_baseFundingCycle` is The [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) to base the calculation on.
-  * `_start` is the start time of the funding cycle to derive a number for.
-* The view function is private to this contract.
-* The function does not alter state on the blockchain.
-* The function returns the derived weight, as a fixed point number with 18 decimals.
+- Arguments:
+  - `_baseFundingCycle` is The [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) to base the calculation on.
+  - `_start` is the start time of the funding cycle to derive a number for.
+- The view function is private to this contract.
+- The function does not alter state on the blockchain.
+- The function returns the derived weight, as a fixed point number with 18 decimals.
 
 #### Body
 
@@ -43,28 +43,32 @@ function _deriveWeightFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_DISCOUNT_RATE`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_DISCOUNT_RATE`
+
 2.  The calculations that follow will progressively apply discount rates to the base funding cycle's weight to arrive at the correct weight to return.
 
     ```
     // The weight should be based off the base funding cycle's weight.
     weight = _baseFundingCycle.weight;
     ```
+
 3.  If the base doesn't have a discount rate, the original weight won't change and should be returned.
 
     ```
     // If the discount is 0, the weight doesn't change.
     if (_baseFundingCycle.discountRate == 0) return weight;
     ```
+
 4.  Get a reference to how long after the base funding cycle's start the specified start time is.
 
     ```
     // The difference between the start of the base funding cycle and the proposed start.
     uint256 _startDistance = _start - _baseFundingCycle.start;
     ```
+
 5.  Apply the base funding cycle's discount rate. Apply the rate as many times as there have been cycles within the start distance. No need to keep iterating if the weight has reached 0.
 
     ```
@@ -86,18 +90,18 @@ function _deriveWeightFrom(JBFundingCycle memory _baseFundingCycle, uint256 _sta
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_DISCOUNT_RATE` 
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_DISCOUNT_RATE`
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The accumulated weight change since the specified funding cycle.
 
   @param _baseFundingCycle The funding cycle to base the calculation on.

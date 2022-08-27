@@ -16,5 +16,5 @@ Interface: [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutr
 IJBFeeGauge public override feeGauge;
 ```
 
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.

@@ -9,8 +9,8 @@ Interface: [`IJBPrices`](/dev/api/interfaces/ijbprices.md)
 #### Definition
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The available price feeds.
 
   @dev
@@ -22,8 +22,8 @@ Interface: [`IJBPrices`](/dev/api/interfaces/ijbprices.md)
 mapping(uint256 => mapping(uint256 => IJBPriceFeed)) public override feedFor;
 ```
 
-* Arguments:
-  * `uint256` is the currency units the feed's resulting price is in terms of.
-  * `uint256` is the base currency unit being priced by the feed.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBPrices`](/dev/api/interfaces/ijbprices.md) interface.
+- Arguments:
+  - `uint256` is the currency units the feed's resulting price is in terms of.
+  - `uint256` is the base currency unit being priced by the feed.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBPrices`](/dev/api/interfaces/ijbprices.md) interface.

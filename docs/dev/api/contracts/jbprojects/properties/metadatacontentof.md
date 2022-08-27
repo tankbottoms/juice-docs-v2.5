@@ -9,8 +9,8 @@ Interface: [`IJBProjects`](/dev/api/interfaces/ijbprojects.md)
 #### Definition
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The metadata for each project, which can be used across several domains.
 
   _projectId The ID of the project to which the metadata belongs.
@@ -19,8 +19,8 @@ Interface: [`IJBProjects`](/dev/api/interfaces/ijbprojects.md)
 mapping(uint256 => mapping(uint256 => string)) public override metadataContentOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the metadata belongs.
-  * `_domain` is the domain within which the metadata applies.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
+- Arguments:
+  - `_projectId` is the ID of the project to which the metadata belongs.
+  - `_domain` is the domain within which the metadata applies.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.

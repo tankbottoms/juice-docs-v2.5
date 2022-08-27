@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of nicholas
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*Podcast extraordinaire and overall smooth talker nicholas took a bit out of his schedule to sit and, for a change, be the interviewee. Starting out as a JB contributor who went astray, the prodigal son is returning to the JB atmosphere with twice the gusto he had before. Don’t call it a second coming, just call it finishing what he started. Read on to learn a bit about this erstwhile contributor-turned-vagabond, his aspirations at JB upon his return, and what his plans are for the future.*
+_Podcast extraordinaire and overall smooth talker nicholas took a bit out of his schedule to sit and, for a change, be the interviewee. Starting out as a JB contributor who went astray, the prodigal son is returning to the JB atmosphere with twice the gusto he had before. Don’t call it a second coming, just call it finishing what he started. Read on to learn a bit about this erstwhile contributor-turned-vagabond, his aspirations at JB upon his return, and what his plans are for the future._
 
 ### How’d you get started with JB and how has it changed since you’ve been here?
 
@@ -29,7 +29,7 @@ That’s obviously enabled partly by V2. The treasury management stuff being dis
 
 Yeah, for sure. What’s great is that JB has really shown that it is aligned with memetic fundraisers in the past. I don’t know if you’d call it product market fit (PMF) yet, but it has the orientation toward PMF with these memetic raises, some of them more enduring than others. Hopefully it can be useful for enduring long term treasury management functions.
 
-One thing I think about— there’s lot of NFT projects that set aside a portion of sales/royalties to  a treasury (which is sitting in a multisig somewhere). Maybe the collection lost momentum, who knows, but that funding is still hanging around somewhere. I have an assumption that there are dozens or more multisigs that belong to a DAO that have 50-250 ETH sitting in it without a lot of activity. If those things had been run on something like JB, maybe there could have been tools JB would have offered to make sure funds like that were put to use.
+One thing I think about— there’s lot of NFT projects that set aside a portion of sales/royalties to a treasury (which is sitting in a multisig somewhere). Maybe the collection lost momentum, who knows, but that funding is still hanging around somewhere. I have an assumption that there are dozens or more multisigs that belong to a DAO that have 50-250 ETH sitting in it without a lot of activity. If those things had been run on something like JB, maybe there could have been tools JB would have offered to make sure funds like that were put to use.
 
 I definitely do agree regarding the interface/tooling offerings— it’ll be interesting to see what happens since JB is one interface right now, and that has value. But ultimately I think we’ll see more interface experimentation. In the past when the Mandarin speakers came in, I was supportive of the idea to create some kind of interface that’s more conducive to that new community group. As JB grows I think we may see things like that.
 

@@ -1,4 +1,4 @@
-# _configure
+# \_configure
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,15 +21,15 @@ function _configure(
 ) internal returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project whose funding cycles are being reconfigured.
-  * `_data` is a [`JBFundingCycleData`](/dev/api/data-structures/jbfundingcycledata.md) data structure that defines the funding cycle. These properties will remain fixed for the duration of the funding cycle.
-  * `_metadata` is a [`JBFundingCycleMetadata`](/dev/api/data-structures/jbfundingcyclemetadata.md) data structure specifying the controller specific params that a funding cycle can have. These properties will remain fixed for the duration of the funding cycle.
-  * `_mustStartAtOrAfter` is the time before which the configured funding cycle cannot start.
-  * `_groupedSplits` is an array of [`JBGroupedSplits`](/dev/api/data-structures/jbgroupedsplits.md) data structures containing splits to set for any number of groups. The core protocol makes use of groups defined in [`JBSplitsGroups`](/dev/api/libraries/jbsplitsgroups.md).
-  * `_fundAccessConstraints` is an array of [`JBFundAccessConstraints`](/dev/api/data-structures/jbfundaccessconstraints.md) data structures containing amounts that a project can use from its treasury for each payment terminal. Amounts are fixed point numbers using the same number of decimals as the accompanying terminal. The `distributionLimit` applies for each funding cycle, and the `overflowAllowance` applies for the entirety of the configuration. The `_distributionLimit` and `_overflowAllowance` parameters must fit in a `uint232`.
-* The resulting function is internal to this contract and its inheriters. 
-* The function returns the funding cycle configuration that was successfully updated.
+- Arguments:
+  - `_projectId` is the ID of the project whose funding cycles are being reconfigured.
+  - `_data` is a [`JBFundingCycleData`](/dev/api/data-structures/jbfundingcycledata.md) data structure that defines the funding cycle. These properties will remain fixed for the duration of the funding cycle.
+  - `_metadata` is a [`JBFundingCycleMetadata`](/dev/api/data-structures/jbfundingcyclemetadata.md) data structure specifying the controller specific params that a funding cycle can have. These properties will remain fixed for the duration of the funding cycle.
+  - `_mustStartAtOrAfter` is the time before which the configured funding cycle cannot start.
+  - `_groupedSplits` is an array of [`JBGroupedSplits`](/dev/api/data-structures/jbgroupedsplits.md) data structures containing splits to set for any number of groups. The core protocol makes use of groups defined in [`JBSplitsGroups`](/dev/api/libraries/jbsplitsgroups.md).
+  - `_fundAccessConstraints` is an array of [`JBFundAccessConstraints`](/dev/api/data-structures/jbfundaccessconstraints.md) data structures containing amounts that a project can use from its treasury for each payment terminal. Amounts are fixed point numbers using the same number of decimals as the accompanying terminal. The `distributionLimit` applies for each funding cycle, and the `overflowAllowance` applies for the entirety of the configuration. The `_distributionLimit` and `_overflowAllowance` parameters must fit in a `uint232`.
+- The resulting function is internal to this contract and its inheriters.
+- The function returns the funding cycle configuration that was successfully updated.
 
 #### Body
 
@@ -42,8 +42,9 @@ function _configure(
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_RESERVED_RATE(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_RESERVED_RATE(...)`
+
 2.  Make sure the redemption rate is a valid number out of the max value.
 
     ```
@@ -54,8 +55,9 @@ function _configure(
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_REDEMPTION_RATE(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_REDEMPTION_RATE(...)`
+
 3.  Make sure the ballot redemption rate is less than the max value.
 
     ```
@@ -66,8 +68,9 @@ function _configure(
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_REDEMPTION_RATE(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_REDEMPTION_RATE(...)`
+
 4.  Configure the project's funding cycles. Pack the metadata into a `uint256`.
 
     ```
@@ -82,12 +85,13 @@ function _configure(
 
     _External references:_
 
-    * [`configureFor`](/dev/api/contracts/jbfundingcyclestore/write/configurefor.md)
+    - [`configureFor`](/dev/api/contracts/jbfundingcyclestore/write/configurefor.md)
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.packFundingCycleMetadata(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.packFundingCycleMetadata(...)`
+
 5.  Set splits.
 
     ```
@@ -97,7 +101,8 @@ function _configure(
 
     _External references:_
 
-    * [`set`](/dev/api/contracts/jbsplitsstore/write/set.md)
+    - [`set`](/dev/api/contracts/jbsplitsstore/write/set.md)
+
 6.  For each fund access constraint struct in the array passed in, store the values of the distribution limit and overflow allowance packed with their respective currencies. Make sure the values are contained within their bit limit so that they can be packed together in one `uint256`. Emit a `SetFundAccessConstraints` event with the relevant parameters.
 
     ```
@@ -144,12 +149,13 @@ function _configure(
 
     _Internal references:_
 
-    * [`_packedDistributionLimitDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packeddistributionlimitdataof.md)
-    * [`_packedOverflowAllowanceDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packedoverflowallowancedataof.md)
+    - [`_packedDistributionLimitDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packeddistributionlimitdataof.md)
+    - [`_packedOverflowAllowanceDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packedoverflowallowancedataof.md)
 
     _Event references:_
 
-    * [`SetFundAccessConstraints`](/dev/api/contracts/or-controllers/jbcontroller/events/setfundaccessconstraints.md)
+    - [`SetFundAccessConstraints`](/dev/api/contracts/or-controllers/jbcontroller/events/setfundaccessconstraints.md)
+
 7.  Return the funding cycle's configuration.
 
     ```
@@ -169,9 +175,9 @@ function _configure(
   @param _data Data that defines the funding cycle. These properties will remain fixed for the duration of the funding cycle.
   @param _metadata Metadata specifying the controller specific params that a funding cycle can have. These properties will remain fixed for the duration of the funding cycle.
   @param _mustStartAtOrAfter The time before which the configured funding cycle cannot start.
-  @param _groupedSplits An array of splits to set for any number of groups. 
+  @param _groupedSplits An array of splits to set for any number of groups.
   @param _fundAccessConstraints An array containing amounts that a project can use from its treasury for each payment terminal. Amounts are fixed point numbers using the same number of decimals as the accompanying terminal. The `_distributionLimit` and `_overflowAllowance` parameters must fit in a `uint232`.
-  
+
   @return configuration The configuration of the funding cycle that was successfully reconfigured.
 */
 function _configure(
@@ -255,22 +261,22 @@ function _configure(
 
 <TabItem value="Errors" label="Errors">
 
-| String                               | Description                                                |
-| ------------------------------------ | ---------------------------------------------------------- |
-| **`INVALID_RESERVED_RATE`**          | Thrown if the reserved rate is greater than 100%.          |
-| **`INVALID_REDEMPTION_RATE`**        | Thrown if the redemption rate is greater than 100%.        |
-| **`INVALID_BALLOT_REDEMPTION_RATE`** | Thrown if the ballot redemption rate is greater than 100%. |
-| **`INVALID_DISTRIBUTION_LIMIT`** | Thrown if the distribution limit is greater than 248 bits. |
+| String                                    | Description                                                       |
+| ----------------------------------------- | ----------------------------------------------------------------- |
+| **`INVALID_RESERVED_RATE`**               | Thrown if the reserved rate is greater than 100%.                 |
+| **`INVALID_REDEMPTION_RATE`**             | Thrown if the redemption rate is greater than 100%.               |
+| **`INVALID_BALLOT_REDEMPTION_RATE`**      | Thrown if the ballot redemption rate is greater than 100%.        |
+| **`INVALID_DISTRIBUTION_LIMIT`**          | Thrown if the distribution limit is greater than 248 bits.        |
 | **`INVALID_DISTRIBUTION_LIMIT_CURRENCY`** | Thrown if the distribution limit currency is greater than 8 bits. |
-| **`INVALID_OVERFLOW_ALLOWANCE`** | Thrown if the overflow allowance is greater than 248 bits. |
+| **`INVALID_OVERFLOW_ALLOWANCE`**          | Thrown if the overflow allowance is greater than 248 bits.        |
 | **`INVALID_OVERFLOW_ALLOWANCE_CURRENCY`** | Thrown if the overflow allowance currency is greater than 8 bits. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                                    | Data                                                                                                                                                                                                                                                                                                                                                          |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                                                                                                | Data                                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**`SetFundAccessConstraints`**](/dev/api/contracts/or-controllers/jbcontroller/events/setfundaccessconstraints.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>[JBFundAccessConstraints](/dev/api/data-structures/jbfundaccessconstraints.md)constraints</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>

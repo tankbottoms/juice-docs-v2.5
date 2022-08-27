@@ -2,7 +2,7 @@
 
 Emitted from:
 
-* [`migrate`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/migrate.md)
+- [`migrate`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/migrate.md)
 
 #### Definition
 
@@ -15,7 +15,7 @@ event Migrate(
 );
 ```
 
-* `projectId` is the ID of the project that was migrated.
-* `to` is the terminal that was migrated to.
-* `amount` is the total token amount that was migrated.
-* `caller` is the address that issued the transaction within which the event was emitted.
+- `projectId` is the ID of the project that was migrated.
+- `to` is the terminal that was migrated to.
+- `amount` is the total token amount that was migrated.
+- `caller` is the address that issued the transaction within which the event was emitted.

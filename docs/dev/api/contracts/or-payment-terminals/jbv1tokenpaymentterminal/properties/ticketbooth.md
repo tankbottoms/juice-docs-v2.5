@@ -16,6 +16,6 @@ Interface: [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentte
 ITicketBooth public immutable override ticketBooth;
 ```
 
-* Once set the value cannot be changed.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.
+- Once set the value cannot be changed.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.

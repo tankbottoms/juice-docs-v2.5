@@ -1,4 +1,4 @@
-# _splitCountOf
+# \_splitCountOf
 
 Contract: [`JBSplitsStore`](/dev/api/contracts/jbsplitsstore/README.md)​‌
 
@@ -7,7 +7,7 @@ Contract: [`JBSplitsStore`](/dev/api/contracts/jbsplitsstore/README.md)​‌
 #### Definition
 
 ```
-/** 
+/**
   @notice
   The number of splits currently set for each project ID's configurations.
 
@@ -18,9 +18,9 @@ Contract: [`JBSplitsStore`](/dev/api/contracts/jbsplitsstore/README.md)​‌
 mapping(uint256 => mapping(uint256 => mapping(uint256 => uint256))) private _splitCountOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the split count for.
-  * `_domain` is an identifier within which the returned splits should be considered active.
-  * `_group` is the identifying group of the splits.
-* Returns the number of splits the project has under the specified domain and gorup.
-* The resulting view function is private to this contract.
+- Arguments:
+  - `_projectId` is the ID of the project to get the split count for.
+  - `_domain` is an identifier within which the returned splits should be considered active.
+  - `_group` is the identifying group of the splits.
+- Returns the number of splits the project has under the specified domain and gorup.
+- The resulting view function is private to this contract.

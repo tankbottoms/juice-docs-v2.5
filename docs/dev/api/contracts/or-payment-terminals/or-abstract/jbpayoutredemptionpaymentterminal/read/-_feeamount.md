@@ -1,4 +1,4 @@
-# _feeAmount
+# \_feeAmount
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,13 +20,13 @@ function _feeAmount(
 ) private pure returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_amount` is the amount that the fee is based on, as a fixed point number with the same amount of decimals as this terminal.
-  * `_fee` is the percentage of the fee, out of MAX_FEE.
-  * `_feeDiscount` is the percentage discount that should be applied out of the max amount, out of MAX_FEE_DISCOUNT.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the amount of the fee, as a fixed point number with the same amount of decimals as this terminal.
+- Arguments:
+  - `_amount` is the amount that the fee is based on, as a fixed point number with the same amount of decimals as this terminal.
+  - `_fee` is the percentage of the fee, out of MAX_FEE.
+  - `_feeDiscount` is the percentage discount that should be applied out of the max amount, out of MAX_FEE_DISCOUNT.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the amount of the fee, as a fixed point number with the same amount of decimals as this terminal.
 
 #### Body
 
@@ -40,10 +40,11 @@ function _feeAmount(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_FEE_DISCOUNT`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_FEE_DISCOUNT`
+
 2.  Return the amount of tokens from the specified amount that should be paid as a fee.
 
     ```
@@ -54,22 +55,22 @@ function _feeAmount(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_FEE`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_FEE`
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Returns the fee amount based on the provided amount for the specified project.
 
   @param _amount The amount that the fee is based on, as a fixed point number with the same amount of decimals as this terminal.
-  @param _fee The percentage of the fee, out of MAX_FEE. 
+  @param _fee The percentage of the fee, out of MAX_FEE.
   @param _feeDiscount The percentage discount that should be applied out of the max amount, out of MAX_FEE_DISCOUNT.
 
   @return The amount of the fee, as a fixed point number with the same amount of decimals as this terminal.

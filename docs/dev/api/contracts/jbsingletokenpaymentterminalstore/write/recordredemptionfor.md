@@ -37,18 +37,18 @@ function recordRedemptionFor(
   ) { ... }
 ```
 
-* Arguments:
-  * `_holder` is the account that is having its tokens redeemed.
-  * `_projectId` is the ID of the project to which the tokens being redeemed belong.
-  * `_tokenCount` is the number of project tokens to redeem, as a fixed point number with 18 decimals.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` are bytes to send along to the data source, if one is provided.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns:
-  * `fundingCycle` is the funding cycle during which the redemption was made.
-  * `reclaimAmount` is the amount of terminal tokens reclaimed, as a fixed point number with 18 decimals.
-  * `delegate` is a delegate contract to use for subsequent calls.
-  * `memo` is a memo that should be passed along to the emitted event.
+- Arguments:
+  - `_holder` is the account that is having its tokens redeemed.
+  - `_projectId` is the ID of the project to which the tokens being redeemed belong.
+  - `_tokenCount` is the number of project tokens to redeem, as a fixed point number with 18 decimals.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` are bytes to send along to the data source, if one is provided.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns:
+  - `fundingCycle` is the funding cycle during which the redemption was made.
+  - `reclaimAmount` is the amount of terminal tokens reclaimed, as a fixed point number with 18 decimals.
+  - `delegate` is a delegate contract to use for subsequent calls.
+  - `memo` is a memo that should be passed along to the emitted event.
 
 #### Body
 
@@ -61,7 +61,8 @@ function recordRedemptionFor(
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+
 2.  Make sure the project's funding cycle isn't configured to pause redemptions.
 
     ```
@@ -71,15 +72,16 @@ function recordRedemptionFor(
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.redeemPaused(...)`
-3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error. 
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.redeemPaused(...)`
+
+3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error.
 
     ```
     // Scoped section prevents stack too deep. `_reclaimedTokenAmount`, `_currentOverflow`, and `_totalSupply` only used within scope.
     { ... }
     ```
-    
+
     1.  Keep a reference to the reclaimed token amount, current overflow amount, and total supply variables to use outside of the subsequent scoped block
 
         ```
@@ -89,7 +91,7 @@ function recordRedemptionFor(
         uint256 _totalSupply;
         ```
 
-    2.  The following other scoped block uses the same hack to prevent a "Stack too deep" error. 
+    2.  The following other scoped block uses the same hack to prevent a "Stack too deep" error.
 
         ```
         // Another scoped section prevents stack too deep. `_token`, `_decimals`, and `_currency` only used within scope.
@@ -111,11 +113,11 @@ function recordRedemptionFor(
 
             _External references:_
 
-            * [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
-            * [`decimals`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/decimals.md)
-            * [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
+            - [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
+            - [`decimals`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/decimals.md)
+            - [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
 
-        2.  Get a reference to the amount of overflow the project has. Either the project's total overflow or the overflow local to the msg.sender's balance will be used depending on how the project's funding cycle is configured. 
+        2.  Get a reference to the amount of overflow the project has. Either the project's total overflow or the overflow local to the msg.sender's balance will be used depending on how the project's funding cycle is configured.
 
             ```
             // Get the amount of current overflow.
@@ -132,13 +134,13 @@ function recordRedemptionFor(
 
             _Library references:_
 
-            * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-              * `.useTotalOverflowForRedemptions(...)`
+            - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+              - `.useTotalOverflowForRedemptions(...)`
 
             _Internal references:_
 
-            * [`_currentTotalOverflowOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_currenttotaloverflowof.md)
-            * [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
+            - [`_currentTotalOverflowOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_currenttotaloverflowof.md)
+            - [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
 
         3.  Get a reference to the total outstanding supply of project tokens.
 
@@ -150,17 +152,17 @@ function recordRedemptionFor(
 
             _Library references:_
 
-            * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-              * `.reservedRate(...)`
+            - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+              - `.reservedRate(...)`
 
             _Internal references:_
 
-            * [`directory`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/directory.md)
+            - [`directory`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/directory.md)
 
             _External references:_
 
-            * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-            * [`totalOutstandingTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/read/totaloutstandingtokensof.md)
+            - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+            - [`totalOutstandingTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/read/totaloutstandingtokensof.md)
 
         4.  Make sure the provided token count is within the bounds of the total supply.
 
@@ -169,7 +171,7 @@ function recordRedemptionFor(
             if (_tokenCount > _totalSupply) revert INSUFFICIENT_TOKENS();
             ```
 
-        5.  Get a reference to the reclaimable overflow if there is overflow. 
+        5.  Get a reference to the reclaimable overflow if there is overflow.
 
             ```
             if (_currentOverflow > 0)
@@ -185,7 +187,7 @@ function recordRedemptionFor(
 
             _Internal references:_
 
-            * [`_reclaimableOverflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_reclaimableoverflowduring.md)
+            - [`_reclaimableOverflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_reclaimableoverflowduring.md)
 
         6.  Construct the reclaim amount struct.
 
@@ -223,12 +225,12 @@ function recordRedemptionFor(
 
         _Library references:_
 
-        * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-          * `.useDataSourceForRedeem(...)`
-          * `.dataSource(...)`
-          * `.redemptionRate(...)`
-          * `.ballotRedemptionRate(...)`
-          * `.useTotalOverflowForRedemptions(...)`
+        - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+          - `.useDataSourceForRedeem(...)`
+          - `.dataSource(...)`
+          - `.redemptionRate(...)`
+          - `.ballotRedemptionRate(...)`
+          - `.useTotalOverflowForRedemptions(...)`
 
 4.  Make sure the amount being claimed is within the bounds of the project's balance.
 
@@ -240,7 +242,8 @@ function recordRedemptionFor(
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+
 5.  Decrement any claimed funds from the project's balance if needed.
 
     ```
@@ -253,7 +256,7 @@ function recordRedemptionFor(
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
 
 </TabItem>
 
@@ -268,7 +271,7 @@ function recordRedemptionFor(
   Redeems the project's tokens according to values provided by a configured data source. If no data source is configured, redeems tokens along a redemption bonding curve that is a function of the number of tokens being burned.
 
   @dev
-  The msg.sender must be an IJBSingleTokenPaymentTerminal. 
+  The msg.sender must be an IJBSingleTokenPaymentTerminal.
 
   @param _holder The account that is having its tokens redeemed.
   @param _projectId The ID of the project to which the tokens being redeemed belong.
@@ -398,10 +401,10 @@ function recordRedemptionFor(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                          | Description                                                                                  |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| **`FUNDING_CYCLE_REDEEM_PAUSED`**               | Thrown if the project has configured its current funding cycle to pause redemptions.         |
-| **`INADEQUATE_PAYMENT_TERMINAL_STORE_BALANCE`** | Thrown if the project's balance isn't sufficient to fulfill the desired claim.               |
+| String                                          | Description                                                                          |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **`FUNDING_CYCLE_REDEEM_PAUSED`**               | Thrown if the project has configured its current funding cycle to pause redemptions. |
+| **`INADEQUATE_PAYMENT_TERMINAL_STORE_BALANCE`** | Thrown if the project's balance isn't sufficient to fulfill the desired claim.       |
 
 </TabItem>
 

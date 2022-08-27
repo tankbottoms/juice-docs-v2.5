@@ -932,4 +932,4 @@ The undersigned, being duly authorized to execute and file this Certificate of R
 
     Authorized Person
 
--   Available from [Syndicate](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity/delaware-series-llc)
+- Available from [Syndicate](https://guide.syndicate.io/web3-investment-clubs/create-a-legal-entity/delaware-series-llc)

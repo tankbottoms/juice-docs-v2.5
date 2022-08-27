@@ -1,4 +1,4 @@
-# _redeemTokensOf
+# \_redeemTokensOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -26,16 +26,16 @@ function _redeemTokensOf(
 ) private returns (uint256 reclaimAmount) { ... }
 ```
 
-* Arguments:
-  * `_holder` is the account to redeem tokens for.
-  * `_projectId` is the ID of the project to which the tokens being redeemed belong.
-  * `_tokenCount` is the number of project tokens to redeem, as a fixed point number with 18 decimals.
-  * `_minReturnedTokens` is the minimum amount of terminal tokens expected in return, as a fixed point number with the same amount of decimals as this terminal.
-  * `_beneficiary` is the address to send the terminal tokens to.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
-* The function is private to this contract.
-* The function returns the amount of terminal tokens that the tokens were redeemed for, as a fixed point number with the same amount of decimals as this terminal.
+- Arguments:
+  - `_holder` is the account to redeem tokens for.
+  - `_projectId` is the ID of the project to which the tokens being redeemed belong.
+  - `_tokenCount` is the number of project tokens to redeem, as a fixed point number with 18 decimals.
+  - `_minReturnedTokens` is the minimum amount of terminal tokens expected in return, as a fixed point number with the same amount of decimals as this terminal.
+  - `_beneficiary` is the address to send the terminal tokens to.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
+- The function is private to this contract.
+- The function returns the amount of terminal tokens that the tokens were redeemed for, as a fixed point number with the same amount of decimals as this terminal.
 
 #### Body
 
@@ -45,6 +45,7 @@ function _redeemTokensOf(
     // Can't send reclaimed funds to the zero address.
     if (_beneficiary == address(0)) revert REDEEM_TO_ZERO_ADDRESS();
     ```
+
 2.  Define a reference to the project's funding cycle during which the redemption is being made.
 
     ```
@@ -52,14 +53,15 @@ function _redeemTokensOf(
     // Keep a reference to the funding cycle during which the redemption is being made.
     JBFundingCycle memory _fundingCycle;
     ```
-3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error. 
+
+3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error.
 
     ```
     // Scoped section prevents stack too deep. `_delegate` only used within scope.
     { ... }
     ```
 
-    1.  Get a reference to the redemption delegate that. 
+    1.  Get a reference to the redemption delegate that.
 
         ```
         IJBRedemptionDelegate _delegate;
@@ -80,11 +82,11 @@ function _redeemTokensOf(
 
         _Internal references:_
 
-        * [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
+        - [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
 
         _External references:_
 
-        * [`recordRedemptionFor`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordredemptionfor.md)
+        - [`recordRedemptionFor`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordredemptionfor.md)
 
     3.  Make sure the amount of terminal tokens being reclaimed is at least as much as the specified minimum.
 
@@ -106,14 +108,15 @@ function _redeemTokensOf(
             false
           );
         ```
+
         _Internal references:_
 
-        * [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
+        - [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
 
         _External references:_
 
-        * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-        * [`burnTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/burntokensof.md)
+        - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+        - [`burnTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/burntokensof.md)
 
     5.  If a delegate was provided, callback to its `didRedeem` function, and emit an event with the relevant parameters..
 
@@ -137,17 +140,17 @@ function _redeemTokensOf(
 
         _Internal references:_
 
-        * [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
-        * [`decimals`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/decimals.md)
-        * [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
+        - [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
+        - [`decimals`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/decimals.md)
+        - [`currency`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/currency.md)
 
         _External references:_
 
-        * [`didRedeem`](/dev/api/interfaces/ijbredemptiondelegate.md)
+        - [`didRedeem`](/dev/api/interfaces/ijbredemptiondelegate.md)
 
         _Event references:_
 
-        * [`DelegateDidRedeem`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/delegatedidredeem.md)
+        - [`DelegateDidRedeem`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/delegatedidredeem.md)
 
 4.  If an amount is being reclaimed, send the funds to the beneficiary.
 
@@ -158,7 +161,8 @@ function _redeemTokensOf(
 
     _Internal references:_
 
-    * [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+    - [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+
 5.  Emit a `RedeemTokens` event with the relevant parameters.
 
     ```
@@ -177,7 +181,7 @@ function _redeemTokensOf(
 
     _Event references:_
 
-    * [`RedeemTokens`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/redeemtokens.md)
+    - [`RedeemTokens`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/redeemtokens.md)
 
 </TabItem>
 
@@ -282,18 +286,18 @@ function _redeemTokensOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
-| **`REDEEM_TO_ZERO_ADDRESS`** | Thrown if the zero address was sent as the beneficiary. |
+| String                          | Description                                                              |
+| ------------------------------- | ------------------------------------------------------------------------ |
+| **`REDEEM_TO_ZERO_ADDRESS`**    | Thrown if the zero address was sent as the beneficiary.                  |
 | **`INADEQUATE_RECLAIM_AMOUNT`** | Thrown if the amount being reclaimed is less than the specified minimum. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                           | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`RedeemTokens`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/redeemtokens.md)                       | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address holder</code></li><li><code>address beneficiary</code></li><li><code>uint256 tokenCount</code></li><li><code>uint256 claimedAmount</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul> |
+| Name                                                                                                                               | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`RedeemTokens`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/redeemtokens.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address holder</code></li><li><code>address beneficiary</code></li><li><code>uint256 tokenCount</code></li><li><code>uint256 claimedAmount</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

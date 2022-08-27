@@ -7,6 +7,7 @@
 **Our goal is to ensure the ability of the earth to nurture life in all its diversity.**
 
 That means we want to:
+
 - **protect biodiversity** in all its forms.
 - **prevent pollution** and abuse of the earth’s ocean, land, air and fresh water.
 - **end all nuclear threats**.

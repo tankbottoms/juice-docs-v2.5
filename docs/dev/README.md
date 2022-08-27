@@ -2,6 +2,7 @@
 slug: /
 sidebar_position: 1
 ---
+
 import ReactPlayer from 'react-player'
 
 # Intro
@@ -16,7 +17,7 @@ The protocol is nuanced, however. The goal of the protocol docs is for you to fi
 
 #### Directory
 
-[Learn](learn/overview.md) - General info on how the protocol works. 
+[Learn](learn/overview.md) - General info on how the protocol works.
 
 [Build](build/getting-started.md) - Guides to launch, program, and extend a treasury.
 
@@ -25,4 +26,3 @@ The protocol is nuanced, however. The goal of the protocol docs is for you to fi
 Documentation for Juicebox Protocol V1 (live on mainnet since July 2021) is available [here](protocol-v1/).
 
 Reach out to contributors of the DAO on [Discord](https://www.discord.gg/juicebox) to call attention to something that could be improved. You can also submit PR's directly to the [documentation repo](https://github.com/jbx-protocol/juice-docs-v2) on GitHub.
-

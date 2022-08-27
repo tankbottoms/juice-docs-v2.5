@@ -16,7 +16,7 @@ _Payouts are sent to the preprogrammed splits. Any leftover is sent to the proje
 
 _Anyone can distribute payouts on a project's behalf. The project can preconfigure a wildcard split that is used to send funds to msg.sender. This can be used to incentivize calling this function._
 
-_All funds distributed outside of this contract or any feeless terminals incure the protocol fee._ 
+_All funds distributed outside of this contract or any feeless terminals incure the protocol fee._
 
 #### Definition
 
@@ -31,17 +31,17 @@ function distributePayoutsOf(
 ) external virtual override returns (uint256 netLeftoverDistributionAmount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project having its payouts distributed.
-  * `_amount` is the amount of terminal tokens to distribute, as a fixed point number with same number of decimals as this terminal.
-  * `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's distribution limit currency.
-  * `_token` is the token being distributed. This terminal ignores this property since it only manages one token.
-  * `_minReturnedTokens` is the minimum number of terminal tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same number of decimals as this terminal.
-  * `_memo` is a memo to pass along to the emitted event.
-* The function can be accessed externally by anyone.
-* The function can be overriden by inheriting contracts.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
-* The function returns the amount that was sent to the project owner, as a fixed point number with the same amount of decimals as this terminal.
+- Arguments:
+  - `_projectId` is the ID of the project having its payouts distributed.
+  - `_amount` is the amount of terminal tokens to distribute, as a fixed point number with same number of decimals as this terminal.
+  - `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's distribution limit currency.
+  - `_token` is the token being distributed. This terminal ignores this property since it only manages one token.
+  - `_minReturnedTokens` is the minimum number of terminal tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same number of decimals as this terminal.
+  - `_memo` is a memo to pass along to the emitted event.
+- The function can be accessed externally by anyone.
+- The function can be overriden by inheriting contracts.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- The function returns the amount that was sent to the project owner, as a fixed point number with the same amount of decimals as this terminal.
 
 #### Body
 
@@ -53,7 +53,7 @@ function distributePayoutsOf(
 
     _Internal references:_
 
-    * [`_distributePayoutsOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_distributepayoutsof.md)
+    - [`_distributePayoutsOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_distributepayoutsof.md)
 
 </TabItem>
 
@@ -96,7 +96,6 @@ function distributePayoutsOf(
 ```
 
 </TabItem>
-
 
 <TabItem value="Bug bounty" label="Bug bounty">
 

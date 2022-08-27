@@ -1,4 +1,4 @@
-# _overflowDuring
+# \_overflowDuring
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -23,14 +23,14 @@ function _overflowDuring(
 ) private view returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_terminal` is the terminal for which the overflow is being calculated.
-  * `_projectId` is the ID of the project to get overflow for.
-  * `_fundingCycle` is the ID of the funding cycle to base the overflow on.
-  * `_balanceCurrency` is the currency that the stored balance is expected to be in terms of.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the overflow of funds, as a fixed point number with the same amount of decimals as the specified terminal.
+- Arguments:
+  - `_terminal` is the terminal for which the overflow is being calculated.
+  - `_projectId` is the ID of the project to get overflow for.
+  - `_fundingCycle` is the ID of the funding cycle to base the overflow on.
+  - `_balanceCurrency` is the currency that the stored balance is expected to be in terms of.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the overflow of funds, as a fixed point number with the same amount of decimals as the specified terminal.
 
 #### Body
 
@@ -43,13 +43,15 @@ function _overflowDuring(
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+
 2.  If the project has no balance, there can't be any overflow.
 
     ```
     // If there's no balance, there's no overflow.
     if (_balanceOf == 0) return 0;
     ```
+
 3.  Get a reference to the current distribution limit of the project, along with the currency the limit is in terms of.
 
     ```
@@ -61,8 +63,9 @@ function _overflowDuring(
 
     _External references:_
 
-    * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-    * [`distributionLimitOf`](/dev/api/contracts/or-controllers/jbcontroller/read/distributionlimitof.md)
+    - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+    - [`distributionLimitOf`](/dev/api/contracts/or-controllers/jbcontroller/read/distributionlimitof.md)
+
 4.  Get a reference to the amount of the funding cycle's target that can still be distributed. This is the difference between its distribution limit and what has already been distributed during this funding cycle.
 
     ```
@@ -73,7 +76,7 @@ function _overflowDuring(
 
     _Internal references:_
 
-    * [`usedDistributionLimitOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/useddistributionlimitof.md)
+    - [`usedDistributionLimitOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/useddistributionlimitof.md)
 
 5.  Convert the distribution remaining into the balance's currency using the appropriate price feed. The distribution remaining and balance fixed point numbers should already be using the same number of decimals.
 
@@ -89,17 +92,18 @@ function _overflowDuring(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
 
     _Internal references:_
 
-    * [`_MAX_FIXED_POINT_FIDELITY`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/-_max_fixed_point_fidelity.md)
-    * [`prices`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/prices.md)
+    - [`_MAX_FIXED_POINT_FIDELITY`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/-_max_fixed_point_fidelity.md)
+    - [`prices`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/prices.md)
 
     _External references:_
 
-    * [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
+    - [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
+
 6.  If the current balance of the project is at most the target remaining, there is no overflow. Otherwise the difference between the project's current balance and the remaining distribution limit is the overflow.
 
     ```

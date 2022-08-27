@@ -16,5 +16,5 @@ Interface: [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md)
 IJBSplitsStore public immutable override splitsStore;
 ```
 
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.

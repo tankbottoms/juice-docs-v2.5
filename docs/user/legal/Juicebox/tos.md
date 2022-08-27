@@ -5,7 +5,7 @@ sidebar_position: 7
 
 # Juicebox Terms of Service
 
-*Last Updated: August 5, 2022*
+_Last Updated: August 5, 2022_
 
 ### Introduction
 
@@ -68,12 +68,14 @@ We may remove or amend the content of the Site at any time. Some of the content 
 We will not be liable to you for any loss or damage you may suffer as a result of the Site being unavailable at any time for any reason. You will comply with all applicable domestic and international laws, statutes, ordinances and regulations applicable to your use of the Site.
 
 **As a condition to accessing or using the Site, you will:**
+
 1. only use the Site in accordance with these Terms;
 2. ensure that all information that you provide on the Site is current, complete, and accurate;
 3. ensure compliance with all U.S. securities laws; and
 4. maintain the security and confidentiality of access to your Cryptocurrency Wallet address.
 
 **As a condition to accessing or using the Site, you will not:**
+
 1. violate any applicable law, including, without limitation, any relevant and applicable anti-money laundering and anti-terrorist financing laws as well as any relevant and applicable privacy and data collection laws, in each case as may be amended;
 2. export, reexport, or transfer, directly or indirectly, any DAO technology in violation of applicable export laws or regulations;
 3. infringe on or misappropriate any contract, intellectual property or other third-party right, or commit a tort while using the Site;
@@ -89,11 +91,13 @@ We will not be liable to you for any loss or damage you may suffer as a result o
 13. encourage or induce any third party to engage in any of the activities prohibited under these Terms.
 
 **You acknowledge that the Site and your use of the Site contain certain risks, including without limitation the following risks:**
+
 1. That any Smart Contracts you interact with are entirely your own responsibility and liability, and that DAO is not party to the Smart Contracts;
 2. That at any time, your access to your Cryptocurrency Assets may be suspended or terminated or there may be a delay in your access or use of your Cryptocurrency Assets which may result in the Cryptocurrency Assets diminishing in value or you being unable to complete a Smart Contract; and
 3. That the Site and/or application may be suspended or terminated for any or no reason, which may limit your access to your Cryptocurrency Assets.
 
 **Accordingly, you expressly agree that:**
+
 1. You assume all risks in connection with your access and use of the Site, the DAO Application and the Smart Contracts; and
 2. You expressly release the DAO, our contributors, members, and affiliates, and hold them harmless from and against, any and all liability, claims, causes of action, losses, expenses, or damages (whether arising in law or equity, including but not limited to special, consequential, indirect, punitive and exemplary damages, and including but not limited to economic loss, business disruption, and/or attorney’s fees) arising from or in any way related to the Site, the Application and/or the Smart Contracts. You expressly waive all such claims against the Releases.
 
@@ -113,9 +117,9 @@ The Site may contain hyperlinks or references to third party websites. Any such 
 
 ### The Verbose Privacy Policy
 
-Certain areas of the Site or Application (including any and all interactions with the Ethereum blockchain) record your Cryptocurrency address and details of the transactions you authorize. You understand that in the aggregate of transactions, including parties you transact with, specific Cryptocurrency Assets you hold, including unique ENS Domain NFTs, third party NFTs (such as a pixelized image of an anthropomorphic banana), the Cryptocurrency address, metadata associated with any Smart Contract such as the executing function, its arguments (or parameters) will contain in aggregate information which *may* identify you personally.
+Certain areas of the Site or Application (including any and all interactions with the Ethereum blockchain) record your Cryptocurrency address and details of the transactions you authorize. You understand that in the aggregate of transactions, including parties you transact with, specific Cryptocurrency Assets you hold, including unique ENS Domain NFTs, third party NFTs (such as a pixelized image of an anthropomorphic banana), the Cryptocurrency address, metadata associated with any Smart Contract such as the executing function, its arguments (or parameters) will contain in aggregate information which _may_ identify you personally.
 
-The Ethereum blockchain transactions are not temporary or transient, but offensively permanently, permission-less, and accessible. The DAO and the DAO's Application, contributors, and affiliates are not engaged in profiling activities whatsoever. However, *any other* 3rd party, including government agencies and foreign adversaries, will have unfettered access to all your transactions on the Ethereum blockchain forever.
+The Ethereum blockchain transactions are not temporary or transient, but offensively permanently, permission-less, and accessible. The DAO and the DAO's Application, contributors, and affiliates are not engaged in profiling activities whatsoever. However, _any other_ 3rd party, including government agencies and foreign adversaries, will have unfettered access to all your transactions on the Ethereum blockchain forever.
 
 Your authorization of transactions with your Cryptocurrency address and your Cryptocurrency Token use will result in the indelible dissemination of information to the Ethereum blockchain. Notwithstanding, the Application handles as little personal information as possible, including your Cryptographic address.
 
@@ -133,7 +137,7 @@ TO THE FULLEST EXTENT PERMITTED BY LAW, THE DISCLAIMERS OF LIABILITY CONTAINED H
 
 IN THE EVENT THAT A COURT AND/OR ARBITRATOR(S) OF COMPETENT JURISDICTION HOLDS THAT ANY DAO PARTY IS LIABLE TO YOU (FOR EXAMPLE AND WITHOUT LIMITATION, BECAUSE ANY RELEASE OR WAIVER HEREUNDER IS FOUND TO BE VOID OR OTHERWISE UNENFORCEABLE, OR BECAUSE ANY CLAIMS ARE FOUND TO BE OUTSIDE THE SCOPE OF ANY SUCH RELEASE OR WAIVER), UNDER NO CIRCUMSTANCES WILL ANY OF THE DAO PARTIES BE LIABLE TO YOU IN THE AGGREGATE FOR MORE THAN THE AMOUNT YOU HAVE PAID THE **DAO DIRECTLY OR THE PERCENTAGE OF THE PROTOCOL FEE PAID TO THE DAO ARISING FROM YOUR CONTRIBUTION TO A PROJECT** IN THE THIRTY (30) DAYS IMMEDIATELY PRECEDING THE DATE ON WHICH YOU FIRST ASSERT ANY SUCH CLAIM, WHETHER SUCH LIABILITY IS BASED ON BREACH OF WARRANTY, BREACH OF CONTRACT OR TORT (INCLUDING NEGLIGENCE) OR OTHERWISE.
 
-*As scoped, the extent of liability is bound to any payments made to the DAO or the percentage of the Member project contribution which the DAO received within the thirty (30) preceding days. i.e. On a contribution of 1 ETH (1 ETH/\$1000.00) to the DAO directly, the liability cap would be \$1,000,00 or 1 ETH, so long as the contribution occurred within the prior thirty (30) days. Alternatively, a contribution to a project with the same amount above, 1 ETH, so long as the funds were transferred from the Application to the Project's external Cryptographic address, and in doing so, incurred the DAO protocol fee of 2.5%, the DAO's liability cap would be \$25.00, so long as the aforementioned transfer occurred within the prior thirty (30) days.*
+_As scoped, the extent of liability is bound to any payments made to the DAO or the percentage of the Member project contribution which the DAO received within the thirty (30) preceding days. i.e. On a contribution of 1 ETH (1 ETH/\$1000.00) to the DAO directly, the liability cap would be \$1,000,00 or 1 ETH, so long as the contribution occurred within the prior thirty (30) days. Alternatively, a contribution to a project with the same amount above, 1 ETH, so long as the funds were transferred from the Application to the Project's external Cryptographic address, and in doing so, incurred the DAO protocol fee of 2.5%, the DAO's liability cap would be \$25.00, so long as the aforementioned transfer occurred within the prior thirty (30) days._
 
 We do not guarantee that the Site will be secure or free from bugs or viruses. You are responsible for configuring your information technology, computer programs and platform in order to access the Site. You should use your own virus protection software. We cannot promise that the use of the Site, or any content taken from the Site, will not infringe the rights of any third party.
 

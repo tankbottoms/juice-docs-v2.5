@@ -2,7 +2,7 @@
 
 Emitted from:
 
-* [`finalize`](/dev/api/contracts/or-ballots/jbreconfigurationbufferballot/write/finalize.md)
+- [`finalize`](/dev/api/contracts/or-ballots/jbreconfigurationbufferballot/write/finalize.md)
 
 #### Definition
 
@@ -15,7 +15,7 @@ event Finalize(
 );
 ```
 
-* `projectId` is the ID of the project whose ballot state was finalized.
-* `configuration` is the configuration that was finalized.
-* `ballotState` is the final ballot state.
-* `caller` is the address that issued the transaction within which the event was emitted.
+- `projectId` is the ID of the project whose ballot state was finalized.
+- `configuration` is the configuration that was finalized.
+- `ballotState` is the final ballot state.
+- `caller` is the address that issued the transaction within which the event was emitted.

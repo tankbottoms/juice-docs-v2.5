@@ -13,7 +13,7 @@ Three trends have characterized these past 30 days:
 
 It may ultimately be too early to tell, but it seems we might have not only found product market fit, we've found it across several different treasury use cases: DAOs that ship products (JuiceboxDAO, TileDAO), DAOs that collect NFTs (SharkDAO), boutique service shops (WAGMI Studios, CanuDAO), NFT galleries, and group bidding. There are still several improvements to make for each of these treasury use cases while maintaining a cohesive experience, and I see clear potential for even more diversity of ideas.
 
-We are a little over 30 days in, this is just the beginning. I'm confident the Juicebox protocol can stretch much, much further. 
+We are a little over 30 days in, this is just the beginning. I'm confident the Juicebox protocol can stretch much, much further.
 
 ---
 
@@ -21,26 +21,26 @@ We are a little over 30 days in, this is just the beginning. I'm confident the J
 
 As a DAO, we should consider focusing on the following areas:
 
-- **Risk mitigation |** make sure things don't go to zero. 
-current lead: jango, exekias
+- **Risk mitigation |** make sure things don't go to zero.
+  current lead: jango, exekias
 
 - **UX improvements **| improve and make templates for project onboarding and the project dashboard.
-current lead: peripheralist
+  current lead: peripheralist
 
-- **Project support, education, & docs |** make sure JB projects have the resources they need to get started and thrive. 
-current lead: jango, natimuril, WAGMI Studios, CanuDAO
+- **Project support, education, & docs |** make sure JB projects have the resources they need to get started and thrive.
+  current lead: jango, natimuril, WAGMI Studios, CanuDAO
 
 - **Analytics** | give projects rich insights into their community treasury.
-current lead: peripheralist (, Buradorii?)
+  current lead: peripheralist (, Buradorii?)
 
 - **Liquidity pools **| add support for JB treasury tokens in secondary markets.
-current lead: exekias 
+  current lead: exekias
 
 - **Marketplace** | give JB projects a place to sell digital goods (and physical?) which pipe percentages of revenue to any number of addresses and juicebox treasuries.
-current lead: jango, nicholas, peripheralist
+  current lead: jango, nicholas, peripheralist
 
 - **Governance** | plan out how we will make decisions together.
-current lead: zheug (, unicornio?)
+  current lead: zheug (, unicornio?)
 
 ### My proposal for FC#3:
 
@@ -48,7 +48,7 @@ current lead: zheug (, unicornio?)
 I think we can find a nice pace with 14 day funding cycles. Let's stick with this.
 
 **Ballot:** 7 day buffer (no change)
-A reconfiguration proposal must be submitted 7 days before the end of the current funding cycle. I think we can get the hang of having the opportunity to vote on proposals every other week, with decisions made one week prior to them taking effect.  This time frame is only possible thanks to CanuDAO, who's staff is managing our communications and operations. They've done a marvelous job getting things organized and keeping everyone on the same page. 
+A reconfiguration proposal must be submitted 7 days before the end of the current funding cycle. I think we can get the hang of having the opportunity to vote on proposals every other week, with decisions made one week prior to them taking effect.  This time frame is only possible thanks to CanuDAO, who's staff is managing our communications and operations. They've done a marvelous job getting things organized and keeping everyone on the same page.
 
 **Discount rate:** 10% (-6%)
 The discount rate should be further reduced by 6%. This is arbitrary, but it continues to give those who commit funds during FC#3 a good discounted rate to adjust for the risk of being early while continuing the process of tapering the rate off.
@@ -68,35 +68,36 @@ This also allows core contributors to embed themselves in the communities of eme
 
 **Core contributors**
 
-- **jango **| *dev: $10k*
-Lead.
-- **peripheralist **| *dev : $10k*
-Peripheralist has not only built the Juicebox website and been improving it since launch, he also successfully launched TileDAO around a gorgeous art project he wrote. He's got first hand experience leading a community and business around a Juicebox treasury. There's no better dev to have on board.
-- **CanuDAO **|*comms:$2.5k*
-Since CanuDAO's staff, zeugh and mvh3030, joined our community and gotten to work, everything seems to be running smoother. They keep our Discord organized, help with community onboarding, make sure everyone is heard and treated with respect, and makes sure the rest of the contributors can continue working towards what's ahead. 
+- **jango **| _dev: $10k_
+  Lead.
+- **peripheralist **| _dev : $10k_
+  Peripheralist has not only built the Juicebox website and been improving it since launch, he also successfully launched TileDAO around a gorgeous art project he wrote. He's got first hand experience leading a community and business around a Juicebox treasury. There's no better dev to have on board.
+- **CanuDAO **|_comms:$2.5k_
+  Since CanuDAO's staff, zeugh and mvh3030, joined our community and gotten to work, everything seems to be running smoother. They keep our Discord organized, help with community onboarding, make sure everyone is heard and treated with respect, and makes sure the rest of the contributors can continue working towards what's ahead.
 
 This payout is an investment in CanuDAO, we'll get their juicebox project's treasury tokens in return.
-- **WAGMI Studios **| *art, animations, and educational content: $2.5k*
-WAGMI Studios is working towards putting out art, animations, and visual assets that strengthen and add color and character to the concepts that we're working on. This will increasingly important going forward as we reach beyond a crypto-native audience.
+
+- **WAGMI Studios **| _art, animations, and educational content: $2.5k_
+  WAGMI Studios is working towards putting out art, animations, and visual assets that strengthen and add color and character to the concepts that we're working on. This will increasingly important going forward as we reach beyond a crypto-native audience.
 
 This payout is an investment in WAGMI Studios, we'll get their juicebox project's treasury tokens in return.
 
 **Experimental contributors**
 
-- **exekias **| *dev : $3k*
-Since Juicebox's launch, exekias has helped write infrastructure contracts for piping marketplace royalties back to Juicebox treasuries, helped with dev ops, and helped tease out complex ideas out with the rest of the team. More importantly, he launched WikiTokenDAO – he has first hand experience with dev onboarding onto Juicebox, getting a Juicebox treasury funded, and building a community around it. We want him on our team.
-- **nicholas** | *dev: $1.5k*
-We need someone who can help us create a generalized NFT marketplace template that pipes a project's sales into Juicebox treasuries. This has emerged as a need for several projects in the ecosystem. Nicholas has been working on a product called NFTstory for the past several months and is intimately familiar with the ERC-721 standard and how it can be improved and extended. He's expressed interest in working with me to take this project on, he just might be the perfect dev for it. Let's see how things go.
-- **natimuril **| *project support*: $500
-Projects that are building on Juicebox tend to need someone to be available for questions, ideation, and support. Natimuril will start helping us out with need, and eventually take on the responsibility fully herself. If all goes well, her idea is to operationalize her process and grow a collective around this community service effort.
-- **Buradorii** | *analytics: $500*
-We need someone who can help form and execute queries on the treasury data that Juicebox projects are putting out, turn these into visual dashboards, and help to tell stories from the data. Buradorii has begun experimenting with running Dune analytics queries over the past week, and seems to be getting the hang of it. 
+- **exekias **| _dev : $3k_
+  Since Juicebox's launch, exekias has helped write infrastructure contracts for piping marketplace royalties back to Juicebox treasuries, helped with dev ops, and helped tease out complex ideas out with the rest of the team. More importantly, he launched WikiTokenDAO – he has first hand experience with dev onboarding onto Juicebox, getting a Juicebox treasury funded, and building a community around it. We want him on our team.
+- **nicholas** | _dev: $1.5k_
+  We need someone who can help us create a generalized NFT marketplace template that pipes a project's sales into Juicebox treasuries. This has emerged as a need for several projects in the ecosystem. Nicholas has been working on a product called NFTstory for the past several months and is intimately familiar with the ERC-721 standard and how it can be improved and extended. He's expressed interest in working with me to take this project on, he just might be the perfect dev for it. Let's see how things go.
+- **natimuril **| _project support_: $500
+  Projects that are building on Juicebox tend to need someone to be available for questions, ideation, and support. Natimuril will start helping us out with need, and eventually take on the responsibility fully herself. If all goes well, her idea is to operationalize her process and grow a collective around this community service effort.
+- **Buradorii** | _analytics: $500_
+  We need someone who can help form and execute queries on the treasury data that Juicebox projects are putting out, turn these into visual dashboards, and help to tell stories from the data. Buradorii has begun experimenting with running Dune analytics queries over the past week, and seems to be getting the hang of it.
 
 **Allocations**
 
 - **Bug Bounty** | $40k
-A total of $20k to pay out to whitehat hackers who report vulnerabilities. Payouts will be according to bug severity. Moe info coming soon.
-This payout will be returned to the treasury if unused.
+  A total of $20k to pay out to whitehat hackers who report vulnerabilities. Payouts will be according to bug severity. Moe info coming soon.
+  This payout will be returned to the treasury if unused.
 - **Figma**, **Infura**, **Gitbook**, **Mee6** & **Fleek subscriptions** | $500
 
 **Reserved rate:** 35% (+ 10%)

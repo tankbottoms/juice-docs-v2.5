@@ -1,4 +1,4 @@
-# _reservedTokenAmountFrom
+# \_reservedTokenAmountFrom
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -18,13 +18,13 @@ function _reservedTokenAmountFrom(
 ) internal pure returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_processedTokenTracker` is the tracker to make the calculation with.
-  * `_reservedRate` is the reserved rate to use to make the calculation.
-  * `_totalEligibleTokens` is the total amount to make the calculation with.
-* The resulting function is internal to this contract and its inheriters. 
-* The function does not alter state on the blockchain.
-* The function returns the reserved token amount.
+- Arguments:
+  - `_processedTokenTracker` is the tracker to make the calculation with.
+  - `_reservedRate` is the reserved rate to use to make the calculation.
+  - `_totalEligibleTokens` is the total amount to make the calculation with.
+- The resulting function is internal to this contract and its inheriters.
+- The function does not alter state on the blockchain.
+- The function returns the reserved token amount.
 
 #### Body
 
@@ -36,12 +36,14 @@ function _reservedTokenAmountFrom(
       ? _totalEligibleTokens - uint256(_processedTokenTracker)
       : _totalEligibleTokens + uint256(-_processedTokenTracker);
     ```
+
 2.  If there are no unprocessed tokens, there are no outstanding reserved tokens.
 
     ```
     // If there are no unprocessed tokens, return.
     if (_unprocessedTokenBalanceOf == 0) return 0;
     ```
+
 3.  If the reserved rate is 100%, the reserved token amount is equal to the unprocessed balance.
 
     ```
@@ -51,8 +53,9 @@ function _reservedTokenAmountFrom(
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_RESERVED_RATE`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_RESERVED_RATE`
+
 4.  The reserved token amount is the reserved percentage of the unprocessed balance.
 
     ```
@@ -66,10 +69,10 @@ function _reservedTokenAmountFrom(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_RESERVED_RATE`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_RESERVED_RATE`
 
 </TabItem>
 
@@ -92,7 +95,7 @@ function _reservedTokenAmountFrom(
   uint256 _totalEligibleTokens
 ) internal pure returns (uint256) {
   // Get a reference to the amount of tokens that are unprocessed.
-  uint256 _unprocessedTokenBalanceOf = _processedTokenTracker >= 0 
+  uint256 _unprocessedTokenBalanceOf = _processedTokenTracker >= 0
     ? _totalEligibleTokens - uint256(_processedTokenTracker)
     : _totalEligibleTokens + uint256(-_processedTokenTracker);
 

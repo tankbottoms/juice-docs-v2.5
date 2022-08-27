@@ -1,4 +1,4 @@
-# _standbyOf
+# \_standbyOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,11 +20,11 @@ _Assumes the project has a latest configuration._
 function _standbyOf(uint256 _projectId) private view returns (uint256 configuration) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of a project to look through for a standby cycle.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the configuration of the standby funding cycle if one exists, or 0 if one doesn't exist.
+- Arguments:
+  - `_projectId` is the ID of a project to look through for a standby cycle.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the configuration of the standby funding cycle if one exists, or 0 if one doesn't exist.
 
 #### Body
 
@@ -37,7 +37,8 @@ function _standbyOf(uint256 _projectId) private view returns (uint256 configurat
 
     _Internal references:_
 
-    * [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+    - [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+
 2.  Get the struct for the latest funding cycle.
 
     ```
@@ -47,19 +48,22 @@ function _standbyOf(uint256 _projectId) private view returns (uint256 configurat
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 3.  If the cycle has started, return 0 since there is not a stored funding cycle in standby.
 
     ```
     // There is no upcoming funding cycle if the latest funding cycle has already started.
     if (block.timestamp >= _fundingCycle.start) return 0;
     ```
+
 4.  If this is the first funding cycle, it must be queued since it doesn't require a ballot's approval.
 
     ```
     // If this is the first funding cycle, it is queued.
     if (_fundingCycle.number == 1) return configuration;
     ```
+
 5.  Get a reference to the cycle that the latest is based on.
 
     ```
@@ -69,7 +73,8 @@ function _standbyOf(uint256 _projectId) private view returns (uint256 configurat
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 6.  It's possible that the latest cycle was configured to start at or after a date in the future that comes after another iteration of the currently active funding cycle. If this is the case, there is no immediately queued funding cycle.
 
     ```
@@ -86,7 +91,7 @@ function _standbyOf(uint256 _projectId) private view returns (uint256 configurat
 
 ```
 /**
-  @notice 
+  @notice
   The project's stored funding cycle that hasn't yet started and should be used next, if one exists.
 
   @dev
@@ -94,7 +99,7 @@ function _standbyOf(uint256 _projectId) private view returns (uint256 configurat
 
   @dev
   Assumes the project has a latest configuration.
-  
+
   @param _projectId The ID of a project to look through for a standby cycle.
 
   @return configuration The configuration of the standby funding cycle if one exists, or 0 if one doesn't exist.

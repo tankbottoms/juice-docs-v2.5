@@ -4,6 +4,7 @@ title: Questions Concerning Compensation
 authors: [felixander]
 tags: [dao, soapbox]
 ---
+
 # Questions Concerning Compensation
 
 As many of you may have noticed, the question of compensation has come up recently in the discord (linked [here](https://discord.com/channels/775859454780244028/963551788823375932/963551856091627522)). It was an exceptionally valuable discussion that really highlighted how tricky the question concerning compensation is, both at JB specifically and in the web3 DAO space as a whole.
@@ -18,7 +19,7 @@ And finally, you can look at Juicebox as a community. In this schema, it’s a c
 
 All this a long-winded way to point out that, if we ask the three people above about compensation, we’re likely to get three very different answers. Furthermore, we’re even more likely to equivocate the word at hand.
 
-For instance: at Juicebox, are we compensating for services rendered, or are we acknowledging people’s efforts *through* compensation? Are we disbursing funds based on how profit-driven companies pay their employees, or are we giving pieces of the pie, ie JBX, to stake future promise and voice into our contributors? And in either case, how are we valuing contributors based on their roles differently?
+For instance: at Juicebox, are we compensating for services rendered, or are we acknowledging people’s efforts _through_ compensation? Are we disbursing funds based on how profit-driven companies pay their employees, or are we giving pieces of the pie, ie JBX, to stake future promise and voice into our contributors? And in either case, how are we valuing contributors based on their roles differently?
 
 And then there is a question of effort spent working– that is, is it even fair to tie compensation to how hard one works. Take for instance classic capitalist models. You may know someone who works hard and makes 50k per year. You may know someone who works hard and makes 200k a year. You may wonder if one person is truly working “harder” than the other. Maybe so, maybe not. But then take Elon Musk, who is worth 300 billion dollars, give or take. Is it fair to say that, in comparison to our 200k-per-year example, Elon is working 1.5 million times harder? Or compared to our 50K example, that he’s working six million times harder? We see from this reductio ad absurdem that equating value with how hard one works tends toward fallacy.
 

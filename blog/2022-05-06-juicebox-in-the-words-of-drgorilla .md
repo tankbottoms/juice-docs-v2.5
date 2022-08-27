@@ -5,12 +5,11 @@ authors: [felixander]
 tags: [dao, interview, juicebox, ethereum]
 ---
 
-
 # Juicebox in the words of: DrGorilla
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*DrGorilla is a contributor to the JB space on the dev side. By all accounts a deft coder, what most people will really tell you is how fucking funny he is. I stand with many when I say that I feel like he’s a comedian moonlighting as a coder. After all, comedy never pays the bills. Read on to learn a bit more about his passions, history at JB, and eclectic former jobs— one of which traces back over 500 years!*
+_DrGorilla is a contributor to the JB space on the dev side. By all accounts a deft coder, what most people will really tell you is how fucking funny he is. I stand with many when I say that I feel like he’s a comedian moonlighting as a coder. After all, comedy never pays the bills. Read on to learn a bit more about his passions, history at JB, and eclectic former jobs— one of which traces back over 500 years!_
 
 ### How'd you get started with JB, and how has it changed since you've been here?
 

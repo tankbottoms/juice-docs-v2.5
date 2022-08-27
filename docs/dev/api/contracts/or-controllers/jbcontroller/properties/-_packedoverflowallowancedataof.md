@@ -1,4 +1,4 @@
-# _packedOverflowAllowanceDataOf
+# \_packedOverflowAllowanceDataOf
 
 Contract: [`JBController`](/dev/api/contracts/or-controllers/jbcontroller/README.md)​‌
 
@@ -30,9 +30,9 @@ mapping(uint256 => mapping(uint256 => mapping(IJBPaymentTerminal =>  mapping(add
   internal _packedOverflowAllowanceDataOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the packed overflow allowance data of.
-  * `_configuration` is the configuration during which the packed overflow allowance data applies.
-  * `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) managing the overflow.
-  * `_token` is the token for which overflow is being allowed.
-* The resulting function is internal to this contract and its inheriters. 
+- Arguments:
+  - `_projectId` is the ID of the project to get the packed overflow allowance data of.
+  - `_configuration` is the configuration during which the packed overflow allowance data applies.
+  - `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) managing the overflow.
+  - `_token` is the token for which overflow is being allowed.
+- The resulting function is internal to this contract and its inheriters.

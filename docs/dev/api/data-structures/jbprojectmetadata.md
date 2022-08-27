@@ -7,7 +7,7 @@ https://github.com/jbx-protocol/juice-contracts-v2/blob/main/contracts/structs/J
 #### Definition
 
 ```
-/** 
+/**
   @member content The metadata content.
   @member domain The domain within which the metadata applies.
 */
@@ -17,5 +17,5 @@ struct JBProjectMetadata {
 }
 ```
 
-* `content` is the metadata content.
-* `domain` is the domain within which the metadata applies.
+- `content` is the metadata content.
+- `domain` is the domain within which the metadata applies.

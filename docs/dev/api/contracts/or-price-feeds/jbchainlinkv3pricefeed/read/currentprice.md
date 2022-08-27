@@ -18,12 +18,12 @@ Interface: [`IJBPriceFeed`](/dev/api/interfaces/ijbpricefeed.md)
 function currentPrice(uint256 _decimals) external view override returns (uint256)  { ... }
 ```
 
-* Arguments:
-  * `_decimals` is the number of decimals the returned fixed point price should include.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBPriceFeed`](/dev/api/interfaces/ijbpricefeed.md) interface.
-* The function returns the current price of the feed, as a fixed point number with the specified number of decimals.
+- Arguments:
+  - `_decimals` is the number of decimals the returned fixed point price should include.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBPriceFeed`](/dev/api/interfaces/ijbpricefeed.md) interface.
+- The function returns the current price of the feed, as a fixed point number with the specified number of decimals.
 
 #### Body
 
@@ -36,11 +36,12 @@ function currentPrice(uint256 _decimals) external view override returns (uint256
 
     _Internal references:_
 
-    * [`feed`](/dev/api/contracts/or-price-feeds/jbchainlinkv3pricefeed/properties/feed.md)
+    - [`feed`](/dev/api/contracts/or-price-feeds/jbchainlinkv3pricefeed/properties/feed.md)
 
     _External references:_
 
-    * [`latestRoundData`](https://docs.chain.link/price-feeds-api-reference/#latestrounddata)
+    - [`latestRoundData`](https://docs.chain.link/price-feeds-api-reference/#latestrounddata)
+
 2.  Get the number of decimals being reported by the price feed that the provided price is expected to have.
 
     ```
@@ -50,12 +51,13 @@ function currentPrice(uint256 _decimals) external view override returns (uint256
 
     _Internal references:_
 
-    * [`feed`](/dev/api/contracts/or-price-feeds/jbchainlinkv3pricefeed/properties/feed.md)
+    - [`feed`](/dev/api/contracts/or-price-feeds/jbchainlinkv3pricefeed/properties/feed.md)
 
     _External references:_
 
-    * [`decimals`](https://docs.chain.link/price-feeds-api-reference/#decimals)
-3. Return the fixed point price after normalizing the value to the desired number of decimals.
+    - [`decimals`](https://docs.chain.link/price-feeds-api-reference/#decimals)
+
+3.  Return the fixed point price after normalizing the value to the desired number of decimals.
 
     ```
     // Return the price, adjusted to the target decimals.
@@ -64,16 +66,16 @@ function currentPrice(uint256 _decimals) external view override returns (uint256
 
     _Library references:_
 
-    * [`JBFixedPointNumber`](/dev/api/libraries/jbfixedpointnumber.md)
-      * `.adjustDecimals(...)`
+    - [`JBFixedPointNumber`](/dev/api/libraries/jbfixedpointnumber.md)
+      - `.adjustDecimals(...)`
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Gets the current price from the feed, normalized to the specified number of decimals.
 
   @param _decimals The number of decimals the returned fixed point price should include.

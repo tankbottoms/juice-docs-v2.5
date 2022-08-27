@@ -25,14 +25,14 @@ function configureFor(
 ) external override onlyController(_projectId) returns (JBFundingCycle memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project being configured.
-  * `_data` is the [`JBFundingCycleData`](/dev/api/data-structures/jbfundingcycledata.md) for the configuration.
-  * `_metadata` is arbitrary extra data to associate with this funding cycle configuration that's not used within.
-  * `_mustStartAtOrAfter` is the time before which the initialized funding cycle cannot start.
-* Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
-* The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
-* Returns the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) that the configuration will take effect during..
+- Arguments:
+  - `_projectId` is the ID of the project being configured.
+  - `_data` is the [`JBFundingCycleData`](/dev/api/data-structures/jbfundingcycledata.md) for the configuration.
+  - `_metadata` is arbitrary extra data to associate with this funding cycle configuration that's not used within.
+  - `_mustStartAtOrAfter` is the time before which the initialized funding cycle cannot start.
+- Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
+- The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
+- Returns the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) that the configuration will take effect during..
 
 #### Body
 
@@ -42,6 +42,7 @@ function configureFor(
     // Duration must fit in a uint64.
     if (_data.duration > type(uint64).max) revert INVALID_DURATION();
     ```
+
 2.  Make sure the `_data.discountRate` is less than the expected maximum value.
 
     ```
@@ -51,20 +52,23 @@ function configureFor(
 
     _Library references:_
 
-    * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-      * `.MAX_DISCOUNT_RATE`
+    - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+      - `.MAX_DISCOUNT_RATE`
+
 3.  Make sure the `_data.weight` fits in a `uint80`.
 
     ```
     // Weight must fit into a uint88.
     if (_data.weight > type(uint88).max) revert INVALID_WEIGHT();
     ```
+
 4.  Get a reference to the time at which the configuration is occurring.
 
     ```
     // The configuration timestamp is now.
     uint256 _configuration = block.timestamp;
     ```
+
 5.  Configure the intrinsic properties. This'll create a new funding cycle if there isn't a queued one already.
 
     ```
@@ -80,7 +84,8 @@ function configureFor(
 
     _Internal references:_
 
-    * [`_configureIntrinsicpropertiesFor`](/dev/api/contracts/jbfundingcyclestore/write/-_configureintrinsicpropertiesfor.md)
+    - [`_configureIntrinsicpropertiesFor`](/dev/api/contracts/jbfundingcyclestore/write/-_configureintrinsicpropertiesfor.md)
+
 6.  Store all of the user configuration properties provided. These properties can all be packed into one `uint256` storage slot. No need to store if the resulting stored value would be 0 since the storage slot defaults to 0.
 
     ```
@@ -107,7 +112,8 @@ function configureFor(
 
     _Internal references:_
 
-    * [`_packedUserPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packeduserpropertiesof.md)
+    - [`_packedUserPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packeduserpropertiesof.md)
+
 7.  Store the provided metadata for the configuration. No need to store if the value is 0 since the storage slot defaults to 0.
 
     ```
@@ -117,7 +123,8 @@ function configureFor(
 
     _Internal references:_
 
-    * [`_metadataOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_metadataof.md)
+    - [`_metadataOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_metadataof.md)
+
 8.  Emit a `Configure` event with the relevant parameters.
 
     ```
@@ -126,7 +133,8 @@ function configureFor(
 
     _Event references:_
 
-    * [`Configure`](/dev/api/contracts/jbfundingcyclestore/events/configure.md)
+    - [`Configure`](/dev/api/contracts/jbfundingcyclestore/events/configure.md)
+
 9.  Return the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) struct that carries the new configuration.
 
     ```
@@ -136,7 +144,7 @@ function configureFor(
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
 
 </TabItem>
 
@@ -144,7 +152,7 @@ function configureFor(
 
 ```
 /**
-  @notice 
+  @notice
   Configures the next eligible funding cycle for the specified project.
 
   @dev
@@ -228,8 +236,8 @@ function configureFor(
 
 <TabItem value="Events" label="Events">
 
-| Name                                      | Data                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Name                                                                          | Data                                                                                                                                                                                                                                                                                                                                |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**`Configure`**](/dev/api/contracts/jbfundingcyclestore/events/configure.md) | <ul><li><code>uint256 indexed configuration</code></li><li><code>uint256 indexed projectId</code></li><li><code>[JBFundingCycleData](/dev/api/data-structures/jbfundingcycledata.md)data</code></li><li><code>uint256 metadata</code></li><li><code>uint256 mustStartAtOrAfter</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>

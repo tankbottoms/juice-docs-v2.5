@@ -16,16 +16,15 @@ _Use the `addToBalance` function if there's a preference to do so. Otherwise use
 
 _This function is called automatically when the contract receives an ETH payment._
 
-
 #### Definition
 
 ```
 receive() external payable virtual override { ... }
 ```
 
-* The function is triggered when the contract receives ETH.
-* The function can be accessed externally by anyone.
-* The function doesn't return anything.
+- The function is triggered when the contract receives ETH.
+- The function can be accessed externally by anyone.
+- The function doesn't return anything.
 
 #### Body
 
@@ -57,23 +56,23 @@ receive() external payable virtual override { ... }
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-      
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+
     _Internal references:_
 
-    * [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
-    * [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
-    * [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
+    - [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
+    - [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
+    - [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Received funds are paid to the default project ID using the stored default properties.
 

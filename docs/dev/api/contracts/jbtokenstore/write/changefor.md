@@ -28,13 +28,13 @@ function changeFor(
 ) external override onlyController(_projectId) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the changed token belongs.
-  * `_token` is the new token. Send an empty address to remove the project's current token without adding a new one, if claiming tokens isn't currency required by the project
-  * `_newOwner` is an address to transfer the current token's ownership to. This is optional, but it cannot be done later.
-* Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to which the changed token belongs.
+  - `_token` is the new token. Send an empty address to remove the project's current token without adding a new one, if claiming tokens isn't currency required by the project
+  - `_newOwner` is an address to transfer the current token's ownership to. This is optional, but it cannot be done later.
+- Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -48,7 +48,7 @@ function changeFor(
 
     _Internal references:_
 
-    * [`requireClaimFor`](/dev/api/contracts/jbtokenstore/properties/requireclaimfor.md)
+    - [`requireClaimFor`](/dev/api/contracts/jbtokenstore/properties/requireclaimfor.md)
 
 2.  Make sure the token being changed to isn't being used by another project.
 
@@ -59,19 +59,19 @@ function changeFor(
 
     _Internal references:_
 
-    * [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+    - [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
 
 3.  Make sure the token has 18 decimals.
 
     ```
     // Can't change to a token that doesn't use 18 decimals.
-    if (_token != IJBToken(address(0)) && _token.decimals() != 18) 
+    if (_token != IJBToken(address(0)) && _token.decimals() != 18)
       revert TOKENS_MUST_HAVE_18_DECIMALS();
     ```
 
     _External references:_
 
-    * [`decimals`](/dev/api/interfaces/ijbtoken.md)
+    - [`decimals`](/dev/api/interfaces/ijbtoken.md)
 
 4.  Get a reference to the project's current token.
 
@@ -82,7 +82,8 @@ function changeFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 5.  Store the provided token as the token of the project.
 
     ```
@@ -92,7 +93,8 @@ function changeFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 6.  Store the project the new token is being used for.
 
     ```
@@ -103,7 +105,8 @@ function changeFor(
 
     _Internal references:_
 
-    * [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+    - [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+
 7.  Reset the project for the project's old token.
 
     ```
@@ -113,7 +116,8 @@ function changeFor(
 
     _Internal references:_
 
-    * [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+    - [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+
 8.  If there's a current token and a new owner address was provided, transfer the ownership of the current token from this contract to the new owner.
 
     ```
@@ -124,7 +128,8 @@ function changeFor(
 
     _External references:_
 
-    * [`transferOwnership`](/dev/api/contracts/jbtoken/write/transferownership.md)
+    - [`transferOwnership`](/dev/api/contracts/jbtoken/write/transferownership.md)
+
 9.  Emit a `Change` event with the relevant parameters.
 
     ```
@@ -133,7 +138,7 @@ function changeFor(
 
     _Event references:_
 
-    * [`Change`](/dev/api/contracts/jbtokenstore/events/change.md)
+    - [`Change`](/dev/api/contracts/jbtokenstore/events/change.md)
 
 </TabItem>
 
@@ -172,7 +177,7 @@ function changeFor(
   if (projectOf[_token] != 0) revert TOKEN_ALREADY_IN_USE();
 
   // Can't change to a token that doesn't use 18 decimals.
-  if (_token != IJBToken(address(0)) && _token.decimals() != 18) 
+  if (_token != IJBToken(address(0)) && _token.decimals() != 18)
     revert TOKENS_MUST_HAVE_18_DECIMALS();
 
   // Get a reference to the current token for the project.
@@ -200,19 +205,19 @@ function changeFor(
 
 <TabItem value="Errors" label="Errors">
 
-| String                              | Description                                               |
-| ----------------------------------- | --------------------------------------------------------- |
-| **`CANT_REMOVE_TOKEN_IF_ITS_REQUIRED`**    | Thrown if the token is being removed but claiming is required.        |
-| **`TOKEN_ALREADY_IN_USE`**    | Thrown if the token being attached is already being used by another project.        |
-| **`TOKENS_MUST_HAVE_18_DECIMALS`**    | Thrown if the token being attached doesn't use 18 decimals.        |
+| String                                  | Description                                                                  |
+| --------------------------------------- | ---------------------------------------------------------------------------- |
+| **`CANT_REMOVE_TOKEN_IF_ITS_REQUIRED`** | Thrown if the token is being removed but claiming is required.               |
+| **`TOKEN_ALREADY_IN_USE`**              | Thrown if the token being attached is already being used by another project. |
+| **`TOKENS_MUST_HAVE_18_DECIMALS`**      | Thrown if the token being attached doesn't use 18 decimals.                  |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                | Data                                                                                                                                                                                |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`Change`**](/dev/api/contracts/jbtokenstore/events/change.md)               | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md)indexed newToken</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md)indexed oldToken</code></li><li><code>address indexed owner</code></li><li><code>address caller</code></li></ul>                                                                                           |
+| Name                                                             | Data                                                                                                                                                                                                                                                                                                      |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Change`**](/dev/api/contracts/jbtokenstore/events/change.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md)indexed newToken</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md)indexed oldToken</code></li><li><code>address indexed owner</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

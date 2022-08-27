@@ -32,9 +32,9 @@ mapping(IJBSingleTokenPaymentTerminal => mapping(uint256 => mapping(uint256 => u
   override usedDistributionLimitOf;
 ```
 
-* Arguments:
-  * `_terminal` is the terminal to which the used distribution limit applies.
-  * `_projectId` is the ID of the project to get the used distribution limit of.
-  * `_fundingCycleNumber` is the number of the funding cycle during which the distribution limit was used.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- Arguments:
+  - `_terminal` is the terminal to which the used distribution limit applies.
+  - `_projectId` is the ID of the project to get the used distribution limit of.
+  - `_fundingCycleNumber` is the number of the funding cycle during which the distribution limit was used.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.

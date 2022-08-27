@@ -18,12 +18,12 @@ Interface: [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md)
 function totalSupplyOf(uint256 _projectId) external view override returns (uint256 totalSupply) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the total token supply of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function returns the total supply of the project's tokens.
+- Arguments:
+  - `_projectId` is the ID of the project to get the total token supply of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function returns the total supply of the project's tokens.
 
 #### Body
 
@@ -36,7 +36,8 @@ function totalSupplyOf(uint256 _projectId) external view override returns (uint2
 
     _Internal references:_
 
-    * [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
+    - [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
+
 2.  Get a reference to the project's current token.
 
     ```
@@ -46,7 +47,8 @@ function totalSupplyOf(uint256 _projectId) external view override returns (uint2
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 3.  If the project has a current token, add its total supply to the total.
 
     ```
@@ -56,7 +58,7 @@ function totalSupplyOf(uint256 _projectId) external view override returns (uint2
 
     _External references:_
 
-    * [`totalSupply`](../../jbtoken/read/totalsupply.md)
+    - [`totalSupply`](../../jbtoken/read/totalsupply.md)
 
 </TabItem>
 

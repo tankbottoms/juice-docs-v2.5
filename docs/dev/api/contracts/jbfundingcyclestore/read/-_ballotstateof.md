@@ -1,4 +1,4 @@
-# _ballotStateOf
+# \_ballotStateOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,14 +21,14 @@ function _ballotStateOf(
 ) private view returns (JBBallotState) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funding cycle belongs.
-  * `_configuration` is the funding cycle configuration to get the ballot state of.
-  * `_start` is the start time of the funding cycle configuration to get the ballot state of.
-  * `_ballotFundingCycleConfiguration` is the configuration of the funding cycle which is configured with the ballot that should be used.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the [`JBBallotState`](/dev/api/enums/jbballotstate.md) of the project.
+- Arguments:
+  - `_projectId` is the ID of the project to which the funding cycle belongs.
+  - `_configuration` is the funding cycle configuration to get the ballot state of.
+  - `_start` is the start time of the funding cycle configuration to get the ballot state of.
+  - `_ballotFundingCycleConfiguration` is the configuration of the funding cycle which is configured with the ballot that should be used.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the [`JBBallotState`](/dev/api/enums/jbballotstate.md) of the project.
 
 #### Body
 
@@ -41,8 +41,9 @@ function _ballotStateOf(
 
     _Enums used:_
 
-    * [`JBBallotState`](/dev/api/enums/jbballotstate.md)
-      * `.Approved`
+    - [`JBBallotState`](/dev/api/enums/jbballotstate.md)
+      - `.Approved`
+
 2.  Get the funding cycle that has a reference of the ballot that should be used.
 
     ```
@@ -55,7 +56,8 @@ function _ballotStateOf(
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 3.  If there's no ballot, the funding cycle configuration is implicitly approved. Otherwise if the ballot's duration has not yet expired, it is implicitly active. Otherwise, return the state that the ballot for the provided configuration.
 
     ```
@@ -71,14 +73,14 @@ function _ballotStateOf(
 
     _Enums used:_
 
-    * [`JBBallotState`](/dev/api/enums/jbballotstate.md)
-      * `.Approved`
-      * `.Active`
+    - [`JBBallotState`](/dev/api/enums/jbballotstate.md)
+      - `.Approved`
+      - `.Active`
 
     _External references:_
 
-    * [`duration`](/dev/api/interfaces/ijbfundingcycleballot.md)
-    * [`stateOf`](/dev/api/interfaces/ijbfundingcycleballot.md)
+    - [`duration`](/dev/api/interfaces/ijbfundingcycleballot.md)
+    - [`stateOf`](/dev/api/interfaces/ijbfundingcycleballot.md)
 
 </TabItem>
 
@@ -86,7 +88,7 @@ function _ballotStateOf(
 
 ```
 /**
-  @notice 
+  @notice
   A project's latest funding cycle configuration approval status.
 
   @param _projectId The ID of the project to which the funding cycle belongs.

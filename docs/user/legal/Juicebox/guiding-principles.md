@@ -27,7 +27,7 @@ sidebar_position: 3
 
 **"DAO"** means Decentralized Autonomous Organization. "DAO" or "The DAO" may refer to [Juicebox DAO](/dao), a Nevada Unincorporated Nonprofit Association.
 
-**"DAO Expenses"** refers to costs and expenses related to the activities, maintenance and operation of the DAO. [*See Section 7(b)(i) of The Agreement.*](#7-fees-and-expenses).
+**"DAO Expenses"** refers to costs and expenses related to the activities, maintenance and operation of the DAO. [_See Section 7(b)(i) of The Agreement._](#7-fees-and-expenses).
 
 **"Dapp"** refers to online portals or other interactive software used by the DAO, individuals, and any other entities to create, manage, contribute to, or otherwise interact with Juicebox Treasuries or to interact with the Juicebox Protocol. Governance activities which are performed within the DAO's Snapshot Spaces on Snapshot.org or other Snapshot servers are also considered to be Dapp activities.
 
@@ -101,13 +101,13 @@ Capitalized terms used herein have the meanings ascribed to them in the [Definit
 
 **(a) Formation.** The DAO was formed on July 15, 2021. The obligations of members of the DAO shall be determined pursuant to the Revised Uniform Unincorporated Nonprofit Association Act of 2008 (the "Act"), NRS §§ 81.700 to 81.890 inclusive, and this Agreement.
 
-**(b) Purpose.** The primary purpose of Juicebox DAO is to help people confidently run programmable and community funded treasuries from startup to scale, openly on Ethereum. The DAO and its community build and maintain the Juicebox protocol, a framework for funding and operating programmable treasuries ("Juicebox Projects", "Treasuries", or "Projects") openly on Ethereum. Its contracts allow communities and individuals to deploy administrative NFTs, programmable payment terminals for receiving funds ("Contributions") and distributing funds ("Payouts"), project tokens which can be used for community membership ("Project Tokens"), and funding cycles which define time-locked constraints. The DAO shall have the power to do any and all acts appropriate, convenient, desirable, incidental, or necessary to or in furtherance of the purposes described in this Agreement, including, without limitation, any and all of the powers that may be exercised on behalf of the DAO by its members. 
+**(b) Purpose.** The primary purpose of Juicebox DAO is to help people confidently run programmable and community funded treasuries from startup to scale, openly on Ethereum. The DAO and its community build and maintain the Juicebox protocol, a framework for funding and operating programmable treasuries ("Juicebox Projects", "Treasuries", or "Projects") openly on Ethereum. Its contracts allow communities and individuals to deploy administrative NFTs, programmable payment terminals for receiving funds ("Contributions") and distributing funds ("Payouts"), project tokens which can be used for community membership ("Project Tokens"), and funding cycles which define time-locked constraints. The DAO shall have the power to do any and all acts appropriate, convenient, desirable, incidental, or necessary to or in furtherance of the purposes described in this Agreement, including, without limitation, any and all of the powers that may be exercised on behalf of the DAO by its members.
 
 The DAO is an unincorporated association of individuals, corporations, statutory trusts, business trusts, estates, trusts, partnerships, limited liability companies, associations, joint ventures, and other legal or commercial entities, many of whom, if not all of whom, agree to join together for a common, nonprofit purpose. For the DAO, that purpose is encapsulated in its [mission statement](/dao/foundation#mission-statement).
 
 The DAO is not intended to be or become an entity required to register as an “investment company” as defined in Section3(a)(1)(A) of the Investment Company Act of 1940, as amended.
 
-*See the [Expanded Misson and Purpose](/dao/foundation).*
+_See the [Expanded Misson and Purpose](/dao/foundation)._
 
 #### 2. Membership; Governance Rights and Tokens; Limitations.
 
@@ -174,6 +174,7 @@ Notwithstanding the foregoing or any other provision of this Agreement, the DAO 
 **(a) Organizational Expenses.** The DAO shall bear all of its organizational expenses and costs, and may amortize these expenses for accounting and/or tax purposes.
 
 **(b) Operating Expenses.**
+
 > **(i)** The DAO shall bear all costs and expenses relating to its activities, maintenance, and operations, including, without limitation, all fees, expenses, and costs associated (directly or indirectly) with the creation, maintainance, and proliferation of the Juicebox Protocol and related services (including, without limitation, litigation-related and indemnification expenses), legal, regulatory, research, consulting, compliance, auditing, accounting, and other professional fees and expenses, the costs of any administrator, the costs of any reporting to Members, expenses of any administrative proceedings undertaken by the applicable Member in its capacity, expenses incurred in connection with the dissolution, liquidation, and termination of the DAO, and other expenses related to the DAO as determined by the Members by a vote via the Dapp (collectively, and together with organizational expenses, the "DAO Expenses").
 >
 > **(ii)** DAO Expenses shall be allocated to and funded by the DAO.
@@ -187,6 +188,7 @@ Notwithstanding the foregoing or any other provision of this Agreement, the DAO 
 #### 9. Dissolution.
 
 **(a) General.** The DAO shall be dissolved and its affairs shall be wound up upon the earliest to occur of:
+
 > **(i)** a determination of the Members by Majority Vote; or
 >
 > **(ii)** the entry of a decree of judicial dissolution pursuant to the Act.
@@ -198,6 +200,7 @@ Notwithstanding the foregoing or any other provision of this Agreement, the DAO 
 **(a) Transfers.** Tokens are freely transferable to Ethereum addresses outside of the DAO ("External Addresses"). You agree that holders of External Addresses shall automatically be granted Membership rights, subject to this Agreement.
 
 **(b) Admission of Substituted Members.** If the transferee is not already a Member, any transferee of Tokens transferred in accordance with the provisions of this Section shall be admitted as a Member. The DAO shall not recognize for any purpose any purported transfer of all or any part of a Member's interest or Tokens in the DAO, and no purchaser, assignee, transferee, or other recipient of all or any part of such Tokens shall become a Member hereunder unless:
+
 > **(i)** The transferee of Tokens transferred pursuant to this Section that is admitted to the DAO as a transferee Member shall succeed to the rights and liabilities of the transferor Member with respect to such transferred Tokens.
 >
 > **(ii)** Effect of Death, Dissolution, or Bankruptcy. Upon the death, incompetence, bankruptcy, insolvency, liquidation, or dissolution of a Member, the rights and obligations of that Member under this Agreement shall accrue to that Member's successor(s), estate, or legal representative, and each such Person shall be treated as an unadmitted transferee of that Member's Tokens, as described in the Act.

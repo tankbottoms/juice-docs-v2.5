@@ -15,15 +15,15 @@ Interface: [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md)
 #### Definition
 
 ```
-function currentBallotStateOf(uint256 _projectId) external view override returns (JBBallotState) { ... } 
+function currentBallotStateOf(uint256 _projectId) external view override returns (JBBallotState) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to check the ballot state of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
-* The function returns the project's current [`JBBallotState`](/dev/api/enums/jbballotstate.md).
+- Arguments:
+  - `_projectId` is the ID of the project to check the ballot state of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
+- The function returns the project's current [`JBBallotState`](/dev/api/enums/jbballotstate.md).
 
 #### Body
 
@@ -36,7 +36,8 @@ function currentBallotStateOf(uint256 _projectId) external view override returns
 
     _Internal references:_
 
-    * [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+    - [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+
 2.  Get a reference to the funding cycle for the latest configuration.
 
     ```
@@ -46,7 +47,8 @@ function currentBallotStateOf(uint256 _projectId) external view override returns
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 3.  Return the ballot state of the latest funding cycle configuration as is determined by the current configuration and the funding cycle it's based on.
 
     ```
@@ -61,15 +63,15 @@ function currentBallotStateOf(uint256 _projectId) external view override returns
 
     _Internal references:_
 
-    * [`_ballotStateOf`](/dev/api/contracts/jbfundingcyclestore/read/-_ballotstateof.md)
+    - [`_ballotStateOf`](/dev/api/contracts/jbfundingcyclestore/read/-_ballotstateof.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The current ballot state of the project.
 
   @param _projectId The ID of the project to check the ballot state of.

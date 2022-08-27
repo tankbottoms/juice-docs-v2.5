@@ -1,4 +1,4 @@
-# _metadataOf
+# \_metadataOf
 
 Contract: [`JBFundingCycleStore`](/dev/api/contracts/jbfundingcyclestore/README.md)​‌
 
@@ -7,7 +7,7 @@ Contract: [`JBFundingCycleStore`](/dev/api/contracts/jbfundingcyclestore/README.
 #### Definition
 
 ```
-/** 
+/**
   @notice
   Stores the metadata for each funding cycle configuration, packed into one storage slot.
 
@@ -17,7 +17,7 @@ Contract: [`JBFundingCycleStore`](/dev/api/contracts/jbfundingcyclestore/README.
 mapping(uint256 => mapping(uint256 => uint256)) private _metadataOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get metadata of.
-  * `_configuration` is the funding cycle configuration to get metadata of.
-* The resulting view function is private to this contract.
+- Arguments:
+  - `_projectId` is the ID of the project to get metadata of.
+  - `_configuration` is the funding cycle configuration to get metadata of.
+- The resulting view function is private to this contract.

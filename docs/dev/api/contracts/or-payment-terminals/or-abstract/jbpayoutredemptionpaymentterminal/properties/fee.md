@@ -21,5 +21,5 @@ _Out of MAX_FEE (25_000_000 / 1_000_000_000)._
 uint256 public override fee = 25_000_000; // 2.5%
 ```
 
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.

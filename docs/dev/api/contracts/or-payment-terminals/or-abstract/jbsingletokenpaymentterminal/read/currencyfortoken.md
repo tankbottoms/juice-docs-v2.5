@@ -18,12 +18,12 @@ Interface: [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md)
 function currencyForToken(address _token) external view override returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_token` is the token to check for the currency of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function returns the currency index.
+- Arguments:
+  - `_token` is the token to check for the currency of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function returns the currency index.
 
 #### Body
 
@@ -38,7 +38,7 @@ function currencyForToken(address _token) external view override returns (uint25
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   The currency that should be used for the specified token.
 

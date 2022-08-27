@@ -22,13 +22,13 @@ function distributeReservedTokensOf(uint256 _projectId, string memory _memo)
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the reserved tokens belong.
-  * `_memo` is a memo to pass along to the emitted event.
-* The function can be accessed externally by anyone.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns the amount of minted reserved tokens.
+- Arguments:
+  - `_projectId` is the ID of the project to which the reserved tokens belong.
+  - `_memo` is a memo to pass along to the emitted event.
+- The function can be accessed externally by anyone.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns the amount of minted reserved tokens.
 
 #### Body
 
@@ -40,7 +40,7 @@ function distributeReservedTokensOf(uint256 _projectId, string memory _memo)
 
     _Internal references:_
 
-    * [`_distributeReservedTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/-_distributereservedtokensof.md)
+    - [`_distributeReservedTokensOf`](/dev/api/contracts/or-controllers/jbcontroller/write/-_distributereservedtokensof.md)
 
 </TabItem>
 

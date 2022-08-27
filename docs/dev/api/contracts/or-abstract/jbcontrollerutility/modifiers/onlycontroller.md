@@ -16,9 +16,9 @@ Contract: [`JBControllerUtility`](/dev/api/contracts/or-abstract/jbcontrolleruti
 modifier onlyController(uint256 _projectId) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project. 
-* The modifier function can be used by any internal function.
+- Arguments:
+  - `_projectId` is the ID of the project.
+- The modifier function can be used by any internal function.
 
 #### Body
 
@@ -30,11 +30,11 @@ modifier onlyController(uint256 _projectId) { ... }
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-abstract/jbcontrollerutility/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-abstract/jbcontrollerutility/properties/directory.md)
 
     _External references:_
 
-    * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+    - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
 
 2.  Continue the rest of the function.
 
@@ -47,11 +47,11 @@ modifier onlyController(uint256 _projectId) { ... }
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
-  Only allows the controller of the specified project to proceed. 
+  Only allows the controller of the specified project to proceed.
 
-  @param _projectId The ID of the project. 
+  @param _projectId The ID of the project.
 */
 modifier onlyController(uint256 _projectId) {
   if (address(directory.controllerOf(_projectId)) != msg.sender) revert CONTROLLER_UNAUTHORIZED();

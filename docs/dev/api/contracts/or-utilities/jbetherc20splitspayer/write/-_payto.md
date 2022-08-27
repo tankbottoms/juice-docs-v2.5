@@ -1,4 +1,4 @@
-# _payTo
+# \_payTo
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -22,14 +22,14 @@ function _payTo(
 ) internal virtual returns (uint256 leftoverAmount) { ... }
 ```
 
-* Arguments:
-  * `_splits` are the splits.
-  * `_token` is the token the amonut being split is in.
-  * `_amount` is the amount of tokens being split, as a fixed point number. If the `_token` is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. 
-  * `_defaultBeneficiary` is the address that will benefit from any non-specified beneficiaries in splits.
-* The function is private to this contract.
-* The function returns the amount leftover after all splits were paid.
+- Arguments:
+  - `_splits` are the splits.
+  - `_token` is the token the amonut being split is in.
+  - `_amount` is the amount of tokens being split, as a fixed point number. If the `_token` is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number.
+  - `_defaultBeneficiary` is the address that will benefit from any non-specified beneficiaries in splits.
+- The function is private to this contract.
+- The function returns the amount leftover after all splits were paid.
 
 #### Body
 
@@ -138,39 +138,39 @@ function _payTo(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-    * [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
-      * `.sendValue(...)`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+    - [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
+      - `.sendValue(...)`
 
     _Internal references:_
 
-    * [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
-    * [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
+    - [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
+    - [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
 
     _External references:_
 
-    * [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
-    * [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transfer-address-uint256-)
-    * [`allocate`](/dev/api/interfaces/ijbsplitallocator.md)
+    - [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
+    - [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transfer-address-uint256-)
+    - [`allocate`](/dev/api/interfaces/ijbsplitallocator.md)
 
     _Event references:_
 
-    * [`DistributeToSplit`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/distributetosplit.md)
-    
+    - [`DistributeToSplit`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/distributetosplit.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Split an amount between all splits.
 
   @param _splits The splits.
   @param _token The token the amonut being split is in.
   @param _amount The amount of tokens being split, as a fixed point number. If the `_token` is ETH, this is ignored and msg.value is used in its place.
-  @param _decimals The number of decimals in the `_amount` fixed point number. 
+  @param _decimals The number of decimals in the `_amount` fixed point number.
   @param _defaultBeneficiary The address that will benefit from any non-specified beneficiaries in splits.
 
   @return leftoverAmount The amount leftover after all splits were paid.
@@ -278,13 +278,14 @@ function _payTo(
   }
 }
 ```
+
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                                          | Data                                                                                          |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [**`DistributeToSplit`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/distributetosplit.md)                                                                          | <ul><li><code>[JBSplit](/dev/api/data-structures/jbsplit.md) split</code></li><li><code>uint256 amount</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                                                                         | Data                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`DistributeToSplit`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/distributetosplit.md) | <ul><li><code>[JBSplit](/dev/api/data-structures/jbsplit.md) split</code></li><li><code>uint256 amount</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

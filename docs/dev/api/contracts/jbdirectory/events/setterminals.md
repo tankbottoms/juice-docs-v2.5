@@ -2,7 +2,7 @@
 
 Emitted from:
 
-* [`setTerminalsOf`](/dev/api/contracts/jbdirectory/write/setterminalsof.md)
+- [`setTerminalsOf`](/dev/api/contracts/jbdirectory/write/setterminalsof.md)
 
 Definition:
 
@@ -14,6 +14,6 @@ event SetTerminals(
   );
 ```
 
-* `projectId` is the ID of the project that set terminals.
-* `terminals` are the terminals that were set.
-* `caller` is the address that issued the transaction within which the event was emitted.
+- `projectId` is the ID of the project that set terminals.
+- `terminals` are the terminals that were set.
+- `caller` is the address that issued the transaction within which the event was emitted.

@@ -5,11 +5,13 @@ sidebar_position: 2
 # Links
 
 #### Website
+
 [juicebox.money](https://juicebox.money/#/) <br/>
 [Testnet juicebox.money](https://rinkeby.juicebox.money/#/) <br/>
 [JuiceboxDAO Project](https://juicebox.money/#/p/juicebox) <br/>
 
 #### Resources
+
 [Notion, Wiki, and Proposals](https://juicebox.notion.site/) <br/>
 [Docs](https://info.juicebox.money/) <br/>
 [Dune Dashboards](https://dune.xyz/twodam) <br/>
@@ -18,6 +20,7 @@ sidebar_position: 2
 [Site Analytics](https://app.usefathom.com/share/eryrrjsv/juicebox.money) and [Docs Analytics](https://app.usefathom.com/share/umyovgdg/info.juicebox.money) <br/>
 
 #### Social
+
 [Twitter](https://twitter.com/juiceboxETH) <br/>
 [Discord](https://discord.gg/juicebox) <br/>
 [Juicebox Cryptovoxels Lounge](https://www.cryptovoxels.com/parcels/6188) <br/>
@@ -25,10 +28,12 @@ sidebar_position: 2
 [YouTube](https://www.youtube.com/channel/UCcImxeZpiixxCGdRqp4JE_g) <br/>
 
 #### Dev
+
 [Github](https://github.com/jbx-protocol) <br/>
 [Docs](https://info.juicebox.money/) <br/>
 
 #### Governance
+
 [Snapshot](https://vote.juicebox.money/#/jbdao.eth) <br/>
 [Snapshot Delegation](https://vote.juicebox.money/#/delegate/jbdao.eth) <br/>
 [Governance Process](/dao/process.md) <br/>
@@ -43,4 +48,3 @@ $JBX ERC-20 Token (Claimed):
 
 $JBX (Claimed + Unclaimed), call totalSupplyOf(1):
 0xee2eBCcB7CDb34a8A822b589F9E8427C24351bfc
-

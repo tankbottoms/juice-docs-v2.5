@@ -23,13 +23,13 @@ Co-authored: jango, peri, exekias, nati, nicholas, zeugh
 
 ### Risk mitigation
 
-*Goal: Make sure things don't go to zero.*
+_Goal: Make sure things don't go to zero._
 
-*Current team: jango (lead), exekias, peri.*
+_Current team: jango (lead), exekias, peri._
 
 **Updates:**
 
-- No new bugs/problems discovered in the contracts. 
+- No new bugs/problems discovered in the contracts.
 - New repo where security issues are documented [here](https://github.com/jbx-protocol/juice-security).
 - Wallet connection issues in the front end solved. One remaining bug where connecting wallet from the projects page sometimes causes the `beneficiary` field of payments.
 - DefiYield auditors seems to have dropped off. Need to follow up again.
@@ -41,18 +41,19 @@ Co-authored: jango, peri, exekias, nati, nicholas, zeugh
 
 ### Web experience
 
-*Goal: Improve the Juicebox experience both for people starting communities and for communities that are growing.*
+_Goal: Improve the Juicebox experience both for people starting communities and for communities that are growing._
 
-*Current team: peri (lead), jango, exekias*
+_Current team: peri (lead), jango, exekias_
 
 **Updates:**
 
 - New analytics data in project dashboards. Still room to grow, more data sourced into The Graph and ready to use.
 
 ![](image-4.png)
+
 - New wallet connection integration. Can now connect with many other wallets with BlockNative integration.
 - Progress on Github issues backlog.
-- Wording in the interface being reconsidered:  "staking" vs "claiming". 
+- Wording in the interface being reconsidered:  "staking" vs "claiming".
 - Researching different UIs for different treasury types.
 
 **Help wanted:**
@@ -61,22 +62,22 @@ Co-authored: jango, peri, exekias, nati, nicholas, zeugh
 
 ### DAO relations
 
-*Goal: Work towards making sure JB projects and the JB community have the resources and attention they need to get started and thrive.*
+_Goal: Work towards making sure JB projects and the JB community have the resources and attention they need to get started and thrive._
 
-*Current team: nati (lead), jango, nicholas, mieos, zeugh*
+_Current team: nati (lead), jango, nicholas, mieos, zeugh_
 
 **Updates:**
 
-- Gitbook updates underway. Walkthrough, explanation of processes. 
+- Gitbook updates underway. Walkthrough, explanation of processes.
 - Working with Whiteboard crypto, UltraDao, BeatsDao.
 - Focusing on established DAOs. Might refocus to newer DAOs later.
 - People should forward questions from #support and from other JB projects to Nati to aggregate into docs.
 
 ### Analytics
 
-*Goal: Give projects rich insights into their community treasury.*
+_Goal: Give projects rich insights into their community treasury._
 
-*Current team: peri (lead), buradorii*
+_Current team: peri (lead), buradorii_
 
 **Updates:**
 
@@ -96,9 +97,9 @@ Co-authored: jango, peri, exekias, nati, nicholas, zeugh
 
 ### Liquidity pools
 
-*Goal: Add support for JB treasury tokens in secondary markets for communities to be able to value their assets better.*
+_Goal: Add support for JB treasury tokens in secondary markets for communities to be able to value their assets better._
 
-*Current team: exekias (lead), jango*
+_Current team: exekias (lead), jango_
 
 Updates:
 
@@ -113,15 +114,15 @@ Updates:
 
 ### NFT Marketplace
 
-*Goal: Give JB projects a place to sell digital (and eventually physical) goods which pipe percentages of revenue to any number of addresses or Juicebox treasuries.*
+_Goal: Give JB projects a place to sell digital (and eventually physical) goods which pipe percentages of revenue to any number of addresses or Juicebox treasuries._
 
-*Current team: nicholas (lead), jango, peri*
+_Current team: nicholas (lead), jango, peri_
 
 **Updates:**
 
 - Big demand from SharkDAO (and others?).
 - Draft of contract looking good.
-- Plan for V1 is no UI on juicebox.money, make bare bones JS SDK/library with/for Shark to build a NFT MKT into their forthcoming website. 
+- Plan for V1 is no UI on juicebox.money, make bare bones JS SDK/library with/for Shark to build a NFT MKT into their forthcoming website.
 - Need to finalize what will be included in v1, and what won't.
 - [Specification draft](https://hackmd.io/QIzjphTdQjKpb-JYOS_Viw)
 - [Github repo](https://github.com/jbx-protocol/juice-NFTMKT) (private for now)
@@ -139,16 +140,16 @@ Updates:
 
 ### Governance
 
-*Goal: Plan out how we will make decisions together.*
+_Goal: Plan out how we will make decisions together._
 
-*Current team: zheug (lead), unicornio, 9birdy9*
+_Current team: zheug (lead), unicornio, 9birdy9_
 
 **Updates:**
 
-- Trying coordinape to test a reputation system. The epoch system feels good, didn't give us the easy integration to voting that we needed after the epoch. 
+- Trying coordinape to test a reputation system. The epoch system feels good, didn't give us the easy integration to voting that we needed after the epoch.
 - We're still wroking on our basic model for how to make decisions. Need to balance governance power between token holders and reputation/contributions but we haven't got a way to test it yet.
 - We can, at the moment, take the csv of reputation distributed after the Epoch, but are still looking on how to import those in a strategy to snapshot.
-Need help from more dev oriented folks to communicate coordinape results onto snapshot.
+  Need help from more dev oriented folks to communicate coordinape results onto snapshot.
 
 **Help needed:**
 
@@ -156,7 +157,7 @@ Need help from more dev oriented folks to communicate coordinape results onto sn
 
 ### Protocol upgrades
 
-*Goal: Evolve the protocol to be more useful.*
+_Goal: Evolve the protocol to be more useful._
 
 C*urrent team: jango (lead), peri, exekias, nicholas*
 
@@ -176,4 +177,4 @@ C*urrent team: jango (lead), peri, exekias, nicholas*
 
 C*urrent team: WAGMI studios*
 
-*This is a new section that will have updates next time*
+_This is a new section that will have updates next time_

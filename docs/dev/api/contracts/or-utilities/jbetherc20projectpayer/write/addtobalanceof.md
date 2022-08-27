@@ -25,17 +25,17 @@ function addToBalanceOf(
 ) public payable virtual override { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project that is being paid.
-  * `_token` is the token being paid in.
-  * `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` is extra data to pass along to the terminal.
-* The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project that is being paid.
+  - `_token` is the token being paid in.
+  - `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` is extra data to pass along to the terminal.
+- The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -57,12 +57,13 @@ function addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-      
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+
     _External references:_
 
-    * [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
+    - [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
+
 2.  Add to the project's balance.
 
     ```
@@ -71,15 +72,15 @@ function addToBalanceOf(
 
     _Internal references:_
 
-    * [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
-    
+    - [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Add to the balance of the specified project.
 
   @param _projectId The ID of the project that is being paid.
@@ -117,9 +118,9 @@ function addToBalanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                       | Description                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------- |
-| **`NO_MSG_VALUE_ALLOWED`**    | Thrown if ETH was sent to a non-ETH terminal.   |
+| String                     | Description                                   |
+| -------------------------- | --------------------------------------------- |
+| **`NO_MSG_VALUE_ALLOWED`** | Thrown if ETH was sent to a non-ETH terminal. |
 
 </TabItem>
 

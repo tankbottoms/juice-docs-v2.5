@@ -18,12 +18,12 @@ Interface: [`IJBToken`](/dev/api/interfaces/ijbtoken.md)
 function totalSupply(uint256) external view override returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the token belongs. This is ignored.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function returns the total supply of this ERC20, as a fixed point number with 18 decimals.
+- Arguments:
+  - `_projectId` is the ID of the project to which the token belongs. This is ignored.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function returns the total supply of this ERC20, as a fixed point number with 18 decimals.
 
 #### Body
 
@@ -35,17 +35,17 @@ function totalSupply(uint256) external view override returns (uint256) { ... }
 
     _Inherited references:_
 
-    * [`totalSupply`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-totalSupply--)
+    - [`totalSupply`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-totalSupply--)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   The total supply of this ERC20.
-  
+
   @param _projectId the ID of the project to which the token belongs. This is ignored.
 
   @return The total supply of this ERC20, as a fixed point number with 18 decimals.

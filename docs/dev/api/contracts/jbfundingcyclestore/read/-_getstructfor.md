@@ -1,4 +1,4 @@
-# _getStructFor
+# \_getStructFor
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,12 +19,12 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
   returns (JBFundingCycle memory fundingCycle) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funding cycle belongs.
-  * `_configuration` is the funding cycle configuration to get the full struct for.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns a [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) struct.
+- Arguments:
+  - `_projectId` is the ID of the project to which the funding cycle belongs.
+  - `_configuration` is the funding cycle configuration to get the full struct for.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns a [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) struct.
 
 #### Body
 
@@ -34,11 +34,13 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
     // Return an empty funding cycle if the configuration specified is 0.
     if (_configuration == 0) return fundingCycle;
     ```
+
 2.  Set the funding cycle's configuration to the provided value.
 
     ```
     fundingCycle.configuration = _configuration;
     ```
+
 3.  Get the stored intrinsic properties of the funding cycle. Populate the struct values by unpacking the `uint256`.
 
     ```
@@ -56,7 +58,8 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
 
     _Internal references:_
 
-    * [`_packedIntrinsicPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packedintrinsicpropertiesof.md)
+    - [`_packedIntrinsicPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packedintrinsicpropertiesof.md)
+
 4.  Get the stored user properties of the funding cycle. Populate the struct values by unpacking the `uint256`.
 
     ```
@@ -72,7 +75,8 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
 
     _Internal references:_
 
-    * [`_packedUserPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packeduserpropertiesof.md)
+    - [`_packedUserPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packeduserpropertiesof.md)
+
 5.  Populate the metadata property of the struct by reading from what's stored.
 
     ```
@@ -81,7 +85,7 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
 
     _Internal references:_
 
-    * [`_metadataOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_metadataof.md)
+    - [`_metadataOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_metadataof.md)
 
 </TabItem>
 
@@ -89,7 +93,7 @@ function _getStructFor(uint256 _projectId, uint256 _configuration)
 
 ```
 /**
-  @notice 
+  @notice
   Unpack a funding cycle's packed stored values into an easy-to-work-with funding cycle struct.
 
   @param _projectId The ID of the project to which the funding cycle belongs.

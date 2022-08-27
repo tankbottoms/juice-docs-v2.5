@@ -12,7 +12,6 @@ Interface: [`IJBController`](/dev/api/interfaces/ijbcontroller.md)
 
 **A project's queued funding cycle along with its metadata.**
 
-
 ### Definition
 
 ```
@@ -23,14 +22,14 @@ function queuedFundingCycleOf(uint256 _projectId)
   returns (JBFundingCycle memory fundingCycle, JBFundingCycleMetadata memory metadata) { ... }
 ```
 
-* Arguments:
-* `_projectId` is the ID of the project to which the funding cycle belongs.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns:
-  * `fundingCycle` is the queued funding cycle.
-  * `metadata` is the queued funding cycle's metadata.
+- Arguments:
+- `_projectId` is the ID of the project to which the funding cycle belongs.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns:
+  - `fundingCycle` is the queued funding cycle.
+  - `metadata` is the queued funding cycle's metadata.
 
 #### Body
 
@@ -42,11 +41,12 @@ function queuedFundingCycleOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
+    - [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
 
     _External references:_
 
-    * [`queuedOf`](/dev/api/contracts/jbfundingcyclestore/read/queuedof.md)
+    - [`queuedOf`](/dev/api/contracts/jbfundingcyclestore/read/queuedof.md)
+
 2.  Expand the metadata of the funding cycle.
 
     ```
@@ -55,15 +55,15 @@ function queuedFundingCycleOf(uint256 _projectId)
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)<br/>
-      * `.expandMetadata(...)`
-      
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)<br/>
+      - `.expandMetadata(...)`
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   A project's queued funding cycle along with its metadata.
 

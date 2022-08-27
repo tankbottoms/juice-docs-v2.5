@@ -27,18 +27,18 @@ function deployProjectPayer(
 ) external override returns (IJBProjectPayer projectPayer) { ... }
 ```
 
-* Arguments:
-  * `_defaultProjectId` is the ID of the project whose treasury should be forwarded the project payer contract's received payments.
-  * `_defaultBeneficiary` is the address that'll receive the project's tokens when the project payer receives payments. 
-  * `_defaultPreferClaimedTokens` is a flag indicating whether issued tokens from the project payer's received payments should be automatically claimed into the beneficiary's wallet. 
-  * `_defaultMemo` is the memo that'll be forwarded with the project payer's received payments. 
-  * `_defaultMetadata` is the metadata that'll be forwarded with the project payer's received payments. 
-  * `_defaultPreferAddToBalance` is a flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
-  * `_directory` is a contract storing directories of terminals and controllers for each project.
-  * `_owner` is the address that will own the project payer.
-* The function can be accessed externally by anyone.
-* The function overrides a function definition from the[`IJBETHERC20ProjectPayerDeployer`](/dev/api/interfaces/ijbetherc20projectpayerdeployer.md) interface.
-* The function returns the project payer contract.
+- Arguments:
+  - `_defaultProjectId` is the ID of the project whose treasury should be forwarded the project payer contract's received payments.
+  - `_defaultBeneficiary` is the address that'll receive the project's tokens when the project payer receives payments.
+  - `_defaultPreferClaimedTokens` is a flag indicating whether issued tokens from the project payer's received payments should be automatically claimed into the beneficiary's wallet.
+  - `_defaultMemo` is the memo that'll be forwarded with the project payer's received payments.
+  - `_defaultMetadata` is the metadata that'll be forwarded with the project payer's received payments.
+  - `_defaultPreferAddToBalance` is a flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
+  - `_directory` is a contract storing directories of terminals and controllers for each project.
+  - `_owner` is the address that will own the project payer.
+- The function can be accessed externally by anyone.
+- The function overrides a function definition from the[`IJBETHERC20ProjectPayerDeployer`](/dev/api/interfaces/ijbetherc20projectpayerdeployer.md) interface.
+- The function returns the project payer contract.
 
 #### Body
 
@@ -60,7 +60,8 @@ function deployProjectPayer(
 
     _External references:_
 
-    * [`JBETHERC20ProjectPayer`](/dev/api/contracts/or-utilities/jbetherc20projectpayer)
+    - [`JBETHERC20ProjectPayer`](/dev/api/contracts/or-utilities/jbetherc20projectpayer)
+
 2.  Emit a `DeployProjectPayer` event with all relevant parameters.
 
     ```
@@ -80,22 +81,22 @@ function deployProjectPayer(
 
     _Event references:_
 
-    * [`DeployProjectPayer`](/dev/api/contracts/or-utilities/jbetherc20projectpayerdeployer/events/deployprojectpayer.md)
+    - [`DeployProjectPayer`](/dev/api/contracts/or-utilities/jbetherc20projectpayerdeployer/events/deployprojectpayer.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Allows anyone to deploy a new project payer contract.
 
   @param _defaultProjectId The ID of the project whose treasury should be forwarded the project payer contract's received payments.
-  @param _defaultBeneficiary The address that'll receive the project's tokens when the project payer receives payments. 
-  @param _defaultPreferClaimedTokens A flag indicating whether issued tokens from the project payer's received payments should be automatically claimed into the beneficiary's wallet. 
-  @param _defaultMemo The memo that'll be forwarded with the project payer's received payments. 
-  @param _defaultMetadata The metadata that'll be forwarded with the project payer's received payments. 
+  @param _defaultBeneficiary The address that'll receive the project's tokens when the project payer receives payments.
+  @param _defaultPreferClaimedTokens A flag indicating whether issued tokens from the project payer's received payments should be automatically claimed into the beneficiary's wallet.
+  @param _defaultMemo The memo that'll be forwarded with the project payer's received payments.
+  @param _defaultMetadata The metadata that'll be forwarded with the project payer's received payments.
   @param _defaultPreferAddToBalance A flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
   @param _directory A contract storing directories of terminals and controllers for each project.
   @param _owner The address that will own the project payer.
@@ -143,9 +144,9 @@ function deployProjectPayer(
 
 <TabItem value="Events" label="Events">
 
-| Name                                | Data                                                                                                                                                                                                                                                  |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`DeployProjectPayer`**](/dev/api/contracts/or-utilities/jbetherc20projectpayerdeployer/events/deployprojectpayer.md)                                                                          | <ul><li><code>[IJBProjectPayer](/dev/api/interfaces/ijbprojectpayer.md) indexed projectPayer</code></li><li><code>uint256 defaultProjectId</code></li><li><code>address defaultBeneficiary</code></li><li><code>bool defaultPreferClaimedTokens</code></li><li><code>string defaultMemo</code></li><li><code>bytes defaultMetadata</code></li><li><code>bool preferAddToBalance</code></li><li><code>[IJBDirectory](/dev/api/interfaces/ijbdirectory.md) directory</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                                                                                    | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`DeployProjectPayer`**](/dev/api/contracts/or-utilities/jbetherc20projectpayerdeployer/events/deployprojectpayer.md) | <ul><li><code>[IJBProjectPayer](/dev/api/interfaces/ijbprojectpayer.md) indexed projectPayer</code></li><li><code>uint256 defaultProjectId</code></li><li><code>address defaultBeneficiary</code></li><li><code>bool defaultPreferClaimedTokens</code></li><li><code>string defaultMemo</code></li><li><code>bytes defaultMetadata</code></li><li><code>bool preferAddToBalance</code></li><li><code>[IJBDirectory](/dev/api/interfaces/ijbdirectory.md) directory</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

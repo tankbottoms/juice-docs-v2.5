@@ -7,7 +7,7 @@ https://github.com/jbx-protocol/juice-contracts-v2/blob/main/contracts/structs/J
 #### Definition
 
 ```
-/** 
+/**
   @member terminal The terminal that is facilitating the redemption.
   @member holder The holder of the tokens being redeemed.
   @member projectId The ID of the project whos tokens are being redeemed.
@@ -39,16 +39,16 @@ struct JBRedeemParamsData {
 }
 ```
 
-* `terminal` is the terminal that is facilitating the redemption.
-* `holder` is the holder of the tokens being redeemed.
-* `projectId` is the ID of the project whos tokens are being redeemed.
-* `currentFundingCycleConfiguration` is the configuration of the funding cycle during which the payment is being made.
-* `tokenCount` is the proposed number of tokens being redeemed, as a fixed point number with 18 decimals.
-* `totalSupply` is the total supply of tokens used in the calculation, as a fixed point number with 18 decimals.
-* `overflow` is the amount of overflow used in the reclaim amount calculation.
-* `reclaimAmount` is the amount that should be reclaimed by the redeemer using the protocol's standard bonding curve redemption formula. Includes the token being reclaimed, the reclaim value, the number of decimals included, and the currency of the reclaim amount.
-* `useTotalOverflow` is if overflow across all of a project's terminals is being used when making redemptions.
-* `redemptionRate` is the redemption rate of the funding cycle during which the redemption is being made.
-* `ballotRedemptionRate` is the ballot redemption rate of the funding cycle during which the redemption is being made.
-* `memo` is the proposed memo that is being emitted alongside the redemption.
-* `metadata` is extra data provided by the redeemer.
+- `terminal` is the terminal that is facilitating the redemption.
+- `holder` is the holder of the tokens being redeemed.
+- `projectId` is the ID of the project whos tokens are being redeemed.
+- `currentFundingCycleConfiguration` is the configuration of the funding cycle during which the payment is being made.
+- `tokenCount` is the proposed number of tokens being redeemed, as a fixed point number with 18 decimals.
+- `totalSupply` is the total supply of tokens used in the calculation, as a fixed point number with 18 decimals.
+- `overflow` is the amount of overflow used in the reclaim amount calculation.
+- `reclaimAmount` is the amount that should be reclaimed by the redeemer using the protocol's standard bonding curve redemption formula. Includes the token being reclaimed, the reclaim value, the number of decimals included, and the currency of the reclaim amount.
+- `useTotalOverflow` is if overflow across all of a project's terminals is being used when making redemptions.
+- `redemptionRate` is the redemption rate of the funding cycle during which the redemption is being made.
+- `ballotRedemptionRate` is the ballot redemption rate of the funding cycle during which the redemption is being made.
+- `memo` is the proposed memo that is being emitted alongside the redemption.
+- `metadata` is extra data provided by the redeemer.

@@ -1,4 +1,4 @@
-# _eligibleOf
+# \_eligibleOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -17,14 +17,14 @@ _Assumes the project has a latest configuration._
 #### Definition
 
 ```
-function _eligibleOf(uint256 _projectId) private view returns (uint256 configuration) { ... } 
+function _eligibleOf(uint256 _projectId) private view returns (uint256 configuration) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to look through.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns the configuration of an eligible funding cycle if one exists, or 0 if one doesn't exist.
+- Arguments:
+  - `_projectId` is the ID of the project to look through.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns the configuration of an eligible funding cycle if one exists, or 0 if one doesn't exist.
 
 #### Body
 
@@ -37,7 +37,8 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
 
     _Internal references:_
 
-    * [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+    - [`latestConfigurationOf`](/dev/api/contracts/jbfundingcyclestore/properties/latestconfigurationof.md)
+
 2.  Get the struct for the latest funding cycle.
 
     ```
@@ -47,7 +48,8 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 3.  If the latest is expired, return an empty funding cycle since there can't be a stored eligible cycle.
 
     ```
@@ -57,12 +59,14 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
       _fundingCycle.duration > 0 && block.timestamp >= _fundingCycle.start + _fundingCycle.duration
     ) return 0;
     ```
+
 4.  If the funding cycle has started, it must be eligible.
 
     ```
     // Return the funding cycle's configuration if it has started.
     if (block.timestamp >= _fundingCycle.start) return _fundingCycle.configuration;
     ```
+
 5.  Get a reference to the funding cycle that the current cycle is based on.
 
     ```
@@ -72,7 +76,8 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+
 6.  If the base is expired, return an empty funding cycle since there can't be a stored eligible cycle.
 
     ```
@@ -83,6 +88,7 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
       block.timestamp >= _baseFundingCycle.start + _baseFundingCycle.duration
     ) return 0;
     ```
+
 7.  Return the configuration that the latest funding cycle is based on.
 
     ```
@@ -96,9 +102,9 @@ function _eligibleOf(uint256 _projectId) private view returns (uint256 configura
 
 ```
 /**
-  @notice 
+  @notice
   The project's stored funding cycle that has started and hasn't yet expired.
-  
+
   @dev
   A value of 0 is returned if no funding cycle was found.
 

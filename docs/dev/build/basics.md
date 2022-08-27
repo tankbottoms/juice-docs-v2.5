@@ -111,7 +111,7 @@ function queuedFundingCycleOf(uint256 _projectId)
 
 The project's latest configured funding cycle can be found using [`JBFundingCycleStore.latestConfiguredOf(...)`](/dev/api/contracts/jbfundingcyclestore/read/latestconfiguredof.md), or using [`JBController.latestConfiguredFundingCycleOf(...)`](/dev/api/contracts/or-controllers/jbcontroller/read/latestconfiguredfundingcycleof.md) if the funding cycle's metadata is needed alongside. These calls also return the current ballot status for the configuration.
 
-If the latest configured funding cycle's ballot is `Approved`, the configuration should also be queued or current. 
+If the latest configured funding cycle's ballot is `Approved`, the configuration should also be queued or current.
 
 ```
 function latestConfiguredOf(uint256 _projectId)
@@ -166,7 +166,7 @@ function distributionLimitOf(
 ) external view override returns (uint256 distributionLimit, uint256 distributionLimitCurrency) { ... }
 ```
 
-The overflow allowance from any payment terminal during any funding cycle configuration can be found using [`JBController.overflowAllowanceOf(...)`](/dev/api/contracts/or-controllers/jbcontroller/read/overflowallowanceof.md). The currency being used for this overflow allowance is returned alongside. 
+The overflow allowance from any payment terminal during any funding cycle configuration can be found using [`JBController.overflowAllowanceOf(...)`](/dev/api/contracts/or-controllers/jbcontroller/read/overflowallowanceof.md). The currency being used for this overflow allowance is returned alongside.
 
 ```
 function overflowAllowanceOf(
@@ -289,7 +289,7 @@ function reservedTokenBalanceOf(uint256 _projectId, uint256 _reservedRate)
   returns (uint256) { ... }
 ```
 
-For projects using [`JBController`](/dev/api/contracts/or-controller/jbcontroller), the project token's total supply including any allocated reserved tokens that have yet to be distributed can be found in using [`JBController.totalOutstandingTokensOf(...)`](/dev/api/contracts/or-controllers/jbcontroller/read/totaloutstandingtokensof.md). 
+For projects using [`JBController`](/dev/api/contracts/or-controller/jbcontroller), the project token's total supply including any allocated reserved tokens that have yet to be distributed can be found in using [`JBController.totalOutstandingTokensOf(...)`](/dev/api/contracts/or-controllers/jbcontroller/read/totaloutstandingtokensof.md).
 
 ```
 function totalOutstandingTokensOf(uint256 _projectId, uint256 _reservedRate)
@@ -298,6 +298,7 @@ function totalOutstandingTokensOf(uint256 _projectId, uint256 _reservedRate)
   override
   returns (uint256) { ... }
 ```
+
 </details>
 
 Anyone can distribute a project's funds from a terminal up to its current funding cycle's distribution limit to its preprogrammed payout splits at any time. For example, if the project has added the [`JBETHPaymentTerminal`](/dev/api/contracts/or-payment-terminals/jbethpaymentterminal), funds can be distributed by calling [`JBETHPaymentTerminal.distributePayoutsOf(...)`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/distributepayoutsof.md).
@@ -328,7 +329,7 @@ function usedDistributionLimitOf(
 
 </details>
 
-A project's owner can distribute additional funds from its treasury's overflow for each of its terminals up until its preconfigured allowance. For example, if the project has added the [`JBETHPaymentTerminal`](/dev/api/contracts/or-payment-terminals/jbethpaymentterminal), funds can be distributed by calling its [`JBETHPaymentTerminal.useAllowanceOf(...)`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/useallowanceof.md) transaction. 
+A project's owner can distribute additional funds from its treasury's overflow for each of its terminals up until its preconfigured allowance. For example, if the project has added the [`JBETHPaymentTerminal`](/dev/api/contracts/or-payment-terminals/jbethpaymentterminal), funds can be distributed by calling its [`JBETHPaymentTerminal.useAllowanceOf(...)`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/useallowanceof.md) transaction.
 
 ```
 function useAllowanceOf(
@@ -476,7 +477,7 @@ function reconfigureFundingCyclesOf(
 Reconfigurations are subject to the approval of the ballot contract included in the current funding cycle. The current ballot state can be found using [`JBFundingCycleStore.ballotStateOf(...)`](/dev/api/contracts/jbfundingcyclestore/read/currentballotstateof.md).
 
 ```
-function currentBallotStateOf(uint256 _projectId) external view override returns (JBBallotState) { ... } 
+function currentBallotStateOf(uint256 _projectId) external view override returns (JBBallotState) { ... }
 ```
 
 </details>
@@ -524,7 +525,7 @@ function changeTokenOf(
 
 <summary>View the project's token</summary>
 
-The token currently being used by a project can be found in the [`JBTokensStore`](/dev/api/contracts/jbtokenstore/README.md) contract by using [`JBTokenStore.tokenOf(...)`](/dev/api/contracts/jbtokenstore/properties/tokenof.md). This will return a zero address if the project hasn't yet issued tokens or changed into a custom token. 
+The token currently being used by a project can be found in the [`JBTokensStore`](/dev/api/contracts/jbtokenstore/README.md) contract by using [`JBTokenStore.tokenOf(...)`](/dev/api/contracts/jbtokenstore/properties/tokenof.md). This will return a zero address if the project hasn't yet issued tokens or changed into a custom token.
 
 ```
 function tokenOf(uint256 _projectId) external view override returns (IJBToken) { ... }
@@ -535,6 +536,7 @@ The project a token is currently being used for can be found by calling [`JBToke
 ```
 function projectOf(IJBToken _token) external view override returns (uint256) { ... }
 ```
+
 </details>
 
 If a project has issued an ERC-20s or is using a custom [`IJBToken`](/dev/api/interfaces/ijbtoken.md), a holder can claim tokens that are being represented via the internal accounting mechanism into the ERC-20 or custom `IJBToken` by calling [`JBTokenStore.claimFor(...)`](/dev/api/contracts/jbtokenstore/write/claimfor.md).

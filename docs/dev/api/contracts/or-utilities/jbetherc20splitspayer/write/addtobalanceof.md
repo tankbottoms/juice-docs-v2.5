@@ -25,17 +25,17 @@ function addToBalanceOf(
 ) public payable virtual override nonReentrant { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project that is being paid after.
-  * `_token` is the token being paid in.
-  * `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` is @param extra data to pass along to the terminal.
-* The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project that is being paid after.
+  - `_token` is the token being paid in.
+  - `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` is @param extra data to pass along to the terminal.
+- The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -57,12 +57,12 @@ function addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-      
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+
     _External references:_
 
-    * [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
+    - [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
 
 2.  Send the funds to the splits and get a reference to the leftover amount.
 
@@ -81,11 +81,12 @@ function addToBalanceOf(
 
     _Internal references:_
 
-    * [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
-    * [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
-    * [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
+    - [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
+    - [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
+    - [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
+
 3.  If there's any leftover amount, add to balance of the specified project. If no project is specified, send the leftover funds to the beneficiary or the msg.sender.
 
     ```
@@ -118,20 +119,20 @@ function addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-    * [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
-      * `.sendValue(...)`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+    - [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
+      - `.sendValue(...)`
 
     _Internal references:_
 
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`_addToBalanceOf`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_addtobalanceof.md)
 
     _External references:_
 
-    * [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-Transfer-address-address-uint256-)
-    
+    - [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-Transfer-address-address-uint256-)
+
 4.  Emit a `AddToBalance` event with the relevant parameters.
 
     ```
@@ -149,22 +150,22 @@ function addToBalanceOf(
 
     _Event references:_
 
-    * [`AddToBalance`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/addtobalance.md)
-    
+    - [`AddToBalance`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/addtobalance.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Add to the balance of the specified project after first splitting the amount among the stored default splits.
 
   @param _projectId The ID of the project that is being paid after.
   @param _token The token being paid in.
   @param _amount The amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
   @param _decimals The number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  @param _memo A memo to pass along to the emitted event.  
+  @param _memo A memo to pass along to the emitted event.
   @param _metadata Extra data to pass along to the terminal.
 */
 function addToBalanceOf(
@@ -242,20 +243,19 @@ function addToBalanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                       | Description                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------- |
-| **`NO_MSG_VALUE_ALLOWED`**    | Thrown if ETH was sent to a non-ETH terminal.   |
+| String                     | Description                                   |
+| -------------------------- | --------------------------------------------- |
+| **`NO_MSG_VALUE_ALLOWED`** | Thrown if ETH was sent to a non-ETH terminal. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                                          | Data                                                                                          |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [**`AddToBalance`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/addtobalance.md)                                                                          | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>address token</code></li><li><code>uint256 amount</code></li><li><code>uint256 decimals</code></li><li><code>uint256 leftoverAmount</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                                                               | Data                                                                                                                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`AddToBalance`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/addtobalance.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>address token</code></li><li><code>uint256 amount</code></li><li><code>uint256 decimals</code></li><li><code>uint256 leftoverAmount</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
-
 
 <TabItem value="Bug bounty" label="Bug bounty">
 

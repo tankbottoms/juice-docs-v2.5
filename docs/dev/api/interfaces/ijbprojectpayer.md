@@ -65,5 +65,3 @@ interface IJBProjectPayer is IERC165 {
   receive() external payable;
 }
 ```
-
-

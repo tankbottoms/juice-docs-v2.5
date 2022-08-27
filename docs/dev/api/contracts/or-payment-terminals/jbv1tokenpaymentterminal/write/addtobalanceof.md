@@ -24,15 +24,15 @@ function addToBalanceOf(
 ) external payable virtual override { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funds received belong. This is ignored since this terminal doesn't allow this function.
-  * `_amount` is the amount of tokens to add, as a fixed point number with the same number of decimals as this terminal. This is ignored since this terminal doesn't allow this function.
-  * `_token` is the token being paid. This terminal ignores this property since it only manages one token. This is ignored since this terminal doesn't allow this function.
-  * `_memo` is a memo to pass along to the emitted event. This is ignored since this terminal doesn't allow this function.
-  * `_metadata` is metadata to pass along to the emitted event. This is ignored since this terminal doesn't allow this function.
-* The function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to which the funds received belong. This is ignored since this terminal doesn't allow this function.
+  - `_amount` is the amount of tokens to add, as a fixed point number with the same number of decimals as this terminal. This is ignored since this terminal doesn't allow this function.
+  - `_token` is the token being paid. This terminal ignores this property since it only manages one token. This is ignored since this terminal doesn't allow this function.
+  - `_memo` is a memo to pass along to the emitted event. This is ignored since this terminal doesn't allow this function.
+  - `_metadata` is metadata to pass along to the emitted event. This is ignored since this terminal doesn't allow this function.
+- The function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -51,7 +51,7 @@ function addToBalanceOf(
   @notice
   Receives funds belonging to the specified project.
 
-  @dev 
+  @dev
   This terminal does not allow adding directly to a project's balance.
 
   @param _projectId The ID of the project to which the funds received belong. This is ignored since this terminal doesn't allow this function.
@@ -81,8 +81,8 @@ function addToBalanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String              | Description                          |
+| ------------------- | ------------------------------------ |
 | **`NOT_SUPPORTED`** | Thrown when this function is called. |
 
 </TabItem>

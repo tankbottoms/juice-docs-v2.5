@@ -28,14 +28,14 @@ function recordUsedAllowanceOf(
   returns (JBFundingCycle memory fundingCycle, uint256 usedAmount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to use the allowance of.
-  * `_amount` is the amount to use from the allowance, as a fixed point number. 
-  * `_currency` is the currency of the `_amount`. Must match the currency of the overflow allowance.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns:
-  * `fundingCycle` is the funding cycle during which the withdrawal was made.
-  * `usedAmount` is the amount of terminal tokens used, as a fixed point number with the same amount of decimals as its relative terminal.
+- Arguments:
+  - `_projectId` is the ID of the project to use the allowance of.
+  - `_amount` is the amount to use from the allowance, as a fixed point number.
+  - `_currency` is the currency of the `_amount`. Must match the currency of the overflow allowance.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns:
+  - `fundingCycle` is the funding cycle during which the withdrawal was made.
+  - `usedAmount` is the amount of terminal tokens used, as a fixed point number with the same amount of decimals as its relative terminal.
 
 #### Body
 
@@ -48,7 +48,8 @@ function recordUsedAllowanceOf(
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+
 2.  Get a reference to the new used overflow allowance for this funding cycle configuration.
 
     ```
@@ -60,7 +61,8 @@ function recordUsedAllowanceOf(
 
     _Internal references:_
 
-    * [`usedOverflowAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/usedoverflowallowanceof.md)
+    - [`usedOverflowAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/usedoverflowallowanceof.md)
+
 3.  Get a reference to the overflow allowance of the project during the current funding cycle configuration, and the currency the overflow allowance is in terms of.
 
     ```
@@ -77,9 +79,10 @@ function recordUsedAllowanceOf(
 
     _External references:_
 
-    * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-    * [`overflowAllowanceOf`](/dev/api/contracts/or-controllers/jbcontroller/read/overflowallowanceof.md)
-    * [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
+    - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+    - [`overflowAllowanceOf`](/dev/api/contracts/or-controllers/jbcontroller/read/overflowallowanceof.md)
+    - [`token`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/properties/token.md)
+
 4.  Make sure there's enough allowance left to accomodate the new used amount.
 
     ```
@@ -116,10 +119,10 @@ function recordUsedAllowanceOf(
 
     _External references:_
 
-    * [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
-    * [`distributionLimitOf`](/dev/api/contracts/or-controllers/jbcontroller/read/distributionlimitof.md)
+    - [`controllerOf`](/dev/api/contracts/jbdirectory/properties/controllerof.md)
+    - [`distributionLimitOf`](/dev/api/contracts/or-controllers/jbcontroller/read/distributionlimitof.md)
 
-8.  Calculate how much of the balance will be used. If the currency of the allowance and the balance are the same, no price conversion is necessary. Otherwise, convert the allowance currency to that of the balance. 
+8.  Calculate how much of the balance will be used. If the currency of the allowance and the balance are the same, no price conversion is necessary. Otherwise, convert the allowance currency to that of the balance.
 
     ```
     // Convert the amount to this store's terminal's token.
@@ -134,16 +137,16 @@ function recordUsedAllowanceOf(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
 
     _Internal references:_
 
-    * [`_MAX_FIXED_POINT_FIDELITY`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/-_max_fixed_point_fidelity.md)
+    - [`_MAX_FIXED_POINT_FIDELITY`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/-_max_fixed_point_fidelity.md)
 
     _External references:_
 
-    * [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
+    - [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
 
 9.  Make sure the amount being used is available in overflow.
 
@@ -162,7 +165,8 @@ function recordUsedAllowanceOf(
 
     _Internal references:_
 
-    * [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
+    - [`_overflowDuring`](/dev/api/contracts/jbsingletokenpaymentterminalstore/read/-_overflowduring.md)
+
 10. Store the incremented value that tracks how much of a project's allowance was used during the current funding cycle configuration.
 
     ```
@@ -174,7 +178,7 @@ function recordUsedAllowanceOf(
 
     _Internal references:_
 
-    * [`usedOverflowAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/usedoverflowallowanceof.md)
+    - [`usedOverflowAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/usedoverflowallowanceof.md)
 
 11. Store the decremented balance.
 
@@ -187,7 +191,7 @@ function recordUsedAllowanceOf(
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
 
 </TabItem>
 
@@ -199,10 +203,10 @@ function recordUsedAllowanceOf(
   Records newly used allowance funds of a project.
 
   @dev
-  The msg.sender must be an IJBSingleTokenPaymentTerminal. 
+  The msg.sender must be an IJBSingleTokenPaymentTerminal.
 
   @param _projectId The ID of the project to use the allowance of.
-  @param _amount The amount to use from the allowance, as a fixed point number. 
+  @param _amount The amount to use from the allowance, as a fixed point number.
   @param _currency The currency of the `_amount`. Must match the currency of the overflow allowance.
   @param _balanceCurrency The currency that the balance is expected to be in terms of.
 

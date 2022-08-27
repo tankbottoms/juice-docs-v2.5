@@ -1,6 +1,7 @@
 # Pay delegate
 
 Before implementing, learn about delegates [here](/dev/learn/glossary/delegate.md).
+
 #### Specs
 
 A contract can become a treasury pay delegate by adhering to [`IJBPayDelegate`](/dev/api/interfaces/ijbpaydelegate.md):
@@ -36,9 +37,9 @@ struct JBTokenAmount {
 }
 ```
 
-The `msg.sender` to the delegate will be the payment terminal that facilitated the payment. 
+The `msg.sender` to the delegate will be the payment terminal that facilitated the payment.
 
-In payment terminals based on the [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal), such as [`JBETHPaymentTerminal`](/dev/api/contracts/or-payment-terminals/jbethpaymentterminal/README.md)'s and [`JBERC20PaymentTerminal`](/dev/api/contracts/or-payment-terminals/jberc20paymentterminal/README.md)'s, the pay delegate hook gets called *after* the project's tokens have been minted and distributed. [View the docs](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_pay.md). 
+In payment terminals based on the [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal), such as [`JBETHPaymentTerminal`](/dev/api/contracts/or-payment-terminals/jbethpaymentterminal/README.md)'s and [`JBERC20PaymentTerminal`](/dev/api/contracts/or-payment-terminals/jberc20paymentterminal/README.md)'s, the pay delegate hook gets called _after_ the project's tokens have been minted and distributed. [View the docs](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_pay.md).
 
 Make sure to only allow trusted contracts to access the `didPay(...)` transaction.
 
@@ -61,7 +62,7 @@ contract NFTPayDelegate is ERC721, IJBFundingCycleDataSource, IJBPayDelegate {
   uint256 projectId;
   JBTokenAmount contributionThreshold;
   uint256 supply;
-  
+
   // This contract can be used as a funding cycle data source to ensure its didPay function is called once the payment has gone through.
   function payParams(JBPayParamsData calldata _data)
     external
@@ -76,7 +77,7 @@ contract NFTPayDelegate is ERC721, IJBFundingCycleDataSource, IJBPayDelegate {
     // Forward the recieved weight and memo, and use this contract as a pay delegate.
     return (_data.weight, _data.memo, IJBPayDelegate(address(this)));
   }
-  
+
   // This is unused but needs to be included to fulfill IJBFundingCycleDataSource.
   function redeemParams(JBRedeemParamsData calldata _data)
     external
@@ -96,7 +97,7 @@ contract NFTPayDelegate is ERC721, IJBFundingCycleDataSource, IJBPayDelegate {
     directory = _directory;
     projectId = _projectId;
   },
-  
+
   // Called once the payment has gone through if the project's current funding cycle is using a data source that returns this delegate.
   function didPay(JBDidPayData calldata _data) external override {
     // Make sure the caller is a terminal of the project, and the call is being made on behalf of an interaction with the correct project.

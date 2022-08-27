@@ -18,13 +18,13 @@ Interface: [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md)
 function acceptsToken(address _token, uint256 _projectId) external view override returns (bool) { ... }
 ```
 
-* Arguments:
-  * `_token` is the token to check if this terminal accepts or not.
-  * `_projectId` is the project ID to check for token acceptance.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function returns the flag.
+- Arguments:
+  - `_token` is the token to check if this terminal accepts or not.
+  - `_projectId` is the project ID to check for token acceptance.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function returns the flag.
 
 #### Body
 
@@ -37,9 +37,9 @@ function acceptsToken(address _token, uint256 _projectId) external view override
 
     _Internal references:_
 
-    * [`v1ProjectIdOf`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/v1projectidof.md)
+    - [`v1ProjectIdOf`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/v1projectidof.md)
 
-1.  This terminal should not accept a token if it's been explicitly set by the project, and the exchanging has not yet been finalized. 
+1.  This terminal should not accept a token if it's been explicitly set by the project, and the exchanging has not yet been finalized.
 
     ```
     // Accept the token if it has been set and the exchange hasn't yet finalized.
@@ -48,19 +48,19 @@ function acceptsToken(address _token, uint256 _projectId) external view override
 
     _Internal references:_
 
-    * [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
-    
-    * [`ticketsOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L69)
+
+    - [`ticketsOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L69)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   A flag indicating if this terminal accepts the specified token.
 

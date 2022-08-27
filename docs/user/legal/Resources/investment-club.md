@@ -43,31 +43,7 @@ Associated with Wallet:
 
 ### SUBSCRIPTION DOCUMENTS
 
-[Note to User: You acknowledge and agree that the making
-available of this document to you by Syndicate Inc. shall not create any
-confidential or special relationship between you and Syndicate Inc. or
-its affiliates (collectively, “Syndicate”) and does not constitute the
-provision of legal advice or other professional advice by Syndicate or
-its legal counsel. You should seek advice from an attorney licensed in
-the relevant jurisdiction(s), as well as a tax professional, before
-relying on this template document.
-Additionally, the information provided in this document does not
-constitute tax advice. Any discussion of tax matters is not intended or
-written to be used, and cannot be used, for the purpose of avoiding
-penalties under the Internal Revenue Code (or equivalent in the relevant
-jurisdiction) or promoting, marketing or recommending to another party
-any transaction or matter.
-You further agree and acknowledge that this document has not been
-prepared with your specific circumstances in mind, may not be suitable
-for use in your business, and does not constitute legal or tax advice.
-Relying on this document, you assume all risk and liability that may
-result.
-Review all documents carefully for accuracy before using them. There may be [BRACKETED TEXT] requiring your attention.
-SYNDICATE PROVIDES THESE TERMS ON AN “AS IS” BASIS, AND SPECIFICALLY
-DISCLAIMS ALL WARRANTIES, TERMS, REPRESENTATIONS AND CONDITIONS WHETHER
-EXPRESS, IMPLIED, OR STATUTORY, AND INCLUDING ANY WARRANTIES, TERMS,
-REPRESENTATIONS AND CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
-FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NONINFRINGEMENT.]
+[Note to User: You acknowledge and agree that the making available of this document to you by Syndicate Inc. shall not create any confidential or special relationship between you and Syndicate Inc. or its affiliates (collectively, “Syndicate”) and does not constitute the provision of legal advice or other professional advice by Syndicate or its legal counsel. You should seek advice from an attorney licensed in the relevant jurisdiction(s), as well as a tax professional, before relying on this template document. Additionally, the information provided in this document does not constitute tax advice. Any discussion of tax matters is not intended or written to be used, and cannot be used, for the purpose of avoiding penalties under the Internal Revenue Code (or equivalent in the relevant jurisdiction) or promoting, marketing or recommending to another party any transaction or matter. You further agree and acknowledge that this document has not been prepared with your specific circumstances in mind, may not be suitable for use in your business, and does not constitute legal or tax advice. Relying on this document, you assume all risk and liability that may result. Review all documents carefully for accuracy before using them. There may be [BRACKETED TEXT] requiring your attention. SYNDICATE PROVIDES THESE TERMS ON AN “AS IS” BASIS, AND SPECIFICALLY DISCLAIMS ALL WARRANTIES, TERMS, REPRESENTATIONS AND CONDITIONS WHETHER EXPRESS, IMPLIED, OR STATUTORY, AND INCLUDING ANY WARRANTIES, TERMS, REPRESENTATIONS AND CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NONINFRINGEMENT.]
 :::
 
 ### TABLE OF CONTENTS
@@ -86,202 +62,76 @@ Exhibit C 27
 
 ### SUBSCRIPTION INSTRUCTIONS
 
-Prior to subscribing to [LLC / Series Name ] (the
-“Vehicle”), prospective members (“Subscribers”) should read: (i) the
-Limited Liability Company Agreement of [Vehicle / Master LLC Name][and the series addenda for the vehicle ] (as amended, restated, supplemented
-or otherwise modified from time to time, collectively the “Operating
-Agreement”); and (ii) these subscription documents (the “Subscription
-Documents”, which shall include the Subscription Agreement, exhibits,
-and any documents incorporated by reference). The Subscriber must also
-provide all of the applicable information and documents and execute the
-signature page outlined in the checklist below. Capitalized words that
-are used but not defined in this Agreement have the meaning given them
-in the Operating Agreement.
+Prior to subscribing to [LLC / Series Name ] (the “Vehicle”), prospective members (“Subscribers”) should read: (i) the Limited Liability Company Agreement of [Vehicle / Master LLC Name][and the series addenda for the vehicle ] (as amended, restated, supplemented or otherwise modified from time to time, collectively the “Operating Agreement”); and (ii) these subscription documents (the “Subscription Documents”, which shall include the Subscription Agreement, exhibits, and any documents incorporated by reference). The Subscriber must also provide all of the applicable information and documents and execute the signature page outlined in the checklist below. Capitalized words that are used but not defined in this Agreement have the meaning given them in the Operating Agreement.
 
-SUBSCRIPTION DOCUMENTS CHECKLIST
+#### SUBSCRIPTION DOCUMENTS CHECKLIST
 
-◻ Complete and sign the Subscription Agreement (including additional representation page, if applicable).
+-   Complete and sign the Subscription Agreement (including additional representation page, if applicable).
+-   Review and sign the Operating Agreement Signature Page.
+-   Complete Exhibit A (Subscriber Information), and provide any documentation requested therein.
+-   Complete Exhibit B (Accredited Investor Status), and provide any documentation requested therein.
+-   Complete Exhibit C (USA Patriot Act Compliance), and provide any documentation requested therein.
+-   Complete and sign the applicable IRS Form:
+-   W-9 (for Subscribers who are U.S. persons)
+-   W-8BEN (for Individual Subscribers who are not U.S. persons)
 
-◻ Review and sign the Operating Agreement Signature Page.
-
-◻ Complete Exhibit A (Subscriber Information), and provide any documentation requested therein.
-
-◻ Complete Exhibit B (Accredited Investor Status), and provide any documentation requested therein.
-
-◻ Complete Exhibit C (USA Patriot Act Compliance), and provide any documentation requested therein.
-
-◻ Complete and sign the applicable IRS Form:
-
-◻ W-9 (for Subscribers who are U.S. persons)
-
-◻ W-8BEN (for Individual Subscribers who are not U.S. persons)
-
-The Administrative Member may request additional documents
-it deems as necessary from any Subscriber.
-Scan and email your completed documents to [Administrative Member’s Name
-] (the “Administrative Member”) and [Counsel, if any ], to arrive as
-soon as possible and in any event no later than [Date ]. Please keep a
-copy of the executed documents for your records. Documents should
-include applicable supporting documentation, as specified in the
-Subscription Documents.
+The Administrative Member may request additional documents it deems as necessary from any Subscriber. Scan and email your completed documents to [Administrative Member’s Name ] (the “Administrative Member”) and [Counsel, if any ], to arrive as soon as possible and in any event no later than [Date ]. Please keep a copy of the executed documents for your records. Documents should include applicable supporting documentation, as specified in the Subscription Documents.
 
 Documents should be sent to:
 
-[Vehicle Name]
+```
+    [Name]
+    Email:
 
-Email: [● ]
+    [●] [with a copy to:
+            [Counsel Firm]
+            Attn:   [Attorney Name]
+            Email:
+        [●]
+        ]
+```
 
-`[with a copy to:
-
-[Counsel Firm]
-
-Attn: [Attorney Name]
-
-Email: [●]]`
-
-After notification from the Administrative Member that the
-subscription has been accepted, the Subscriber must send his or her
-subscription amount by wire transfer or as digital assets . Digital
-asset wallets and wire transfer information will be provided separately
-by the Administrative Member.
-Upon acceptance of the subscription, a copy of the executed Subscription
-Documents, signed as accepted on behalf of the Vehicle, will be
-returned to Subscriber.
+After notification from the Administrative Member that the subscription has been accepted, the Subscriber must send his or her subscription amount by wire transfer or as digital assets . Digital asset wallets and wire transfer information will be provided separately by the Administrative Member. Upon acceptance of the subscription, a copy of the executed Subscription Documents, signed as accepted on behalf of the Vehicle, will be returned to Subscriber.
 
 ### SUBSCRIPTION AGREEMENT
 
-This Subscription Agreement (this “Agreement”) is entered into by and
-between [LLC / Series Name ] (the “Vehicle”), [a Delaware Limited
-Liability Company / a Series of [Master LLC Name], a Delaware Limited
-Liability Company (the “Master LLC”)], and the undersigned party as
-Subscriber (the “Subscriber”), effective as of the date set forth on the
-Acceptance of Subscription page of this Agreement. Capitalized words
-that are used but not defined in this Agreement have the meaning given
-them in the Limited Liability Company Agreement of the [Vehicle / Master
-LLC, together with each applicable Series Addenda for the Vehicle ] (as
-amended, restated, supplemented or otherwise modified from time to
-time, the “Operating Agreement”). In consideration of the mutual
-covenants set forth in this Agreement and for other good and valuable
-consideration, the receipt and sufficiency of which are hereby
-acknowledged, the Subscriber and the Vehicle hereby agree as follows:
+This Subscription Agreement (this “Agreement”) is entered into by and between [LLC / Series Name ] (the “Vehicle”), [a Delaware Limited Liability Company / a Series of [Master LLC Name], a Delaware Limited Liability Company (the “Master LLC”)], and the undersigned party as Subscriber (the “Subscriber”), effective as of the date set forth on the Acceptance of Subscription page of this Agreement. Capitalized words that are used but not defined in this Agreement have the meaning given them in the Limited Liability Company Agreement of the [Vehicle / Master LLC, together with each applicable Series Addenda for the Vehicle ] (as amended, restated, supplemented or otherwise modified from time to time, the “Operating Agreement”). In consideration of the mutual covenants set forth in this Agreement and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Subscriber and the Vehicle hereby agree as follows:
 
-1. Subscription.
+### **1. Subscription.**
 
-(a) Subject to the terms and conditions of this Agreement, the
-Subscriber hereby irrevocably tenders this subscription (this
-“Subscription”) for an interest in the Vehicle (an “Interest”) in the
-amount set forth on the “Subscription Amount” line (the “Subscription
-Amount”) on the Subscriber’s applicable signature page hereto (the
-“Signature Page”).
+> -   (a) Subject to the terms and conditions of this Agreement, the Subscriber hereby irrevocably tenders this subscription (this “Subscription”) for an interest in the Vehicle (an “Interest”) in the amount set forth on the “Subscription Amount” line (the “Subscription Amount”) on the Subscriber’s applicable signature page hereto (the “Signature Page”).
 
-(b) This Subscription, when and if accepted by the Administrative Member of the Vehicle, will constitute a commitment to contribute to the
-Vehicle that portion of the Subscription Amount accepted by the
-Administrative Member. The Subscriber will be admitted as a Member in
-the Vehicle at the time this Subscription is accepted by the
-Administrative Member pursuant to the terms of Section1(c) below, and
-the Subscriber hereby irrevocably agrees to be bound by the Operating
-Agreement as a Member of the Vehicle and to perform all obligations
-contained in the Operating Agreement applicable to him or her, including making contributions to the Vehicle. This Agreement will become
-irrevocable with respect to the Subscriber at the time of its submission to the Vehicle and may not be withdrawn by the Subscriber unless the
-Administrative Member rejects this Subscription.
+> -   (b) This Subscription, when and if accepted by the Administrative Member of the Vehicle, will constitute a commitment to contribute to the Vehicle that portion of the Subscription Amount accepted by the Administrative Member. The Subscriber will be admitted as a Member in the Vehicle at the time this Subscription is accepted by the Administrative Member pursuant to the terms of Section1(c) below, and the Subscriber hereby irrevocably agrees to be bound by the Operating Agreement as a Member of the Vehicle and to perform all obligations contained in the Operating Agreement applicable to him or her, including making contributions to the Vehicle. This Agreement will become irrevocable with respect to the Subscriber at the time of its submission to the Vehicle and may not be withdrawn by the Subscriber unless the Administrative Member rejects this Subscription.
 
-(c) The Administrative Member, on behalf of the Vehicle, may accept or
-reject this Subscription, in whole or in part, in its sole discretion.
-This Subscription will be deemed to be accepted by the Administrative
-Member and this Agreement will be binding against the Administrative
-Member only upon execution and delivery to the Subscriber of the
-Acceptance of Subscription attached to this Agreement. At the Closing,
-the Administrative Member will execute the Acceptance of Subscription
-and deliver notice of the Closing to the Subscriber within a reasonable
-time after the Closing. Upon acceptance, the Subscriber will be issued
-the Interest for which it has subscribed. Failure to deliver
-fully-completed and executed Subscription Documents, of which this
-Agreement is a part, may result in the Vehicle rejecting this
-Subscription.
+> -   (c) The Administrative Member, on behalf of the Vehicle, may accept or reject this Subscription, in whole or in part, in its sole discretion. This Subscription will be deemed to be accepted by the Administrative Member and this Agreement will be binding against the Administrative Member only upon execution and delivery to the Subscriber of the Acceptance of Subscription attached to this Agreement. At the Closing, the Administrative Member will execute the Acceptance of Subscription and deliver notice of the Closing to the Subscriber within a reasonable time after the Closing. Upon acceptance, the Subscriber will be issued the Interest for which it has subscribed. Failure to deliver fully-completed and executed Subscription Documents, of which this Agreement is a part, may result in the Vehicle rejecting this Subscription.
 
-(d) The Vehicle has the unrestricted right to condition its acceptance
-of the Subscriber’s Subscription, in whole or in part, upon the receipt
-by the Vehicle of any additional instruments (including any
-designations, representations, warranties, or covenants), documentation
-and information requested by the Vehicle in its sole discretion,
-including an opinion of counsel to the Subscriber, evidencing the
-legality of an investment in the Vehicle by the Subscriber and the
-authority of the person executing this Agreement on behalf of the
-Subscriber (collectively the “Additional Documents”), in addition to
-these Subscription Documents.
+> -   (d) The Vehicle has the unrestricted right to condition its acceptance of the Subscriber’s Subscription, in whole or in part, upon the receipt by the Vehicle of any additional instruments (including any designations, representations, warranties, or covenants), documentation and information requested by the Vehicle in its sole discretion, including an opinion of counsel to the Subscriber, evidencing the legality of an investment in the Vehicle by the Subscriber and the authority of the person executing this Agreement on behalf of the Subscriber (collectively the “Additional Documents”), in addition to these Subscription Documents.
 
-(e) The Subscriber understands that the Vehicle has entered into or
-expects to enter into separate subscription agreements with other
-members which are or will be substantially similar in all material
-respects to this Agreement providing for the admission of such other
-members as Members in the Vehicle. This Agreement and other separate
-subscription agreements are separate agreements and the sale
-arrangements between the Vehicle and other members are separate sales.
-The Subscriber also acknowledges and agrees that the Administrative
-Member may enter into side letters with certain Members (which may
-include the Subscriber) which contain terms different from those in this Agreement or amend and supplement certain provisions of the Operating
-Agreement as it applies to such Members. In the event of any
-inconsistency between the terms of this Agreement and the terms of any
-side letter, the terms of the side letter shall control.
+(e) The Subscriber understands that the Vehicle has entered into or expects to enter into separate subscription agreements with other members which are or will be substantially similar in all material respects to this Agreement providing for the admission of such other members as Members in the Vehicle. This Agreement and other separate subscription agreements are separate agreements and the sale arrangements between the Vehicle and other members are separate sales. The Subscriber also acknowledges and agrees that the Administrative Member may enter into side letters with certain Members (which may include the Subscriber) which contain terms different from those in this Agreement or amend and supplement certain provisions of the Operating Agreement as it applies to such Members. In the event of any inconsistency between the terms of this Agreement and the terms of any side letter, the terms of the side letter shall control.
 
-2. Representations and Warranties of the Subscriber.
+### **2. Representations and Warranties of the Subscriber.**
 
-The Subscriber hereby represents and warrants to the Vehicle as of the
-date of this Agreement and as of the date of any Capital Contribution to the Vehicle (and the Subscriber agrees to notify the Vehicle in writing immediately if any changes in the information set forth in this
-Agreement occur):
+The Subscriber hereby represents and warrants to the Vehicle as of the date of this Agreement and as of the date of any Capital Contribution to the Vehicle (and the Subscriber agrees to notify the Vehicle in writing immediately if any changes in the information set forth in this Agreement occur):
 
-(a) The Subscriber has completed Exhibit B indicating if and how the
-Subscriber qualifies as an “Accredited Investor” within the meaning of
-Rule 501 of Regulation D under the Securities Act of 1933, as amended
-(the “Securities Act”).
+> -   (a) The Subscriber has completed Exhibit B indicating if and how the Subscriber qualifies as an “Accredited Investor” within the meaning of Rule 501 of Regulation D under the Securities Act of 1933, as amended (the “Securities Act”).
 
-(b) The Subscriber has not reproduced, duplicated, or delivered the
-Operating Agreement or this Agreement to any other person, except
-professional advisers to the Subscriber or as instructed by the
-Administrative Member. Notwithstanding the foregoing, the Subscriber
-(and each employee, representative or other agent of the Subscriber) may disclose to any and all persons, without limitation of any kind, the
-tax treatment and tax structure of (i) the Vehicle and (ii) any of its
-transactions, and all materials of any kind (including opinions or other tax analyses) that are provided to the Subscriber relating to such tax
-treatment and tax structure.
+> -   (b) The Subscriber has not reproduced, duplicated, or delivered the Operating Agreement or this Agreement to any other person, except professional advisers to the Subscriber or as instructed by the Administrative Member. Notwithstanding the foregoing, the Subscriber (and each employee, representative or other agent of the Subscriber) may disclose to any and all persons, without limitation of any kind, the tax treatment and tax structure of
+>     > -   (i) the Vehicle and
+>     > -   (ii) any of its transactions, and all materials of any kind (including opinions or other tax analyses) that are provided to the Subscriber relating to such tax treatment and tax structure.
 
-(c) The Subscriber (either alone or with the Subscriber’s professional
-advisers who are unaffiliated with the Vehicle, the Administrative
-Member, or its affiliates) has such knowledge and experience in
-financial and business matters that the Subscriber is capable of
-evaluating the merits and risks of membership in the Vehicle.
+> -   (c) The Subscriber (either alone or with the Subscriber’s professional advisers who are unaffiliated with the Vehicle, the Administrative Member, or its affiliates) has such knowledge and experience in financial and business matters that the Subscriber is capable of evaluating the merits and risks of membership in the Vehicle.
 
-(d) All questions of the Subscriber related to the Subscriber’s
-membership in the Vehicle have been answered to the full satisfaction of the Subscriber and the Subscriber has received all the information the
-Subscriber considers necessary or appropriate for deciding whether to
-purchase the Interest.
+> -   (d) All questions of the Subscriber related to the Subscriber’s membership in the Vehicle have been answered to the full satisfaction of the Subscriber and the Subscriber has received all the information the Subscriber considers necessary or appropriate for deciding whether to purchase the Interest.
 
-(e) Upon acceptance of the Subscription by the Vehicle, this Agreement
-and the Operating Agreement will each constitute a valid and legally
-binding obligation of the Subscriber, enforceable in accordance with its terms except to the extent limited by applicable bankruptcy,
-insolvency, reorganization or other laws affecting the enforcement of
-creditors’ rights generally and by principles of equity.
+> -   (e) Upon acceptance of the Subscription by the Vehicle, this Agreement and the Operating Agreement will each constitute a valid and legally binding obligation of the Subscriber, enforceable in accordance with its terms except to the extent limited by applicable bankruptcy, insolvency, reorganization or other laws affecting the enforcement of creditors’ rights generally and by principles of equity.
 
-(f) The Subscriber (i) is a natural person, (ii) has full legal capacity to execute and deliver this Agreement and to perform the Subscriber’s
-obligations in this Agreement and (iii) is a bona fide resident of the
-state of residence set forth on Exhibit A and has no present intention
-of becoming a resident of any other state or jurisdiction.
+> -   (f) The Subscriber
+>     > -   (i) is a natural person,
+>     > -   (ii) has full legal capacity to execute and deliver this Agreement and to perform the Subscriber’s
+>         obligations in this Agreement and
+>     > -   (iii) is a bona fide resident of the state of residence set forth on Exhibit A and has no present intention of becoming a resident of any other state or jurisdiction.
 
-(g) Other than as set forth in this Agreement or in the Operating
-Agreement (and any separate agreement in writing with the Vehicle
-executed in conjunction with the Subscriber’s Subscription), the
-Subscriber is not relying upon any information, representation or
-warranty by the Vehicle, the Administrative Member, or any of their
-respective agents or representatives in determining to subscribe to the
-Vehicle. The Subscriber has consulted, to the extent deemed appropriate
-by the Subscriber, with the Subscriber’s own advisers as to the
-financial, tax, legal and other matters concerning the Vehicle and on
-that basis and the basis of its own independent investigations, without
-the assistance of the Vehicle, the Administrative Member, or any of
-their respective agents or representatives, believes that an investment
-in the Vehicle is suitable and appropriate for the Subscriber.
-Subscriber hereby represents and warrants that it has had the
-opportunity to have its own independent legal counsel review and approve all of the legal documents executed in connection with its
-Subscription.
+> -   (g) Other than as set forth in this Agreement or in the Operating Agreement (and any separate agreement in writing with the Vehicle executed in conjunction with the Subscriber’s Subscription), the Subscriber is not relying upon any information, representation or warranty by the Vehicle, the Administrative Member, or any of their respective agents or representatives in determining to subscribe to the Vehicle. The Subscriber has consulted, to the extent deemed appropriate by the Subscriber, with the Subscriber’s own advisers as to the financial, tax, legal and other matters concerning the Vehicle and on that basis and the basis of its own independent investigations, without the assistance of the Vehicle, the Administrative Member, or any of their respective agents or representatives, believes that an investment in the Vehicle is suitable and appropriate for the Subscriber. Subscriber hereby represents and warrants that it has had the opportunity to have its own independent legal counsel review and approve all of the legal documents executed in connection with its Subscription.
 
 (h) The Subscriber understands and acknowledges that (i) any description of the Vehicle’s business and prospects given to the Subscriber is not
 necessarily exhaustive, (ii) all estimates, projections and

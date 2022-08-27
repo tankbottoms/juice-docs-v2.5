@@ -11,10 +11,10 @@ Interface: [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md)
 ```
 /**
   @notice
-  The group within which the default splits are stored. 
+  The group within which the default splits are stored.
 */
 uint256 public override defaultSplitsGroup;
 ```
 
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBSplitsPayer`](/dev/api/interfaces/ijbsplitspayer.md) interface.

@@ -18,12 +18,12 @@ Interface: [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md)
 function decimalsForToken(address _token) external view override returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_token` is the token to check for the decimals of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function returns the number of decimals for the token.
+- Arguments:
+  - `_token` is the token to check for the decimals of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function returns the number of decimals for the token.
 
 #### Body
 
@@ -39,7 +39,7 @@ function decimalsForToken(address _token) external view override returns (uint25
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   The decimals that should be used in fixed number accounting for the specified token.
 

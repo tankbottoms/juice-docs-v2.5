@@ -32,6 +32,6 @@ contract HelloWorldContract is JuiceboxProject {
 
 ### Example Projects
 
-* [TileDAO](https://github.com/TileDAO/tiles/blob/main/contracts/Tiles.sol)
-* [WikiToken](https://github.com/odd-amphora/wiki.token/blob/main/packages/hardhat/contracts/Token.sol)
-* Add yours here!
+- [TileDAO](https://github.com/TileDAO/tiles/blob/main/contracts/Tiles.sol)
+- [WikiToken](https://github.com/odd-amphora/wiki.token/blob/main/packages/hardhat/contracts/Token.sol)
+- Add yours here!

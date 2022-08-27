@@ -25,12 +25,12 @@ function supportsInterface(bytes4 _interfaceId)
   returns (bool) { ... }
 ```
 
-* Arguments:
-  * `_interfaceId` is the ID of the interface to check for adherance to.
-* The view function can be accessed externally by anyone, and internally within this contract.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IERC165`](https://docs.openzeppelin.com/contracts/2.x/dev/api/introspection#IERC165) interface.
-* The function returns a flag indicating if this contract adheres to the specified interface.
+- Arguments:
+  - `_interfaceId` is the ID of the interface to check for adherance to.
+- The view function can be accessed externally by anyone, and internally within this contract.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IERC165`](https://docs.openzeppelin.com/contracts/2.x/dev/api/introspection#IERC165) interface.
+- The function returns a flag indicating if this contract adheres to the specified interface.
 
 #### Body
 
@@ -52,7 +52,7 @@ function supportsInterface(bytes4 _interfaceId)
   @notice
   Indicates if this contract adheres to the specified interface.
 
-  @dev 
+  @dev
   See {IERC165-supportsInterface}.
 
   @param _interfaceId The ID of the interface to check for adherance to.

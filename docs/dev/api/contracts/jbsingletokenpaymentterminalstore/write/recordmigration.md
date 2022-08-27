@@ -24,10 +24,10 @@ function recordMigration(uint256 _projectId)
   returns (uint256 balance) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project being migrated.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns the project's migrated balance, as a fixed point number with the same amount of decimals as its relative terminal.
+- Arguments:
+  - `_projectId` is the ID of the project being migrated.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns the project's migrated balance, as a fixed point number with the same amount of decimals as its relative terminal.
 
 #### Body
 
@@ -40,7 +40,8 @@ function recordMigration(uint256 _projectId)
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+
 2.  Make sure that migrating terminals is allowed by the current funding cycle.
 
     ```
@@ -50,8 +51,9 @@ function recordMigration(uint256 _projectId)
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.terminalMigrationAllowed(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.terminalMigrationAllowed(...)`
+
 3.  Get a reference to the project's current balance. Set this to the value that the function will return.
 
     ```
@@ -61,7 +63,8 @@ function recordMigration(uint256 _projectId)
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+
 4.  Set the project's balance to 0 since funds are moving away from this terminal.
 
     ```
@@ -71,7 +74,7 @@ function recordMigration(uint256 _projectId)
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
 
 </TabItem>
 
@@ -83,7 +86,7 @@ function recordMigration(uint256 _projectId)
   Records the migration of funds from this store.
 
   @dev
-  The msg.sender must be an IJBSingleTokenPaymentTerminal. 
+  The msg.sender must be an IJBSingleTokenPaymentTerminal.
 
   @param _projectId The ID of the project being migrated.
 
@@ -113,8 +116,8 @@ function recordMigration(uint256 _projectId)
 
 <TabItem value="Errors" label="Errors">
 
-| String                  | Description                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------- |
+| String                                       | Description                                                                  |
+| -------------------------------------------- | ---------------------------------------------------------------------------- |
 | **`PAYMENT_TERMINAL_MIGRATION_NOT_ALLOWED`** | Thrown if the project's current funding cycle disallows terminal migrations. |
 
 </TabItem>

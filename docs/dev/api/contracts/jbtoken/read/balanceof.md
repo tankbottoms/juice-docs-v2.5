@@ -15,20 +15,20 @@ Interface: [`IJBToken`](/dev/api/interfaces/ijbtoken.md)
 #### Definition
 
 ```
-function balanceOf(address _account, uint256 _projectId) 
-  external 
-  view 
-  override 
+function balanceOf(address _account, uint256 _projectId)
+  external
+  view
+  override
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_account` is the account to get a balance of.
-  * `_projectId` is the ID of the project to which the token belongs. This is ignored.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function returns the balance of the `_account` of this ERC20, as a fixed point number with 18 decimals.
+- Arguments:
+  - `_account` is the account to get a balance of.
+  - `_projectId` is the ID of the project to which the token belongs. This is ignored.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function returns the balance of the `_account` of this ERC20, as a fixed point number with 18 decimals.
 
 #### Body
 
@@ -40,14 +40,14 @@ function balanceOf(address _account, uint256 _projectId)
 
     _Inherited references:_
 
-    * [`balanceOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-balanceOf-address-)
+    - [`balanceOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-balanceOf-address-)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   An account's balance of this ERC20.
 
@@ -56,11 +56,11 @@ function balanceOf(address _account, uint256 _projectId)
 
   @return The balance of the `_account` of this ERC20, as a fixed point number with 18 decimals.
 */
-function balanceOf(address _account, uint256 _projectId) 
-  external 
-  view 
-  override 
-  returns (uint256) 
+function balanceOf(address _account, uint256 _projectId)
+  external
+  view
+  override
+  returns (uint256)
 {
   _projectId; // Prevents unused var compiler and natspec complaints.
 

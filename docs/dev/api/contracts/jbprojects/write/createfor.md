@@ -23,12 +23,12 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
   returns (uint256 projectId) { ... }
 ```
 
-* Arguments:
-  * `_owner` is the address that will be the owner of the project.
-  * `_metadata` is a struct containing metadata content about the project, and domain within which the metadata applies.
-* The function can be accessed externally by anyone.
-* The function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
-* The function returns the token ID of the newly created project.
+- Arguments:
+  - `_owner` is the address that will be the owner of the project.
+  - `_metadata` is a struct containing metadata content about the project, and domain within which the metadata applies.
+- The function can be accessed externally by anyone.
+- The function overrides a function definition from the [`IJBProjects`](/dev/api/interfaces/ijbprojects.md) interface.
+- The function returns the token ID of the newly created project.
 
 #### Body
 
@@ -41,7 +41,8 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
     _Internal references:_
 
-    * [`count`](/dev/api/contracts/jbprojects/properties/count.md)
+    - [`count`](/dev/api/contracts/jbprojects/properties/count.md)
+
 2.  Mint a new NFT token belonging to the owner using the projectId as the tokenId.
 
     ```
@@ -51,7 +52,8 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
     _Internal references:_
 
-    * [`_safeMint`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#ERC721-_safeMint-address-uint256-bytes-)
+    - [`_safeMint`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#ERC721-_safeMint-address-uint256-bytes-)
+
 3.  If metadata was provided (meaning its content is not an empty string), store it for newly created project under the provided domain.
 
     ```
@@ -62,7 +64,8 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
     _Internal references:_
 
-    * [`metadataContentOf`](/dev/api/contracts/jbprojects/properties/metadatacontentof.md)
+    - [`metadataContentOf`](/dev/api/contracts/jbprojects/properties/metadatacontentof.md)
+
 4.  Emit a `Create` event with all relevant parameters.
 
     ```
@@ -71,7 +74,7 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
     _Event references:_
 
-    * [`Create`](/dev/api/contracts/jbprojects/events/create.md)
+    - [`Create`](/dev/api/contracts/jbprojects/events/create.md)
 
 </TabItem>
 
@@ -79,10 +82,10 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
 ```
 /**
-  @notice 
+  @notice
   Create a new project for the specified owner, which mints an NFT (ERC-721) into their wallet.
 
-  @dev 
+  @dev
   Anyone can create a project on an owner's behalf.
 
   @param _owner The address that will be the owner of the project.
@@ -113,9 +116,9 @@ function createFor(address _owner, JBProjectMetadata calldata _metadata)
 
 <TabItem value="Events" label="Events">
 
-| Name                                | Data                                                                                                                                                                                                                                                  |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`Create`**](/dev/api/contracts/jbprojects/events/create.md)                                                                          | <ul><li><code>uint256 indexed projectId</code></li><li><code>address indexed owner</code></li><li><code>[JBProjectMetadata](/dev/api/data-structures/jbprojectmetadata.md) metadata</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                           | Data                                                                                                                                                                                                                                     |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Create`**](/dev/api/contracts/jbprojects/events/create.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>address indexed owner</code></li><li><code>[JBProjectMetadata](/dev/api/data-structures/jbprojectmetadata.md) metadata</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

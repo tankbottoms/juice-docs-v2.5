@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of: 0xSTVG
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*0xSTVG is a JB die-hard, having been around since the early days. As the DAOs onboarder and bona fide swag and sticker monger, you can see him around the discord always helpful and ready to answer questions. Recently we had a moment to chat and I was able to hear his wonderful JB origin story, and his priorities in the JB space. Check it out below!*
+_0xSTVG is a JB die-hard, having been around since the early days. As the DAOs onboarder and bona fide swag and sticker monger, you can see him around the discord always helpful and ready to answer questions. Recently we had a moment to chat and I was able to hear his wonderful JB origin story, and his priorities in the JB space. Check it out below!_
 
 ### How’d you get started with JB and how has JB changed since you’ve been here?
 

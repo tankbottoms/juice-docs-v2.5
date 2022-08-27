@@ -1,4 +1,4 @@
-# _packAndStoreIntrinsicPropertiesOf
+# \_packAndStoreIntrinsicPropertiesOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -23,15 +23,15 @@ function _packAndStoreIntrinsicPropertiesOf(
 ) private { ... }
 ```
 
-* Arguments:
-  * `_configuration` is the configuration of the funding cycle to pack and store.
-  * `_projectId` is the ID of the project to which the funding cycle belongs.
-  * `_number` is the number of the funding cycle.
-  * `_weight` is the weight of the funding cycle.
-  * `_basedOn` is the configuration of the base funding cycle.
-  * `_start` is the start time of this funding cycle.
-* The function is private to this contract.
-* The function doesn't return anything.
+- Arguments:
+  - `_configuration` is the configuration of the funding cycle to pack and store.
+  - `_projectId` is the ID of the project to which the funding cycle belongs.
+  - `_number` is the number of the funding cycle.
+  - `_weight` is the weight of the funding cycle.
+  - `_basedOn` is the configuration of the base funding cycle.
+  - `_start` is the start time of this funding cycle.
+- The function is private to this contract.
+- The function doesn't return anything.
 
 #### Body
 
@@ -41,24 +41,28 @@ function _packAndStoreIntrinsicPropertiesOf(
     // weight in bits 0-87.
     uint256 packed = _weight;
     ```
+
 2.  The based on configuration should take up the next 56 bits.
 
     ```
     // basedOn in bits 88-143.
     packed |= _basedOn << 88;
     ```
+
 3.  The start should take up the next 56 bits.
 
     ```
     // start in bits 144-199.
     packed |= _start << 144;
     ```
+
 4.  The number should take up the last 56 bits.
 
     ```
     // number in bits 200-255.
     packed |= _number << 200;
     ```
+
 5.  Store the packed intrinsic properties for the funding cycle.
 
     ```
@@ -68,7 +72,7 @@ function _packAndStoreIntrinsicPropertiesOf(
 
     _Internal references:_
 
-    * [`_packedIntrinsicPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packedintrinsicpropertiesof.md)
+    - [`_packedIntrinsicPropertiesOf`](/dev/api/contracts/jbfundingcyclestore/properties/-_packedintrinsicpropertiesof.md)
 
 </TabItem>
 
@@ -76,7 +80,7 @@ function _packAndStoreIntrinsicPropertiesOf(
 
 ```
 /**
-  @notice 
+  @notice
   Efficiently stores a funding cycle's provided intrinsic properties.
 
   @param _configuration The configuration of the funding cycle to pack and store.

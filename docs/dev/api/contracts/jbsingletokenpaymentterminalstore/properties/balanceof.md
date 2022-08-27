@@ -22,8 +22,8 @@ Interface: [`IJBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsinglet
 mapping(IJBSingleTokenPaymentTerminal => mapping(uint256 => uint256)) public override balanceOf;
 ```
 
-* Arguments:
-  * `_terminal` is the terminal to which the balance applies.
-  * `_projectId` is the ID of the project to get the balance of.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- Arguments:
+  - `_terminal` is the terminal to which the balance applies.
+  - `_projectId` is the ID of the project to get the balance of.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.

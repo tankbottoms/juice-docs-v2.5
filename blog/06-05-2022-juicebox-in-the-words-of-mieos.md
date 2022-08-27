@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of Mieos
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*Big Daddy Mieos is the patriarch of Wagmi studios and a certified JB OG. He’s seen Juicebox evolve from it’s very beginnings to the robust platform it is today, and he launched one of its very first projects back in the day. Meios is a gentle conductor of creative JB branding and a level-headed voice of reason within the JB community. Read on to learn a bit more about this awesome JB contributor, what he’s up to right now, and the origin story of Wagmi Studios.*
+_Big Daddy Mieos is the patriarch of Wagmi studios and a certified JB OG. He’s seen Juicebox evolve from it’s very beginnings to the robust platform it is today, and he launched one of its very first projects back in the day. Meios is a gentle conductor of creative JB branding and a level-headed voice of reason within the JB community. Read on to learn a bit more about this awesome JB contributor, what he’s up to right now, and the origin story of Wagmi Studios._
 
 ### Hey Mieos! What’re you up to right now and what’s on your mind?
 

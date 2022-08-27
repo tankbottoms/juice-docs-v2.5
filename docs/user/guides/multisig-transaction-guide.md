@@ -2,7 +2,7 @@
 
 ## Multisig Process
 
-The Multisig Process was ratified by JBX holders in *[JBP - 98 Ratify Multisig Process](https://snapshot.org/#/jbdao.eth/proposal/0xaff54a1eebc16329758c925ff0fbbeb73718a0d06918609b1e8bbbf9c7cada68).* Multisig members should be aware of the following stipulations:
+The Multisig Process was ratified by JBX holders in _[JBP - 98 Ratify Multisig Process](https://snapshot.org/#/jbdao.eth/proposal/0xaff54a1eebc16329758c925ff0fbbeb73718a0d06918609b1e8bbbf9c7cada68)._ Multisig members should be aware of the following stipulations:
 
 1. **The Juicebox multisig and Juicebox multisig owner accounts must agree to execute the will of JBX token holders, as expressed through the Juicebox Governance Process.**
 2. Existing multisig members must agree to these principles, and prospective multisig members must agree to these principles before being added to the multisig.
@@ -17,45 +17,45 @@ The Multisig Process was ratified by JBX holders in *[JBP - 98 Ratify Multisig P
 
 ## Juicebox v1.0 Multisig Actions
 
-*For more information about v1 transactions, look at the [Juicebox Docs](https://docs.juicebox.money/).*
+_For more information about v1 transactions, look at the [Juicebox Docs](https://docs.juicebox.money/)._
 
 ### Treasury and Tickets
 
-| Transaction | Description |
-| --- | --- |
-| TerminalV1.configure | Configure funding cycle properties including funding target, funding distribution, reserved tokens, etc. |
-| TerminalV1.printPreminedTickets | Print tickets to any address. Only works before payments have been received (no longer possible for JuiceboxDAO). |
-| TerminalV1.migrate | Migrate funds and operations to a new contract. |
-| TicketBooth.issue | Issues an owner's ERC-20 Tickets that'll be used when unstaking tickets and deploys an owner's Ticket ERC-20 token contract. |
-| TerminalV1_1.printTickets | Print tickets to any address (Only available on V1.1 projects—Allow minting tokens must be enabled). |
+| Transaction                     | Description                                                                                                                  |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| TerminalV1.configure            | Configure funding cycle properties including funding target, funding distribution, reserved tokens, etc.                     |
+| TerminalV1.printPreminedTickets | Print tickets to any address. Only works before payments have been received (no longer possible for JuiceboxDAO).            |
+| TerminalV1.migrate              | Migrate funds and operations to a new contract.                                                                              |
+| TicketBooth.issue               | Issues an owner's ERC-20 Tickets that'll be used when unstaking tickets and deploys an owner's Ticket ERC-20 token contract. |
+| TerminalV1_1.printTickets       | Print tickets to any address (Only available on V1.1 projects—Allow minting tokens must be enabled).                         |
 
 ### Project Details
 
-| Transaction | Description |
-| --- | --- |
-| Projects.setHandle | Set the project's handle. |
-| Projects.setUri | Set the project's URI (IPFS CDN with project info). |
-| Projects.transferHandle | Transfer handle to another address. |
-| Projects.claimHandle | Claim and apply a transferred handle. |
-| Projects.renewHandle | Renew a handle to prevent claiming for a year after it is challenged. |
+| Transaction             | Description                                                           |
+| ----------------------- | --------------------------------------------------------------------- |
+| Projects.setHandle      | Set the project's handle.                                             |
+| Projects.setUri         | Set the project's URI (IPFS CDN with project info).                   |
+| Projects.transferHandle | Transfer handle to another address.                                   |
+| Projects.claimHandle    | Claim and apply a transferred handle.                                 |
+| Projects.renewHandle    | Renew a handle to prevent claiming for a year after it is challenged. |
 
 ### Project Control
 
-| Transaction | Description |
-| --- | --- |
+| Transaction               | Description                                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------- |
 | OperatorStore.setOperator | Give an address permission to take actions (full operation list) pertaining to a specified domain |
-| Projects.transfer | Transfer the ERC-721 that confers ownership in a Juicebox project to a new address. |
+| Projects.transfer         | Transfer the ERC-721 that confers ownership in a Juicebox project to a new address.               |
 
 ### Gnosis
 
 All Gnosis actions are available on [their app](https://gnosis-safe.io/app/eth:0xAF28bcB48C40dBC86f52D459A6562F658fc94B1e/settings/owners), use them for better UX.
 
-| Transaction | Description |
-| --- | --- |
-| OwnerManager.addOwnerWithThreshold | Add a new owner to the Safe and update the threshold at the same time (check txn here) |
-| OwnerManager.removeOwner | Remove an owner from the Safe and update the threshold at the same time (check txn here) |
-| OwnerManager.changeThreshold | Update the number of owner accounts needed to confirm a Gnosis Safe transaction. |
-|  |  |
+| Transaction                        | Description                                                                              |
+| ---------------------------------- | ---------------------------------------------------------------------------------------- |
+| OwnerManager.addOwnerWithThreshold | Add a new owner to the Safe and update the threshold at the same time (check txn here)   |
+| OwnerManager.removeOwner           | Remove an owner from the Safe and update the threshold at the same time (check txn here) |
+| OwnerManager.changeThreshold       | Update the number of owner accounts needed to confirm a Gnosis Safe transaction.         |
+|                                    |                                                                                          |
 
 ## Add Juicebox Safe
 
@@ -98,13 +98,13 @@ Here are the interface definitions:
 
 ```solidity
 /**
-      @notice 
+      @notice
       Configures the properties of the current funding cycle if the project hasn't distributed tickets yet, or
       sets the properties of the proposed funding cycle that will take effect once the current one expires
       if it is approved by the current funding cycle's ballot.
       @dev
       Only a project's owner or a designated operator can configure its funding cycles.
-      @param _projectId The ID of the project being reconfigured. 
+      @param _projectId The ID of the project being reconfigured.
       @param _properties The funding cycle configuration.
         @dev _properties.target The amount that the project wants to receive in this funding stage. Sent as a wad.
         @dev _properties.currency The currency of the `target`. Send 0 for ETH or 1 for USD.

@@ -1,4 +1,4 @@
-# _namehash
+# \_namehash
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -18,11 +18,11 @@ _See https://eips.ethereum.org/EIPS/eip-137._
 function _namehash(string[] memory _ensNameParts) internal pure returns (bytes32 namehash) { ... }
 ```
 
-* Arguments:
-  * `_ensNameParts` is the parts of an ENS name to hash.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function returns the namehash for an ENS name parts.
+- Arguments:
+  - `_ensNameParts` is the parts of an ENS name to hash.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function returns the namehash for an ENS name parts.
 
 #### Body
 
@@ -59,11 +59,11 @@ function _namehash(string[] memory _ensNameParts) internal pure returns (bytes32
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Returns a namehash for an ENS name.
 
-  @dev 
+  @dev
   See https://eips.ethereum.org/EIPS/eip-137.
 
   @param _ensNameParts The parts of an ENS name to hash.

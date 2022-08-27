@@ -1,4 +1,4 @@
-# _getStructsFor
+# \_getStructsFor
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,13 +20,13 @@ function _getStructsFor(
 ) private view returns (JBSplit[] memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get splits for.
-  * `_domain` is an identifier within which the returned splits should be considered active.
-  * `_group` is the identifying group of the splits.
-* The view function is private to this contract.
-* The view function does not alter state on the blockchain.
-* The function returns an array of [`JBSplit`](/dev/api/data-structures/jbsplit.md)s.
+- Arguments:
+  - `_projectId` is the ID of the project to get splits for.
+  - `_domain` is an identifier within which the returned splits should be considered active.
+  - `_group` is the identifying group of the splits.
+- The view function is private to this contract.
+- The view function does not alter state on the blockchain.
+- The function returns an array of [`JBSplit`](/dev/api/data-structures/jbsplit.md)s.
 
 #### Body
 
@@ -39,13 +39,15 @@ function _getStructsFor(
 
     _Internal references:_
 
-    * [`_splitCountOf`](/dev/api/contracts/jbsplitsstore/properties/-_splitcountof.md)
+    - [`_splitCountOf`](/dev/api/contracts/jbsplitsstore/properties/-_splitcountof.md)
+
 2.  Inititalize an array of [`JBSplit`](/dev/api/data-structures/jbsplit.md) with length equal to the number of splits expected.
 
     ```
     // Initialize an array to be returned that has the set length.
     JBSplit[] memory _splits = new JBSplit[](_splitCount);
     ```
+
 3.  For each index, parse out the packed split parts into [`JBSplit`](/dev/api/data-structures/jbsplit.md) structs and add to the array. The packed splits are stored in two different `uint256` slots, the second of which contains info that is populated way less frequently.
 
     ```
@@ -54,7 +56,7 @@ function _getStructsFor(
       // Get a reference to the fist packed data.
       uint256 _packedSplitPart1 = _packedSplitParts1Of[_projectId][_domain][_group][_i];
 
-      // Store the first spit part. 
+      // Store the first spit part.
       JBSplit memory _split;
 
       // prefer claimed in bit 0.
@@ -86,8 +88,8 @@ function _getStructsFor(
 
     _Internal references:_
 
-    * [`_packedSplitParts1Of`](/dev/api/contracts/jbsplitsstore/properties/-_packedsplitparts1of.md)
-    * [`_packedSplitParts2Of`](/dev/api/contracts/jbsplitsstore/properties/-_packedsplitparts2of.md)
+    - [`_packedSplitParts1Of`](/dev/api/contracts/jbsplitsstore/properties/-_packedsplitparts1of.md)
+    - [`_packedSplitParts2Of`](/dev/api/contracts/jbsplitsstore/properties/-_packedsplitparts2of.md)
 
 4.  Return the array of splits.
 
@@ -101,7 +103,7 @@ function _getStructsFor(
 
 ```
 /**
-  @notice 
+  @notice
   Unpack splits' packed stored values into easy-to-work-with split structs.
 
   @param _projectId The ID of the project to which the split belongs.

@@ -24,18 +24,18 @@ function addToBalanceOf(
 ) external payable virtual override isTerminalOf(_projectId) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funds received belong.
-  * `_amount` is the amount of tokens to add, as a fixed point number with the same number of decimals as this terminal. If this is an ETH terminal, this is ignored and msg.value is used instead.
-  * `_token` is the token being paid. This terminal ignores this property since it only manages one token.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` is metadata to pass along to the emitted event.
-* The function can be accessed externally by anyone.
-* The function can be overriden by inheriting contracts.
-* Through the [`isTerminalOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/modifiers/isterminalof.md) modifier, this transaction reverts if this terminal is not one of the project's terminals.
-* The function accepts ETH. The transaction reverts if receives ETH but the terminal's token type isn't ETH.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to which the funds received belong.
+  - `_amount` is the amount of tokens to add, as a fixed point number with the same number of decimals as this terminal. If this is an ETH terminal, this is ignored and msg.value is used instead.
+  - `_token` is the token being paid. This terminal ignores this property since it only manages one token.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` is metadata to pass along to the emitted event.
+- The function can be accessed externally by anyone.
+- The function can be overriden by inheriting contracts.
+- Through the [`isTerminalOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/modifiers/isterminalof.md) modifier, this transaction reverts if this terminal is not one of the project's terminals.
+- The function accepts ETH. The transaction reverts if receives ETH but the terminal's token type isn't ETH.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -56,12 +56,13 @@ function addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbcurrencies.md)
-      * `.ETH`
+    - [`JBTokens`](/dev/api/libraries/jbcurrencies.md)
+      - `.ETH`
 
     _Virtual references:_
 
-    * [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+    - [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+
 2.  Forward to the internal function to properly account for the added balance. If the message sender is a feeless address, don't refund held fees.
 
     ```
@@ -70,7 +71,7 @@ function addToBalanceOf(
 
     _Internal references:_
 
-    * [`_addToBalanceOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_addtobalanceof.md)
+    - [`_addToBalanceOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_addtobalanceof.md)
 
 </TabItem>
 
@@ -83,7 +84,7 @@ function addToBalanceOf(
 
   @param _projectId The ID of the project to which the funds received belong.
   @param _amount The amount of tokens to add, as a fixed point number with the same number of decimals as this terminal. If this is an ETH terminal, this is ignored and msg.value is used instead.
-  @param _token The token being paid. This terminal ignores this property since it only manages one token. 
+  @param _token The token being paid. This terminal ignores this property since it only manages one token.
   @param _memo A memo to pass along to the emitted event.
   @param _metadata Metadata to pass along to the emitted event.
 */
@@ -115,8 +116,8 @@ function addToBalanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String                     | Description                                   |
+| -------------------------- | --------------------------------------------- |
 | **`NO_MSG_VALUE_ALLOWED`** | Thrown if ETH was sent to a non-ETH terminal. |
 
 </TabItem>

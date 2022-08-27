@@ -1,4 +1,4 @@
-# _packedsplitParts2Of
+# \_packedsplitParts2Of
 
 Contract: [`JBSplitsStore`](/dev/api/contracts/jbsplitsstore/README.md)​‌
 
@@ -9,7 +9,7 @@ _This packed data is often 0._
 #### Definition
 
 ```
-/** 
+/**
   @notice
   More packed data of splits for each project ID's configurations.
 
@@ -25,10 +25,10 @@ mapping(uint256 => mapping(uint256 => mapping(uint256 => mapping(uint256 => uint
   private _packedSplitParts2Of;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get packed splits data for.
-  * `_domain` is an identifier within which the returned splits should be considered active.
-  * `_group` is the identifying group of the splits.
-  * `_index` is the indexed order that the split was set at.
-* Returns packed split data.
-* The resulting view function is private to this contract.
+- Arguments:
+  - `_projectId` is the ID of the project to get packed splits data for.
+  - `_domain` is an identifier within which the returned splits should be considered active.
+  - `_group` is the identifying group of the splits.
+  - `_index` is the indexed order that the split was set at.
+- Returns packed split data.
+- The resulting view function is private to this contract.

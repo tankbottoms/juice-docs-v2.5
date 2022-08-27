@@ -13,4 +13,3 @@ Projects with no funding cycle duration can make project reconfigurations at any
 :::
 
 Projects can also set a _Funding cycle target_ in ETH or USD, which determines how much funding can be distributed each funding cycle. Contributor payouts and fixed monthly costs should be considered when setting this target. **Overflow** is created if a project exceeds this target. Token holders can then redeem their tokens to claim overflow, burning their tokens in the process.
-

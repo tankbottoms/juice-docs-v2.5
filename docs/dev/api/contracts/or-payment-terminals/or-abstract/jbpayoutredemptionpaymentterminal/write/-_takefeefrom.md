@@ -1,4 +1,4 @@
-# _takeFeeFrom
+# \_takeFeeFrom
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -8,7 +8,7 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 <Tabs>
 <TabItem value="Step by step" label="Step by step">
 
-**Takes a fee into the platform's project, which has an id of _PROTOCOL_PROJECT_ID.**
+**Takes a fee into the platform's project, which has an id of \_PROTOCOL_PROJECT_ID.**
 
 #### Definition
 
@@ -22,14 +22,14 @@ function _takeFeeFrom(
 ) private returns (uint256 feeAmount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project having fees taken from.
-  * `_fundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) during which the fee is being taken.
-  * `_amount` is the amount to take a fee from.
-  * `_beneficiary` is the address to mint the platforms tokens for.
-  * `_feeDiscount` is the amount of discount to apply to the fee, out of the MAX_FEE.
-* The function is private to this contract.
-* The function returns the amount of the fee taken.
+- Arguments:
+  - `_projectId` is the ID of the project having fees taken from.
+  - `_fundingCycle` is the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md) during which the fee is being taken.
+  - `_amount` is the amount to take a fee from.
+  - `_beneficiary` is the address to mint the platforms tokens for.
+  - `_feeDiscount` is the amount of discount to apply to the fee, out of the MAX_FEE.
+- The function is private to this contract.
+- The function returns the amount of the fee taken.
 
 #### Body
 
@@ -42,8 +42,9 @@ function _takeFeeFrom(
 
     _Internal references:_
 
-    * [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
-    * [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
+    - [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
+    - [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
+
 2.  If the funding cycle is configured to hold fees, add a [`JBFee`](/dev/api/data-structures/jbfee.md) data structure to the project's stored held fees to be either processed or refunded later, and emit a `HoldFee` event with the relevant parameters. Otherwise, take the fee and emit a `ProcessFee` event with the relevant parameters.
 
     ```
@@ -62,14 +63,14 @@ function _takeFeeFrom(
 
     _Internal references:_
 
-    * [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
-    * [`_processFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_processfee.md)
+    - [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_processFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_processfee.md)
 
     _Event references:_
 
-    * [`HoldFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/holdfee.md)
-    * [`ProcessFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)
+    - [`HoldFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/holdfee.md)
+    - [`ProcessFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)
 
 </TabItem>
 
@@ -115,10 +116,10 @@ function _takeFeeFrom(
 
 <TabItem value="Events" label="Events">
 
-| Name                          | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`HoldFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/holdfee.md)                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>uint256 indexed fee</code></li><li><code>uint256 feeDiscount</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul>                                                                                                                                                                                                                                                                                                                         |
-| [**`ProcessFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md)                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>bool indexed wasHeld</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul>                                                                                                                                                                                                                                                                                                                         |
+| Name                                                                                                                           | Data                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`HoldFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/holdfee.md)       | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>uint256 indexed fee</code></li><li><code>uint256 feeDiscount</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul> |
+| [**`ProcessFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/processfee.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed amount</code></li><li><code>bool indexed wasHeld</code></li><li><code>address beneficiary</code></li><li><code>address caller</code></li></ul>                                         |
 
 </TabItem>
 

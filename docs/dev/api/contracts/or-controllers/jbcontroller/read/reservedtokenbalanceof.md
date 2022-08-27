@@ -22,13 +22,13 @@ function reservedTokenBalanceOf(uint256 _projectId, uint256 _reservedRate)
   returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get a reserved token balance of.
-  * `_reservedRate` is the reserved rate to use when making the calculation.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns the reserved token balance.
+- Arguments:
+  - `_projectId` is the ID of the project to get a reserved token balance of.
+  - `_reservedRate` is the reserved rate to use when making the calculation.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns the reserved token balance.
 
 #### Body
 
@@ -45,12 +45,12 @@ function reservedTokenBalanceOf(uint256 _projectId, uint256 _reservedRate)
 
     _Internal references:_
 
-    * [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
-    * [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
+    - [`_reservedTokenAmountFrom`](/dev/api/contracts/or-controllers/jbcontroller/read/-_reservedtokenamountfrom.md)
+    - [`_processedTokenTrackerOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_processedtokentrackerof.md)
 
     _External references:_
 
-    * [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
+    - [`totalSupplyOf`](/dev/api/contracts/jbtokenstore/read/totalsupplyof.md)
 
 </TabItem>
 

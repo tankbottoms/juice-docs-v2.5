@@ -24,13 +24,13 @@ function claimFor(
 ) external override requirePermission(_holder, _projectId, JBOperations.CLAIM) { ... }
 ```
 
-* Arguments:
-  * `_holder` is the owner of the tokens being claimed.
-  * `_projectId` is the ID of the project whose tokens are being claimed.
-  * `_amount` is the amount of tokens to claim.
-* Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the token holder, or from an operator that has been given the [`JBOperations.CLAIM`](/dev/api/libraries/jboperations.md) permission by the token holder. 
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function does't return anything.
+- Arguments:
+  - `_holder` is the owner of the tokens being claimed.
+  - `_projectId` is the ID of the project whose tokens are being claimed.
+  - `_amount` is the amount of tokens to claim.
+- Through the [`requirePermission`](/dev/api/contracts/or-abstract/jboperatable/modifiers/requirepermission.md) modifier, the function is only accessible by the token holder, or from an operator that has been given the [`JBOperations.CLAIM`](/dev/api/libraries/jboperations.md) permission by the token holder.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function does't return anything.
 
 #### Body
 
@@ -43,13 +43,15 @@ function claimFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 2.  Make sure the project has a token. If it doesn't, there's nowhere to claim tokens onto.
 
     ```
     // The project must have a token contract attached.
     if (_token == IJBToken(address(0))) revert TOKEN_NOT_FOUND();
     ```
+
 3.  Get a reference to the amount of unclaimed project tokens the holder has.
 
     ```
@@ -59,13 +61,15 @@ function claimFor(
 
     _Internal references:_
 
-    * [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+    - [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+
 4.  Make sure the holder has enough tokens to claim.
 
     ```
     // There must be enough unlocked unclaimed tokens to claim.
     if (_unclaimedBalance < _amount) revert INSUFFICIENT_UNCLAIMED_TOKENS();
     ```
+
 5.  Subtract from the unclaimed project token balance of the holder.
 
     ```
@@ -75,7 +79,8 @@ function claimFor(
 
     _Internal references:_
 
-    * [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+    - [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+
 6.  Subtract from the unclaimed token total supply of the project.
 
     ```
@@ -85,7 +90,8 @@ function claimFor(
 
     _Internal references:_
 
-    * [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
+    - [`unclaimedTotalSupplyOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedtotalsupplyof.md)
+
 7.  Mint the tokens to the holder's wallet.
 
     ```
@@ -95,7 +101,8 @@ function claimFor(
 
     _External references:_
 
-    * [`mint`](/dev/api/contracts/jbtoken/write/mint.md)
+    - [`mint`](/dev/api/contracts/jbtoken/write/mint.md)
+
 8.  Emit a `Claim` event with the relevant parameters.
 
     ```
@@ -104,7 +111,7 @@ function claimFor(
 
     _Event references:_
 
-    * [`Claim`](/dev/api/contracts/jbtokenstore/events/claim.md)
+    - [`Claim`](/dev/api/contracts/jbtokenstore/events/claim.md)
 
 </TabItem>
 
@@ -156,18 +163,18 @@ function claimFor(
 
 <TabItem value="Errors" label="Errors">
 
-| String                              | Description                                               |
-| ----------------------------------- | --------------------------------------------------------- |
-| **`TOKEN_NOT_FOUND`**               | Thrown if the project doesn't have a token contract attached.        |
-| **`INSUFFICIENT_UNCLAIMED_TOKENS`** | Thrown if the holder doens't have enough tokens to claim. |
+| String                              | Description                                                   |
+| ----------------------------------- | ------------------------------------------------------------- |
+| **`TOKEN_NOT_FOUND`**               | Thrown if the project doesn't have a token contract attached. |
+| **`INSUFFICIENT_UNCLAIMED_TOKENS`** | Thrown if the holder doens't have enough tokens to claim.     |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                              | Data                                                                                                                                                                         |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`Claim`**](/dev/api/contracts/jbtokenstore/events/claim.md)                           | <ul><li><code>address indexed holder</code></li><li><code>uint256 indexed projectId</code></li><li><code>uint256 initialUnclaimedBalance</code></li><li><code>uint256 amount</code></li><li><code>address caller</code></li></ul>                                                                                                  |
+| Name                                                           | Data                                                                                                                                                                                                                              |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Claim`**](/dev/api/contracts/jbtokenstore/events/claim.md) | <ul><li><code>address indexed holder</code></li><li><code>uint256 indexed projectId</code></li><li><code>uint256 initialUnclaimedBalance</code></li><li><code>uint256 amount</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

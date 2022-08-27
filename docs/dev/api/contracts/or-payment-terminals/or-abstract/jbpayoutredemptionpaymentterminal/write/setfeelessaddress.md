@@ -24,12 +24,12 @@ function setFeelessAddress(address _address, bool _flag)
   onlyOwner { ... }
 ```
 
-* Arguments:
-  * `_address` is the address that can be paid towards while still bypassing fees.
-  * `_flag` is a flag indicating whether the terminal should be feeless or not.
-* Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/ownership#Ownable-onlyOwner--) modifier, the function can only be accessed by the owner of this contract.
-* The function can be overriden by inheriting contracts.
-* The function doesn't return anything.
+- Arguments:
+  - `_address` is the address that can be paid towards while still bypassing fees.
+  - `_flag` is a flag indicating whether the terminal should be feeless or not.
+- Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/ownership#Ownable-onlyOwner--) modifier, the function can only be accessed by the owner of this contract.
+- The function can be overriden by inheriting contracts.
+- The function doesn't return anything.
 
 #### Body
 
@@ -42,7 +42,8 @@ function setFeelessAddress(address _address, bool _flag)
 
     _Internal references:_
 
-    * [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
+    - [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
+
 2.  Emit a `SetFeelessAddress` event with the relevant parameters.
 
     ```
@@ -51,7 +52,7 @@ function setFeelessAddress(address _address, bool _flag)
 
     _Event references:_
 
-    * [`SetFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfeelessaddress.md)
+    - [`SetFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfeelessaddress.md)
 
 </TabItem>
 
@@ -85,8 +86,8 @@ function setFeelessAddress(address _address, bool _flag)
 
 <TabItem value="Events" label="Events">
 
-| Name                                          | Data                                                                                                                                                    |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                                                                                                                         | Data                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | [**`SetFeelessAddress`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfeelessaddress.md) | <ul><li><code>address indexed addrs</code></li><li><code>bool indexed flag</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>

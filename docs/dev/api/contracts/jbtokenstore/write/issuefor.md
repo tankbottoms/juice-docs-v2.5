@@ -26,13 +26,13 @@ function issueFor(
 ) external override onlyController(_projectId) returns (IJBToken token) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project being issued tokens.
-  * `_name` is the ERC-20's name.
-  * `_symbol` is the ERC-20's symbol.
-* Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function returns the token that was issued.
+- Arguments:
+  - `_projectId` is the ID of the project being issued tokens.
+  - `_name` is the ERC-20's name.
+  - `_symbol` is the ERC-20's symbol.
+- Through the [`onlyController`](/dev/api/contracts/or-abstract/jbcontrollerutility/modifiers/onlycontroller.md) modifier, the function can only be accessed by the controller of the `_projectId`.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function returns the token that was issued.
 
 #### Body
 
@@ -42,12 +42,14 @@ function issueFor(
     // There must be a name.
     if (bytes(_name).length == 0) revert EMPTY_NAME();
     ```
+
 2.  Make sure a symbol was provided.
 
     ```
     // There must be a symbol.
     if (bytes(_symbol).length == 0) revert EMPTY_SYMBOL();
     ```
+
 3.  Make sure the project doesn't already have a token.
 
     ```
@@ -57,13 +59,15 @@ function issueFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 4.  Deploy a new instance of a [`JBToken`](/dev/api/contracts/jbtoken/) contract. Assign it to the return value.
 
     ```
     // Deploy the token contract.
     token = new JBToken(_name, _symbol);
     ```
+
 5.  Store the newly deployed token contract as the token of the project.
 
     ```
@@ -73,7 +77,8 @@ function issueFor(
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 6.  Store the project the token is being used for.
 
     ```
@@ -83,7 +88,8 @@ function issueFor(
 
     _Internal references:_
 
-    * [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+    - [`projectOf`](/dev/api/contracts/jbtokenstore/properties/projectof.md)
+
 7.  Emit an `Issue` event with the relevant parameters.
 
     ```
@@ -92,7 +98,7 @@ function issueFor(
 
     _Event references:_
 
-    * [`Issue`](/dev/api/contracts/jbtokenstore/events/issue.md)
+    - [`Issue`](/dev/api/contracts/jbtokenstore/events/issue.md)
 
 </TabItem>
 
@@ -146,19 +152,19 @@ function issueFor(
 
 <TabItem value="Errors" label="Errors">
 
-| String                     | Description                                        |
-| -------------------------- | -------------------------------------------------- |
-| **`EMPTY_NAME`**           | Thrown if a name wasn't specified for the token.   |
-| **`EMPTY_SYMBOL`**         | Thrown if a symbol wasn't specified for the token. |
-| **`PROJECT_ALREADY_HAS_TOKEN`** | Thrown if the project already has a token.  |
+| String                          | Description                                        |
+| ------------------------------- | -------------------------------------------------- |
+| **`EMPTY_NAME`**                | Thrown if a name wasn't specified for the token.   |
+| **`EMPTY_SYMBOL`**              | Thrown if a symbol wasn't specified for the token. |
+| **`PROJECT_ALREADY_HAS_TOKEN`** | Thrown if the project already has a token.         |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                              | Data                                                                                                                                                                                                         |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [**`Issue`**](/dev/api/contracts/jbtokenstore/events/issue.md)                           | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md) indexed token</code></li><li><code>string name</code></li><li><code>string symbol</code></li><li><code>address caller</code></li></ul>                                                                  |
+| Name                                                           | Data                                                                                                                                                                                                                                            |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Issue`**](/dev/api/contracts/jbtokenstore/events/issue.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>[IJBToken](/dev/api/interfaces/ijbtoken.md) indexed token</code></li><li><code>string name</code></li><li><code>string symbol</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

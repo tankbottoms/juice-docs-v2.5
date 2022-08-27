@@ -13,34 +13,34 @@ The following agreements use **ExampleDAO** and **Example** as the name of the E
 
 This section is intentionally blank.
 
--   [Acceptable Use](./others/acceptable-use.md)
--   [Terms of Service](../Juicebox/tos.md)
+- [Acceptable Use](./others/acceptable-use.md)
+- [Terms of Service](../Juicebox/tos.md)
 
 ### Privacy Policy
 
--   [Fathom Analytics](privacy-policy)
+- [Fathom Analytics](privacy-policy)
 
 ### Loan Agreements
 
--   [Simple Loan Agreement](./loans/note-template.md)
--   [IOU Loan Agreement](./loans/iou-template.md)
--   [Promissory Note](./loans/promissory-note-template.md)
--   [Secured Promissory Note Template](./loans/secured-promissory-note-template.md)
+- [Simple Loan Agreement](./loans/note-template.md)
+- [IOU Loan Agreement](./loans/iou-template.md)
+- [Promissory Note](./loans/promissory-note-template.md)
+- [Secured Promissory Note Template](./loans/secured-promissory-note-template.md)
 
 ### Trust Agreements
 
--   [Trust](./trusts/trust.md)
--   [Trust Declaration](./trusts/declaration-of-trust.md)
+- [Trust](./trusts/trust.md)
+- [Trust Declaration](./trusts/declaration-of-trust.md)
 
 ### Unincorporated Non-Profit
 
--   [Nevada State](nv-una)
+- [Nevada State](nv-una)
 
 ### Series LLC, Standalone
 
--   [Investment Club](./llcs/investment-club)
--   [Delaware Series LLC](op-llc-series)
--   [Delaware Standalone](standalone-llc)
+- [Investment Club](./llcs/investment-club)
+- [Delaware Series LLC](op-llc-series)
+- [Delaware Standalone](standalone-llc)
 
 ### S-Corporation
 
@@ -56,5 +56,5 @@ This section is intentionally blank.
 
 #### Additional Agreements
 
--   [Simple Agreement for Future Equity (SAFE)](./tokens/Rolling-SAFE-Template.docx)
--   [SAFE Exhibit A](./tokens/Rolling-SAFE-Exhibit-A.docx)
+- [Simple Agreement for Future Equity (SAFE)](./tokens/Rolling-SAFE-Template.docx)
+- [SAFE Exhibit A](./tokens/Rolling-SAFE-Exhibit-A.docx)

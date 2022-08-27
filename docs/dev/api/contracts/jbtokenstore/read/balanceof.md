@@ -21,13 +21,14 @@ function balanceOf(address _holder, uint256 _projectId)
   override
   returns (uint256 balance) { ... }
 ```
-* Arguments:
-  * `_holder` is the token holder to get a balance for.
-  * `_projectId` is the project to get the `_holder`s balance of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
-* The function returns the project token balance of the `_holder`.
+
+- Arguments:
+  - `_holder` is the token holder to get a balance for.
+  - `_projectId` is the project to get the `_holder`s balance of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBTokenStore`](/dev/api/interfaces/ijbtokenstore.md) interface.
+- The function returns the project token balance of the `_holder`.
 
 #### Body
 
@@ -40,7 +41,8 @@ function balanceOf(address _holder, uint256 _projectId)
 
     _Internal references:_
 
-    * [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+    - [`unclaimedBalanceOf`](/dev/api/contracts/jbtokenstore/properties/unclaimedbalanceof.md)
+
 2.  Get a reference to the project's current token.
 
     ```
@@ -50,7 +52,8 @@ function balanceOf(address _holder, uint256 _projectId)
 
     _Internal references:_
 
-    * [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+    - [`tokenOf`](/dev/api/contracts/jbtokenstore/properties/tokenof.md)
+
 3.  If the project has a current token, add the holder's balance to the total.
 
     ```
@@ -60,7 +63,7 @@ function balanceOf(address _holder, uint256 _projectId)
 
     _External references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbtoken/read/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbtoken/read/balanceof.md)
 
 </TabItem>
 

@@ -1,4 +1,4 @@
-# _packedPermissions
+# \_packedPermissions
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,10 +16,10 @@ Contract: [`JBOperatorStore`](/dev/api/contracts/jboperatorstore/README.md)â€‹â€
 function _packedPermissions(uint256[] calldata _indexes) private pure returns (uint256 packed) {...}
 ```
 
-* `_indexes` are the indexes of the permissions to pack.
-* The view function is private to the contract.
-* The view function does not modify or reference state variables outside the function.
-* The function returns the packed value.
+- `_indexes` are the indexes of the permissions to pack.
+- The view function is private to the contract.
+- The view function does not modify or reference state variables outside the function.
+- The function returns the packed value.
 
 #### Body
 
@@ -28,16 +28,19 @@ function _packedPermissions(uint256[] calldata _indexes) private pure returns (u
     ```
     for (uint256 _i = 0; _i < _indexes.length; _i++) { ... }
     ```
+
 2.  Get a reference to the permission index being iterated on.
 
     ```
     uint256 _index = _indexes[_i];
     ```
+
 3.  Make sure the permission index is one of the 255 indexes in a `uint256`.
 
     ```
     if (_index > 255) revert PERMISSION_INDEX_OUT_OF_BOUNDS();
     ```
+
 4.  Flip the bit at the specified index of the packed value being returned to indicate a truthy permission.
 
     ```
@@ -50,8 +53,8 @@ function _packedPermissions(uint256[] calldata _indexes) private pure returns (u
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Converts an array of permission indexes to a packed `uint256`.
 
   @param _indexes The indexes of the permissions to pack.

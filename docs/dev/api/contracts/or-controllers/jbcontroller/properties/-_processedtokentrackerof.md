@@ -1,4 +1,4 @@
-# _processedTokenTrackerOf
+# \_processedTokenTrackerOf
 
 Contract: [`JBController`](/dev/api/contracts/or-controllers/jbcontroller/README.md)​‌
 
@@ -16,6 +16,6 @@ Contract: [`JBController`](/dev/api/contracts/or-controllers/jbcontroller/README
 mapping(uint256 => int256) internal _processedTokenTrackerOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the tracker of.
-* The resulting function is internal to this contract and its inheriters. 
+- Arguments:
+  - `_projectId` is the ID of the project to get the tracker of.
+- The resulting function is internal to this contract and its inheriters.

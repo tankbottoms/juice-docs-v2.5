@@ -1,4 +1,4 @@
-# _addToBalanceOf
+# \_addToBalanceOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -23,19 +23,19 @@ function _addToBalanceOf(
 ) internal virtual { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project that is being paid.
-  * `_token` is the token being paid in.
-  * `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  * `_memo` is a memo to pass along to the emitted event.
-  * `_metadata` is extra data to pass along to the terminal.
-* The function is private to this contract.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project that is being paid.
+  - `_token` is the token being paid in.
+  - `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
+  - `_memo` is a memo to pass along to the emitted event.
+  - `_metadata` is extra data to pass along to the terminal.
+- The function is private to this contract.
+- The function doesn't return anything.
 
 #### Body
 
-1.  Get a reference to the terminal that should be sent the payment by checking for the project's stored primary terminal for the token being paid.  
+1.  Get a reference to the terminal that should be sent the payment by checking for the project's stored primary terminal for the token being paid.
 
     ```
     // Find the terminal for the specified project.
@@ -44,11 +44,12 @@ function _addToBalanceOf(
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/directory.md)
 
     _External references:_
 
-    * [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+    - [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+
 2.  Make sure there is a terminal to make a payment towards.
 
     ```
@@ -65,7 +66,7 @@ function _addToBalanceOf(
 
     _External references:_
 
-    * [`decimalsForToken`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/read/decimalsfortoken.md)
+    - [`decimalsForToken`](/dev/api/contracts/or-payment-terminals/or-abstract/jbsingletokenpaymentterminal/read/decimalsfortoken.md)
 
 4.  If the token being paid is an ERC20, approve the terminal to spend the amount of tokens from this terminal.
 
@@ -76,14 +77,14 @@ function _addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
 
     _External references:_
 
-    * [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
+    - [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
 
-5.  Keep a reference to the amount to send in the transaction. If the token being paid is ETH, send the value along with the tx.   
+5.  Keep a reference to the amount to send in the transaction. If the token being paid is ETH, send the value along with the tx.
 
     ```solidity
     // If the token is ETH, send it in msg.value.
@@ -92,10 +93,10 @@ function _addToBalanceOf(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
 
-5.  Add to the project's balance with the provided properties. 
+6.  Add to the project's balance with the provided properties.
 
     ```
     // Add to balance so tokens don't get issued.
@@ -104,15 +105,15 @@ function _addToBalanceOf(
 
     _External references:_
 
-    * [`addToBalanceOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/addtobalanceof.md)
-    
+    - [`addToBalanceOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/addtobalanceof.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Add to the balance of the specified project.
 
   @param _projectId The ID of the project that is being paid.
@@ -155,10 +156,10 @@ function _addToBalanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                       | Description                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------- |
-| **`TERMINAL_NOT_FOUND`**    | Thrown if the project has no terminal for the specified token   |
-| **`INCORRECT_DECIMAL_AMOUNT`**                     | Thrown if the amount being paid is a fixed point number with a different amount of decimals than the terminal expects  |
+| String                         | Description                                                                                                           |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **`TERMINAL_NOT_FOUND`**       | Thrown if the project has no terminal for the specified token                                                         |
+| **`INCORRECT_DECIMAL_AMOUNT`** | Thrown if the amount being paid is a fixed point number with a different amount of decimals than the terminal expects |
 
 </TabItem>
 

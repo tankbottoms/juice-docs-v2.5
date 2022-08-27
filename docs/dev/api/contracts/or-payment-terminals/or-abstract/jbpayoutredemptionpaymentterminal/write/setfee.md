@@ -20,11 +20,11 @@ _Only the owner of this contract can change the fee._
 function setFee(uint256 _fee) external onlyOwner { ... }
 ```
 
-* Arguments:
-  * `_fee` is the new fee, out of MAX_FEE.
-* Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/ownership#Ownable-onlyOwner--) modifier, the function can only be accessed by the owner of this contract.
-* The function can be overriden by inheriting contracts.
-* The function doesn't return anything.
+- Arguments:
+  - `_fee` is the new fee, out of MAX_FEE.
+- Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/ownership#Ownable-onlyOwner--) modifier, the function can only be accessed by the owner of this contract.
+- The function can be overriden by inheriting contracts.
+- The function doesn't return anything.
 
 #### Body
 
@@ -37,7 +37,8 @@ function setFee(uint256 _fee) external onlyOwner { ... }
 
     _Internal references:_
 
-    * [`_FEE_CAP`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_fee_cap.md)
+    - [`_FEE_CAP`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_fee_cap.md)
+
 2.  Store the new fee.
 
     ```
@@ -47,8 +48,8 @@ function setFee(uint256 _fee) external onlyOwner { ... }
 
     _Internal references:_
 
-    * [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
-    
+    - [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
+
 3.  Emit a `SetFee` event with the relevant parameters.
 
     ```
@@ -57,7 +58,7 @@ function setFee(uint256 _fee) external onlyOwner { ... }
 
     _Event references:_
 
-    * [`SetFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfee.md)
+    - [`SetFee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfee.md)
 
 </TabItem>
 
@@ -96,9 +97,9 @@ function setFee(uint256 _fee) external virtual override onlyOwner {
 
 <TabItem value="Events" label="Events">
 
-| Name                                | Data                                                                           |
-| ----------------------------------- | ------------------------------------------------------------------------------ |
-| [**`SetFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfee.md)                                                 | <ul><li><code>uint256 fee</code></li><li><code>address caller</code></li></ul>                                                                                                                                                                                                                                            |
+| Name                                                                                                                   | Data                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [**`SetFee`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/setfee.md) | <ul><li><code>uint256 fee</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

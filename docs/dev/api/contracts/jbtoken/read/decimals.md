@@ -18,10 +18,10 @@ Interface: [`IJBToken`](/dev/api/interfaces/ijbtoken.md)
 function decimals() public view override(ERC20, IJBToken) returns (uint8) { ... }
 ```
 
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function returns the number of decimals.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function returns the number of decimals.
 
 #### Body
 
@@ -33,14 +33,14 @@ function decimals() public view override(ERC20, IJBToken) returns (uint8) { ... 
 
     _Inherited references:_
 
-    * [`decimals`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#ERC20Detailed-decimals--)
+    - [`decimals`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#ERC20Detailed-decimals--)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   The number of decimals included in the fixed point accounting of this token.
 

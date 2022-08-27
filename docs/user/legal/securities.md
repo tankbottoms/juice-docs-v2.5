@@ -13,10 +13,10 @@ So what is a security? Unfortunately, as even federal courts have recognized, th
 
 In particular, the U.S. Supreme Court has outlined a four-part test for determining whether a transaction qualifies as a form of a security called an “investment contract." Originally set forth in SEC v. W.J. Howey Co., the Court has explained that a transaction is an “investment contract” when it involves
 
-> -   (1) an investment of money
-> -   (2) in a common enterprise
-> -   (3) with an expectation of profit
-> -   (4) to be derived from the efforts of others.
+> - (1) an investment of money
+> - (2) in a common enterprise
+> - (3) with an expectation of profit
+> - (4) to be derived from the efforts of others.
 
 There is a long history of cases interpreting whether various financial instruments meet this definition of a security, covering everything from bank certificates of deposits to interests in whiskey barrels. Some of the most influential cases have been compiled here. However, there are many more cases analyzing various elements of the Howey test, each hinging on the specific facts of the particular transaction.
 

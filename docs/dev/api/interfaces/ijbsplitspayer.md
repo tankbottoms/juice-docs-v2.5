@@ -69,5 +69,3 @@ interface IJBSplitsPayer is IERC165 {
   ) external;
 }
 ```
-
-

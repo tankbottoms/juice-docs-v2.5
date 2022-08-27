@@ -1,4 +1,4 @@
-# _formatHandle
+# \_formatHandle
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,11 +21,11 @@ function _formatHandle(string[] memory _ensNameParts)
   returns (string memory _handle) { ... }
 ```
 
-* Arguments:
-  * `_ensNameParts` is the ENS name parts to format into a handle.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function returns the formatted ENS handle.
+- Arguments:
+  - `_ensNameParts` is the ENS name parts to format into a handle.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function returns the formatted ENS handle.
 
 #### Body
 
@@ -57,8 +57,8 @@ function _formatHandle(string[] memory _ensNameParts)
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Formats ENS name parts into a handle.
 
   @param _ensNameParts The ENS name parts to format into a handle.

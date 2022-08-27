@@ -6,9 +6,9 @@ sidebar_position: 6
 
 ## A Permeable DAO
 
-JuiceboxDAO strives to maintain an open contribution policy. Anyone may pitch in and help with any of the Focus Areas defined in the DAO Foundation, such as protocol and frontend development, community alignment, and governance. 
+JuiceboxDAO strives to maintain an open contribution policy. Anyone may pitch in and help with any of the Focus Areas defined in the DAO Foundation, such as protocol and frontend development, community alignment, and governance.
 
-Unlike traditional workplaces, the DAO is open to pseudonymous contributors ("anons"). New contributors are not expected to present a resumé or any other identifying material. The DAOs permeability to new contributors with no substantial reputation informs its contributor onboarding structure. 
+Unlike traditional workplaces, the DAO is open to pseudonymous contributors ("anons"). New contributors are not expected to present a resumé or any other identifying material. The DAOs permeability to new contributors with no substantial reputation informs its contributor onboarding structure.
 
 To welcome new contributors, many of whom have little to no reputation online, the DAO suggests that contributors consider the following process to successfully onboard as a paid contributor
 
@@ -29,10 +29,10 @@ Once you have completed a Payout Trial Period, it is recommended that you fill o
 1. Join [the Discord](https://www.discord.gg/juicebox).
 2. Join the weekly Town Halls if possible (Tuesday 22:00 UTC).
 3. Read the most recent cycle of governance proposals (or more, if you are able).
-4. Read the recent message history in relevant Discord channels to familiarize yourself with the high level ongoing projects in the DAO, and details of the areas you wish to contribute to. 
+4. Read the recent message history in relevant Discord channels to familiarize yourself with the high level ongoing projects in the DAO, and details of the areas you wish to contribute to.
 5. Reach out to active contributors in the channels related to work you’d like to help contribute. Ask what you can help on or propose a new work action.
 6. Participate in the DAO for 1-2 weeks before asking for a payout.
-7. Write a governance proposal for a Trial Payout (see recent trial payout proposals to size the payout). See *[How to Make a Governance Proposal](proposals.md)*.
+7. Write a governance proposal for a Trial Payout (see recent trial payout proposals to size the payout). See _[How to Make a Governance Proposal](proposals.md)_.
 8. If you would like to continue after the initial trial payout period, write another trial payout proposal, or a recurring payout proposal. You may want to talk with other contributors first to feel out which makes sense.
 
-*Note: In order to get paid by Juicebox DAO, you will need to have a cryptocurrency wallet. You can read more about wallets [here](https://ethereum.org/en/wallets/).*
+_Note: In order to get paid by Juicebox DAO, you will need to have a cryptocurrency wallet. You can read more about wallets [here](https://ethereum.org/en/wallets/)._

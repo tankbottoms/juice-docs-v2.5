@@ -1,4 +1,4 @@
-# _primaryTerminalOf
+# \_primaryTerminalOf
 
 Contract: [`JBDirectory`](/dev/api/contracts/jbdirectory/README.md)‌
 
@@ -7,8 +7,8 @@ Contract: [`JBDirectory`](/dev/api/contracts/jbdirectory/README.md)‌
 #### Definition
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   The project's primary terminal for a token.
 
   _projectId The ID of the project to get the primary terminal of.
@@ -17,7 +17,7 @@ Contract: [`JBDirectory`](/dev/api/contracts/jbdirectory/README.md)‌
 mapping(uint256 => mapping(address => IJBPaymentTerminal)) private _primaryTerminalOf;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to get the primary terminal of.
-  * `_token` is the token to get the project's primary terminal of.
-* The resulting view function is private to this contract.
+- Arguments:
+  - `_projectId` is the ID of the project to get the primary terminal of.
+  - `_token` is the token to get the project's primary terminal of.
+- The resulting view function is private to this contract.

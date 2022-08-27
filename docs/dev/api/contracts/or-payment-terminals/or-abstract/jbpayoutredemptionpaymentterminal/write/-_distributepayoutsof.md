@@ -1,4 +1,4 @@
-# _distributePayoutsOf
+# \_distributePayoutsOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,7 +14,7 @@ _Payouts are sent to the preprogrammed splits. Any leftover is sent to the proje
 
 _Anyone can distribute payouts on a project's behalf. The project can preconfigure a wildcard split that is used to send funds to msg.sender. This can be used to incentivize calling this function._
 
-_All funds distributed outside of this contract or any feeless terminals incure the protocol fee._ 
+_All funds distributed outside of this contract or any feeless terminals incure the protocol fee._
 
 #### Definition
 
@@ -28,18 +28,18 @@ function _distributePayoutsOf(
 ) private returns (uint256 netLeftoverDistributionAmount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project having its payouts distributed.
-  * `_amount` is the amount of terminal tokens to distribute, as a fixed point number with same number of decimals as this terminal.
-  * `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's distribution limit currency.
-  * `_minReturnedTokens` is the minimum number of terminal tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same number of decimals as this terminal.
-  * `_memo` is a memo to pass along to the emitted event.
-* The function is private to this contract.
-* The function returns the amount that was sent to the project owner, as a fixed point number with the same amount of decimals as this terminal.
+- Arguments:
+  - `_projectId` is the ID of the project having its payouts distributed.
+  - `_amount` is the amount of terminal tokens to distribute, as a fixed point number with same number of decimals as this terminal.
+  - `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's distribution limit currency.
+  - `_minReturnedTokens` is the minimum number of terminal tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same number of decimals as this terminal.
+  - `_memo` is a memo to pass along to the emitted event.
+- The function is private to this contract.
+- The function returns the amount that was sent to the project owner, as a fixed point number with the same amount of decimals as this terminal.
 
 #### Body
 
-1.  Record the distribution. 
+1.  Record the distribution.
 
     ```
     // Record the distribution.
@@ -52,11 +52,12 @@ function _distributePayoutsOf(
 
     _Internal references:_
 
-    * [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
+    - [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
 
     _External references:_
 
-    * [`recordDistributionFor`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recorddistributionfor.md)
+    - [`recordDistributionFor`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recorddistributionfor.md)
+
 2.  Make sure the distributed amount is at least as much as the minimum expected amount.
 
     ```
@@ -74,7 +75,8 @@ function _distributePayoutsOf(
 
     _External references:_
 
-    * [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+    - [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+
 4.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error. Define a few variables outside of the scope that'll be set within the scope but later referenced again outside.
 
     ```
@@ -86,7 +88,7 @@ function _distributePayoutsOf(
     { ... }
     ```
 
-    1.  Get a reference to the discount that'll be used when applying the fee. If the fee is 0, set the discount to be 100% to simplify subsequent calculations. No fee is the same as a full discount. 
+    1.  Get a reference to the discount that'll be used when applying the fee. If the fee is 0, set the discount to be 100% to simplify subsequent calculations. No fee is the same as a full discount.
 
         ```
         // Get the amount of discount that should be applied to any fees taken.
@@ -98,13 +100,13 @@ function _distributePayoutsOf(
 
         _Library references:_
 
-        * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-          * `.MAX_FEE_DISCOUNT(...)`
+        - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+          - `.MAX_FEE_DISCOUNT(...)`
 
         _Internal references:_
 
-        * [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
-        * [`_currentFeeDiscount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_currentfeediscount.md)
+        - [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
+        - [`_currentFeeDiscount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_currentfeediscount.md)
 
     2.  Get a reference to the amount of distributed funds from which fees should be taken, and the amount leftover after distributing splits.
 
@@ -132,8 +134,8 @@ function _distributePayoutsOf(
 
         _Internal references:_
 
-        * [`payoutSplitsGroup`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/payoutsplitsgroup.md)
-        * [`_distributeToPayoutSplitsOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_distributetopayoutsplitsof.md)
+        - [`payoutSplitsGroup`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/payoutsplitsgroup.md)
+        - [`_distributeToPayoutSplitsOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_distributetopayoutsplitsof.md)
 
     4.  Add the leftover distribution amount to the amount from which fees should be taken since those funds will be leaving the ecosystem to the project owner's address.
 
@@ -162,12 +164,12 @@ function _distributePayoutsOf(
 
         _Library references:_
 
-        * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-          * `.MAX_FEE_DISCOUNT(...)`
+        - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+          - `.MAX_FEE_DISCOUNT(...)`
 
         _Internal references:_
 
-        * [`_takeFeeFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_takefeefrom.md)
+        - [`_takeFeeFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_takefeefrom.md)
 
     6.  Calculate what the net value of the leftover distribution will be.
 
@@ -182,8 +184,8 @@ function _distributePayoutsOf(
 
         _Internal references:_
 
-        * [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
-        * [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
+        - [`fee`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/fee.md)
+        - [`_feeAmount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_feeamount.md)
 
     7.  Transfer any leftover amount to the project owner if needed.
 
@@ -195,7 +197,7 @@ function _distributePayoutsOf(
 
         _Virtual references:_
 
-        * [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+        - [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
 
 5.  Emit a `DistributePayouts` event with the relevant parameters.
 
@@ -216,7 +218,7 @@ function _distributePayoutsOf(
 
     _Event references:_
 
-    * [`DistributePayouts`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/distributepayouts.md)
+    - [`DistributePayouts`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/distributepayouts.md)
 
 </TabItem>
 
@@ -341,18 +343,17 @@ function _distributePayoutsOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String                               | Description                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------- |
 | **`INADEQUATE_DISTRIBUTION_AMOUNT`** | Thrown if the amount being distributed is less than the specified minimum. |
-
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                 | Data                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`DistributePayouts`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/distributepayouts.md)             | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 distributedAmount</code></li><li><code>uint256 feeAmount</code></li><li><code>uint256 beneficiaryDistributionAmount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul>                                                                                       |
+| Name                                                                                                                                         | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`DistributePayouts`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/distributepayouts.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 distributedAmount</code></li><li><code>uint256 feeAmount</code></li><li><code>uint256 beneficiaryDistributionAmount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

@@ -25,17 +25,17 @@ function overflowAllowanceOf(
 ) external view override returns (uint256, uint256) { ... }
 ```
 
-* Arguments:
-* `_projectId` is the ID of the project to get the overflow allowance of.
-* `_configuration` is the configuration of the during which the allowance applies.
-* `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) managing the overflow.
-* `_token` is the token for which the overflow allowance applies.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns:
-  * `overflowAllowance` is the overflow allowance, as a fixed point number with the same number of decimals as the provided terminal.
-  * `overflowAllowanceCurrency` is the currency from [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md) that the returned overflow allowance is in terms of.
+- Arguments:
+- `_projectId` is the ID of the project to get the overflow allowance of.
+- `_configuration` is the configuration of the during which the allowance applies.
+- `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) managing the overflow.
+- `_token` is the token for which the overflow allowance applies.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns:
+  - `overflowAllowance` is the overflow allowance, as a fixed point number with the same number of decimals as the provided terminal.
+  - `overflowAllowanceCurrency` is the currency from [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md) that the returned overflow allowance is in terms of.
 
 #### Body
 
@@ -48,7 +48,8 @@ function overflowAllowanceOf(
 
     _Internal references:_
 
-    * [`_packedOverflowAllowanceDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packedoverflowallowancedataof.md)
+    - [`_packedOverflowAllowanceDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packedoverflowallowancedataof.md)
+
 2.  Return the overflow allowance, which is in the first 248 bits, and the currency the overflow allowance is in terms of, which is in the last 8 bits.
 
     ```
@@ -66,7 +67,7 @@ function overflowAllowanceOf(
   The amount of overflow that a project is allowed to tap into on-demand throughout a configuration, and the currency it's in terms of.
 
   @dev
-  The number of decimals in the returned fixed point amount is the same as that of the specified terminal. 
+  The number of decimals in the returned fixed point amount is the same as that of the specified terminal.
 
   @param _projectId The ID of the project to get the overflow allowance of.
   @param _configuration The configuration of the during which the allowance applies.

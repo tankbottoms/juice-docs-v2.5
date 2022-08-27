@@ -13,16 +13,16 @@ The primary purpose of Juicebox DAO ("DAO") helps people confidently run program
 
 Features of the Juicebox protocol include:
 
--   Funding Cycle automation and duration. The duration of time the configuration of the Member Project is active.
--   Payouts. The fixed amount or percentage of cryptocurrency to distribute for each Funding Cycle per address.
--   Project Token Issuance, or initial mint rate of Member Project Token. Possible values are 1 to 1,000,000.
--   Reserved Tokens. The percentage of total Project Tokens withheld from distribution for the Contribution. Possible values are 0 to 100.
--   Reserved Token allocation. The individual, entities which will receive Project Token from the Reserved Tokens allocation.
--   Discount Rate. The percentage which the Token issuance will decrease each funding cycle. Valid values are between 0 and 20.
--   Redemption Rate. The amount of overflow each Project Token may be redeemed for.
--   Pause payments. When enabled, Member Projects cannot receive payments.
--   Allow token minting. When enabled, Project Tokens can be issued at will.
--   Reconfiguration rules, or Ballot. Conditions which must be met for a project to be reconfigured.
+- Funding Cycle automation and duration. The duration of time the configuration of the Member Project is active.
+- Payouts. The fixed amount or percentage of cryptocurrency to distribute for each Funding Cycle per address.
+- Project Token Issuance, or initial mint rate of Member Project Token. Possible values are 1 to 1,000,000.
+- Reserved Tokens. The percentage of total Project Tokens withheld from distribution for the Contribution. Possible values are 0 to 100.
+- Reserved Token allocation. The individual, entities which will receive Project Token from the Reserved Tokens allocation.
+- Discount Rate. The percentage which the Token issuance will decrease each funding cycle. Valid values are between 0 and 20.
+- Redemption Rate. The amount of overflow each Project Token may be redeemed for.
+- Pause payments. When enabled, Member Projects cannot receive payments.
+- Allow token minting. When enabled, Project Tokens can be issued at will.
+- Reconfiguration rules, or Ballot. Conditions which must be met for a project to be reconfigured.
 
 Juicebox treasuries can evolve over time, allowing people to launch open-ended projects and to adjust constraints, extensions, and incentives over time as needed. The protocol is light enough for a group of friends, yet powerful enough for a global network of anons sharing thousands of ETH, ERC-20s, or other assets ("Cryptocurrencies").
 

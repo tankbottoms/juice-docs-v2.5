@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 ---
+
 import ReactPlayer from 'react-player'
 
 # Understanding Tokens
@@ -17,14 +18,14 @@ These tokens can then be used to connect with services such as [Snapshot](https:
 
 The **Reserved Tokens** section determines what percentage of tokens goes to the payer and what percentage of tokens goes to a designated list of Ethereum wallets and Juicebox projects.
 
-* _Reserved tokens_ determines what percentage of token issuance is reserved.
-* _Allocate reserved tokens_ determines how reserved tokens will be distributed. By default, reserved tokens go to the project owner.
+- _Reserved tokens_ determines what percentage of token issuance is reserved.
+- _Allocate reserved tokens_ determines how reserved tokens will be distributed. By default, reserved tokens go to the project owner.
 
 ### Incentives
 
 Juicebox projects can enable a _Discount rate_ and _Bonding curve rate._
 
-* _Discount rate_ is a percentage that changes the cost of issuing tokens over time. Each funding cycle, the amount of tokens issued per ETH will decrease by the discount rate. Generally, this will reward people who fund your project earlier.
-* _Bonding curve rate_ changes the amount of overflow that each token can be redeemed for. A Bonding curve rate of 60% means that tokens can be redeemed for 60% of the value they correspond to. The other 40% remains in the treasury, increasing the value of other tokens and rewarding long-term token holders.
+- _Discount rate_ is a percentage that changes the cost of issuing tokens over time. Each funding cycle, the amount of tokens issued per ETH will decrease by the discount rate. Generally, this will reward people who fund your project earlier.
+- _Bonding curve rate_ changes the amount of overflow that each token can be redeemed for. A Bonding curve rate of 60% means that tokens can be redeemed for 60% of the value they correspond to. The other 40% remains in the treasury, increasing the value of other tokens and rewarding long-term token holders.
 
 <ReactPlayer controls url='https://youtu.be/dxqc3yMqi5M' />

@@ -25,17 +25,17 @@ function setDefaultValues(
 ) external virtual override onlyOwner { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project whose treasury should be forwarded this contract's received payments.
-  * `_beneficiary` is the address that'll receive the project's tokens. 
-  * `_preferClaimedTokens` is a flag indicating whether issued tokens should be automatically claimed into the beneficiary's wallet. 
-  * `_memo` is the memo that'll be used. 
-  * `_metadata` is the metadata that'll be sent. 
-  * `_defaultPreferAddToBalance` is a flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
-* Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project whose treasury should be forwarded this contract's received payments.
+  - `_beneficiary` is the address that'll receive the project's tokens.
+  - `_preferClaimedTokens` is a flag indicating whether issued tokens should be automatically claimed into the beneficiary's wallet.
+  - `_memo` is the memo that'll be used.
+  - `_metadata` is the metadata that'll be sent.
+  - `_defaultPreferAddToBalance` is a flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
+- Through the [`onlyOwner`](https://docs.openzeppelin.com/contracts/4.x/dev/api/access#Ownable-onlyOwner--) modifier, this function can only be accessed by the address that owns this contract.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -48,7 +48,8 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
+    - [`defaultProjectId`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultprojectid.md)
+
 2.  Set the default beneficiary if it has changed.
 
     ```
@@ -58,7 +59,8 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+
 3.  Set the default claimed token preference if it has changed.
 
     ```
@@ -69,7 +71,8 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
+    - [`defaultPreferClaimedTokens`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferclaimedtokens.md)
+
 4.  Set the default memo if it has changed.
 
     ```
@@ -80,7 +83,8 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultMemo`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmemo.md)
+    - [`defaultMemo`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmemo.md)
+
 5.  Set the default metadata if it has changed.
 
     ```
@@ -91,9 +95,9 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultMetadata`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmetadata.md)
+    - [`defaultMetadata`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultmetadata.md)
 
-5.  Set the default metadata if it has changed.
+6.  Set the default metadata if it has changed.
 
     ```
     // Set the add to balance preference if it has changed.
@@ -103,8 +107,9 @@ function setDefaultValues(
 
     _Internal references:_
 
-    * [`defaultPreferAddToBalance`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferaddtobalance.md)
-6.  Emit a `SetDefaultValues` event with all relevant parameters.
+    - [`defaultPreferAddToBalance`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultpreferaddtobalance.md)
+
+7.  Emit a `SetDefaultValues` event with all relevant parameters.
 
     ```
     emit SetDefaultValues(
@@ -120,22 +125,22 @@ function setDefaultValues(
 
     _Event references:_
 
-    * [`SetDefaultValues`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/events/setdefaultvalues.md)
+    - [`SetDefaultValues`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/events/setdefaultvalues.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Sets the default values that determine how to interact with a protocol treasury when this contract receives ETH directly.
 
   @param _projectId The ID of the project whose treasury should be forwarded this contract's received payments.
-  @param _beneficiary The address that'll receive the project's tokens. 
-  @param _preferClaimedTokens A flag indicating whether issued tokens should be automatically claimed into the beneficiary's wallet. 
-  @param _memo The memo that'll be used. 
-  @param _metadata The metadata that'll be sent. 
+  @param _beneficiary The address that'll receive the project's tokens.
+  @param _preferClaimedTokens A flag indicating whether issued tokens should be automatically claimed into the beneficiary's wallet.
+  @param _memo The memo that'll be used.
+  @param _metadata The metadata that'll be sent.
   @param _defaultPreferAddToBalance A flag indicating if received payments should call the `pay` function or the `addToBalance` function of a project.
 */
 function setDefaultValues(
@@ -184,9 +189,9 @@ function setDefaultValues(
 
 <TabItem value="Events" label="Events">
 
-| Name                                | Data                                                                                                                                                                                                                                                  |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`SetDefaultValues`**](/dev/api/contracts/or-utilities/jbetherc20projectpayer/events/setdefaultvalues.md)                                                                          | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>bool preferClaimedTokens</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>bool preferAddToBalance</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                                                                        | Data                                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`SetDefaultValues`**](/dev/api/contracts/or-utilities/jbetherc20projectpayer/events/setdefaultvalues.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>bool preferClaimedTokens</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>bool preferAddToBalance</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

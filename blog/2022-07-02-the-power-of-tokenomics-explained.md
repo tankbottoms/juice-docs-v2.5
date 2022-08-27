@@ -25,9 +25,9 @@ How a token is used within the Juicebox protocol varies on a number of different
 
 You’ve created a project, and you’ve set a distribution limit (how much funding your project needs in a given time frame to keep the lights on). Let’s say that every two weeks your project needs to be bringing in $5,000. That amount will cover the costs of the team and any other expenses to keep your project running smoothly.
 
-Now let’s say somebody comes along and puts $2000 into your project. In exchange for contributing those funds, they get some amount of tokens (how many is completely determined by you). Furthermore, you may want to keep some tokens every time someone contributes funds, so you set something called a *reserved rate*, which is what percentage of tokens you keep. Let’s say you do 10%. So now 10% of all tokens created goes back to your project and sits in a treasury.
+Now let’s say somebody comes along and puts $2000 into your project. In exchange for contributing those funds, they get some amount of tokens (how many is completely determined by you). Furthermore, you may want to keep some tokens every time someone contributes funds, so you set something called a _reserved rate_, which is what percentage of tokens you keep. Let’s say you do 10%. So now 10% of all tokens created goes back to your project and sits in a treasury.
 
-Now fast forward. Many more people have contributed to your project, and at this point your distribution limit is still $5000 every two weeks, but on average you’re taking in a lot more than that. All those extra funds sit in your treasury. Those “extra” funds are called your *overflow*.
+Now fast forward. Many more people have contributed to your project, and at this point your distribution limit is still $5000 every two weeks, but on average you’re taking in a lot more than that. All those extra funds sit in your treasury. Those “extra” funds are called your _overflow_.
 
 Now let’s say one of your early investors, who has a lot of tokens for your project, wants to move on and get rid of his tokens. Rather than simply ignoring them, he can claim a percent of the overflow in your treasury proportional to how many tokens he has. If he has a lot of tokens, even though he may have initially just given you $2000 in funding, his tokens could be traded in for far more than that if your overflow is sufficiently large.
 
@@ -59,7 +59,7 @@ The redemption rate is something you set that determines how much value redeemed
 
 ### Weight
 
-The term *weight* simply means how many tokens or other assets, such as NFTs, a contributor will receive for a set amount of contribution. For instance, a contributor who puts $1000 into your project may receive a million tokens (if you so choose).
+The term _weight_ simply means how many tokens or other assets, such as NFTs, a contributor will receive for a set amount of contribution. For instance, a contributor who puts $1000 into your project may receive a million tokens (if you so choose).
 
 ### Burning versus Redeeming tokens
 

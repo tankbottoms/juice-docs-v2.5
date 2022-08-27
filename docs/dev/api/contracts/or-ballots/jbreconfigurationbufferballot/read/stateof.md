@@ -22,18 +22,18 @@ function stateOf(
 ) public view override returns (JBBallotState)  { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funding cycle being checked belongs.
-  * `_configured` is the configuration of the funding cycle to check the state of.
-  * `_start` is the start timestamp of the funding cycle to check the state of.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBFundingCycleBallot`](/dev/api/interfaces/ijbfundingcycleballot.md) interface.
-* The function returns the state of the provided ballot.
+- Arguments:
+  - `_projectId` is the ID of the project to which the funding cycle being checked belongs.
+  - `_configured` is the configuration of the funding cycle to check the state of.
+  - `_start` is the start timestamp of the funding cycle to check the state of.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBFundingCycleBallot`](/dev/api/interfaces/ijbfundingcycleballot.md) interface.
+- The function returns the state of the provided ballot.
 
 #### Body
 
-1.  Return the final state if there is one. 
+1.  Return the final state if there is one.
 
     ```
     // If there is a finalized state, return it.
@@ -43,14 +43,14 @@ function stateOf(
 
     _Enums used:_
 
-    * [`JBBallotState`](/dev/api/enums/jbballotstate.md)
-      * `.Active`
+    - [`JBBallotState`](/dev/api/enums/jbballotstate.md)
+      - `.Active`
 
     _Internal references:_
 
-    * [`finalState`](/dev/api/contracts/or-ballots/jbreconfigurationbufferballot/properties/finalstate.md)
+    - [`finalState`](/dev/api/contracts/or-ballots/jbreconfigurationbufferballot/properties/finalstate.md)
 
-2.  If the ballot's duration has not yet passed since the reconfiguration was proposed, the state is failed if the funding cycle is supposed to have already started. Otherwise it is still active.  
+2.  If the ballot's duration has not yet passed since the reconfiguration was proposed, the state is failed if the funding cycle is supposed to have already started. Otherwise it is still active.
 
     ```
     // If the delay hasn't yet passed, the ballot is either failed or active.
@@ -61,11 +61,11 @@ function stateOf(
 
     _Enums used:_
 
-    * [`JBBallotState`](/dev/api/enums/jbballotstate.md)
-      * `.Failed`
-      * `.Active`
+    - [`JBBallotState`](/dev/api/enums/jbballotstate.md)
+      - `.Failed`
+      - `.Active`
 
-3. The ballot is otherwise approved. 
+3.  The ballot is otherwise approved.
 
     ```
     // The ballot is otherwise approved.
@@ -74,8 +74,8 @@ function stateOf(
 
     _Enums used:_
 
-    * [`JBBallotState`](/dev/api/enums/jbballotstate.md)
-      * `.Approved`
+    - [`JBBallotState`](/dev/api/enums/jbballotstate.md)
+      - `.Approved`
 
 </TabItem>
 
@@ -83,7 +83,7 @@ function stateOf(
 
 ```
 /**
-  @notice 
+  @notice
   The approval state of a particular funding cycle.
 
   @param _projectId The ID of the project to which the funding cycle being checked belongs.

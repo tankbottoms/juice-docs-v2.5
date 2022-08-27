@@ -22,12 +22,12 @@ function approve(
 ) external override { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the token belongs. This is ignored.
-  * `_spender` is the address that will be spending tokens on the `msg.sender`s behalf.
-  * `_amount` is the amount the `_spender` is allowed to spend.
-* The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project to which the token belongs. This is ignored.
+  - `_spender` is the address that will be spending tokens on the `msg.sender`s behalf.
+  - `_amount` is the amount the `_spender` is allowed to spend.
+- The function overrides a function definition from the [`IJBToken`](/dev/api/interfaces/ijbtoken.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -39,14 +39,14 @@ function approve(
 
     _Inherited references:_
 
-    * [`_mint`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
+    - [`_mint`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Approves an account to spend tokens on the `msg.sender`s behalf.
 

@@ -25,17 +25,17 @@ function distributionLimitOf(
 ) external view override returns (uint256, uint256) { ... }
 ```
 
-* Arguments:
-* `_projectId` is the ID of the project to get the distribution limit of.
-* `_configuration` is the configuration during which the distribution limit applies.
-* `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) from which distributions are being limited.
-* `_token` is the token for which the distribution limit applies.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns:
-  * `distributionLimit` is the distribution limit, as a fixed point number with the same number of decimals as the provided terminal.
-  * `distributionLimitCurrency` is the currency from [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md) that the returned distribution limit is in terms of.
+- Arguments:
+- `_projectId` is the ID of the project to get the distribution limit of.
+- `_configuration` is the configuration during which the distribution limit applies.
+- `_terminal` is the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) from which distributions are being limited.
+- `_token` is the token for which the distribution limit applies.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns:
+  - `distributionLimit` is the distribution limit, as a fixed point number with the same number of decimals as the provided terminal.
+  - `distributionLimitCurrency` is the currency from [`JBCurrencies`](/dev/api/libraries/jbcurrencies.md) that the returned distribution limit is in terms of.
 
 #### Body
 
@@ -48,7 +48,8 @@ function distributionLimitOf(
 
     _Internal references:_
 
-    * [`_packedDistributionLimitDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packeddistributionlimitdataof.md)
+    - [`_packedDistributionLimitDataOf`](/dev/api/contracts/or-controllers/jbcontroller/properties/-_packeddistributionlimitdataof.md)
+
 2.  Return the distribution limit, which is in the first 248 bits, and the currency the distribution limit is in terms of, which is in the last 8 bits.
 
     ```
@@ -66,7 +67,7 @@ function distributionLimitOf(
   The amount of token that a project can distribute per funding cycle, and the currency it's in terms of.
 
   @dev
-  The number of decimals in the returned fixed point amount is the same as that of the specified terminal. 
+  The number of decimals in the returned fixed point amount is the same as that of the specified terminal.
 
   @param _projectId The ID of the project to get the distribution limit of.
   @param _configuration The configuration during which the distribution limit applies.

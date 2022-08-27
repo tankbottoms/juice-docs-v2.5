@@ -11,23 +11,23 @@ Only a few minor changes are needed for Funding Cycle #4. All of the focus areas
 
 As a DAO, we should continue focusing on the following areas:
 
-### Risk mitigation 
+### Risk mitigation
 
-*Goal: Make sure things don't go to zero. *
+_Goal: Make sure things don't go to zero. _
 
-*Current team: jango (lead), exekias*
+_Current team: jango (lead), exekias_
 
-Updates: 
+Updates:
 
 - One low severity bug was discovered, an explanation of what happened can be found [here](/blog/juicebox-postmortem-of-low-severity-bug-discovered-8-18-2021/), and a postmortem is available [here](https://github.com/jbx-protocol/juice-security/blob/main/incidents/08-18-2021.md).
 - We're underway with a baseline audit being performed by DeFiYield.
 - We still need to outline a bug bounty program with associated rewards for discovered vulnerabilities of varying severities.
 
-### UX improvements 
+### UX improvements
 
-*Goal: Improve and make templates for project onboarding and the project dashboard.*
+_Goal: Improve and make templates for project onboarding and the project dashboard._
 
-*Current team: peri (lead), jango, exekias*
+_Current team: peri (lead), jango, exekias_
 
 Updates:
 
@@ -38,9 +38,9 @@ Updates:
 
 ### Project support, education, & docs
 
-*Goal: Make sure JB projects have the resources they need to get started and thrive. *
+_Goal: Make sure JB projects have the resources they need to get started and thrive. _
 
-*Current team: jango (lead), natimuril, WAGMI Studios, CanuDAO*
+_Current team: jango (lead), natimuril, WAGMI Studios, CanuDAO_
 
 Updates:
 
@@ -48,11 +48,11 @@ Updates:
 - Several conversations with projects that are interested in building their treasury using Juicebox. Actively workshopping solutions for [ScribeDAO](https://twitter.com/scribedao) and [Phlote](https://phlote.xyz/), with [FingerprintsDAO](https://twitter.com/FingerprintsDAO), $Loot, and a project by [NiftyTable](https://twitter.com/NiftyTabIe) also on the radar.
 - No significant updates on tech or process documentation. We need to make progress here as we continue to understand the materials that projects and contributors need to be successful.
 
-### Analytics 
+### Analytics
 
-*Goal: Give projects rich insights into their community treasury.*
+_Goal: Give projects rich insights into their community treasury._
 
-*Current team: peri (lead), buradorii*
+_Current team: peri (lead), buradorii_
 
 Updates:
 
@@ -62,20 +62,20 @@ Updates:
 
 ### Liquidity pools
 
-*Goal: Add support for JB treasury tokens in secondary markets.*
+_Goal: Add support for JB treasury tokens in secondary markets._
 
-*Current team: exekias (lead), jango*
+_Current team: exekias (lead), jango_
 
 Updates:
 
-- SharkDAO's SHARK token has been pooled with ETH on Sushiswap, you can see the analytics [here](https://analytics.sushi.com/tokens/0x232afce9f1b3aae7cb408e482e847250843db931). SharkDAO's Juicebox page was closed during this transition, with plans to reopen in the coming days. 
+- SharkDAO's SHARK token has been pooled with ETH on Sushiswap, you can see the analytics [here](https://analytics.sushi.com/tokens/0x232afce9f1b3aae7cb408e482e847250843db931). SharkDAO's Juicebox page was closed during this transition, with plans to reopen in the coming days.
 - Research is underway to provide a staking contract to projects where LP rewards can be distributed.
 
 ### Marketplace
 
-*Goal: Give JB projects a place to sell digital goods (and physical?) which pipe percentages of revenue to any number of addresses and Juicebox treasuries.*
-*
-Current team: nicholas (lead), jango, peri*
+_Goal: Give JB projects a place to sell digital goods (and physical?) which pipe percentages of revenue to any number of addresses and Juicebox treasuries._
+
+- Current team: nicholas (lead), jango, peri\*
 
 Updates:
 
@@ -86,9 +86,9 @@ Updates:
 
 ### Governance
 
-*Goal: Plan out how we will make decisions together.*
+_Goal: Plan out how we will make decisions together._
 
-*Current team: zheug (lead), unicornio*
+_Current team: zheug (lead), unicornio_
 
 Updates:
 
@@ -98,7 +98,7 @@ Updates:
 
 ### Protocol upgrades  
 
-*Goal: Evolve the protocol to be more useful and remove friction from the treasury management process. *
+_Goal: Evolve the protocol to be more useful and remove friction from the treasury management process. _
 
 C*urrent team: jango (lead), exekias, peri, nicholas*
 
@@ -114,33 +114,33 @@ Updates:
 **Ballot:** 3 day delay (changed from 7 day)
 A reconfiguration proposal must be submitted 3 days before the end of the current funding cycle. Reconfiguration decisions are feelings a little rushed. Changing the ballot delay from 7-days to 3-days gives us a bit more time than what we currently have for evaluating proposals and conveying changes on-chain.
 
-**Discount rate:** 10% 
+**Discount rate:** 10%
 The discount rate should continue to compound at 10% to reward contributors who continue to fund the JuiceboxDAO treasury at this risky stage.
 
 **Bonding curve:** 60% (+-0%)
 No need to change this. Still arbitrary, but there's no demand to redeem right now, so might as well keep it this tight as we adjust the discount rate.
 
-**Payouts: **$33.5k total 
+**Payouts: **$33.5k total
 
-I propose we pay exekias, nicholas, nati, and buradorii slightly more. 
+I propose we pay exekias, nicholas, nati, and buradorii slightly more.
 
 **Core contributors**
 
-- **jango **| *dev: $10k (no change)*
-- **peripheralist **| *dev : $10k (no change)*
-- **CanuDAO **|*comms:$2.5k (no change)*
-- **WAGMI Studios **| *art, animations, and educational content: $2.5k *(no change)
-- **exekias **| *dev: $4k (+ $1k)*
-Exekias has bee hands on with all aspects of the code. Increasingly becoming an integral part of the core dev staff.
+- **jango **| _dev: $10k (no change)_
+- **peripheralist **| _dev : $10k (no change)_
+- **CanuDAO **|_comms:$2.5k (no change)_
+- **WAGMI Studios **| _art, animations, and educational content: $2.5k _(no change)
+- **exekias **| _dev: $4k (+ $1k)_
+  Exekias has bee hands on with all aspects of the code. Increasingly becoming an integral part of the core dev staff.
 
 **Experimental contributors**
 
-- **nicholas** | *dev: $2k (+ $500)*
-Nicholas has begun writing code, he's been an active voice in our community, and he's helping to progress pivotal discussions forward.
-- **nati **| *community relations*: $1k (+$500)
-Nati has begun onboarding DAOs onto Juicebox and is also helping progress pivotal discussions forward.
-- **Buradorii** | *analytics: $1k *(+$500)
-Buradorii has begun publishing Flipside data dashboards. We've yet to aggregate charts and deliver them to projects.
+- **nicholas** | _dev: $2k (+ $500)_
+  Nicholas has begun writing code, he's been an active voice in our community, and he's helping to progress pivotal discussions forward.
+- **nati **| _community relations_: $1k (+$500)
+  Nati has begun onboarding DAOs onto Juicebox and is also helping progress pivotal discussions forward.
+- **Buradorii** | _analytics: $1k _(+$500)
+  Buradorii has begun publishing Flipside data dashboards. We've yet to aggregate charts and deliver them to projects.
 
 **Allocations**
 

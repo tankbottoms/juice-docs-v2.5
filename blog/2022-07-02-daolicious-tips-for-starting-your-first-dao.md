@@ -5,7 +5,6 @@ authors: [felixander]
 tags: [dao, news, juicebox]
 ---
 
-
 # DAOlicious tips for starting your first DAO
 
 Do you want to know the surefire way to build a DAO with a small, strong community? It’s easy. Just start with a DAO with a large, strong community!

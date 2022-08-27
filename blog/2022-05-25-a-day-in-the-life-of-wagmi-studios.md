@@ -5,7 +5,6 @@ authors: [felixander]
 tags: [dao, shitpost, juicebox]
 ---
 
-
 # A Day in the life of Wagmi Studios
 
 Who knew the pot smoking banana was the least strange one among us?

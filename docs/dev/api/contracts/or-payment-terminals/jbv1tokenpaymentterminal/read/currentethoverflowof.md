@@ -20,12 +20,12 @@ _The current overflow is represented as a fixed point number with 18 decimals._
 function currentEthOverflowOf(uint256 _projectId) external view override returns (uint256) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the ETH overflow belongs.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
-* The function returns the current amount of ETH overflow that project has in this terminal, as a fixed point number with 18 decimals.
+- Arguments:
+  - `_projectId` is the ID of the project to which the ETH overflow belongs.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md) interface.
+- The function returns the current amount of ETH overflow that project has in this terminal, as a fixed point number with 18 decimals.
 
 #### Body
 

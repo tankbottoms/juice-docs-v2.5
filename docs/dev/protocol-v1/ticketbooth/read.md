@@ -8,8 +8,8 @@ The total balance of tickets a holder has for a specified project, including sta
 
 **Params:**
 
-* **holder:** The ticket holder to get a balance for.
-* **_projectId:** The project to get the \`_hodler\`s balance of.
+- **holder:** The ticket holder to get a balance for.
+- **\_projectId:** The project to get the \`\_hodler\`s balance of.
 
 **Returns:** The balance.
 
@@ -28,7 +28,7 @@ The total supply of tickets for each project, including staked and unstaked tick
 
 **Params:**
 
-* **projectId:** The ID of the project to get the total supply of.
+- **projectId:** The ID of the project to get the total supply of.
 
 **Returns:** The total supply.
 

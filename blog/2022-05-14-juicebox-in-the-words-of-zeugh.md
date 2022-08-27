@@ -7,9 +7,9 @@ tags: [dao, interview, juicebox]
 
 # Juicebox in the words of: Zeugh
 
-*“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick.*
+_“Juicebox in the words of” is a series that highlights JB community members in interview form. Learn about members’ roles at JB and what makes them tick._
 
-*Zeugh* *is a contributor to the JB space as a community manager and a straight up OG. He has all the trappings of a proverbial hype-man, and a knack for bringing a party and good vibes wherever he goes. He’s upbeat with an excellent sense of humor, and his sarcasm game is through the roof. He works tirelessly to help bring the JB community together, and to bring those JB vibes to every corner of the globe. Read on to learn a bit more about this sarcastic human teddy bear.*
+_Zeugh_ _is a contributor to the JB space as a community manager and a straight up OG. He has all the trappings of a proverbial hype-man, and a knack for bringing a party and good vibes wherever he goes. He’s upbeat with an excellent sense of humor, and his sarcasm game is through the roof. He works tirelessly to help bring the JB community together, and to bring those JB vibes to every corner of the globe. Read on to learn a bit more about this sarcastic human teddy bear._
 
 ### How'd you get started with JB, and how has it changed since you've been here?
 

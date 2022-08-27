@@ -26,15 +26,15 @@ function latestConfiguredFundingCycleOf(uint256 _projectId)
   ) { ... }
 ```
 
-* Arguments:
-* `_projectId` is the ID of the project to which the funding cycle belongs.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
-* The function returns:
-  * `fundingCycle` is the latest configured funding cycle.
-  * `metadata` is the latest configured funding cycle's metadata.
-  * `ballotState` is the state of the configuration.
+- Arguments:
+- `_projectId` is the ID of the project to which the funding cycle belongs.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBController`](/dev/api/interfaces/ijbcontroller.md) interface.
+- The function returns:
+  - `fundingCycle` is the latest configured funding cycle.
+  - `metadata` is the latest configured funding cycle's metadata.
+  - `ballotState` is the state of the configuration.
 
 #### Body
 
@@ -46,11 +46,12 @@ function latestConfiguredFundingCycleOf(uint256 _projectId)
 
     _Internal references:_
 
-    * [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
+    - [`fundingCycleStore`](/dev/api/contracts/or-controllers/jbcontroller/properties/fundingcyclestore.md)
 
     _External references:_
 
-    * [`latestConfiguredOf`](/dev/api/contracts/jbfundingcyclestore/read/latestconfiguredof.md)
+    - [`latestConfiguredOf`](/dev/api/contracts/jbfundingcyclestore/read/latestconfiguredof.md)
+
 2.  Expand the metadata of the funding cycle.
 
     ```
@@ -59,15 +60,15 @@ function latestConfiguredFundingCycleOf(uint256 _projectId)
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)<br/>
-      * `.expandMetadata(...)`
-      
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)<br/>
+      - `.expandMetadata(...)`
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   A project's latest configured funding cycle along with its metadata and the ballot state of the configuration.
 

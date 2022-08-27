@@ -1,4 +1,4 @@
-# _useAllowanceOf
+# \_useAllowanceOf
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -27,14 +27,14 @@ function _useAllowanceOf(
 ) private returns (uint256 netDistributedAmount) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to use the allowance of.
-  * `_amount` is the amount of terminal tokens to use from this project's current allowance, as a fixed point number with the same amount of decimals as this terminal.
-  * `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's overflow allowance currency.
-  * `_minReturnedTokens` is the minimum number of tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same amount of decimals as this terminal.
-  * `_beneficiary` is the address to send the funds to.
-* The function is private to this contract.
-* The function returns the amount of tokens that was distributed to the beneficiary, as a fixed point number with the same amount of decimals as the terminal.
+- Arguments:
+  - `_projectId` is the ID of the project to use the allowance of.
+  - `_amount` is the amount of terminal tokens to use from this project's current allowance, as a fixed point number with the same amount of decimals as this terminal.
+  - `_currency` is the expected currency of the amount being distributed. Must match the project's current funding cycle's overflow allowance currency.
+  - `_minReturnedTokens` is the minimum number of tokens that the `_amount` should be valued at in terms of this terminal's currency, as a fixed point number with the same amount of decimals as this terminal.
+  - `_beneficiary` is the address to send the funds to.
+- The function is private to this contract.
+- The function returns the amount of tokens that was distributed to the beneficiary, as a fixed point number with the same amount of decimals as the terminal.
 
 #### Body
 
@@ -51,11 +51,12 @@ function _useAllowanceOf(
 
     _Internal references:_
 
-    * [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
+    - [`store`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/store.md)
 
     _External references:_
 
-    * [`recordUsedAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordusedallowanceof.md)
+    - [`recordUsedAllowanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/write/recordusedallowanceof.md)
+
 2.  Make sure the distributed amount is at least as much as the specified minimum.
 
     ```
@@ -63,7 +64,7 @@ function _useAllowanceOf(
     if (_distributedAmount < _minReturnedTokens) revert INADEQUATE_DISTRIBUTION_AMOUNT();
     ```
 
-3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error. 
+3.  The following scoped block is a bit of a hack to prevent a "Stack too deep" error.
 
     ```
     // Scoped section prevents stack too deep. `_fee`, `_projectOwner`, `_feeDiscount`, and `_netAmount` only used within scope.
@@ -86,13 +87,13 @@ function _useAllowanceOf(
 
         _Internal references:_
 
-        * [`projects`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/projects.md)
+        - [`projects`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/projects.md)
 
         _External references:_
 
-        * [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+        - [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
 
-    3.  Get a reference to the discount that'll be used when applying the fee. If the fee is 0, set the discount to be 100% to simplify subsequent calculations. No fee is the same as a full discount. 
+    3.  Get a reference to the discount that'll be used when applying the fee. If the fee is 0, set the discount to be 100% to simplify subsequent calculations. No fee is the same as a full discount.
 
         ```
         // Get the amount of discount that should be applied to any fees taken.
@@ -104,13 +105,13 @@ function _useAllowanceOf(
 
         _Library references:_
 
-        * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-          * `.MAX_FEE_DISCOUNT(...)`
+        - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+          - `.MAX_FEE_DISCOUNT(...)`
 
         _Internal references:_
 
-        * [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
-        * [`_currentFeeDiscount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_currentfeediscount.md)
+        - [`isFeelessAddress`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/isfeelessaddress.md)
+        - [`_currentFeeDiscount`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/read/-_currentfeediscount.md)
 
     4.  Take the fee if needed.
 
@@ -123,12 +124,12 @@ function _useAllowanceOf(
 
         _Library references:_
 
-        * [`JBConstants`](/dev/api/libraries/jbconstants.md)
-          * `.MAX_FEE_DISCOUNT(...)`
+        - [`JBConstants`](/dev/api/libraries/jbconstants.md)
+          - `.MAX_FEE_DISCOUNT(...)`
 
         _Internal references:_
 
-        * [`_takeFeeFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_takefeefrom.md)
+        - [`_takeFeeFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_takefeefrom.md)
 
     5.  Send the net amount to the beneficiary if needed.
 
@@ -139,13 +140,13 @@ function _useAllowanceOf(
         }
 
         // Transfer any remaining balance to the beneficiary.
-        if (netDistributedAmount > 0) 
+        if (netDistributedAmount > 0)
           _transferFrom(address(this), _beneficiary, _netAmount);
         ```
 
         _Virtual references:_
 
-        * [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
+        - [`_transferFrom`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_transferfrom.md)
 
 4.  Emit a `UseAllowance` event with the relevant parameters.
 
@@ -165,7 +166,7 @@ function _useAllowanceOf(
 
     _Event references:_
 
-    * [`UseAllowance`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/useallowance.md)
+    - [`UseAllowance`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/useallowance.md)
 
 </TabItem>
 
@@ -178,7 +179,7 @@ function _useAllowanceOf(
 
   @dev
   Only a project's owner or a designated operator can use its allowance.
-  
+
   @dev
   Incurs the protocol fee.
 
@@ -235,7 +236,7 @@ function useAllowanceOf(
     }
 
     // Transfer any remaining balance to the beneficiary.
-    if (netDistributedAmount > 0) 
+    if (netDistributedAmount > 0)
       _transferFrom(address(this), _beneficiary, _netAmount);
   }
 
@@ -257,17 +258,16 @@ function useAllowanceOf(
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
+| String                               | Description                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------- |
 | **`INADEQUATE_DISTRIBUTION_AMOUNT`** | Thrown if the amount being distributed is less than the specified minimum. |
-
 
 </TabItem>
 <TabItem value="Events" label="Events">
 
-| Name                                            | Data                                                                                                                                                                                                                                                                                                                                                                |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`UseAllowance`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/useallowance.md)                       | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 distributedAmount</code></li><li><code>uint256 feeAmount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul>                                                                                                                            |
+| Name                                                                                                                               | Data                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`UseAllowance`**](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/events/useallowance.md) | <ul><li><code>uint256 indexed fundingCycleConfiguration</code></li><li><code>uint256 indexed fundingCycleNumber</code></li><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>uint256 amount</code></li><li><code>uint256 distributedAmount</code></li><li><code>uint256 feeAmount</code></li><li><code>string memo</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

@@ -6,13 +6,13 @@ sidebar_position: 2
 
 ### Mission statement
 
-*What the DAO works toward*
+_What the DAO works toward_
 
 JuiceboxDAO helps people confidently run programmable and community funded treasuries from startup to scale, openly on Ethereum.
 
 ### Values
 
-*Who we are*
+_Who we are_
 
 - **We're builders.** The decisions we make prioritize those building, and we trust those who we've delegated responsibilities to.
 - **We're focused.** We encourage one another to focus on the commitments we've made to the DAO, and keep each other accountable to them.
@@ -23,7 +23,7 @@ JuiceboxDAO helps people confidently run programmable and community funded treas
 
 #### Focus areas
 
-*Where the DAO focuses its resources*
+_Where the DAO focuses its resources_
 
 (No particular order)
 
@@ -68,7 +68,7 @@ Regularly define, assess, prioritize, and publicly communicate the goals and pro
 
 #### Membership
 
-*What does it mean to be a JuiceboxDAO member*
+_What does it mean to be a JuiceboxDAO member_
 
 DAO members are responsible for proposing and voting on:
 

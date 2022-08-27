@@ -15,6 +15,7 @@ Every Steward must act and interact in ways that contribute to an open, welcomin
 ## Community Standards
 
 Examples of behavior that contributes to a positive environment for our community include:
+
 - Making education a priority, both for ourselves and the wider community.
 - Demonstrating empathy and kindness toward other people.
 - Embodying the values of the forthcoming DAO Manifesto.
@@ -26,6 +27,7 @@ Examples of behavior that contributes to a positive environment for our communit
 - Execute and sign transactions using the Steward's Cryptographic keys on behalf of and at the discretion of the Community.
 
 Examples of unacceptable behavior include:
+
 - The use of sexualized language or imagery, and sexual attention or advances of any kind.
 - Trolling, insults, derogatory comments, and personal or political attacks.
 - Public or private harassment.
@@ -37,22 +39,27 @@ Examples of unacceptable behavior include:
 ## Community Impact and Enforcement Guidelines
 
 DAO Stewards will follow the Community Impact and Enforcement Guidelines listed below in determining the consequences for any action they deem in violation of the Code of Conduct:
+
 ### 1. Correction
+
 **Transgression:** The use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
 
 **Consequence:** Deletion or removal of the post in question, along with communication of which rule was violated and how to avoid such violations in the future. If the action was in person: direct communication with that individual to identify which rule was violated (and how to avoid such violations in the future).
 
 ### 2. Warning
+
 **Transgression:** A violation through a single incident or series of actions.
 
 **Consequence:** A warning with consequences for continued inappropriate behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes interactions in community spaces as well as external channels like Telegram, Discord, Reddit, Community Forum, etc. Violating these terms may lead to a temporary or permanent ban.
 
 ### 3. Temporary Ban
+
 **Transgression:** A serious violation of community standards, including sustained inappropriate behavior.
 
 **Consequence:** A temporary ban from any sort of interaction or public communication with the Community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
 
 ### 4. Permanent Ban
+
 **Transgression:** Demonstrating a pattern of violating community standards, including sustained inappropriate behavior, harassment, aggression, or disparagement towards individuals or classes of individuals.
 
 **Consequence:** Permanent removal from any sort of interaction or public communication with the Community for an indefinite period of time. If an individual has alternate accounts those may be removed as well. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct.

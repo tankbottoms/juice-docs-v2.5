@@ -18,12 +18,12 @@ Interface: [`IJBPaymentTerminal`](/dev/api/interfaces/ijbpaymentterminal.md)
 function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external override { ... }
 ```
 
-* Arguments:
-  * `_v1ProjectId` is the ID of the v1 project whose tokens are being released.
-  * `_beneficiary` is the address that the tokens are being sent to.
-* The function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_v1ProjectId` is the ID of the v1 project whose tokens are being released.
+  - `_beneficiary` is the address that the tokens are being sent to.
+- The function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBV1TokenPaymentTerminal`](/dev/api/interfaces/ijbv1tokenpaymentterminal.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -36,12 +36,12 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
-    
-    * [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
-    * [`projects`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L71)
+
+    - [`ownerOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc721#IERC721-ownerOf-uint256-)
+    - [`projects`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L71)
 
 2.  Make sure the v1 project has not yet been finalized.
 
@@ -52,7 +52,7 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
+    - [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
 
 3.  Get a reference to the v1 ERC20 token being used by the project.
 
@@ -63,11 +63,11 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
-    
-    * [`ticketsOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L69)
+
+    - [`ticketsOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L69)
 
 4.  Get a reference to the v1 unclaimed token balance currently being held by this contract.
 
@@ -78,11 +78,11 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
-  
-    * [`stakedBalanceOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L84)
+
+    - [`stakedBalanceOf`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L84)
 
 5.  Get a reference to the v1 ERC20 token balance currently being held by this contract.
 
@@ -94,8 +94,8 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
     ```
 
     _External references:_
-  
-    * [`balanceOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-balanceOf-address-)
+
+    - [`balanceOf`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-balanceOf-address-)
 
 6.  Mark this v1 project as finalized so that this terminal no longer accepts this v1 token in exchange for any v2 token.
 
@@ -106,7 +106,7 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
+    - [`finalized`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/finalized.md)
 
 7.  Transfer ERC20 token balance held by this contract to the specified beneficiary.
 
@@ -117,7 +117,7 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _External references:_
 
-    * [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transfer-address-uint256-)
+    - [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transfer-address-uint256-)
 
 8.  Transfer the unclaimed token balance held by this contract to the specified beneficiary.
 
@@ -129,14 +129,13 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Internal references:_
 
-    * [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
+    - [`ticketBooth`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/properties/ticketbooth.md)
 
     _External references:_
 
-    * [`transfer`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L145)
+    - [`transfer`](https://github.com/jbx-protocol/juice-contracts-v1/blob/a91b55e8d264267c338b089aa9a45b29fd8e8f13/contracts/interfaces/ITicketBooth.sol#L145)
 
-
-3.  Emit a `ReleaseV1Tokens` event with the relevant parameters.
+9.  Emit a `ReleaseV1Tokens` event with the relevant parameters.
 
     ```
     emit ReleaseV1Tokens(_v1ProjectId, _beneficiary, _unclaimedBalance, _erc20Balance, msg.sender);
@@ -144,15 +143,14 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
     _Event references:_
 
-    * [`ReleaseV1Tokens`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/releasev1tokens.md)
-
+    - [`ReleaseV1Tokens`](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/releasev1tokens.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Allows a project owner to gain custody of all the v1 tokens that have been paid, after they have finalized the ability for v1 token holders to convert to v2 tokens via this contract.
 
@@ -195,18 +193,18 @@ function releaseV1TokensOf(uint256 _v1ProjectId, address _beneficiary) external 
 
 <TabItem value="Errors" label="Errors">
 
-| String                       | Description                                             |
-| ---------------------------- | ------------------------------------------------------- |
-| **`NOT_ALLOWED`** | Thrown if an address other than the v1 project's owner is attempting to release the v1 token. |
-| **`MIGRATION_TERMINATED`** | Thrown if the specified v1 project has already been finalized. |
+| String                     | Description                                                                                   |
+| -------------------------- | --------------------------------------------------------------------------------------------- |
+| **`NOT_ALLOWED`**          | Thrown if an address other than the v1 project's owner is attempting to release the v1 token. |
+| **`MIGRATION_TERMINATED`** | Thrown if the specified v1 project has already been finalized.                                |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                          | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**`ReleaseV1Tokens`**](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/releasev1tokens.md)                                         | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed beneficiary</code></li><li><code>uint256 unclaimedBalance</code></li><li><code>uint256 claimedBalance</code></li><li><code>address caller</code></li></ul>        |
+| Name                                                                                                                | Data                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`ReleaseV1Tokens`**](/dev/api/contracts/or-payment-terminals/jbv1tokenpaymentterminal/events/releasev1tokens.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>uint256 indexed beneficiary</code></li><li><code>uint256 unclaimedBalance</code></li><li><code>uint256 claimedBalance</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

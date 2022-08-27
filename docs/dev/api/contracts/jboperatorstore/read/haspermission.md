@@ -23,14 +23,14 @@ function hasPermissions(
 ) external view override returns (bool) { ... }
 ```
 
-* `_operator` is the operator to check
-* `_account` is the account that has given out permission to the operator.
-* `_domain` is the domain that the operator has been given permissions to operate.
-* `_permissionIndexes` are the permission index to check for.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
-* The function returns a flag indicating whether the operator has the specified permission.
+- `_operator` is the operator to check
+- `_account` is the account that has given out permission to the operator.
+- `_domain` is the domain that the operator has been given permissions to operate.
+- `_permissionIndexes` are the permission index to check for.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
+- The function returns a flag indicating whether the operator has the specified permission.
 
 #### Body
 
@@ -39,6 +39,7 @@ function hasPermissions(
     ```
     if (_permissionIndex > 255) revert PERMISSION_INDEX_OUT_OF_BOUNDS();
     ```
+
 2.  Return true if the bit is flipped on for the specified permission index. Otherwise return false.
 
     ```
@@ -47,15 +48,15 @@ function hasPermissions(
 
     _Internal references:_
 
-    * [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
+    - [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Whether or not an operator has the permission to take a certain action pertaining to the specified domain.
 
   @param _operator The operator to check.

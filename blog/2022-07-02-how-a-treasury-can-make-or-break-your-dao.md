@@ -11,7 +11,7 @@ tags: [dao, news, juicebox]
 
 Okay, no one has ever woken up with a great business or non-profit idea and screamed, “Eureka! I can’t wait to get started on my accounting!” We get it. You have a passion, and it’s probably not in making an accounts payable/receivable department.
 
-But here’s the thing: how your [DAO](https://info.juicebox.money/blog/daolicious-tips-for-starting-your-first-dao), business or non-profit treats its capital is *absolutely* an essential factor to its long-term success. Ironically, decisions around precisely these kinds of mechanisms, that lead to long-term success, tend to be back-burner relegated in the creation process of a new project. With [Juicebox](https://info.juicebox.money/blog/juicebox-the-token-minting-powerhouse): not anymore.
+But here’s the thing: how your [DAO](https://info.juicebox.money/blog/daolicious-tips-for-starting-your-first-dao), business or non-profit treats its capital is _absolutely_ an essential factor to its long-term success. Ironically, decisions around precisely these kinds of mechanisms, that lead to long-term success, tend to be back-burner relegated in the creation process of a new project. With [Juicebox](https://info.juicebox.money/blog/juicebox-the-token-minting-powerhouse): not anymore.
 
 ### What’s the big deal about a programmable treasury, anyways?
 

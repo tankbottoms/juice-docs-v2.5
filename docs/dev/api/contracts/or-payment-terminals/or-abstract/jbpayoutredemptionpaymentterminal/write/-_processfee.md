@@ -1,4 +1,4 @@
-# _processFee
+# \_processFee
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,11 +16,11 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 function _processFee(uint256 _amount, address _beneficiary) { ... }
 ```
 
-* Arguments:
-  * `_amount` is the fee amount, as a floating point number with the same amount of decimals as this terminal.
-  * `_beneficiary` is the address to mint the platform's tokens for.
-* The function is private to this contract.
-* The function doesn't return anything.
+- Arguments:
+  - `_amount` is the fee amount, as a floating point number with the same amount of decimals as this terminal.
+  - `_beneficiary` is the address to mint the platform's tokens for.
+- The function is private to this contract.
+- The function doesn't return anything.
 
 #### Body
 
@@ -33,11 +33,11 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
 
     _Internal references:_
 
-    * [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
+    - [`directory`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/directory.md)
 
     _External references:_
 
-    * [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
+    - [`primaryTerminalOf`](/dev/api/contracts/jbdirectory/read/primaryterminalof.md)
 
 2.  If the protocol's terminal is the same as this terminal, save gas by paying the contract internally.
 
@@ -45,6 +45,7 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
     // When processing the admin fee, save gas if the admin is using this contract as its terminal.
     if (_terminal == this) { ... }
     ```
+
     1.  Pay the protocol using the internal pay function.
 
         ```
@@ -53,7 +54,7 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
 
         _Internal references:_
 
-        * [`_pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_pay.md)
+        - [`_pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_pay.md)
 
 3.  Otherwise if the terminal is different, transfer the fee over.
 
@@ -70,9 +71,9 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
 
         _Virtual references:_
 
-        * [`_beforeTransferTo`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_beforetransferto.md)
+        - [`_beforeTransferTo`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/-_beforetransferto.md)
 
-    4.  Get a reference to the ETH amount that should be attached to the transaction. Only attach anything if the token being paid is ETH.
+    2.  Get a reference to the ETH amount that should be attached to the transaction. Only attach anything if the token being paid is ETH.
 
         ```
         // If this terminal's token is ETH, send it in msg.value.
@@ -81,9 +82,10 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
 
         _Library references:_
 
-        * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-          * `.ETH`
-    5.  Send the payment.
+        - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+          - `.ETH`
+
+    3.  Send the payment.
 
         ```
         // Send the payment.
@@ -101,12 +103,11 @@ function _processFee(uint256 _amount, address _beneficiary) { ... }
 
         _Internal references:_
 
-        * [`_PROTOCOL_PROJECT_ID`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_protocol_project_id.md)
-        
+        - [`_PROTOCOL_PROJECT_ID`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_protocol_project_id.md)
+
         _External references:_
 
-        * [`pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/pay.md)
-
+        - [`pay`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/write/pay.md)
 
 </TabItem>
 
@@ -170,4 +171,3 @@ function _processFee(uint256 _amount, address _beneficiary) private {
 </TabItem>
 
 </Tabs>
-  

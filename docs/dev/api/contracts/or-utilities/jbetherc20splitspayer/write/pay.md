@@ -28,20 +28,20 @@ function pay(
 ) public payable virtual override nonReentrant { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project that is being paid after.
-  * `_token` is the token being paid in.
-  * `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
-  * `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
-  * `_beneficiary` is the address who will receive tokens from the payment.
-  * `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with 18 decimals.
-  * `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
-  * `_memo` is a memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate.  A data source can alter the memo before emitting in the event and forwarding to the delegate.
-  * `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
-* The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
-* The function can be overriden by inheriting contracts.
-* The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
-* The function doesn't return anything.
+- Arguments:
+  - `_projectId` is the ID of the project that is being paid after.
+  - `_token` is the token being paid in.
+  - `_amount` is the amount of tokens being paid, as a fixed point number. If the token is ETH, this is ignored and msg.value is used in its place.
+  - `_decimals` is the number of decimals in the `_amount` fixed point number. If the token is ETH, this is ignored and 18 is used in its place, which corresponds to the amount of decimals expected in msg.value.
+  - `_beneficiary` is the address who will receive tokens from the payment.
+  - `_minReturnedTokens` is the minimum number of project tokens expected in return, as a fixed point number with 18 decimals.
+  - `_preferClaimedTokens` is a flag indicating whether the request prefers to mint project tokens into the beneficiaries wallet rather than leaving them unclaimed. This is only possible if the project has an attached token contract. Leaving them unclaimed saves gas.
+  - `_memo` is a memo to pass along to the emitted event, and passed along the the funding cycle's data source and delegate. A data source can alter the memo before emitting in the event and forwarding to the delegate.
+  - `_metadata` are bytes to send along to the data source, delegate, and emitted event, if provided.
+- The function can be accessed externally by anyone, or internally from this contract or one that inherits it.
+- The function can be overriden by inheriting contracts.
+- The function overrides a function definition from the [`IJBProjectPayer`](/dev/api/interfaces/ijbprojectpayer.md) interface.
+- The function doesn't return anything.
 
 #### Body
 
@@ -63,12 +63,12 @@ function pay(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
 
     _External references:_
 
-    * [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
+    - [`transferFrom`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-transferFrom-address-address-uint256-)
 
 2.  Send the funds to the splits and get a reference to the leftover amount.
 
@@ -87,11 +87,11 @@ function pay(
 
     _Internal references:_
 
-    * [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
-    * [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
-    * [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
-    * [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
-    * [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
+    - [`defaultSplitsProjectId`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsprojectid.md)
+    - [`defaultSplitsDomain`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsdomain.md)
+    - [`defaultSplitsGroup`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/properties/defaultsplitsgroup.md)
+    - [`defaultBeneficiary`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/properties/defaultbeneficiary.md)
+    - [`_payToSplits`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/write/-_paytosplits.md)
 
 3.  If there's any leftover amount, pay the specified project. If no project is specified, send the leftover funds to the beneficiary or the msg.sender.
 
@@ -134,18 +134,18 @@ function pay(
 
     _Library references:_
 
-    * [`JBTokens`](/dev/api/libraries/jbtokens.md)
-      * `.ETH`
-    * [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
-      * `.sendValue(...)`
+    - [`JBTokens`](/dev/api/libraries/jbtokens.md)
+      - `.ETH`
+    - [`Address`](https://docs.openzeppelin.com/contracts/4.x/dev/api/utils#Address)
+      - `.sendValue(...)`
 
     _Internal references:_
 
-    * [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
+    - [`_pay`](/dev/api/contracts/or-utilities/jbetherc20projectpayer/write/-_pay.md)
 
     _External references:_
 
-    * [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-Transfer-address-address-uint256-)
+    - [`transfer`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-Transfer-address-address-uint256-)
 
 4.  Emit a `Pay` event with the relevant parameters.
 
@@ -167,15 +167,15 @@ function pay(
 
     _Event references:_
 
-    * [`Pay`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/pay.md)
-    
+    - [`Pay`](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/pay.md)
+
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Make a payment to the specified project after first splitting the amount among the stored default splits.
 
   @param _projectId The ID of the project that is being paid after.
@@ -277,17 +277,17 @@ function pay(
 
 <TabItem value="Errors" label="Errors">
 
-| String                                       | Description                                                                     |
-| -------------------------------------------- | ------------------------------------------------------------------------------- |
-| **`NO_MSG_VALUE_ALLOWED`**    | Thrown if ETH was sent to a non-ETH terminal.   |
+| String                     | Description                                   |
+| -------------------------- | --------------------------------------------- |
+| **`NO_MSG_VALUE_ALLOWED`** | Thrown if ETH was sent to a non-ETH terminal. |
 
 </TabItem>
 
 <TabItem value="Events" label="Events">
 
-| Name                                                                          | Data                                                                                          |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [**`Pay`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/pay.md)                                                                          | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>address token</code></li><li><code>uint256 amount</code></li><li><code>uint256 decimals</code></li><li><code>uint256 leftoverAmount</code></li><li><code>uint256 minReturnedTokens</code></li><li><code>bool preferClaimedTokens</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul>                  |
+| Name                                                                             | Data                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**`Pay`**](/dev/api/contracts/or-utilities/jbetherc20splitspayer/events/pay.md) | <ul><li><code>uint256 indexed projectId</code></li><li><code>address beneficiary</code></li><li><code>address token</code></li><li><code>uint256 amount</code></li><li><code>uint256 decimals</code></li><li><code>uint256 leftoverAmount</code></li><li><code>uint256 minReturnedTokens</code></li><li><code>bool preferClaimedTokens</code></li><li><code>string memo</code></li><li><code>bytes metadata</code></li><li><code>address caller</code></li></ul> |
 
 </TabItem>
 

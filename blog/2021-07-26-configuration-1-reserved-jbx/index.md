@@ -11,6 +11,7 @@ A new supply of JBX is minted each time the project receives a contribution. Thi
 
 As a result, the configured recipients "vest" their JBX at the rate of the project's growth instead of a cliff/lock schedule.
 ![](image-6.png)Screenshot from https://juicebox.money/#/p/juicebox
+
 ### Investors
 
 - **Jango** gets **40%** of reserved tokens for architecting the mechanism, writing the contracts, thoroughly testing the ecosystem, leading design and development efforts post-launch, and leading project relations.

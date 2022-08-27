@@ -23,14 +23,14 @@ function hasPermissions(
 ) external view override returns (bool) { ... }
 ```
 
-* `_operator` is the operator to check
-* `_account` is the account that has given out permission to the operator.
-* `_domain` is the domain that the operator has been given permissions to operate.
-* `_permissionIndexes` is an array of permission indexes to check for.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
-* The function returns a flag indicating whether the operator has all specified permissions.
+- `_operator` is the operator to check
+- `_account` is the account that has given out permission to the operator.
+- `_domain` is the domain that the operator has been given permissions to operate.
+- `_permissionIndexes` is an array of permission indexes to check for.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBOperatorStore`](/dev/api/interfaces/ijboperatorstore.md) interface.
+- The function returns a flag indicating whether the operator has all specified permissions.
 
 #### Body
 
@@ -39,16 +39,19 @@ function hasPermissions(
     ```
     for (uint256 _i = 0; _i < _permissionIndexes.length; _i++) { ... }
     ```
+
 2.  Get a reference to the `_permissionIndex` being iterated on.
 
     ```
     uint256 _permissionIndex = _permissionIndexes[_i];
     ```
+
 3.  Make sure the `_permissionIndex` is one of the 255 indexes in a `uint256`.
 
     ```
     if (_permissionIndex > 255) revert PERMISSION_INDEX_OUT_OF_BOUNDS();
     ```
+
 4.  If the bit at the specified permission index of the packed permissions of the operator for the specified account and within the specified domain is off, return `false` because all provided permissions are not on.
 
     ```
@@ -58,7 +61,8 @@ function hasPermissions(
 
     _Internal references:_
 
-    * [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
+    - [`permissionsOf`](/dev/api/contracts/jboperatorstore/properties/permissionsof.md)
+
 5.  After the loop, return `true` since the loop checked all specified permissions without returning `false`.
 
     ```
@@ -70,8 +74,8 @@ function hasPermissions(
 <TabItem value="Code" label="Code">
 
 ```
-/** 
-  @notice 
+/**
+  @notice
   Whether or not an operator has the permission to take certain actions pertaining to the specified domain.
 
   @param _operator The operator to check.

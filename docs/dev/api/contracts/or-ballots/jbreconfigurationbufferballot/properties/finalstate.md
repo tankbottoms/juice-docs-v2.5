@@ -12,7 +12,7 @@ _If `Active`, the ballot for the provided configuration can still be finalized w
 
 ```
 /**
-  @notice 
+  @notice
   The finalized state.
 
   @dev
@@ -24,8 +24,8 @@ _If `Active`, the ballot for the provided configuration can still be finalized w
 mapping(uint256 => mapping(uint256 => JBBallotState)) public override finalState;
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to check the final ballot state of.
-  * `_configuration` is the configuration of the funding cycle to check the final ballot state of.
-* The resulting view function can be accessed externally by anyone.
-* The resulting function overrides a function definition from the [`IJBReconfigurationBufferBallot`](/dev/api/contracts/interfaces/ijbreconfigurationbufferballot) interface.
+- Arguments:
+  - `_projectId` is the ID of the project to check the final ballot state of.
+  - `_configuration` is the configuration of the funding cycle to check the final ballot state of.
+- The resulting view function can be accessed externally by anyone.
+- The resulting function overrides a function definition from the [`IJBReconfigurationBufferBallot`](/dev/api/contracts/interfaces/ijbreconfigurationbufferballot) interface.

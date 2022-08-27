@@ -1,4 +1,4 @@
-# _beforeTransferTo
+# \_beforeTransferTo
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,11 +16,11 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 function _beforeTransferTo(address, uint256) internal override { ...}
 ```
 
-* Arguments:
-  * `_to` is the address to which the transfer is going.
-  * `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
-* The resulting function is internal to this contract and its inheriters.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- Arguments:
+  - `_to` is the address to which the transfer is going.
+  - `_amount` is the amount of the transfer, as a fixed point number with the same number of decimals as this terminal.
+- The resulting function is internal to this contract and its inheriters.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
 
 #### Body
 
@@ -32,15 +32,14 @@ function _beforeTransferTo(address, uint256) internal override { ...}
 
     _External references:_
 
-    * [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
-
+    - [`approve`](https://docs.openzeppelin.com/contracts/4.x/dev/api/token/erc20#IERC20-approve-address-uint256-)
 
 </TabItem>
 
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
   Logic to be triggered before transferring tokens from this terminal.
 

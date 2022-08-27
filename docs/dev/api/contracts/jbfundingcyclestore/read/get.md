@@ -22,13 +22,13 @@ function get(uint256 _projectId, uint256 _configuration)
   returns (JBFundingCycle memory fundingCycle) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project to which the funding cycle belongs.
-  * `_configuration` is the configuration of the funding cycle to get.
-* The view function can be accessed externally by anyone.
-* The view function does not alter state on the blockchain.
-* The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
-* The function returns the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md).
+- Arguments:
+  - `_projectId` is the ID of the project to which the funding cycle belongs.
+  - `_configuration` is the configuration of the funding cycle to get.
+- The view function can be accessed externally by anyone.
+- The view function does not alter state on the blockchain.
+- The function overrides a function definition from the [`IJBFundingCycleStore`](/dev/api/interfaces/ijbfundingcyclestore.md) interface.
+- The function returns the [`JBFundingCycle`](/dev/api/data-structures/jbfundingcycle.md).
 
 #### Body
 
@@ -40,7 +40,7 @@ function get(uint256 _projectId, uint256 _configuration)
 
     _Internal references:_
 
-    * [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
+    - [`_getStructFor`](/dev/api/contracts/jbfundingcyclestore/read/-_getstructfor.md)
 
 </TabItem>
 
@@ -48,7 +48,7 @@ function get(uint256 _projectId, uint256 _configuration)
 
 ```
 /**
-  @notice 
+  @notice
   Get the funding cycle with the given configuration for the specified project.
 
   @param _projectId The ID of the project to which the funding cycle belongs.

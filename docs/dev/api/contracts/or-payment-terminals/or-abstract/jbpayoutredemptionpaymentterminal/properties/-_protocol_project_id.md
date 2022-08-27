@@ -1,8 +1,8 @@
-# _PROTOCOL_PROJECT_ID
+# \_PROTOCOL_PROJECT_ID
 
 Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/README.md)​‌
 
-**The protocol project ID is 1, as it should be the first project launched during the deployment process.** 
+**The protocol project ID is 1, as it should be the first project launched during the deployment process.**
 
 #### Definition
 
@@ -14,5 +14,5 @@ Contract: [`JBPayoutRedemptionPaymentTerminal`](/dev/api/contracts/or-payment-te
 uint256 private constant _PROTOCOL_PROJECT_ID = 1;
 ```
 
-* This value must be hardcoded.
-* The resulting view function is private to this contract.
+- This value must be hardcoded.
+- The resulting view function is private to this contract.

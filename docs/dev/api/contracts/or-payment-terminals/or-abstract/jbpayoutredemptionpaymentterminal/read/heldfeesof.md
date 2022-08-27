@@ -18,12 +18,12 @@ Interface: [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutr
 function heldFeesOf(uint256 _projectId) external view override returns (JBFee[] memory) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project for which fees are being held.
-* The view function can be accessed externally by anyone.
-* The function does not alter state on the blockchain.
-* The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
-* The function returns an array of fees that are being held.
+- Arguments:
+  - `_projectId` is the ID of the project for which fees are being held.
+- The view function can be accessed externally by anyone.
+- The function does not alter state on the blockchain.
+- The resulting function overrides a function definition from the [`IJBPayoutRedemptionPaymentTerminal`](/dev/api/interfaces/ijbpayoutredemptionpaymentterminal.md) interface.
+- The function returns an array of fees that are being held.
 
 #### Body
 
@@ -35,7 +35,7 @@ function heldFeesOf(uint256 _projectId) external view override returns (JBFee[] 
 
     _Internal references:_
 
-    * [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
+    - [`_heldFeesOf`](/dev/api/contracts/or-payment-terminals/or-abstract/jbpayoutredemptionpaymentterminal/properties/-_heldfeesof.md)
 
 </TabItem>
 

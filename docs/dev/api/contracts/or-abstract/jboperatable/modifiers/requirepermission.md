@@ -20,9 +20,9 @@ modifier requirePermission(
 ) { ... }
 ```
 
-* Arguments:
-  * `_projectId` is the ID of the project. 
-* The modifier function can be used by any internal function.
+- Arguments:
+  - `_projectId` is the ID of the project.
+- The modifier function can be used by any internal function.
 
 #### Body
 
@@ -34,7 +34,7 @@ modifier requirePermission(
 
     _Internal references:_
 
-    * [`_requirePermission`](/dev/api/contracts/or-abstract/jboperatable/read/-_requirepermission.md)
+    - [`_requirePermission`](/dev/api/contracts/or-abstract/jboperatable/read/-_requirepermission.md)
 
 2.  Continue the rest of the function.
 
@@ -47,13 +47,13 @@ modifier requirePermission(
 <TabItem value="Code" label="Code">
 
 ```
-/** 
+/**
   @notice
-  Only allows the speficied account or an operator of the account to proceed. 
+  Only allows the speficied account or an operator of the account to proceed.
 
   @param _account The account to check for.
-  @param _domain The domain namespace to look for an operator within. 
-  @param _permissionIndex The index of the permission to check for. 
+  @param _domain The domain namespace to look for an operator within.
+  @param _permissionIndex The index of the permission to check for.
 */
 modifier requirePermission(
   address _account,
@@ -78,6 +78,6 @@ modifier requirePermission(
 </TabItem>
 </Tabs>
 
-
 ```
+
 ```

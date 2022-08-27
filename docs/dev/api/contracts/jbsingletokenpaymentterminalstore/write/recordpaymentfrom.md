@@ -39,20 +39,20 @@ function recordPaymentFrom(
   ) { ... }
 ```
 
-* Arguments:
-  * `_payer` is the original address that sent the payment to the terminal.
-  * `_amount` is a [`JBTokenAmount`](/dev/api/data-structures/jbtokenamount.md) data structure specifying the amount of tokens being paid. Includes the token being paid, the value, the number of decimals included, and the currency of the amount.
-  * `_projectId` is the ID of the project being paid.
-  * `_baseWeightCurrency` is the currency to base token issuance on.
-  * `_beneficiary` is the specified address that should be the beneficiary of anything that results from the payment.
-  * `_memo` is a memo to pass along to the emitted event, and passed along to the funding cycle's data source.
-  * `_metadata` are bytes to send along to the data source, if one is provided.
-* The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
-* The function returns:
-  * `fundingCycle` is the project's funding cycle during which payment was made.
-  * `tokenCount` is the number of project tokens that were minted, as a fixed point number with 18 decimals.
-  * `delegate` is a delegate contract to use for subsequent calls.
-  * `memo` is a memo that should be passed along to the emitted event.
+- Arguments:
+  - `_payer` is the original address that sent the payment to the terminal.
+  - `_amount` is a [`JBTokenAmount`](/dev/api/data-structures/jbtokenamount.md) data structure specifying the amount of tokens being paid. Includes the token being paid, the value, the number of decimals included, and the currency of the amount.
+  - `_projectId` is the ID of the project being paid.
+  - `_baseWeightCurrency` is the currency to base token issuance on.
+  - `_beneficiary` is the specified address that should be the beneficiary of anything that results from the payment.
+  - `_memo` is a memo to pass along to the emitted event, and passed along to the funding cycle's data source.
+  - `_metadata` are bytes to send along to the data source, if one is provided.
+- The resulting function overrides a function definition from the [`JBSingleTokenPaymentTerminalStore`](/dev/api/interfaces/ijbsingletokenpaymentterminalstore.md) interface.
+- The function returns:
+  - `fundingCycle` is the project's funding cycle during which payment was made.
+  - `tokenCount` is the number of project tokens that were minted, as a fixed point number with 18 decimals.
+  - `delegate` is a delegate contract to use for subsequent calls.
+  - `memo` is a memo that should be passed along to the emitted event.
 
 #### Body
 
@@ -65,13 +65,15 @@ function recordPaymentFrom(
 
     _External references:_
 
-    * [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+    - [`currentOf`](/dev/api/contracts/jbfundingcyclestore/read/currentof.md)
+
 2.  Make sure the project has a funding cycle configured. This is done by checking if the project's current funding cycle number is non-zero.
 
     ```
     // The project must have a funding cycle configured.
     if (fundingCycle.number == 0) revert INVALID_FUNDING_CYCLE();
     ```
+
 3.  Make sure the project's funding cycle isn't configured to pause payments.
 
     ```
@@ -81,14 +83,16 @@ function recordPaymentFrom(
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.payPaused(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.payPaused(...)`
+
 4.  Create a variable where the weight to use in subsquent calculations will be saved.
 
     ```
     // The weight according to which new token supply is to be minted, as a fixed point number with 18 decimals.
     uint256 _weight;
     ```
+
 5.  If the project's current funding cycle is configured to use a data source when receiving payments, ask the data source for the parameters that should be used throughout the rest of the function given provided contextual values in a [`JBPayParamsData`](/dev/api/data-structures/jbpayparamsdata.md) structure. Otherwise default parameters are used.
 
     ```
@@ -120,20 +124,22 @@ function recordPaymentFrom(
 
     _Library references:_
 
-    * [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
-      * `.useDataSourceForPay(...)`\
-      * `.dataSource(...)`\
-      * `.reservedRate(...)`
+    - [`JBFundingCycleMetadataResolver`](/dev/api/libraries/jbfundingcyclemetadataresolver.md)
+      - `.useDataSourceForPay(...)`\
+      - `.dataSource(...)`\
+      - `.reservedRate(...)`
 
     _External references:_
 
-    * [`payParams`](/dev/api/interfaces/ijbfundingcycledatasource.md)
+    - [`payParams`](/dev/api/interfaces/ijbfundingcycledatasource.md)
+
 6.  If there is no amount being recorded, there's nothing left to do so the current values can be returned.
 
     ```
     // If there's no amount being recorded, there's nothing left to do.
     if (_amount.value == 0) return (fundingCycle, 0, delegate, memo);
     ```
+
 7.  Add the amount being paid to the stored balance.
 
     ```
@@ -145,13 +151,15 @@ function recordPaymentFrom(
 
     _Internal references:_
 
-    * [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+    - [`balanceOf`](/dev/api/contracts/jbsingletokenpaymentterminalstore/properties/balanceof.md)
+
 8.  If there is no weight, the resulting token count will be 0. There's nothing left to do so the current values can be returned.
 
     ```
     // If there's no weight, token count must be 0 so there's nothing left to do.
     if (_weight == 0) return (fundingCycle, 0, delegate, memo);
     ```
+
 9.  Calculate the weight ratio. This allows a project to get paid in a certain token, but issue project tokens relative to a different base currency. The weight ratio will be used to divide the product of the paid amount and the weight to determine the number of tokens that should be distributed. Since the number of distributed tokens should be a fixed point number with 18 decimals, the weight ratio must have the same number of decimals as the amount to cancel it out and leave only the fidelity of the 18 decimal fixed point weight.
 
     ```
@@ -167,7 +175,7 @@ function recordPaymentFrom(
 
     _External references:_
 
-    * [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
+    - [`priceFor`](/dev/api/contracts/jbprices/read/pricefor.md)
 
 10. Determine the number of tokens to mint.
 
@@ -178,8 +186,8 @@ function recordPaymentFrom(
 
     _Library references:_
 
-    * [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
-      * `.mulDiv(...)`
+    - [`PRBMath`](https://github.com/hifi-finance/prb-math/blob/main/contracts/PRBMath.sol)
+      - `.mulDiv(...)`
 
 </TabItem>
 
@@ -294,10 +302,10 @@ function recordPaymentFrom(
 
 <TabItem value="Errors" label="Errors">
 
-| String                             | Description                                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **`INVALID_FUNDING_CYCLE`**        | Thrown if the project doesn't have a funding cycle.                                            |
-| **`FUNDING_CYCLE_PAYMENT_PAUSED`** | Thrown if the project has configured its current funding cycle to pause payments.              |
+| String                             | Description                                                                       |
+| ---------------------------------- | --------------------------------------------------------------------------------- |
+| **`INVALID_FUNDING_CYCLE`**        | Thrown if the project doesn't have a funding cycle.                               |
+| **`FUNDING_CYCLE_PAYMENT_PAUSED`** | Thrown if the project has configured its current funding cycle to pause payments. |
 
 </TabItem>
 
