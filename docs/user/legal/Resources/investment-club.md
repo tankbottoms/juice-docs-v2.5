@@ -133,242 +133,84 @@ The Subscriber hereby represents and warrants to the Vehicle as of the date of t
 
 > -   (g) Other than as set forth in this Agreement or in the Operating Agreement (and any separate agreement in writing with the Vehicle executed in conjunction with the Subscriber’s Subscription), the Subscriber is not relying upon any information, representation or warranty by the Vehicle, the Administrative Member, or any of their respective agents or representatives in determining to subscribe to the Vehicle. The Subscriber has consulted, to the extent deemed appropriate by the Subscriber, with the Subscriber’s own advisers as to the financial, tax, legal and other matters concerning the Vehicle and on that basis and the basis of its own independent investigations, without the assistance of the Vehicle, the Administrative Member, or any of their respective agents or representatives, believes that an investment in the Vehicle is suitable and appropriate for the Subscriber. Subscriber hereby represents and warrants that it has had the opportunity to have its own independent legal counsel review and approve all of the legal documents executed in connection with its Subscription.
 
-(h) The Subscriber understands and acknowledges that (i) any description of the Vehicle’s business and prospects given to the Subscriber is not
-necessarily exhaustive, (ii) all estimates, projections and
-forward-looking statements were based assumptions, estimates or
-projections at the time they were made, there is no guarantee that such
-assumptions, estimates or projections were at the time or remain
-reasonable and whether or not the estimates, projections or
-forward-looking statements will materialize depends upon many factors
-that are out of the control of the Vehicle and (iii) there is no
-assurance that any projections, estimates or forward-looking statements
-will be attained.
+> -   (h) The Subscriber understands and acknowledges that
+>
+> > -   (i) any description of the Vehicle’s business and prospects given to the Subscriber is not necessarily exhaustive,
+> > -   (ii) all estimates, projections and forward-looking statements were based assumptions, estimates or projections at the time they were made, there is no guarantee that such assumptions, estimates or projections were at the time or remain reasonable and whether or not the estimates, projections or forward-looking statements will materialize depends upon many factors that are out of the control of the Vehicle and
+> > -   (iii) there is no assurance that any projections, estimates or forward-looking statements will be attained.
 
-(i) The Subscriber’s information provided in this Agreement (including
-the exhibits hereto) is complete and accurate and may be relied upon by
-the Vehicle and the Administrative Member. Additionally, by executing
-the Agreement, the Subscriber acknowledges and agrees that any
-identifying information or documentation regarding the Subscriber and/or its suitability to invest in the Vehicle that was furnished by the
-Subscriber to the Administrative Member, whether in connection with this Subscription or previously, may be made available to Administrative
-Member, remains true and correct in all respects and may, at the
-discretion of the Administrative Member, be incorporated by reference
-herein (collectively, “Supporting Documents”).
+> -   (i) The Subscriber’s information provided in this Agreement (including the exhibits hereto) is complete and accurate and may be relied upon by the Vehicle and the Administrative Member. Additionally, by executing the Agreement, the Subscriber acknowledges and agrees that any identifying information or documentation regarding the Subscriber and/or its suitability to invest in the Vehicle that was furnished by the Subscriber to the Administrative Member, whether in connection with this Subscription or previously, may be made available to Administrative Member, remains true and correct in all respects and may, at the discretion of the Administrative Member, be incorporated by reference herein (collectively, “Supporting Documents”).
 
-(j) Neither this Subscription nor any of the Subscriber’s Capital
-Contributions do or will directly or indirectly contravene applicable
-laws and regulations, including anti-money-laundering laws and
-regulations. The Subscriber understands and agrees that the Vehicle may
-undertake any actions that the Vehicle deems necessary or appropriate to ensure compliance with applicable laws, rules and regulations regarding money laundering or terrorism. In furtherance of those efforts, the
-Subscriber hereby represents, covenants, and agrees that, to the best of the Subscriber’s knowledge based on reasonable investigation:
+> -   (j) Neither this Subscription nor any of the Subscriber’s Capital Contributions do or will directly or indirectly contravene applicable laws and regulations, including anti-money-laundering laws and regulations. The Subscriber understands and agrees that the Vehicle may undertake any actions that the Vehicle deems necessary or appropriate to ensure compliance with applicable laws, rules and regulations regarding money laundering or terrorism. In furtherance of those efforts, the Subscriber hereby represents, covenants, and agrees that, to the best of the Subscriber’s knowledge based on reasonable investigation:
 
-    (i) None of the Subscriber’s Capital Contributions to the Vehicle
-    (whether payable in cash or otherwise) will be derived from money
-    laundering or similar activities deemed illegal under federal laws and
-    regulations.
+> > -   (i) None of the Subscriber’s Capital Contributions to the Vehicle (whether payable in cash or otherwise) will be derived from money laundering or similar activities deemed illegal under federal laws and regulations.
 
-    (ii) To the extent within the Subscriber’s control, none of the
-    Subscriber’s Capital Contributions to the Vehicle will cause the Vehicle or any of its personnel to be in violation of federal anti-money
-    laundering laws, including without limitation the Bank Secrecy Act (31
-    U.S.C. 5311 et seq.), the United States Money Laundering Control Act of
-    1986 or the International Money Laundering Abatement and Anti-Terrorist
-    Financing Act of 2001, and any regulations promulgated thereunder.
+> > -   (ii) To the extent within the Subscriber’s control, none of the Subscriber’s Capital Contributions to the Vehicle will cause the Vehicle or any of its personnel to be in violation of federal anti-money laundering laws, including without limitation the Bank Secrecy Act (31 U.S.C. 5311 et seq.), the United States Money Laundering Control Act of 1986 or the International Money Laundering Abatement and Anti-Terrorist Financing Act of 2001, and any regulations promulgated thereunder.
 
-    (iii) The Subscriber acknowledges that due to anti-money laundering
-    requirements operating in the United States, as well as the Vehicle’s
-    own internal anti-money laundering policies, the Vehicle and the
-    Administrative Member may require further identification of the
-    Subscriber and the source of its Capital Contribution before these
-    Subscription Documents can be processed, Capital Contributions can be
-    accepted, or distributions can be made. When requested by the
-    Administrative Member, the Subscriber will provide any and all
-    additional information, and the Subscriber understands and agrees that
-    the Administrative Member may release confidential information about the Subscriber or persons related to Subscriber if the Administrative
-    Member has determined that the release is necessary to ensure compliance with all applicable laws and regulations concerning money laundering
-    and similar activities.
+> > -   (iii) The Subscriber acknowledges that due to anti-money laundering requirements operating in the United States, as well as the Vehicle’s own internal anti-money laundering policies, the Vehicle and the Administrative Member may require further identification of the Subscriber and the source of its Capital Contribution before these Subscription Documents can be processed, Capital Contributions can be accepted, or distributions can be made. When requested by the Administrative Member, the Subscriber will provide any and all additional information, and the Subscriber understands and agrees that the Administrative Member may release confidential information about the Subscriber or persons related to Subscriber if the Administrative Member has determined that the release is necessary to ensure compliance with all applicable laws and regulations concerning money laundering and similar activities.
 
-(k) Except as otherwise disclosed in writing to the Administrative
-Member, the Subscriber represents and warrants that neither it nor any
-person or entity controlled by, controlling or under common control with the Subscriber nor any person having a beneficial or economic interest
-in the Subscriber or the Subscriber’s assets nor (without limiting the
-Subscriber’s representations in Section 9 below) for whom the Subscriber is acting as agent or nominee in connection with this investment, is:
+> -   (k) Except as otherwise disclosed in writing to the Administrative Member, the Subscriber represents and warrants that neither it nor any person or entity controlled by, controlling or under common control with the Subscriber nor any person having a beneficial or economic interest in the Subscriber or the Subscriber’s assets nor (without limiting the Subscriber’s representations in Section 9 below) for whom the Subscriber is acting as agent or nominee in connection with this investment, is:
 
-    (i) a Prohibited Investor;
+> > -   (i) a Prohibited Investor;
 
-    (ii) a Senior Foreign Political Figure, any member of a Senior Foreign
-    Political Figure’s “immediate family,” which includes the figure’s
-    parents, siblings, spouse, children and in-laws, or any Close Associate
-    of a Senior Foreign Political Figure, or a person or entity resident in, or organized or chartered under, the laws of a Non-Cooperative
-    Jurisdiction;
+> > -   (ii) a Senior Foreign Political Figure, any member of a Senior Foreign Political Figure’s “immediate family,” which includes the figure’s parents, siblings, spouse, children and in-laws, or any Close Associate of a Senior Foreign Political Figure, or a person or entity resident in, or organized or chartered under, the laws of a Non-Cooperative Jurisdiction;
 
-    (iii) a person or entity resident in, or organized or chartered under,
-    the laws of a jurisdiction that has been designated by the U.S.
-    Secretary of the Treasury under Section 311 or 312 of the USA PATRIOT
-    Act as warranting special measures due to money laundering concerns; or
+> > -   (iii) a person or entity resident in, or organized or chartered under, the laws of a jurisdiction that has been designated by the U.S. Secretary of the Treasury under Section 311 or 312 of the USA PATRIOT Act as warranting special measures due to money laundering concerns; or
 
-    (iv) a person or entity who gives the Subscriber reason to believe that
-    its funds originate from, or will be or have been routed through, an
-    account maintained at a Foreign Shell Bank, an “offshore bank,” or a
-    bank organized or chartered under the laws of a Non-Cooperative
-    Jurisdiction.
+> > -   (iv) a person or entity who gives the Subscriber reason to believe that its funds originate from, or will be or have been routed through, an account maintained at a Foreign Shell Bank, an “offshore bank,” or a bank organized or chartered under the laws of a Non-Cooperative Jurisdiction.
 
-(l) The Subscriber understands the rights, obligations and restrictions
-of Members, including that withdrawals of capital from the Vehicle and
-transfers of interests in the Vehicle by Members are limited by the
-terms of the Operating Agreement.
+> -   (l) The Subscriber understands the rights, obligations and restrictions of Members, including that withdrawals of capital from the Vehicle and transfers of interests in the Vehicle by Members are limited by the terms of the Operating Agreement.
 
-(m) The Subscriber understands the meaning and legal consequences of the representations and warranties made by the Subscriber in these
-Subscription Documents and the Operating Agreement, and that the
-Administrative Member is relying on those representations and warranties in making its determination to accept or reject this Subscription. The
-Subscriber represents and warrants that the information contained in
-this Agreement and in the Subscription Documents is true and correct as
-of the date hereof and shall be deemed repeated and reaffirmed by the
-Subscriber as of each date that it makes a Capital Contribution to the
-Vehicle and agrees to notify immediately the Administrative Member of
-any changes in such information (or, if there have been any changes in
-the information provided to the Vehicle by the Subscriber in the
-Subscription Documents since the date the Subscription Documents were
-furnished, the Subscriber has advised the Vehicle in writing of such
-changes). The Subscriber hereby agrees to indemnify and hold harmless
-the Vehicle and each member thereof from and against any and all losses, damages, expenses, liabilities or reasonable attorneys’ fees (including attorneys’ fees and expenses incurred in a securities or other action
-in which no judgment in favor of the Subscriber is rendered) due to or
-arising out of a breach of any representation or warranty of the
-Subscriber, whether contained in the Operating Agreement, this
-Subscription Agreement or the Subscription Documents. Notwithstanding
-any of the representations, warranties, acknowledgments or agreements
-made in this Subscription Agreement and in the Subscription Documents by the Subscriber, the Subscriber does not thereby or in any other manner
-waive any rights granted to the Subscriber under federal or state
-securities law.
+> -   (m) The Subscriber understands the meaning and legal consequences of the representations and warranties made by the Subscriber in these Subscription Documents and the Operating Agreement, and that the Administrative Member is relying on those representations and warranties in making its determination to accept or reject this Subscription. The Subscriber represents and warrants that the information contained in this Agreement and in the Subscription Documents is true and correct as of the date hereof and shall be deemed repeated and reaffirmed by the Subscriber as of each date that it makes a Capital Contribution to the Vehicle and agrees to notify immediately the Administrative Member of any changes in such information (or, if there have been any changes in the information provided to the Vehicle by the Subscriber in the Subscription Documents since the date the Subscription Documents were furnished, the Subscriber has advised the Vehicle in writing of such changes). The Subscriber hereby agrees to indemnify and hold harmless the Vehicle and each member thereof from and against any and all losses, damages, expenses, liabilities or reasonable attorneys’ fees (including attorneys’ fees and expenses incurred in a securities or other action in which no judgment in favor of the Subscriber is rendered) due to or arising out of a breach of any representation or warranty of the Subscriber, whether contained in the Operating Agreement, this Subscription Agreement or the Subscription Documents. Notwithstanding any of the representations, warranties, acknowledgments or agreements made in this Subscription Agreement and in the Subscription Documents by the Subscriber, the Subscriber does not thereby or in any other manner waive any rights granted to the Subscriber under federal or state securities law.
 
-(n) The Subscriber understands the risks involved with acquiring an
-interest in the Vehicle, understands the business of the Vehicle, has
-thoroughly read and understands all the provisions of the Operating
-Agreement and can withstand a total loss of its Capital Contributions to the Vehicle.
+> -   (n) The Subscriber understands the risks involved with acquiring an interest in the Vehicle, understands the business of the Vehicle, has thoroughly read and understands all the provisions of the Operating Agreement and can withstand a total loss of its Capital Contributions to the Vehicle.
 
-(o) [The Subscriber understands that the use of a limited liability
-company with protected or registered Series (a “Series LLC”) has not yet been widely adopted and is subject to various legal uncertainties,
-including, without limitation, uncertainties relating to:
+> -   (o) [The Subscriber understands that the use of a limited liability
 
-    (i) the potential non-recognition of the separate and segregated assets
-    and liabilities of a Series in jurisdictions that do not have statutes
-    permitting the establishment of a Series LLC;
+    company with protected or registered Series (a “Series LLC”) has not yet been widely adopted and is subject to various legal uncertainties,
+    including, without limitation, uncertainties relating to:
 
-    (ii) the risk of non-compliance with statutory requirements that must be met in order to maintain the separate liability and assets of a Series
-    in Delaware or any applicable state even if that state otherwise
-    recognizes or permits the establishment of a Series LLC;
+        > > -   (i) the potential non-recognition of the separate and segregated assets and liabilities of a Series in jurisdictions that do not have statutes permitting the establishment of a Series LLC;
+        > > -   (ii) the risk of non-compliance with statutory requirements that must be met in order to maintain the separate liability and assets of a Series in Delaware or any applicable state even if that state otherwise recognizes or permits the establishment of a Series LLC;
+        > > -   (iii) the novelty and lack of established precedent regarding Series LLCs and the potential for liability “spill-over” risks between a Series and the Series LLC or another Series;
+        > > -   (iv) the lack of legal and regulatory clarity regarding the taxation of a Series and a Series LLC at both the federal and state level; ands
+        > > -   (v) the lack of legal and regulatory clarity regarding the treatment of a Series and a Series LLC in bankruptcy proceedings under federal law.]
 
-    (iii) the novelty and lack of established precedent regarding Series
-    LLCs and the potential for liability “spill-over” risks between a Series and the Series LLC or another Series;
+### **3. Liability.**
 
-    (iv) the lack of legal and regulatory clarity regarding the taxation of a Series and a Series LLC at both the federal and state level; and
+The Subscriber agrees that neither the Vehicle, the Administrative Member, nor any of their respective affiliates, nor their respective managers, officers, directors, members, equity holders, employees or other applicable representatives (collectively, the “Covered Persons”), will incur any liability (a) in respect of any action taken upon any information provided to the Vehicle by the Subscriber (including any Supporting Documents or Additional Documents) or for relying on any notice, consent, request, instructions or other instrument believed, in good faith, to be genuine or to be signed by properly authorized persons on behalf of the Subscriber, including any document transmitted by email or other electronic delivery or (b) for adhering to applicable anti-money laundering obligations whether now or later comes into effect.
 
-    (v) the lack of legal and regulatory clarity regarding the treatment of a Series and a Series LLC in bankruptcy proceedings under federal law.]
+### **4. Power of Attorney.**
 
-3.  Liability. The Subscriber agrees that neither the Vehicle, the
-    Administrative Member, nor any of their respective affiliates, nor their respective managers, officers, directors, members, equity holders,
-    employees or other applicable representatives (collectively, the
-    “Covered Persons”), will incur any liability (a) in respect of any
-    action taken upon any information provided to the Vehicle by the
-    Subscriber (including any Supporting Documents or Additional Documents)
-    or for relying on any notice, consent, request, instructions or other
-    instrument believed, in good faith, to be genuine or to be signed by
-    properly authorized persons on behalf of the Subscriber, including any
-    document transmitted by email or other electronic delivery or (b) for
-    adhering to applicable anti-money laundering obligations whether now or
-    later comes into effect.
+The Subscriber hereby irrevocably makes, constitutes and appoints the Administrative Member its true and lawful agent and attorney-in-fact, with full power of substitution and full power and authority in the name, place, and stead of the Subscriber, to make, execute, sign, swear to, acknowledge and record and file in all necessary or appropriate places all documents relating to the Vehicle and its activities, including, but not limited to:
 
-4.  Power of Attorney. The Subscriber hereby irrevocably makes,
-    constitutes and appoints the Administrative Member its true and lawful
-    agent and attorney-in-fact, with full power of substitution and full
-    power and authority in the name, place, and stead of the Subscriber, to
-    make, execute, sign, swear to, acknowledge and record and file in all
-    necessary or appropriate places all documents relating to the Vehicle
-    and its activities, including, but not limited to: (a) the Operating
-    Agreement and any amendment to the Operating Agreement that has been
-    adopted as provided in the Operating Agreement; (b) a Certificate of
-    Formation of the Vehicle and all amendments required or permitted by law or the provisions of the Operating Agreement; (c) any applications,
-    forms, certificates, reports, or other documents that may be requested
-    or required by any federal, state, or local governmental agency,
-    securities exchange, securities association, self-regulatory
-    organization, or similar institution and that are deemed necessary or
-    advisable by the Administrative Member; (d) any other instrument that
-    may be required to be filed or recorded in any state or county or by any governmental agency, or that the Administrative Member deems advisable
-    to file or record, including, without limitation, applications for
-    foreign qualification and certificates of assumed name; (e) any
-    documents that may be required to effect the continuation of the
-    Vehicle, the admission of additional Members, the admission of
-    substitute Members, or the dissolution or termination of the Vehicle,
-    provided such continuation, admission, dissolution or termination are in accordance with the terms of the Operating Agreement; (f) to make
-    certain elections contained in the Internal Revenue Code (the “Code”) or state law governing taxation of limited liability companies; and (g) to perform any and all other ministerial duties or functions necessary for the conduct of the business of the Vehicle. Notwithstanding the
-    foregoing, the Administrative Member may not exercise this power of
-    attorney with respect to matters as to which the Operating Agreement
-    requires the consent of the Members until such consent has been
-    received. The foregoing power of attorney is coupled with an interest,
-    is irrevocable and will survive the subsequent death or disability of
-    the Subscriber or any subsequent power of attorney executed by the
-    Subscriber and is coupled with an interest, is irrevocable and will
-    survive the subsequent death or disability of the Subscriber or any
-    subsequent power of attorney executed by the Subscriber. The Subscriber
-    must execute and deliver to the Administrative Member within 5 business
-    days after receipt of the Administrative Member’s request, any further
-    designations, powers-of-attorney and other instruments as the
-    Administrative Member reasonably deems necessary to carry out the terms
-    of this Agreement.
+> -   (a) the Operating Agreement and any amendment to the Operating Agreement that has been adopted as provided in the Operating Agreement;
+> -   (b) a Certificate of Formation of the Vehicle and all amendments required or permitted by law or the provisions of the Operating Agreement;
+> -   (c) any applications, forms, certificates, reports, or other documents that may be requested or required by any federal, state, or local governmental agency, securities exchange, securities association, self-regulatory organization, or similar institution and that are deemed necessary or advisable by the Administrative Member;
+> -   (d) any other instrument that may be required to be filed or recorded in any state or county or by any governmental agency, or that the Administrative Member deems advisable to file or record, including, without limitation, applications for foreign qualification and certificates of assumed name;
+> -   (e) any documents that may be required to effect the continuation of the Vehicle, the admission of additional Members, the admission of substitute Members, or the dissolution or termination of the Vehicle, provided such continuation, admission, dissolution or termination are in accordance with the terms of the Operating Agreement;
+> -   (f) to make certain elections contained in the Internal Revenue Code (the “Code”) or state law governing taxation of limited liability companies; and
+> -   (g) to perform any and all other ministerial duties or functions necessary for the conduct of the business of the Vehicle. Notwithstanding the foregoing, the Administrative Member may not exercise this power of attorney with respect to matters as to which the Operating Agreement requires the consent of the Members until such consent has been received. The foregoing power of attorney is coupled with an interest, is irrevocable and will survive the subsequent death or disability of the Subscriber or any subsequent power of attorney executed by the Subscriber and is coupled with an interest, is irrevocable and will survive the subsequent death or disability of the Subscriber or any subsequent power of attorney executed by the Subscriber. The Subscriber must execute and deliver to the Administrative Member within 5 business days after receipt of the Administrative Member’s request, any further designations, powers-of-attorney and other instruments as the Administrative Member reasonably deems necessary to carry out the terms of this Agreement.
 
-5.  Dispute Resolution.
-    Notwithstanding anything to the contrary in this Agreement or the
-    Operating Agreement, and except for any claim or action that
-    Administrative Member or the Vehicle may elect to commence to enforce
-    any of its rights or the Subscriber’s obligations under this Agreement
-    or the Operating Agreement, the Subscriber agrees that all disputes
-    arising out of (i) this Agreement, (ii) the Vehicle’s offering of the
-    Interest, (iii) the Subscriber’s Subscription for the Interest and (iv)
-    the Subscriber’s rights and obligations under the Operating Agreement
-    will be settled by binding arbitration, before three arbitrators,
-    administered by the American Arbitration Association under and in
-    accordance with its Commercial Arbitration Rules. The decision of the
-    arbitrators shall be non-appealable, binding and conclusive upon all
-    parties thereto and judgment on the award rendered by the arbitrators
-    may be entered in any court having jurisdiction. The location of the
-    arbitration will be [San Francisco, California ]. Each of the parties
-    will equally bear any arbitration fees and administrative costs
-    associated with the arbitration. The prevailing party, as determined by
-    the arbitrators, will be awarded its costs and reasonable attorneys’
-    fees incurred in connection with the arbitration. Each party hereby
-    irrevocably and unconditionally submits, for itself and its property, to the exclusive jurisdiction of any courts located in the Arbitration
-    Location, for recognition or enforcement of any award determined
-    pursuant to this Section 5.
+### **5. Dispute Resolution.**
 
-6.  NOTICE: By becoming a party to this Agreement and the Operating
-    Agreement, each party is agreeing to have all disputes, claims or
-    controversies arising out of or relating to this Agreement and the
-    Operating Agreement decided by neutral binding arbitration, and is
-    giving up any rights it might possess to have those matters litigated in a court or jury trial. By becoming a party to this Agreement and the
-    Operating Agreement, each party is giving up its judicial rights to
-    discovery and appeal except to the extent that they are specifically
-    provided for under this Agreement and the Operating Agreement. If any
-    party refuses to submit to arbitration after agreeing to this provision, that party may be compelled to arbitrate under federal or state law. By becoming a party to this Agreement and the Operating Agreement, each
-    party confirms that its agreement to this arbitration provision is
-    voluntary.
+    Notwithstanding anything to the contrary in this Agreement or the Operating Agreement, and except for any claim or action that Administrative Member or the Vehicle may elect to commence to enforce any of its rights or the Subscriber’s obligations under this Agreement or the Operating Agreement, the Subscriber agrees that all disputes arising out of (i) this Agreement, (ii) the Vehicle’s offering of the Interest, (iii) the Subscriber’s Subscription for the Interest and (iv) the Subscriber’s rights and obligations under the Operating Agreement will be settled by binding arbitration, before three arbitrators, administered by the American Arbitration Association under and in accordance with its Commercial Arbitration Rules. The decision of the arbitrators shall be non-appealable, binding and conclusive upon all parties thereto and judgment on the award rendered by the arbitrators may be entered in any court having jurisdiction. The location of the arbitration will be [San Francisco, California ]. Each of the parties will equally bear any arbitration fees and administrative costs associated with the arbitration. The prevailing party, as determined by the arbitrators, will be awarded its costs and reasonable attorneys’ fees incurred in connection with the arbitration. Each party hereby irrevocably and unconditionally submits, for itself and its property, to the exclusive jurisdiction of any courts located in the Arbitration Location, for recognition or enforcement of any award determined pursuant to this Section 5.
 
-7.  Waiver; Conflict of Interest. The Subscriber acknowledges and agrees that the Members (including the Administrative Member), and their
-    affiliates will be subject to various conflicts of interest in carrying
-    out responsibilities with respect to the Vehicle. Affiliates of Members
-    may also be in competition with the Vehicle or its investments. Other
-    vehicles may be formed in the future with objectives that are the same
-    as or similar to the Vehicle’s objectives. Each Subscriber hereby waives any such conflicts by executing this Agreement.
+### **6. NOTICE:**
 
-8.  Confidentiality. The Subscriber must keep confidential, and not make use of or disclose to any person (other than for purposes reasonably
-    related to its Interest or as required by law), any information or
-    matter received from or relating to the Vehicle; provided, that the
-    Subscriber may disclose any such information to the extent that such
-    information (i) is or becomes generally available to the public through
-    no act or omission of the Subscriber, (ii) was already in the possession of the Subscriber at the time of such disclosure or (iii) is
-    communicated to the Subscriber by a third party without violation of
-    confidentiality obligations.
+By becoming a party to this Agreement and the Operating Agreement, each party is agreeing to have all disputes, claims or controversies arising out of or relating to this Agreement and the Operating Agreement decided by neutral binding arbitration, and is giving up any rights it might possess to have those matters litigated in a court or jury trial. By becoming a party to this Agreement and the Operating Agreement, each party is giving up its judicial rights to discovery and appeal except to the extent that they are specifically provided for under this Agreement and the Operating Agreement. If any party refuses to submit to arbitration after agreeing to this provision, that party may be compelled to arbitrate under federal or state law. By becoming a party to this Agreement and the Operating Agreement, each party confirms that its agreement to this arbitration provision is voluntary.
 
-9.  USA PATRIOT Act. To comply with applicable laws, rules and
-    regulations designed to combat money laundering or terrorism, the
-    Subscriber must provide the information on Exhibit C of this Agreement.
+### **7. Waiver; Conflict of Interest.**
+
+The Subscriber acknowledges and agrees that the Members (including the Administrative Member), and their affiliates will be subject to various conflicts of interest in carrying out responsibilities with respect to the Vehicle. Affiliates of Members may also be in competition with the Vehicle or its investments. Other vehicles may be formed in the future with objectives that are the same as or similar to the Vehicle’s objectives. Each Subscriber hereby waives any such conflicts by executing this Agreement.
+
+### **8. Confidentiality.**
+
+The Subscriber must keep confidential, and not make use of or disclose to any person (other than for purposes reasonably related to its Interest or as required by law), any information or matter received from or relating to the Vehicle; provided, that the Subscriber may disclose any such information to the extent that such information (i) is or becomes generally available to the public through no act or omission of the Subscriber, (ii) was already in the possession of the Subscriber at the time of such disclosure or (iii) is communicated to the Subscriber by a third party without violation of confidentiality obligations.
+
+### **9. USA PATRIOT Act.**
+
+To comply with applicable laws, rules and regulations designed to combat money laundering or terrorism, the Subscriber must provide the information on Exhibit C of this Agreement.
 
 10. Beneficial Ownership. The Subscriber represents and warrants that it is subscribing for Interests for Subscriber’s own account and own risk. The Subscriber also represents that it does not have the intention or
     obligation to sell, distribute, or transfer its Interests or any portion of Interests, directly or indirectly, to any other person or entity or
